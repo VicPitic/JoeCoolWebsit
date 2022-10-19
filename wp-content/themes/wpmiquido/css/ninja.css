@@ -1,0 +1,14 @@
+.resp_image__bg {
+	position: relative;
+	object-fit: cover;
+	object-position: 50% 50%;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+.section--about-awards .container-about-awards .container-about-award .about-award-logo .visible--mobile {
+    display: none;
+}

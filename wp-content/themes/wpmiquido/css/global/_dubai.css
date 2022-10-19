@@ -1,0 +1,435 @@
+.page-template-dubai-template {
+    --dubai_black: #1a181e;
+    --dubai_gold: #e4ad61;
+    --dubai_grey: #f9f8fe;
+    --dubai_grey-dark: #b9b9b9;
+}
+
+/* global */
+.page-template-dubai-template {
+    color: var(--dubai_black);
+}
+
+.page-template-dubai-template .container-dark {
+    background: var(--dubai_black);
+}
+
+.page-template-dubai-template a.cta-secondary.dark {
+    color: var(--white);
+    border: 1px solid var(--dubai_gold);
+    background-color: transparent;
+}
+
+.page-template-dubai-template a.cta-secondary.dark:hover {
+    color: var(--white);
+    background-color: var(--dubai_gold);
+}
+
+/* header */
+.header-dubai .nav--main .menu-item a {
+    color: var(--dubai_black);
+}
+
+.header-dubai .nav--main .menu-item a:hover {
+    color: var(--dubai_gold);
+}
+
+.header-dubai nav.menu a {
+    background-color: var(--dubai_gold);
+    color: var(--white);
+}
+
+.header-dubai nav.menu a:hover {
+    background-color: var(--dubai_black);
+}
+
+.header-dubai .nav--main .menu > li > .sub-menu > li > a .menu-item-description {
+    color: var(--dubai_black);
+}
+
+.header-dubai .menu--button span {
+    background-color: var(--dubai_black);
+}
+
+.header-dubai .menu--button:after,
+.header-dubai .menu--button:before {
+    background-color: var(--dubai_black);
+}
+
+.page-template-dubai-template.open-menu .menu-mobile .menu-container ul.menu li a {
+    color: var(--dubai_black);
+}
+
+.page-template-dubai-template.open-menu .menu-mobile .menu-container ul.menu li:last-child a {
+    color: var(--dubai_gold);
+}
+
+.page-template-dubai-template.open-menu .menu-mobile .container-social-media .nav-social-media li a {
+    color: var(--dubai_black);
+}
+
+/* hero */
+@keyframes mouseRoller {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(14px);
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .page-template-dubai-template .section--hero .container-left .container-main-picture figure {
+            height: auto;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .page-template-dubai-template .main-picture img {
+        width: 100%;
+    }
+}
+
+
+.mouse {
+    position: absolute;
+    z-index: 2;
+    bottom: 1px;
+    left: 0;
+
+    width: 22px;
+    height: 38px;
+
+    transform: translateY(50%);
+
+    border: 2px solid var(--dubai_black);
+    border-radius: 15px;
+}
+
+.mouse .roller {
+    position: absolute;
+    z-index: 2;
+    top: 8px;
+    left: 50%;
+
+    width: 4px;
+    height: 4px;
+    margin-left: -2px;
+
+    animation: mouseRoller 0.8s cubic-bezier(0.7, 0, 0.3, 1) infinite alternate;
+
+    border-radius: 4px;
+    background-color: var(--dubai_black);
+}
+
+.mouse .roller-shadow {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+
+    width: 4px;
+    height: 4px;
+    margin-left: -2px;
+
+    animation: mouseRoller 0.8s cubic-bezier(0.7, 0, 0.3, 1) infinite alternate;
+    animation-delay: 80ms;
+
+    border-radius: 4px;
+    background-color: var(--dubai_gold);
+}
+
+/* social sidebar */
+.page-template-dubai-template .container-sidebar-social a {
+    color: var(--dubai_black);
+}
+
+.page-template-dubai-template .container-sidebar-social a:after {
+    border-bottom: 2px solid var(--dubai_black);
+}
+
+/* sales */
+.page-template-dubai-template .contactpeople-item .person-name a svg path {
+    fill: var(--dubai_black);
+}
+
+.page-template-dubai-template .contactpeople-item .person-name a:hover svg path {
+    fill: var(--dubai_gold);
+}
+
+.page-template-dubai-template .contactpeople-item .person-mail {
+    color: var(--dubai_gold);
+}
+
+.page-template-dubai-template .contactpeople-item .person-mail:hover {
+    color: var(--dubai_black);
+}
+
+.page-template-dubai-template .sales-cta h4 a {
+    color: var(--dubai_gold);
+}
+
+.page-template-dubai-template .sales-cta h4 a:after {
+    background-color: var(--dubai_gold);
+}
+
+/* footer */
+.page-template-dubai-template .footer {
+    color: var(--white);
+}
+
+.page-template-dubai-template .footer a {
+    color: var(--white);
+}
+
+.page-template-dubai-template .footer a:hover {
+    color: var(--dubai_gold);
+}
+
+.page-template-dubai-template .section--pagefooter-contact {
+    z-index: 1;
+}
+
+.page-template-dubai-template .section--pagefooter-contact .wrapper {
+    background-color: var(--dubai_black);
+}
+
+.page-template-dubai-template .container-map-contact-header h2 {
+    margin-bottom: 25px;
+}
+
+.page-template-dubai-template .container-map-contact-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.page-template-dubai-template .container-map-contact-info a {
+    transition: color var(--translation_duration);
+}
+
+@media only screen and (max-width: 1440px) {
+    .page-template-dubai-template .container-map-contact-box {
+        flex: 0 1 50%;
+
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .page-template-dubai-template .container-map-contact-box {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .page-template-dubai-template .container-map-contact-box {
+        margin-bottom: 24px;
+        flex: 0 1 100%;
+
+        width: 100%;
+    }
+}
+
+.page-template-dubai-template .container-map-contact-box h3 {
+    margin-bottom: 15px;
+
+    text-transform: uppercase;
+}
+
+.page-template-dubai-template .container-map-contact-box .e-mail,
+.page-template-dubai-template .container-map-contact-box .phone {
+    margin-bottom: 10px;
+
+    font-weight: var(--font_weight--bold);
+}
+
+.page-template-dubai-template .container-map-contact-box .phone {
+    margin-bottom: 20px;
+}
+
+.page-template-dubai-template .container-map-contact-box .address {
+    font-weight: var(--font_weight--normal);
+    line-height: var(--line_hight--large);
+    padding-right: 10px;
+}
+
+.page-template-dubai-template .shape-map {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    overflow: hidden;
+
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+
+    background: url("../../img/shapes/shape_map-dubai.svg") top right no-repeat;
+    background-size: contain;
+}
+
+@media only screen and (max-width: 1440px) {
+    .page-template-dubai-template .shape-map {
+        height: 75%;
+    }
+}
+
+@media only screen and (large) {
+    .page-template-dubai-template .shape-map {
+        height: 75%;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .page-template-dubai-template .shape-map {
+        height: 50%;
+    }
+}
+
+.page-template-dubai-template .shape-map .map-person {
+    position: absolute;
+    bottom: 20%;
+    left: 55%;
+
+    display: flex;
+    align-items: center;
+
+    transform: translate(-20px, -40px);
+}
+
+@media only screen and (max-width: 1024px) {
+    .page-template-dubai-template .shape-map .map-person {
+        display: none;
+    }
+}
+
+.page-template-dubai-template .shape-map .map-person .map-person-image {
+    overflow: hidden;
+
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+
+    border-radius: 50%;
+}
+
+.page-template-dubai-template .shape-map .map-person .map-person-image img {
+    width: 100%;
+    height: auto;
+}
+
+.page-template-dubai-template .shape-map .map-person .map-person-dialog {
+    position: relative;
+
+    display: block;
+
+    width: 210px;
+    height: 50px;
+    padding: 5px 15px;
+
+    border-radius: 25px;
+    background: var(--white);
+    box-shadow: 0 10px 40px 0 var(--black);
+}
+
+.page-template-dubai-template .map-person-dialog:before {
+    position: absolute;
+    top: 8px;
+    right: -3px;
+
+    width: 0;
+    height: 0;
+
+    content: "";
+
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid var(--white);
+    border-radius: 90px;
+}
+
+.page-template-dubai-template .map-person-dialog span {
+    display: block;
+}
+
+.page-template-dubai-template span.dialog-author {
+    color: var(--dubai_grey-dark);
+}
+
+.page-template-dubai-template span.dialog-text {
+    color: var(--dubai_black);
+}
+
+.page-template-dubai-template .footer-section--bottom a {
+    color: var(--dubai_black);
+}
+
+.page-template-dubai-template .footer-section--bottom a:after {
+    border-bottom: 2px solid var(--dubai_black);
+}
+
+.page-template-dubai-template .container-footer-bottom {
+    color: var(--dubai_black);
+    background-color: var(--dubai_grey);
+}
+
+.page-template-dubai-template .copyright a {
+    margin-right: 25px;
+}
+
+@media only screen and (max-width: 1440px) {
+    .page-template-dubai-template .copyright a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .page-template-dubai-template .copyright a:first-of-type {
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .page-template-dubai-template .copyright a {
+        display: unset;
+
+        margin-right: 24px;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .page-template-dubai-template .copyright a {
+        display: block;
+
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+}
+
+.page-template-dubai-template .copyright a img {
+    height: 30px;
+}
+
+/* cookie notification */
+.page-template-dubai-template .cookie-notice-container {
+    background-color: var(--dubai_black);
+}
+
+.page-template-dubai-template .cn-text-container .cookie-text-more {
+    background: var(--brand--dark);
+    background: linear-gradient(0deg, var(--dubai_black) 0%, var(--dubai_black) 75%, var(--dubai_black) 100%);
+}
+
+.page-template-dubai-template .cn-text-container .cookie-text-more:hover:after {
+    border-color: var(--dubai_gold);
+}
+
+.page-template-dubai-template .cn-set-cookie {
+    background: var(--dubai_gold);
+}
+
+.page-template-dubai-template .cn-set-cookie:hover {
+    color: var(--dubai_black);
+    background: var(--white);
+}

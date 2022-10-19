@@ -1,0 +1,340 @@
+:root {
+    /* ----- colors ----- */
+    --brand: #051344;
+    --brand--dark: #373b78;
+    --brand--light: #9D9FCB;
+
+    --black: #000000;
+    --white: #ffffff;
+    --grey_light: #f9fbff;
+    --grey_darker: #f1f7ff;
+    --grey_blue: #d9e8ff;
+    --grey_deep_blue: #a5a8cd;
+
+    --orange: #fdad31;
+    --orange_dark: #ff8819;
+    --red: #43b8c9;
+    --red--light: #fdeaf0;
+    --red--dark: #d31d54;
+
+    /* ----- typography ----- */
+    --font_family: "sofia-pro", sans-serif;
+
+    --font_weight--normal: 300;
+    --font_weight--semibold: 500;
+    --font_weight--bold: 600;
+
+    --letter_spacing--wideer: 1px;
+
+    --h1-hero--font-size : 40px;
+    --h1-hero--font-size--large : 36px;
+    --h1-hero--font-size--desktop : 36px;
+    --h1-hero--font-size--tablet : 30px;
+    --h1-hero--font-size--mobile_landscape : 24px;
+    --h1-hero--font-size--mobile : 24px;
+
+    --h1--font-size : 60px;
+    --h1--font-size--large : 54px;
+    --h1--font-size--desktop : 50px;
+    --h1--font-size--tablet : 48px;
+    --h1--font-size--mobile_landscape : 28px;
+    --h1--font-size--mobile : 36px;
+
+    --h2--font-size : 46px;
+    --h2--font-size--large : 40px;
+    --h2--font-size--desktop : 40px;
+    --h2--font-size--tablet : 32px;
+    --h2--font-size--mobile_landscape : 24px;
+    --h2--font-size--mobile : 22px;
+
+    --h3--font-size : 34px;
+    --h3--font-size--large : 32px;
+    --h3--font-size--desktop : 28px;
+    --h3--font-size--tablet : 24px;
+    --h3--font-size--mobile_landscape : 20px;
+    --h3--font-size--mobile : 16px;
+
+    --h4--font-size : 24px;
+    --h4--font-size--large : 20px;
+    --h4--font-size--desktop : 20px;
+    --h4--font-size--tablet : 16px;
+    --h4--font-size--mobile_landscape : 16px;
+    --h4--font-size--mobile : 14px;
+
+    --h5--font-size : 18px;
+    --h5--font-size--large : 16px;
+    --h5--font-size--desktop : 14px;
+    --h5--font-size--tablet : 14px;
+    --h5--font-size--mobile : 12px;
+
+    --p--font-size: 18px;
+    --p--font-size--large : 18px;
+    --p--font-size--desktop: 16px;
+    --p--font-size--tablet: 14px;
+    --p--font-size--mobile_landscape: 14px;
+    --p--font-size--mobile: 14px;
+
+    --primary-link--font-size: 24px;
+    --primary-link--font-size--large: 20px;
+    --primary-link--font-size--desktop: 18px;
+    --primary-link--font-size--tablet: 16px;
+    --primary-link--font-size--mobile: 16px;
+
+    --secondary-link--font-size: 18px;
+
+    --list-font-size: 18px;
+    --list-font-size--tablet: 14px;
+    --list-font-size--mobile: 12px;
+
+    --menu--font-size: 16px;
+    --menu--font-size--tablet: 14px;
+
+    --breadcrumbs--font-size: 12px;
+
+    --blockquote--font-size: 34px;
+    --blockquote--font-size--large: 28px;
+    --blockquote--font-size--tablet: 24px;
+    --blockquote--font-size--mobile: 18px;
+
+    --table-header--font-size: 16px;
+    --table-text--font-size: 13px;
+
+    --tab--font-size: 24px;
+
+    --caption-font-size: 16px;
+    --caption-font-size--mobile: 12px;
+
+    --tech-stack-header--font-size: 12px;
+    --tech-stack-header--font-size--mobile: 11px;
+
+    --tech-stack--font-size: 14px;
+    --tech-stack--font-size--mobile: 12px;
+
+    --footer--font-size: 12px;
+
+    --line_hight: 1;
+    --line_hight--normal: 1.24;
+    --line_hight--header: 1.25;
+    --line_hight--large: 1.5;
+    --line_hight--extralarge: 2;
+
+
+    /* ----------------------
+       ----- new vars-----
+       ---------------------- */
+
+    /* ----- font sizes----- */
+
+    --h1-hero : 40px;
+    --h1-hero--large : 32px;
+    --h1-hero--desktop : 22px;
+    --h1-hero--tablet : 32px;
+    --h1-hero--mobile_landscape : 32px;
+    --h1-hero--mobile : 22px;
+
+    --h2-hero : 50px;
+    --h2-hero--large : 40px;
+    --h2-hero--desktop : 32px;
+    --h2-hero--tablet : 40px;
+    --h2-hero--mobile_landscape : 40px;
+    --h2-hero--mobile : 32px;
+
+    --h2 : 40px;
+    --h2--large : 32px;
+    --h2--desktop : 22px;
+    --h2--tablet : 32px;
+    --h2--mobile_landscape : 32px;
+    --h2--mobile : 22px;
+
+    --h3 : 32px;
+    --h3--large : 22px;
+    --h3--desktop : 18px;
+    --h3--tablet : 22px;
+    --h3--mobile_landscape : 22px;
+    --h3--mobile : 18px;
+
+    --h3-blog : 32px;
+    --h3-blog--large : 24px;
+    --h3-blog--desktop : 24px;
+    --h3-blog--tablet : 24px;
+    --h3-blog--mobile_landscape : 24px;
+    --h3-blog--mobile : 20px;
+
+    --h4 : 22px;
+    --h4--large : 18px;
+    --h4--desktop : 16px;
+    --h4--tablet : 18px;
+    --h4--mobile_landscape : 18px;
+    --h4--mobile : 16px;
+
+    --h4-blog : 24px;
+    --h4-blog--large : 20px;
+    --h4-blog--desktop : 20px;
+    --h4-blog--tablet : 20px;
+    --h4-blog--mobile_landscape : 20px;
+    --h4-blog--mobile : 18px;
+
+    --h5 : 18px;
+    --h5--large : 16px;
+    --h5--desktop : 14px;
+    --h5--tablet : 16px;
+    --h5--mobile_landscape : 16px;
+    --h5--mobile : 14px;
+
+    --h5-blog : 20px;
+    --h5-blog--large : 18px;
+    --h5-blog--desktop : 18px;
+    --h5-blog--tablet : 18px;
+    --h5-blog--mobile_landscape : 18px;
+    --h5-blog--mobile : 16px;
+
+    --p : 18px;
+    --p--large : 16px;
+    --p--desktop : 14px;
+    --p--tablet : 16px;
+    --p--mobile_landscape : 16px;
+    --p--mobile : 14px;
+
+    --p-blog : 20px;
+    --p-blog--large : 18px;
+    --p-blog--desktop : 16px;
+    --p-blog--tablet : 18px;
+    --p-blog--mobile_landscape : 18px;
+    --p-blog--mobile : 16px;
+
+    --label : 22px;
+    --label--large : 18px;
+    --label--desktop : 16px;
+    --label--tablet : 18px;
+    --label--mobile_landscape : 18px;
+    --label--mobile : 16px;
+
+    --caption : 16px;
+    --caption--large : 14px;
+    --caption--desktop : 14px;
+    --caption--tablet : 14px;
+    --caption--mobile_landscape : 14px;
+    --caption--mobile : 14px;
+
+    --tag : 14px;
+
+    --footer-copy: 12px;
+
+    --link-primary : 20px;
+    --link-primary--large : 18px;
+    --link-primary--desktop : 16px;
+    --link-primary--tablet : 18px;
+    --link-primary--mobile_landscape : 18px;
+    --link-primary--mobile : 16px;
+
+    --link-secondary : 18px;
+    --link-secondary--large : 16px;
+    --link-secondary--desktop : 14px;
+    --link-secondary--tablet : 16px;
+    --link-secondary--mobile_landscape : 16px;
+    --link-secondary--mobile : 14px;
+
+
+    /* ----- line height----- */
+    --line-height--s: 1;
+    --line-height--m: 1.25;
+    --line-height--l: 1.3;
+    --line-height--xl: 1.5;
+    --line-height--xl-blog: 1.75;
+    --line-height--xxl: 2;
+
+    /* ----- spacing----- */
+
+    --section-margin-bottom--xl: 140px;
+    --section-margin-bottom--xl--large: 110px;
+    --section-margin-bottom--xl--desktop: 100px;
+    --section-margin-bottom--xl--tablet: 110px;
+    --section-margin-bottom--xl--landscape-mobile: 100px;
+    --section-margin-bottom--xl--mobile: 50px;
+
+    --section-margin-bottom--l: 100px;
+    --section-margin-bottom--l--large: 80px;
+    --section-margin-bottom--l--desktop: 70px;
+    --section-margin-bottom--l--tablet: 80px;
+    --section-margin-bottom--l--landscape-mobile: 70px;
+    --section-margin-bottom--l--mobile: 50px;
+
+    --section-margin-bottom--m: 80px;
+    --section-margin-bottom--m--large: 70px;
+    --section-margin-bottom--m--desktop: 60px;
+    --section-margin-bottom--m--tablet: 70px;
+    --section-margin-bottom--m--landscape-mobile: 60px;
+    --section-margin-bottom--m--mobile: 50px;
+
+    --section-margin-bottom--s: 50px;
+    --section-margin-bottom--s--large: 40px;
+    --section-margin-bottom--s--desktop: 30px;
+    --section-margin-bottom--s--tablet: 40px;
+    --section-margin-bottom--s--landscape-mobile: 40px;
+    --section-margin-bottom--s--mobile: 50px;
+
+    --element-margin-bottom--m: 70px;
+    --element-margin-bottom--m--large: 60px;
+    --element-margin-bottom--m--desktop: 50px;
+    --element-margin-bottom--m--tablet: 60px;
+    --element-margin-bottom--m--landscape-mobile: 50px;
+    --element-margin-bottom--m--mobile: 20px;
+
+    --element-margin-bottom--s: 40px;
+    --element-margin-bottom--s--large: 30px;
+    --element-margin-bottom--s--desktop: 20px;
+    --element-margin-bottom--s--tablet: 30px;
+    --element-margin-bottom--s--landscape-mobile: 20px;
+    --element-margin-bottom--s--mobile: 20px;
+
+    --element-margin-right: 30px;
+    --element-margin-right--large: 30px;
+    --element-margin-right--desktop: 24px;
+    --element-margin-right--tablet: 24px;
+    --element-margin-right--landscape-mobile: 24px;
+    --element-margin-right--mobile: 24px;
+
+    --inside-padding--l: 100px;
+    --inside-padding--l--large: 80px;
+    --inside-padding--l--desktop: 70px;
+    --inside-padding--l--tablet: 80px;
+    --inside-padding--l--landscape-mobile: 70px;
+    --inside-padding--l--mobile: 50px;
+
+    --inside-padding--m: 80px;
+    --inside-padding--m--large: 70px;
+    --inside-padding--m--desktop: 60px;
+    --inside-padding--m--tablet: 60px;
+    --inside-padding--m--landscape-mobile: 50px;
+    --inside-padding--m--mobile: 50px;
+
+    --inside-padding--s: 50px;
+    --inside-padding--s--large: 40px;
+    --inside-padding--s--desktop: 30px;
+    --inside-padding--s--tablet: 40px;
+    --inside-padding--s--landscape-mobile: 40px;
+    --inside-padding--s--mobile: 50px;
+
+
+    /* ----- animations timing----- */
+    --translation_duration: 300ms;
+    --translation_duration--fast: 100ms;
+    --translation_duration--slow: 600ms;
+
+
+    /* ----- spacing----- */
+    --margin-bottom : 100px;
+    --margin-bottom--large : 80px;
+    --margin-bottom--desktop : 70px;
+    --margin-bottom--tablet : 60px;
+    --margin-bottom--mobile : 40px;
+}
+
+/*
+@media screen and (min-width: 1441px) {}
+@media screen and (max-width: 1440px) {}
+@media screen and (max-width: 1280px) {}
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 768px) {}
+@media screen and (max-width: 460px) {}
+*/

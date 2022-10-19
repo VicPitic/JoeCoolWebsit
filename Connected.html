@@ -1,0 +1,3693 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connected</title>
+<style id="applicationStylesheet" type="text/css">
+
+	body {
+		overflow: hidden;
+	}	.mediaViewInfo {
+		--web-view-name: Connected;
+		--web-view-id: Connected;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Connected;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Connected {
+		position: absolute;
+		width: 390px;
+		height: 844px;
+		background-color: rgba(144,40,31,1);
+		overflow: hidden;
+		--web-view-name: Connected;
+		--web-view-id: Connected;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Group_14627 {
+		position: absolute;
+		width: 390px;
+		height: 844px;
+		left: -3px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_1000 {
+		fill: rgba(144,40,31,1);
+	}
+	.Rectangle_1000 {
+		position: absolute;
+		overflow: visible;
+		width: 390px;
+		height: 844px;
+		left: 0px;
+		top: 0px;
+	}
+	#Mask_Group_2 {
+		position: absolute;
+		width: 390px;
+		height: 474px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_678 {
+		opacity: 0.15;
+		fill: rgba(0,0,0,1);
+	}
+	.Path_678 {
+		overflow: visible;
+		position: absolute;
+		width: 390px;
+		height: 241px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Current_IP_127001 {
+		left: 95px;
+		top: 214px;
+		position: absolute;
+		overflow: visible;
+		width: 201px;
+		height: 23px;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_14594 {
+		position: absolute;
+		width: 315px;
+		height: 50px;
+		left: 38px;
+		top: 715px;
+		overflow: visible;
+	}
+	#Group_1567 {
+		position: absolute;
+		width: 315px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#United_States {
+		left: 69px;
+		top: 13px;
+		position: absolute;
+		overflow: visible;
+		width: 107px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -2px;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#united-states-of-america-flag- {
+		position: absolute;
+		width: 39px;
+		height: 33px;
+		left: 15px;
+		top: 9px;
+		overflow: visible;
+	}
+	#Rectangle_983 {
+		fill: rgba(0,0,0,0.102);
+		stroke: rgba(206,206,206,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_983 {
+		position: absolute;
+		overflow: visible;
+		width: 315px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+	}
+	#Chevron {
+		fill: rgba(255,255,255,1);
+	}
+	.Chevron {
+		overflow: visible;
+		position: absolute;
+		width: 8.201px;
+		height: 14.01px;
+		transform: translate(-30px, -707px) matrix(1,0,0,1,318.5773,725.4127) rotate(90deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+	#Current_Location {
+		left: 123px;
+		top: 677px;
+		position: absolute;
+		overflow: visible;
+		width: 146px;
+		height: 23px;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#iPhone_XStatus_BarsStatus_Bar_ {
+		opacity: 0;
+		position: absolute;
+		width: 390px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle {
+		fill: transparent;
+	}
+	.Rectangle {
+		position: absolute;
+		overflow: visible;
+		width: 390px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_3 {
+		position: absolute;
+		width: 66.662px;
+		height: 11.336px;
+		left: 308.666px;
+		top: 17.331px;
+		overflow: visible;
+	}
+	#Battery {
+		position: absolute;
+		width: 24.328px;
+		height: 11.333px;
+		left: 42.334px;
+		top: 0.003px;
+		overflow: visible;
+	}
+	#Border {
+		opacity: 0.35;
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Border {
+		position: absolute;
+		overflow: visible;
+		width: 22px;
+		height: 11.333px;
+		left: 0px;
+		top: 0px;
+	}
+	#Cap {
+		opacity: 0.4;
+		fill: rgba(255,255,255,1);
+	}
+	.Cap {
+		overflow: visible;
+		position: absolute;
+		width: 1.328px;
+		height: 4px;
+		left: 23px;
+		top: 3.667px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Capacity {
+		fill: rgba(255,255,255,1);
+	}
+	.Capacity {
+		position: absolute;
+		overflow: visible;
+		width: 18px;
+		height: 7.333px;
+		left: 2px;
+		top: 2px;
+	}
+	#Wifi {
+		fill: rgba(255,255,255,1);
+	}
+	.Wifi {
+		overflow: visible;
+		position: absolute;
+		width: 15.272px;
+		height: 10.965px;
+		left: 22.028px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Cellular_Connection {
+		fill: rgba(255,255,255,1);
+	}
+	.Cellular_Connection {
+		overflow: visible;
+		position: absolute;
+		width: 17px;
+		height: 10.667px;
+		left: 0px;
+		top: 0.336px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Time_Style {
+		position: absolute;
+		width: 24.986px;
+		height: 10.268px;
+		left: 34.98px;
+		top: 18.931px;
+		overflow: visible;
+	}
+	#n_Time {
+		fill: rgba(255,255,255,1);
+	}
+	.n_Time {
+		overflow: visible;
+		position: absolute;
+		width: 7.67px;
+		height: 10.268px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#n_Time_ {
+		fill: rgba(255,255,255,1);
+	}
+	.n_Time_ {
+		overflow: visible;
+		position: absolute;
+		width: 1.962px;
+		height: 7.075px;
+		left: 8.88px;
+		top: 1.593px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#n_Time_ba {
+		fill: rgba(255,255,255,1);
+	}
+	.n_Time_ba {
+		overflow: visible;
+		position: absolute;
+		width: 7.943px;
+		height: 9.864px;
+		left: 11.978px;
+		top: 0.205px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#n_Time_bb {
+		fill: rgba(255,255,255,1);
+	}
+	.n_Time_bb {
+		overflow: visible;
+		position: absolute;
+		width: 4.32px;
+		height: 9.864px;
+		left: 20.666px;
+		top: 0.205px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Union_64 {
+		fill: rgba(255,255,255,1);
+	}
+	.Union_64 {
+		overflow: visible;
+		position: absolute;
+		width: 25.5px;
+		height: 25.497px;
+		left: 345.25px;
+		top: 68.501px;
+		transform: matrix(1,0,0,1,0,0);
+		cursor: pointer;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Menu.html;
+	}
+	#StarX-VPN-Logo-white {
+		position: absolute;
+		width: 221px;
+		height: 59px;
+		left: 85px;
+		top: 52px;
+		overflow: visible;
+	}
+	#Group_14604 {
+		position: absolute;
+		width: 390px;
+		height: 51px;
+		left: 0px;
+		top: 135px;
+		overflow: visible;
+	}
+	#Rectangle_993 {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_993 {
+		position: absolute;
+		overflow: visible;
+		width: 390px;
+		height: 51px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_14603 {
+		position: absolute;
+		width: 227.603px;
+		height: 28px;
+		left: 81px;
+		top: 12px;
+		overflow: visible;
+	}
+	#Group_14601 {
+		position: absolute;
+		width: 182px;
+		height: 28px;
+		left: 45.604px;
+		top: 0px;
+		overflow: visible;
+	}
+	#You_Are_Protected {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 183px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(17,204,67,1);
+	}
+	#surface1 {
+		position: absolute;
+		width: 21.333px;
+		height: 25.052px;
+		left: 0px;
+		top: 1.403px;
+		overflow: visible;
+	}
+	#Path_680 {
+		fill: rgba(17,204,67,1);
+	}
+	.Path_680 {
+		overflow: visible;
+		position: absolute;
+		width: 9.546px;
+		height: 9.546px;
+		left: 5.894px;
+		top: 7.753px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_681 {
+		fill: rgba(17,204,67,1);
+	}
+	.Path_681 {
+		overflow: visible;
+		position: absolute;
+		width: 21.333px;
+		height: 25.052px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_14621 {
+		position: absolute;
+		width: 274px;
+		height: 274px;
+		left: 58px;
+		top: 352px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Disconnected.html;
+		cursor: pointer;
+	}
+	#Ellipse_118_bo {
+		fill: url(#Ellipse_118_bo);
+	}
+	.Ellipse_118_bo {
+		position: absolute;
+		overflow: visible;
+		width: 274px;
+		height: 274px;
+		left: 0px;
+		top: 0px;
+	}
+	#Ellipse_116 {
+		fill: rgba(144,40,31,1);
+	}
+	.Ellipse_116 {
+		position: absolute;
+		overflow: visible;
+		width: 220px;
+		height: 220px;
+		left: 27px;
+		top: 27px;
+	}
+	#Mask_Group_3 {
+		position: absolute;
+		width: 220px;
+		height: 220px;
+		left: 27px;
+		top: 27px;
+		overflow: visible;
+	}
+	#n_00001 {
+		left: 100px;
+		top: 190px;
+		position: absolute;
+		overflow: visible;
+		width: 75px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(17,204,67,1);
+	}
+	#Group_14620 {
+		position: absolute;
+		width: 149px;
+		height: 79px;
+		left: 63px;
+		top: 47px;
+		overflow: visible;
+	}
+	#Path_682 {
+		fill: rgba(255,255,255,1);
+	}
+	.Path_682 {
+		overflow: visible;
+		position: absolute;
+		width: 45.263px;
+		height: 46.544px;
+		left: 52px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Switch_off {
+		left: 0px;
+		top: 56px;
+		position: absolute;
+		overflow: visible;
+		width: 150px;
+		height: 23px;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#DUUR {
+		left: 63px;
+		top: 158px;
+		position: absolute;
+		overflow: visible;
+		width: 150px;
+		height: 23px;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(0,0,0,1);
+	}
+	#Group_14630 {
+		position: absolute;
+		width: 292px;
+		height: 49px;
+		left: 49px;
+		top: 265px;
+		overflow: visible;
+	}
+	#Downloaded {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 103px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#n_64_KiB {
+		left: 22px;
+		top: 28px;
+		position: absolute;
+		overflow: visible;
+		width: 59px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+	#n_33_KiB {
+		left: 225px;
+		top: 28px;
+		position: absolute;
+		overflow: visible;
+		width: 57px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+	#Uploaded {
+		left: 214px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 79px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+</style>
+<script id="applicationScript">
+///////////////////////////////////////
+// INITIALIZATION
+///////////////////////////////////////
+
+/**
+ * Functionality for scaling, showing by media query, and navigation between multiple pages on a single page. 
+ * Code subject to change.
+ **/
+
+if (window.console==null) { window["console"] = { log : function() {} } }; // some browsers do not set console
+
+var Application = function() {
+	// event constants
+	this.prefix = "--web-";
+	this.NAVIGATION_CHANGE = "viewChange";
+	this.VIEW_NOT_FOUND = "viewNotFound";
+	this.VIEW_CHANGE = "viewChange";
+	this.VIEW_CHANGING = "viewChanging";
+	this.STATE_NOT_FOUND = "stateNotFound";
+	this.APPLICATION_COMPLETE = "applicationComplete";
+	this.APPLICATION_RESIZE = "applicationResize";
+	this.SIZE_STATE_NAME = "data-is-view-scaled";
+	this.STATE_NAME = this.prefix + "state";
+
+	this.lastTrigger = null;
+	this.lastView = null;
+	this.lastState = null;
+	this.lastOverlay = null;
+	this.currentView = null;
+	this.currentState = null;
+	this.currentOverlay = null;
+	this.currentQuery = {index: 0, rule: null, mediaText: null, id: null};
+	this.inclusionQuery = "(min-width: 0px)";
+	this.exclusionQuery = "none and (min-width: 99999px)";
+	this.LastModifiedDateLabelName = "LastModifiedDateLabel";
+	this.viewScaleSliderId = "ViewScaleSliderInput";
+	this.pageRefreshedName = "showPageRefreshedNotification";
+	this.application = null;
+	this.applicationStylesheet = null;
+	this.showByMediaQuery = null;
+	this.mediaQueryDictionary = {};
+	this.viewsDictionary = {};
+	this.addedViews = [];
+	this.viewStates = [];
+	this.views = [];
+	this.viewIds = [];
+	this.viewQueries = {};
+	this.overlays = {};
+	this.overlayIds = [];
+	this.numberOfViews = 0;
+	this.verticalPadding = 0;
+	this.horizontalPadding = 0;
+	this.stateName = null;
+	this.viewScale = 1;
+	this.viewLeft = 0;
+	this.viewTop = 0;
+	this.horizontalScrollbarsNeeded = false;
+	this.verticalScrollbarsNeeded = false;
+
+	// view settings
+	this.showUpdateNotification = false;
+	this.showNavigationControls = false;
+	this.scaleViewsToFit = false;
+	this.scaleToFitOnDoubleClick = false;
+	this.actualSizeOnDoubleClick = false;
+	this.scaleViewsOnResize = false;
+	this.navigationOnKeypress = false;
+	this.showViewName = false;
+	this.enableDeepLinking = true;
+	this.refreshPageForChanges = false;
+	this.showRefreshNotifications = true;
+
+	// view controls
+	this.scaleViewSlider = null;
+	this.lastModifiedLabel = null;
+	this.supportsPopState = false; // window.history.pushState!=null;
+	this.initialized = false;
+
+	// refresh properties
+	this.refreshDuration = 250;
+	this.lastModifiedDate = null;
+	this.refreshRequest = null;
+	this.refreshInterval = null;
+	this.refreshContent = null;
+	this.refreshContentSize = null;
+	this.refreshCheckContent = false;
+	this.refreshCheckContentSize = false;
+
+	var self = this;
+
+	self.initialize = function(event) {
+		var view = self.getVisibleView();
+		var views = self.getVisibleViews();
+		if (view==null) view = self.getInitialView();
+		self.collectViews();
+		self.collectOverlays();
+		self.collectMediaQueries();
+
+		for (let index = 0; index < views.length; index++) {
+			var view = views[index];
+			self.setViewOptions(view);
+			self.setViewVariables(view);
+			self.centerView(view);
+		}
+
+		// sometimes the body size is 0 so we call this now and again later
+		if (self.initialized) {
+			window.addEventListener(self.NAVIGATION_CHANGE, self.viewChangeHandler);
+			window.addEventListener("keyup", self.keypressHandler);
+			window.addEventListener("keypress", self.keypressHandler);
+			window.addEventListener("resize", self.resizeHandler);
+			window.document.addEventListener("dblclick", self.doubleClickHandler);
+
+			if (self.supportsPopState) {
+				window.addEventListener('popstate', self.popStateHandler);
+			}
+			else {
+				window.addEventListener('hashchange', self.hashChangeHandler);
+			}
+
+			// we are ready to go
+			window.dispatchEvent(new Event(self.APPLICATION_COMPLETE));
+		}
+
+		if (self.initialized==false) {
+			if (self.enableDeepLinking) {
+				self.syncronizeViewToURL();
+			} 
+	
+			if (self.refreshPageForChanges) {
+				self.setupRefreshForChanges();
+			}
+	
+			self.initialized = true;
+		}
+		
+		if (self.scaleViewsToFit) {
+			self.viewScale = self.scaleViewToFit(view);
+			
+			if (self.viewScale<0) {
+				setTimeout(self.scaleViewToFit, 500, view);
+			}
+		}
+		else if (view) {
+			self.viewScale = self.getViewScaleValue(view);
+			self.centerView(view);
+			self.updateSliderValue(self.viewScale);
+		}
+		else {
+			// no view found
+		}
+	
+		if (self.showUpdateNotification) {
+			self.showNotification();
+		}
+
+		//"addEventListener" in window ? null : window.addEventListener = window.attachEvent;
+		//"addEventListener" in document ? null : document.addEventListener = document.attachEvent;
+	}
+
+
+	///////////////////////////////////////
+	// AUTO REFRESH 
+	///////////////////////////////////////
+
+	self.setupRefreshForChanges = function() {
+		self.refreshRequest = new XMLHttpRequest();
+
+		if (!self.refreshRequest) {
+			return false;
+		}
+
+		// get document start values immediately
+		self.requestRefreshUpdate();
+	}
+
+	/**
+	 * Attempt to check the last modified date by the headers 
+	 * or the last modified property from the byte array (experimental)
+	 **/
+	self.requestRefreshUpdate = function() {
+		var url = document.location.href;
+		var protocol = window.location.protocol;
+		var method;
+		
+		try {
+
+			if (self.refreshCheckContentSize) {
+				self.refreshRequest.open('HEAD', url, true);
+			}
+			else if (self.refreshCheckContent) {
+				self.refreshContent = document.documentElement.outerHTML;
+				self.refreshRequest.open('GET', url, true);
+				self.refreshRequest.responseType = "text";
+			}
+			else {
+
+				// get page last modified date for the first call to compare to later
+				if (self.lastModifiedDate==null) {
+
+					// File system does not send headers in FF so get blob if possible
+					if (protocol=="file:") {
+						self.refreshRequest.open("GET", url, true);
+						self.refreshRequest.responseType = "blob";
+					}
+					else {
+						self.refreshRequest.open("HEAD", url, true);
+						self.refreshRequest.responseType = "blob";
+					}
+
+					self.refreshRequest.onload = self.refreshOnLoadOnceHandler;
+
+					// In some browsers (Chrome & Safari) this error occurs at send: 
+					// 
+					// Chrome - Access to XMLHttpRequest at 'file:///index.html' from origin 'null' 
+					// has been blocked by CORS policy: 
+					// Cross origin requests are only supported for protocol schemes: 
+					// http, data, chrome, chrome-extension, https.
+					// 
+					// Safari - XMLHttpRequest cannot load file:///Users/user/Public/index.html. Cross origin requests are only supported for HTTP.
+					// 
+					// Solution is to run a local server, set local permissions or test in another browser
+					self.refreshRequest.send(null);
+
+					// In MS browsers the following behavior occurs possibly due to an AJAX call to check last modified date: 
+					// 
+					// DOM7011: The code on this page disabled back and forward caching.
+
+					// In Brave (Chrome) error when on the server
+					// index.js:221 HEAD https://www.example.com/ net::ERR_INSUFFICIENT_RESOURCES
+					// self.refreshRequest.send(null);
+
+				}
+				else {
+					self.refreshRequest = new XMLHttpRequest();
+					self.refreshRequest.onreadystatechange = self.refreshHandler;
+					self.refreshRequest.ontimeout = function() {
+						self.log("Couldn't find page to check for updates");
+					}
+					
+					var method;
+					if (protocol=="file:") {
+						method = "GET";
+					}
+					else {
+						method = "HEAD";
+					}
+
+					//refreshRequest.open('HEAD', url, true);
+					self.refreshRequest.open(method, url, true);
+					self.refreshRequest.responseType = "blob";
+					self.refreshRequest.send(null);
+				}
+			}
+		}
+		catch (error) {
+			self.log("Refresh failed for the following reason:")
+			self.log(error);
+		}
+	}
+
+	self.refreshHandler = function() {
+		var contentSize;
+
+		try {
+
+			if (self.refreshRequest.readyState === XMLHttpRequest.DONE) {
+				
+				if (self.refreshRequest.status === 2 || 
+					self.refreshRequest.status === 200) {
+					var pageChanged = false;
+
+					self.updateLastModifiedLabel();
+
+					if (self.refreshCheckContentSize) {
+						var lastModifiedHeader = self.refreshRequest.getResponseHeader("Last-Modified");
+						contentSize = self.refreshRequest.getResponseHeader("Content-Length");
+						//lastModifiedDate = refreshRequest.getResponseHeader("Last-Modified");
+						var headers = self.refreshRequest.getAllResponseHeaders();
+						var hasContentHeader = headers.indexOf("Content-Length")!=-1;
+						
+						if (hasContentHeader) {
+							contentSize = self.refreshRequest.getResponseHeader("Content-Length");
+
+							// size has not been set yet
+							if (self.refreshContentSize==null) {
+								self.refreshContentSize = contentSize;
+								// exit and let interval call this method again
+								return;
+							}
+
+							if (contentSize!=self.refreshContentSize) {
+								pageChanged = true;
+							}
+						}
+					}
+					else if (self.refreshCheckContent) {
+
+						if (self.refreshRequest.responseText!=self.refreshContent) {
+							pageChanged = true;
+						}
+					}
+					else {
+						lastModifiedHeader = self.getLastModified(self.refreshRequest);
+
+						if (self.lastModifiedDate!=lastModifiedHeader) {
+							self.log("lastModifiedDate:" + self.lastModifiedDate + ",lastModifiedHeader:" +lastModifiedHeader);
+							pageChanged = true;
+						}
+
+					}
+
+					
+					if (pageChanged) {
+						clearInterval(self.refreshInterval);
+						self.refreshUpdatedPage();
+						return;
+					}
+
+				}
+				else {
+					self.log('There was a problem with the request.');
+				}
+
+			}
+		}
+		catch( error ) {
+			//console.log('Caught Exception: ' + error);
+		}
+	}
+
+	self.refreshOnLoadOnceHandler = function(event) {
+
+		// get the last modified date
+		if (self.refreshRequest.response) {
+			self.lastModifiedDate = self.getLastModified(self.refreshRequest);
+
+			if (self.lastModifiedDate!=null) {
+
+				if (self.refreshInterval==null) {
+					self.refreshInterval = setInterval(self.requestRefreshUpdate, self.refreshDuration);
+				}
+			}
+			else {
+				self.log("Could not get last modified date from the server");
+			}
+		}
+	}
+
+	self.refreshUpdatedPage = function() {
+		if (self.showRefreshNotifications) {
+			var date = new Date().setTime((new Date().getTime()+10000));
+			document.cookie = encodeURIComponent(self.pageRefreshedName) + "=true" + "; max-age=6000;" + " path=/";
+		}
+
+		document.location.reload(true);
+	}
+
+	self.showNotification = function(duration) {
+		var notificationID = self.pageRefreshedName+"ID";
+		var notification = document.getElementById(notificationID);
+		if (duration==null) duration = 4000;
+
+		if (notification!=null) {return;}
+
+		notification = document.createElement("div");
+		notification.id = notificationID;
+		notification.textContent = "PAGE UPDATED";
+		var styleRule = ""
+		styleRule = "position: fixed; padding: 7px 16px 6px 16px; font-family: Arial, sans-serif; font-size: 10px; font-weight: bold; left: 50%;";
+		styleRule += "top: 20px; background-color: rgba(0,0,0,.5); border-radius: 12px; color:rgb(235, 235, 235); transition: all 2s linear;";
+		styleRule += "transform: translateX(-50%); letter-spacing: .5px; filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, .1)); cursor: pointer";
+		notification.setAttribute("style", styleRule);
+
+		notification.className = "PageRefreshedClass";
+		notification.addEventListener("click", function() {
+			notification.parentNode.removeChild(notification);
+		});
+		
+		document.body.appendChild(notification);
+
+		setTimeout(function() {
+			notification.style.opacity = "0";
+			notification.style.filter = "drop-shadow( 0px 0px 0px rgba(0,0,0, .5))";
+			setTimeout(function() {
+				try {
+					notification.parentNode.removeChild(notification);
+				} catch(error) {}
+			}, duration)
+		}, duration);
+
+		document.cookie = encodeURIComponent(self.pageRefreshedName) + "=; max-age=1; path=/";
+	}
+
+	/**
+	 * Get the last modified date from the header 
+	 * or file object after request has been received
+	 **/
+	self.getLastModified = function(request) {
+		var date;
+
+		// file protocol - FILE object with last modified property
+		if (request.response && request.response.lastModified) {
+			date = request.response.lastModified;
+		}
+		
+		// http protocol - check headers
+		if (date==null) {
+			date = request.getResponseHeader("Last-Modified");
+		}
+
+		return date;
+	}
+
+	self.updateLastModifiedLabel = function() {
+		var labelValue = "";
+		
+		if (self.lastModifiedLabel==null) {
+			self.lastModifiedLabel = document.getElementById("LastModifiedLabel");
+		}
+
+		if (self.lastModifiedLabel) {
+			var seconds = parseInt(((new Date().getTime() - Date.parse(document.lastModified)) / 1000 / 60) * 100 + "");
+			var minutes = 0;
+			var hours = 0;
+
+			if (seconds < 60) {
+				seconds = Math.floor(seconds/10)*10;
+				labelValue = seconds + " seconds";
+			}
+			else {
+				minutes = parseInt((seconds/60) + "");
+
+				if (minutes>60) {
+					hours = parseInt((seconds/60/60) +"");
+					labelValue += hours==1 ? " hour" : " hours";
+				}
+				else {
+					labelValue = minutes+"";
+					labelValue += minutes==1 ? " minute" : " minutes";
+				}
+			}
+			
+			if (seconds<10) {
+				labelValue = "Updated now";
+			}
+			else {
+				labelValue = "Updated " + labelValue + " ago";
+			}
+
+			if (self.lastModifiedLabel.firstElementChild) {
+				self.lastModifiedLabel.firstElementChild.textContent = labelValue;
+
+			}
+			else if ("textContent" in self.lastModifiedLabel) {
+				self.lastModifiedLabel.textContent = labelValue;
+			}
+		}
+	}
+
+	self.getShortString = function(string, length) {
+		if (length==null) length = 30;
+		string = string!=null ? string.substr(0, length).replace(/\n/g, "") : "[String is null]";
+		return string;
+	}
+
+	self.getShortNumber = function(value, places) {
+		if (places==null || places<1) places = 4;
+		value = Math.round(value * Math.pow(10,places)) / Math.pow(10, places);
+		return value;
+	}
+
+	///////////////////////////////////////
+	// NAVIGATION CONTROLS
+	///////////////////////////////////////
+
+	self.updateViewLabel = function() {
+		var viewNavigationLabel = document.getElementById("ViewNavigationLabel");
+		var view = self.getVisibleView();
+		var viewIndex = view ? self.getViewIndex(view) : -1;
+		var viewName = view ? self.getViewPreferenceValue(view, self.prefix + "view-name") : null;
+		var viewId = view ? view.id : null;
+
+		if (viewNavigationLabel && view) {
+			if (viewName && viewName.indexOf('"')!=-1) {
+				viewName = viewName.replace(/"/g, "");
+			}
+
+			if (self.showViewName) {
+				viewNavigationLabel.textContent = viewName;
+				self.setTooltip(viewNavigationLabel, viewIndex + 1 + " of " + self.numberOfViews);
+			}
+			else {
+				viewNavigationLabel.textContent = viewIndex + 1 + " of " + self.numberOfViews;
+				self.setTooltip(viewNavigationLabel, viewName);
+			}
+
+		}
+	}
+
+	self.updateURL = function(view) {
+		view = view == null ? self.getVisibleView() : view;
+		var viewId = view ? view.id : null
+		var viewFragment = view ? "#"+ viewId : null;
+
+		if (viewId && self.viewIds.length>1 && self.enableDeepLinking) {
+
+			if (self.supportsPopState==false) {
+				self.setFragment(viewId);
+			}
+			else {
+				if (viewFragment!=window.location.hash) {
+
+					if (window.location.hash==null) {
+						window.history.replaceState({name:viewId}, null, viewFragment);
+					}
+					else {
+						window.history.pushState({name:viewId}, null, viewFragment);
+					}
+				}
+			}
+		}
+	}
+
+	self.updateURLState = function(view, stateName) {
+		stateName = view && (stateName=="" || stateName==null) ? self.getStateNameByViewId(view.id) : stateName;
+
+		if (self.supportsPopState==false) {
+			self.setFragment(stateName);
+		}
+		else {
+			if (stateName!=window.location.hash) {
+
+				if (window.location.hash==null) {
+					window.history.replaceState({name:view.viewId}, null, stateName);
+				}
+				else {
+					window.history.pushState({name:view.viewId}, null, stateName);
+				}
+			}
+		}
+	}
+
+	self.setFragment = function(value) {
+		window.location.hash = "#" + value;
+	}
+
+	self.setTooltip = function(element, value) {
+		// setting the tooltip in edge causes a page crash on hover
+		if (/Edge/.test(navigator.userAgent)) { return; }
+
+		if ("title" in element) {
+			element.title = value;
+		}
+	}
+
+	self.getStylesheetRules = function(styleSheet) {
+		try {
+			if (styleSheet) return styleSheet.cssRules || styleSheet.rules;
+	
+			return document.styleSheets[0]["cssRules"] || document.styleSheets[0]["rules"];
+		}
+		catch (error) {
+			// ERRORS:
+			// SecurityError: The operation is insecure.
+			// Errors happen when script loads before stylesheet or loading an external css locally
+
+			// InvalidAccessError: A parameter or an operation is not supported by the underlying object
+			// Place script after stylesheet
+
+			console.log(error);
+			if (error.toString().indexOf("The operation is insecure")!=-1) {
+				console.log("Load the stylesheet before the script or load the stylesheet inline until it can be loaded on a server")
+			}
+			return [];
+		}
+	}
+
+	/**
+	 * If single page application hide all of the views. 
+	 * @param {Number} selectedIndex if provided shows the view at index provided
+	 **/
+	self.hideViews = function(selectedIndex, animation) {
+		var rules = self.getStylesheetRules();
+		var queryIndex = 0;
+		var numberOfRules = rules!=null ? rules.length : 0;
+
+		// loop through rules and hide media queries except selected
+		for (var i=0;i<numberOfRules;i++) {
+			var rule = rules[i];
+			var cssText = rule && rule.cssText;
+
+			if (rule.media!=null && cssText.match("--web-view-name:")) {
+
+				if (queryIndex==selectedIndex) {
+					self.currentQuery.mediaText = rule.conditionText;
+					self.currentQuery.index = selectedIndex;
+					self.currentQuery.rule = rule;
+					self.enableMediaQuery(rule);
+				}
+				else {
+					if (animation) {
+						self.fadeOut(rule)
+					}
+					else {
+						self.disableMediaQuery(rule);
+					}
+				}
+				
+				queryIndex++;
+			}
+		}
+
+		self.numberOfViews = queryIndex;
+		self.updateViewLabel();
+		self.updateURL();
+
+		self.dispatchViewChange();
+
+		var view = self.getVisibleView();
+		var viewIndex = view ? self.getViewIndex(view) : -1;
+
+		return viewIndex==selectedIndex ? view : null;
+	}
+
+	/**
+	 * If single page application hide all of the views. 
+	 * @param {HTMLElement} selectedView if provided shows the view passed in
+	 **/
+	 self.hideAllViews = function(selectedView, animation) {
+		var views = self.views;
+		var queryIndex = 0;
+		var numberOfViews = views!=null ? views.length : 0;
+
+		// loop through rules and hide media queries except selected
+		for (var i=0;i<numberOfViews;i++) {
+			var viewData = views[i];
+			var view = viewData && viewData.view;
+			var mediaRule = viewData && viewData.mediaRule;
+			
+			if (view==selectedView) {
+				self.currentQuery.mediaText = mediaRule.conditionText;
+				self.currentQuery.index = queryIndex;
+				self.currentQuery.rule = mediaRule;
+				self.enableMediaQuery(mediaRule);
+			}
+			else {
+				if (animation) {
+					self.fadeOut(mediaRule)
+				}
+				else {
+					self.disableMediaQuery(mediaRule);
+				}
+			}
+			
+			queryIndex++;
+		}
+
+		self.numberOfViews = queryIndex;
+		self.updateViewLabel();
+		self.updateURL();
+		self.dispatchViewChange();
+
+		var visibleView = self.getVisibleView();
+
+		return visibleView==selectedView ? selectedView : null;
+	}
+
+	/**
+	 * Hide view
+	 * @param {Object} view element to hide
+	 **/
+	self.hideView = function(view) {
+		var rule = view ? self.mediaQueryDictionary[view.id] : null;
+
+		if (rule) {
+			self.disableMediaQuery(rule);
+		}
+	}
+
+	/**
+	 * Hide overlay
+	 * @param {Object} overlay element to hide
+	 **/
+	self.hideOverlay = function(overlay) {
+		var rule = overlay ? self.mediaQueryDictionary[overlay.id] : null;
+
+		if (rule) {
+			self.disableMediaQuery(rule);
+
+			//if (self.showByMediaQuery) {
+				overlay.style.display = "none";
+			//}
+		}
+	}
+
+	/**
+	 * Show the view by media query. Does not hide current views
+	 * Sets view options by default
+	 * @param {Object} view element to show
+	 * @param {Boolean} setViewOptions sets view options if null or true
+	 */
+	self.showViewByMediaQuery = function(view, setViewOptions) {
+		var id = view ? view.id : null;
+		var query = id ? self.mediaQueryDictionary[id] : null;
+		var isOverlay = view ? self.isOverlay(view) : false;
+		setViewOptions = setViewOptions==null ? true : setViewOptions;
+
+		if (query) {
+			self.enableMediaQuery(query);
+
+			if (isOverlay && view && setViewOptions) {
+				self.setViewVariables(null, view);
+			}
+			else {
+				if (view && setViewOptions) self.setViewOptions(view);
+				if (view && setViewOptions) self.setViewVariables(view);
+			}
+		}
+	}
+
+	/**
+	 * Show the view. Does not hide current views
+	 */
+	self.showView = function(view, setViewOptions) {
+		var id = view ? view.id : null;
+		var query = id ? self.mediaQueryDictionary[id] : null;
+		var display = null;
+		setViewOptions = setViewOptions==null ? true : setViewOptions;
+
+		if (query) {
+			self.enableMediaQuery(query);
+			if (view==null) view =self.getVisibleView();
+			if (view && setViewOptions) self.setViewOptions(view);
+		}
+		else if (id) {
+			display = window.getComputedStyle(view).getPropertyValue("display");
+			if (display=="" || display=="none") {
+				view.style.display = "block";
+			}
+		}
+
+		if (view) {
+			if (self.currentView!=null) {
+				self.lastView = self.currentView;
+			}
+
+			self.currentView = view;
+		}
+	}
+
+	self.showViewById = function(id, setViewOptions) {
+		var view = id ? self.getViewById(id) : null;
+
+		if (view) {
+			self.showView(view);
+			return;
+		}
+
+		self.log("View not found '" + id + "'");
+	}
+
+	self.getElementView = function(element) {
+		var view = element;
+		var viewFound = false;
+
+		while (viewFound==false || view==null) {
+			if (view && self.viewsDictionary[view.id]) {
+				return view;
+			}
+			view = view.parentNode;
+		}
+	}
+
+	/**
+	 * Show overlay over view
+	 * @param {Event | HTMLElement} event event or html element with styles applied
+	 * @param {String} id id of view or view reference
+	 * @param {Number} x x location
+	 * @param {Number} y y location
+	 */
+	self.showOverlay = function(event, id, x, y) {
+		var overlay = id && typeof id === 'string' ? self.getViewById(id) : id ? id : null;
+		var query = overlay ? self.mediaQueryDictionary[overlay.id] : null;
+		var centerHorizontally = false;
+		var centerVertically = false;
+		var anchorLeft = false;
+		var anchorTop = false;
+		var anchorRight = false;
+		var anchorBottom = false;
+		var display = null;
+		var reparent = true;
+		var view = null;
+		
+		if (overlay==null || overlay==false) {
+			self.log("Overlay not found, '"+ id + "'");
+			return;
+		}
+
+		// get enter animation - event target must have css variables declared
+		if (event) {
+			var button = event.currentTarget || event; // can be event or htmlelement
+			var buttonComputedStyles = getComputedStyle(button);
+			var actionTargetValue = buttonComputedStyles.getPropertyValue(self.prefix+"action-target").trim();
+			var animation = buttonComputedStyles.getPropertyValue(self.prefix+"animation").trim();
+			var isAnimated = animation!="";
+			var targetType = buttonComputedStyles.getPropertyValue(self.prefix+"action-type").trim();
+			var actionTarget = self.application ? null : self.getElement(actionTargetValue);
+			var actionTargetStyles = actionTarget ? actionTarget.style : null;
+
+			if (actionTargetStyles) {
+				actionTargetStyles.setProperty("animation", animation);
+			}
+
+			if ("stopImmediatePropagation" in event) {
+				event.stopImmediatePropagation();
+			}
+		}
+		
+		if (self.application==false || targetType=="page") {
+			document.location.href = "./" + actionTargetValue;
+			return;
+		}
+
+		// remove any current overlays
+		if (self.currentOverlay) {
+
+			// act as switch if same button
+			if (self.currentOverlay==actionTarget || self.currentOverlay==null) {
+				if (self.lastTrigger==button) {
+					self.removeOverlay(isAnimated);
+					return;
+				}
+			}
+			else {
+				self.removeOverlay(isAnimated);
+			}
+		}
+
+		if (reparent) {
+			view = self.getElementView(button);
+			if (view) {
+				view.appendChild(overlay);
+			}
+		}
+
+		if (query) {
+			//self.setElementAnimation(overlay, null);
+			//overlay.style.animation = animation;
+			self.enableMediaQuery(query);
+			
+			var display = overlay && overlay.style.display;
+			
+			if (overlay && display=="" || display=="none") {
+				overlay.style.display = "block";
+				//self.setViewOptions(overlay);
+			}
+
+			// add animation defined in event target style declaration
+			if (animation && self.supportAnimations) {
+				self.fadeIn(overlay, false, animation);
+			}
+		}
+		else if (id) {
+
+			display = window.getComputedStyle(overlay).getPropertyValue("display");
+
+			if (display=="" || display=="none") {
+				overlay.style.display = "block";
+			}
+
+			// add animation defined in event target style declaration
+			if (animation && self.supportAnimations) {
+				self.fadeIn(overlay, false, animation);
+			}
+		}
+
+		// do not set x or y position if centering
+		var horizontal = self.prefix + "center-horizontally";
+		var vertical = self.prefix + "center-vertically";
+		var style = overlay.style;
+		var transform = [];
+
+		centerHorizontally = self.getIsStyleDefined(id, horizontal) ? self.getViewPreferenceBoolean(overlay, horizontal) : false;
+		centerVertically = self.getIsStyleDefined(id, vertical) ? self.getViewPreferenceBoolean(overlay, vertical) : false;
+		anchorLeft = self.getIsStyleDefined(id, "left");
+		anchorRight = self.getIsStyleDefined(id, "right");
+		anchorTop = self.getIsStyleDefined(id, "top");
+		anchorBottom = self.getIsStyleDefined(id, "bottom");
+
+		
+		if (self.viewsDictionary[overlay.id] && self.viewsDictionary[overlay.id].styleDeclaration) {
+			style = self.viewsDictionary[overlay.id].styleDeclaration.style;
+		}
+		
+		if (centerHorizontally) {
+			style.left = "50%";
+			style.transformOrigin = "0 0";
+			transform.push("translateX(-50%)");
+		}
+		else if (anchorRight && anchorLeft) {
+			style.left = x + "px";
+		}
+		else if (anchorRight) {
+			//style.right = x + "px";
+		}
+		else {
+			style.left = x + "px";
+		}
+		
+		if (centerVertically) {
+			style.top = "50%";
+			transform.push("translateY(-50%)");
+			style.transformOrigin = "0 0";
+		}
+		else if (anchorTop && anchorBottom) {
+			style.top = y + "px";
+		}
+		else if (anchorBottom) {
+			//style.bottom = y + "px";
+		}
+		else {
+			style.top = y + "px";
+		}
+
+		if (transform.length) {
+			style.transform = transform.join(" ");
+		}
+
+		self.currentOverlay = overlay;
+		self.lastTrigger = button;
+	}
+
+	self.goBack = function() {
+		if (self.currentOverlay) {
+			self.removeOverlay();
+		}
+		else if (self.lastView) {
+			self.goToView(self.lastView.id);
+		}
+	}
+
+	self.removeOverlay = function(animate) {
+		var overlay = self.currentOverlay;
+		animate = animate===false ? false : true;
+
+		if (overlay) {
+			var style = overlay.style;
+			
+			if (style.animation && self.supportAnimations && animate) {
+				self.reverseAnimation(overlay, true);
+
+				var duration = self.getAnimationDuration(style.animation, true);
+		
+				setTimeout(function() {
+					self.setElementAnimation(overlay, null);
+					self.hideOverlay(overlay);
+					self.currentOverlay = null;
+				}, duration);
+			}
+			else {
+				self.setElementAnimation(overlay, null);
+				self.hideOverlay(overlay);
+				self.currentOverlay = null;
+			}
+		}
+	}
+
+	/**
+	 * Reverse the animation and hide after
+	 * @param {Object} target element with animation
+	 * @param {Boolean} hide hide after animation ends
+	 */
+	self.reverseAnimation = function(target, hide) {
+		var lastAnimation = null;
+		var style = target.style;
+
+		style.animationPlayState = "paused";
+		lastAnimation = style.animation;
+		style.animation = null;
+		style.animationPlayState = "paused";
+
+		if (hide) {
+			//target.addEventListener("animationend", self.animationEndHideHandler);
+	
+			var duration = self.getAnimationDuration(lastAnimation, true);
+			var isOverlay = self.isOverlay(target);
+	
+			setTimeout(function() {
+				self.setElementAnimation(target, null);
+
+				if (isOverlay) {
+					self.hideOverlay(target);
+				}
+				else {
+					self.hideView(target);
+				}
+			}, duration);
+		}
+
+		setTimeout(function() {
+			style.animation = lastAnimation;
+			style.animationPlayState = "paused";
+			style.animationDirection = "reverse";
+			style.animationPlayState = "running";
+		}, 30);
+	}
+
+	self.animationEndHandler = function(event) {
+		var target = event.currentTarget;
+		self.dispatchEvent(new Event(event.type));
+	}
+
+	self.isOverlay = function(view) {
+		var result = view ? self.getViewPreferenceBoolean(view, self.prefix + "is-overlay") : false;
+
+		return result;
+	}
+
+	self.animationEndHideHandler = function(event) {
+		var target = event.currentTarget;
+		self.setViewVariables(null, target);
+		self.hideView(target);
+		target.removeEventListener("animationend", self.animationEndHideHandler);
+	}
+
+	self.animationEndShowHandler = function(event) {
+		var target = event.currentTarget;
+		target.removeEventListener("animationend", self.animationEndShowHandler);
+	}
+
+	self.setViewOptions = function(view) {
+
+		if (view) {
+			self.minimumScale = self.getViewPreferenceValue(view, self.prefix + "minimum-scale");
+			self.maximumScale = self.getViewPreferenceValue(view, self.prefix + "maximum-scale");
+			self.scaleViewsToFit = self.getViewPreferenceBoolean(view, self.prefix + "scale-to-fit");
+			self.scaleToFitType = self.getViewPreferenceValue(view, self.prefix + "scale-to-fit-type");
+			self.scaleToFitOnDoubleClick = self.getViewPreferenceBoolean(view, self.prefix + "scale-on-double-click");
+			self.actualSizeOnDoubleClick = self.getViewPreferenceBoolean(view, self.prefix + "actual-size-on-double-click");
+			self.scaleViewsOnResize = self.getViewPreferenceBoolean(view, self.prefix + "scale-on-resize");
+			self.enableScaleUp = self.getViewPreferenceBoolean(view, self.prefix + "enable-scale-up");
+			self.centerHorizontally = self.getViewPreferenceBoolean(view, self.prefix + "center-horizontally");
+			self.centerVertically = self.getViewPreferenceBoolean(view, self.prefix + "center-vertically");
+			self.navigationOnKeypress = self.getViewPreferenceBoolean(view, self.prefix + "navigate-on-keypress");
+			self.showViewName = self.getViewPreferenceBoolean(view, self.prefix + "show-view-name");
+			self.refreshPageForChanges = self.getViewPreferenceBoolean(view, self.prefix + "refresh-for-changes");
+			self.refreshPageForChangesInterval = self.getViewPreferenceValue(view, self.prefix + "refresh-interval");
+			self.showNavigationControls = self.getViewPreferenceBoolean(view, self.prefix + "show-navigation-controls");
+			self.scaleViewSlider = self.getViewPreferenceBoolean(view, self.prefix + "show-scale-controls");
+			self.enableDeepLinking = self.getViewPreferenceBoolean(view, self.prefix + "enable-deep-linking");
+			self.singlePageApplication = self.getViewPreferenceBoolean(view, self.prefix + "application");
+			self.showByMediaQuery = self.getViewPreferenceBoolean(view, self.prefix + "show-by-media-query");
+			self.showUpdateNotification = document.cookie!="" ? document.cookie.indexOf(self.pageRefreshedName)!=-1 : false;
+			self.imageComparisonDuration = self.getViewPreferenceValue(view, self.prefix + "image-comparison-duration");
+			self.supportAnimations = self.getViewPreferenceBoolean(view, self.prefix + "enable-animations", true);
+
+			if (self.scaleViewsToFit) {
+				var newScaleValue = self.scaleViewToFit(view);
+				
+				if (newScaleValue<0) {
+					setTimeout(self.scaleViewToFit, 500, view);
+				}
+			}
+			else {
+				self.viewScale = self.getViewScaleValue(view);
+				self.viewToFitWidthScale = self.getViewFitToViewportWidthScale(view, self.enableScaleUp)
+				self.viewToFitHeightScale = self.getViewFitToViewportScale(view, self.enableScaleUp);
+				self.updateSliderValue(self.viewScale);
+			}
+
+			if (self.imageComparisonDuration!=null) {
+				// todo
+			}
+
+			if (self.refreshPageForChangesInterval!=null) {
+				self.refreshDuration = Number(self.refreshPageForChangesInterval);
+			}
+		}
+	}
+
+	self.previousView = function(event) {
+		var rules = self.getStylesheetRules();
+		var view = self.getVisibleView()
+		var index = view ? self.getViewIndex(view) : -1;
+		var prevQueryIndex = index!=-1 ? index-1 : self.currentQuery.index-1;
+		var queryIndex = 0;
+		var numberOfRules = rules!=null ? rules.length : 0;
+
+		if (event) {
+			event.stopImmediatePropagation();
+		}
+
+		if (prevQueryIndex<0) {
+			return;
+		}
+
+		// loop through rules and hide media queries except selected
+		for (var i=0;i<numberOfRules;i++) {
+			var rule = rules[i];
+			
+			if (rule.media!=null) {
+
+				if (queryIndex==prevQueryIndex) {
+					self.currentQuery.mediaText = rule.conditionText;
+					self.currentQuery.index = prevQueryIndex;
+					self.currentQuery.rule = rule;
+					self.enableMediaQuery(rule);
+					self.updateViewLabel();
+					self.updateURL();
+					self.dispatchViewChange();
+				}
+				else {
+					self.disableMediaQuery(rule);
+				}
+
+				queryIndex++;
+			}
+		}
+	}
+
+	self.nextView = function(event) {
+		var rules = self.getStylesheetRules();
+		var view = self.getVisibleView();
+		var index = view ? self.getViewIndex(view) : -1;
+		var nextQueryIndex = index!=-1 ? index+1 : self.currentQuery.index+1;
+		var queryIndex = 0;
+		var numberOfRules = rules!=null ? rules.length : 0;
+		var numberOfMediaQueries = self.getNumberOfMediaRules();
+
+		if (event) {
+			event.stopImmediatePropagation();
+		}
+
+		if (nextQueryIndex>=numberOfMediaQueries) {
+			return;
+		}
+
+		// loop through rules and hide media queries except selected
+		for (var i=0;i<numberOfRules;i++) {
+			var rule = rules[i];
+			
+			if (rule.media!=null) {
+
+				if (queryIndex==nextQueryIndex) {
+					self.currentQuery.mediaText = rule.conditionText;
+					self.currentQuery.index = nextQueryIndex;
+					self.currentQuery.rule = rule;
+					self.enableMediaQuery(rule);
+					self.updateViewLabel();
+					self.updateURL();
+					self.dispatchViewChange();
+				}
+				else {
+					self.disableMediaQuery(rule);
+				}
+
+				queryIndex++;
+			}
+		}
+	}
+
+	/**
+	 * Enables a view via media query
+	 */
+	self.enableMediaQuery = function(rule) {
+
+		try {
+			rule.media.mediaText = self.inclusionQuery;
+		}
+		catch(error) {
+			//self.log(error);
+			rule.conditionText = self.inclusionQuery;
+		}
+	}
+
+	self.disableMediaQuery = function(rule) {
+
+		try {
+			rule.media.mediaText = self.exclusionQuery;
+		}
+		catch(error) {
+			rule.conditionText = self.exclusionQuery;
+		}
+	}
+
+	self.dispatchViewChange = function() {
+		try {
+			var event = new Event(self.NAVIGATION_CHANGE);
+			window.dispatchEvent(event);
+		}
+		catch (error) {
+			// In IE 11: Object doesn't support this action
+		}
+	}
+
+	self.getNumberOfMediaRules = function() {
+		var rules = self.getStylesheetRules();
+		var numberOfRules = rules ? rules.length : 0;
+		var numberOfQueries = 0;
+
+		for (var i=0;i<numberOfRules;i++) {
+			if (rules[i].media!=null) { numberOfQueries++; }
+		}
+		
+		return numberOfQueries;
+	}
+
+	/////////////////////////////////////////
+	// VIEW SCALE 
+	/////////////////////////////////////////
+
+	self.sliderChangeHandler = function(event) {
+		var value = self.getShortNumber(event.currentTarget.value/100);
+		var view = self.getVisibleView();
+		self.setViewScaleValue(view, false, value, true);
+	}
+
+	self.updateSliderValue = function(scale) {
+		var slider = document.getElementById(self.viewScaleSliderId);
+		var tooltip = parseInt(scale * 100 + "") + "%";
+		var inputType;
+		var inputValue;
+		
+		if (slider) {
+			inputValue = self.getShortNumber(scale * 100);
+			if (inputValue!=slider["value"]) {
+				slider["value"] = inputValue;
+			}
+			inputType = slider.getAttributeNS(null, "type");
+
+			if (inputType!="range") {
+				// input range is not supported
+				slider.style.display = "none";
+			}
+
+			self.setTooltip(slider, tooltip);
+		}
+	}
+
+	self.viewChangeHandler = function(event) {
+		var view = self.getVisibleView();
+		var matrix = view ? getComputedStyle(view).transform : null;
+		
+		if (matrix) {
+			self.viewScale = self.getViewScaleValue(view);
+			
+			var scaleNeededToFit = self.getViewFitToViewportScale(view);
+			var isViewLargerThanViewport = scaleNeededToFit<1;
+			
+			// scale large view to fit if scale to fit is enabled
+			if (self.scaleViewsToFit) {
+				self.scaleViewToFit(view);
+			}
+			else {
+				self.updateSliderValue(self.viewScale);
+			}
+		}
+	}
+
+	self.getViewScaleValue = function(view) {
+		var matrix = getComputedStyle(view).transform;
+
+		if (matrix) {
+			var matrixArray = matrix.replace("matrix(", "").split(",");
+			var scaleX = parseFloat(matrixArray[0]);
+			var scaleY = parseFloat(matrixArray[3]);
+			var scale = Math.min(scaleX, scaleY);
+		}
+
+		return scale;
+	}
+
+	/**
+	 * Scales view to scale. 
+	 * @param {Object} view view to scale. views are in views array
+	 * @param {Boolean} scaleToFit set to true to scale to fit. set false to use desired scale value
+	 * @param {Number} desiredScale scale to define. not used if scale to fit is false
+	 * @param {Boolean} isSliderChange indicates if slider is callee
+	 */
+	self.setViewScaleValue = function(view, scaleToFit, desiredScale, isSliderChange) {
+		var enableScaleUp = self.enableScaleUp;
+		var scaleToFitType = self.scaleToFitType;
+		var minimumScale = self.minimumScale;
+		var maximumScale = self.maximumScale;
+		var hasMinimumScale = !isNaN(minimumScale) && minimumScale!="";
+		var hasMaximumScale = !isNaN(maximumScale) && maximumScale!="";
+		var scaleNeededToFit = self.getViewFitToViewportScale(view, enableScaleUp);
+		var scaleNeededToFitWidth = self.getViewFitToViewportWidthScale(view, enableScaleUp);
+		var scaleNeededToFitHeight = self.getViewFitToViewportHeightScale(view, enableScaleUp);
+		var scaleToFitFull = self.getViewFitToViewportScale(view, true);
+		var scaleToFitFullWidth = self.getViewFitToViewportWidthScale(view, true);
+		var scaleToFitFullHeight = self.getViewFitToViewportHeightScale(view, true);
+		var scaleToWidth = scaleToFitType=="width";
+		var scaleToHeight = scaleToFitType=="height";
+		var shrunkToFit = false;
+		var topPosition = null;
+		var leftPosition = null;
+		var translateY = null;
+		var translateX = null;
+		var transformValue = "";
+		var canCenterVertically = true;
+		var canCenterHorizontally = true;
+		var style = view.style;
+
+		if (view && self.viewsDictionary[view.id] && self.viewsDictionary[view.id].styleDeclaration) {
+			style = self.viewsDictionary[view.id].styleDeclaration.style;
+		}
+
+		if (scaleToFit && isSliderChange!=true) {
+			if (scaleToFitType=="fit" || scaleToFitType=="") {
+				desiredScale = scaleNeededToFit;
+			}
+			else if (scaleToFitType=="width") {
+				desiredScale = scaleNeededToFitWidth;
+			}
+			else if (scaleToFitType=="height") {
+				desiredScale = scaleNeededToFitHeight;
+			}
+		}
+		else {
+			if (isNaN(desiredScale)) {
+				desiredScale = 1;
+			}
+		}
+
+		self.updateSliderValue(desiredScale);
+		
+		// scale to fit width
+		if (scaleToWidth && scaleToHeight==false) {
+			canCenterVertically = scaleNeededToFitHeight>=scaleNeededToFitWidth;
+			canCenterHorizontally = scaleNeededToFitWidth>=1 && enableScaleUp==false;
+
+			if (isSliderChange) {
+				canCenterHorizontally = desiredScale<scaleToFitFullWidth;
+			}
+			else if (scaleToFit) {
+				desiredScale = scaleNeededToFitWidth;
+			}
+
+			if (hasMinimumScale) {
+				desiredScale = Math.max(desiredScale, Number(minimumScale));
+			}
+
+			if (hasMaximumScale) {
+				desiredScale = Math.min(desiredScale, Number(maximumScale));
+			}
+
+			desiredScale = self.getShortNumber(desiredScale);
+
+			canCenterHorizontally = self.canCenterHorizontally(view, "width", enableScaleUp, desiredScale, minimumScale, maximumScale);
+			canCenterVertically = self.canCenterVertically(view, "width", enableScaleUp, desiredScale, minimumScale, maximumScale);
+
+			if (desiredScale>1 && (enableScaleUp || isSliderChange)) {
+				transformValue = "scale(" + desiredScale + ")";
+			}
+			else if (desiredScale>=1 && enableScaleUp==false) {
+				transformValue = "scale(" + 1 + ")";
+			}
+			else {
+				transformValue = "scale(" + desiredScale + ")";
+			}
+
+			if (self.centerVertically) {
+				if (canCenterVertically) {
+					translateY = "-50%";
+					topPosition = "50%";
+				}
+				else {
+					translateY = "0";
+					topPosition = "0";
+				}
+				
+				if (style.top != topPosition) {
+					style.top = topPosition + "";
+				}
+
+				if (canCenterVertically) {
+					transformValue += " translateY(" + translateY+ ")";
+				}
+			}
+
+			if (self.centerHorizontally) {
+				if (canCenterHorizontally) {
+					translateX = "-50%";
+					leftPosition = "50%";
+				}
+				else {
+					translateX = "0";
+					leftPosition = "0";
+				}
+
+				if (style.left != leftPosition) {
+					style.left = leftPosition + "";
+				}
+
+				if (canCenterHorizontally) {
+					transformValue += " translateX(" + translateX+ ")";
+				}
+			}
+
+			style.transformOrigin = "0 0";
+			style.transform = transformValue;
+
+			self.viewScale = desiredScale;
+			self.viewToFitWidthScale = scaleNeededToFitWidth;
+			self.viewToFitHeightScale = scaleNeededToFitHeight;
+			self.viewLeft = leftPosition;
+			self.viewTop = topPosition;
+
+			return desiredScale;
+		}
+
+		// scale to fit height
+		if (scaleToHeight && scaleToWidth==false) {
+			//canCenterVertically = scaleNeededToFitHeight>=scaleNeededToFitWidth;
+			//canCenterHorizontally = scaleNeededToFitHeight<=scaleNeededToFitWidth && enableScaleUp==false;
+			canCenterVertically = scaleNeededToFitHeight>=scaleNeededToFitWidth;
+			canCenterHorizontally = scaleNeededToFitWidth>=1 && enableScaleUp==false;
+			
+			if (isSliderChange) {
+				canCenterHorizontally = desiredScale<scaleToFitFullHeight;
+			}
+			else if (scaleToFit) {
+				desiredScale = scaleNeededToFitHeight;
+			}
+
+			if (hasMinimumScale) {
+				desiredScale = Math.max(desiredScale, Number(minimumScale));
+			}
+
+			if (hasMaximumScale) {
+				desiredScale = Math.min(desiredScale, Number(maximumScale));
+				//canCenterVertically = desiredScale>=scaleNeededToFitHeight && enableScaleUp==false;
+			}
+
+			desiredScale = self.getShortNumber(desiredScale);
+
+			canCenterHorizontally = self.canCenterHorizontally(view, "height", enableScaleUp, desiredScale, minimumScale, maximumScale);
+			canCenterVertically = self.canCenterVertically(view, "height", enableScaleUp, desiredScale, minimumScale, maximumScale);
+
+			if (desiredScale>1 && (enableScaleUp || isSliderChange)) {
+				transformValue = "scale(" + desiredScale + ")";
+			}
+			else if (desiredScale>=1 && enableScaleUp==false) {
+				transformValue = "scale(" + 1 + ")";
+			}
+			else {
+				transformValue = "scale(" + desiredScale + ")";
+			}
+
+			if (self.centerHorizontally) {
+				if (canCenterHorizontally) {
+					translateX = "-50%";
+					leftPosition = "50%";
+				}
+				else {
+					translateX = "0";
+					leftPosition = "0";
+				}
+
+				if (style.left != leftPosition) {
+					style.left = leftPosition + "";
+				}
+
+				if (canCenterHorizontally) {
+					transformValue += " translateX(" + translateX+ ")";
+				}
+			}
+
+			if (self.centerVertically) {
+				if (canCenterVertically) {
+					translateY = "-50%";
+					topPosition = "50%";
+				}
+				else {
+					translateY = "0";
+					topPosition = "0";
+				}
+				
+				if (style.top != topPosition) {
+					style.top = topPosition + "";
+				}
+
+				if (canCenterVertically) {
+					transformValue += " translateY(" + translateY+ ")";
+				}
+			}
+
+			style.transformOrigin = "0 0";
+			style.transform = transformValue;
+
+			self.viewScale = desiredScale;
+			self.viewToFitWidthScale = scaleNeededToFitWidth;
+			self.viewToFitHeightScale = scaleNeededToFitHeight;
+			self.viewLeft = leftPosition;
+			self.viewTop = topPosition;
+
+			return scaleNeededToFitHeight;
+		}
+
+		if (scaleToFitType=="fit") {
+			//canCenterVertically = scaleNeededToFitHeight>=scaleNeededToFitWidth;
+			//canCenterHorizontally = scaleNeededToFitWidth>=scaleNeededToFitHeight;
+			canCenterVertically = scaleNeededToFitHeight>=scaleNeededToFit;
+			canCenterHorizontally = scaleNeededToFitWidth>=scaleNeededToFit;
+
+			if (hasMinimumScale) {
+				desiredScale = Math.max(desiredScale, Number(minimumScale));
+			}
+
+			desiredScale = self.getShortNumber(desiredScale);
+
+			if (isSliderChange || scaleToFit==false) {
+				canCenterVertically = scaleToFitFullHeight>=desiredScale;
+				canCenterHorizontally = desiredScale<scaleToFitFullWidth;
+			}
+			else if (scaleToFit) {
+				desiredScale = scaleNeededToFit;
+			}
+
+			transformValue = "scale(" + desiredScale + ")";
+
+			//canCenterHorizontally = self.canCenterHorizontally(view, "fit", false, desiredScale);
+			//canCenterVertically = self.canCenterVertically(view, "fit", false, desiredScale);
+			
+			if (self.centerVertically) {
+				if (canCenterVertically) {
+					translateY = "-50%";
+					topPosition = "50%";
+				}
+				else {
+					translateY = "0";
+					topPosition = "0";
+				}
+				
+				if (style.top != topPosition) {
+					style.top = topPosition + "";
+				}
+
+				if (canCenterVertically) {
+					transformValue += " translateY(" + translateY+ ")";
+				}
+			}
+
+			if (self.centerHorizontally) {
+				if (canCenterHorizontally) {
+					translateX = "-50%";
+					leftPosition = "50%";
+				}
+				else {
+					translateX = "0";
+					leftPosition = "0";
+				}
+
+				if (style.left != leftPosition) {
+					style.left = leftPosition + "";
+				}
+
+				if (canCenterHorizontally) {
+					transformValue += " translateX(" + translateX+ ")";
+				}
+			}
+
+			style.transformOrigin = "0 0";
+			style.transform = transformValue;
+
+			self.viewScale = desiredScale;
+			self.viewToFitWidthScale = scaleNeededToFitWidth;
+			self.viewToFitHeightScale = scaleNeededToFitHeight;
+			self.viewLeft = leftPosition;
+			self.viewTop = topPosition;
+
+			self.updateSliderValue(desiredScale);
+			
+			return desiredScale;
+		}
+
+		if (scaleToFitType=="default" || scaleToFitType=="") {
+			desiredScale = 1;
+
+			if (hasMinimumScale) {
+				desiredScale = Math.max(desiredScale, Number(minimumScale));
+			}
+			if (hasMaximumScale) {
+				desiredScale = Math.min(desiredScale, Number(maximumScale));
+			}
+
+			canCenterHorizontally = self.canCenterHorizontally(view, "none", false, desiredScale, minimumScale, maximumScale);
+			canCenterVertically = self.canCenterVertically(view, "none", false, desiredScale, minimumScale, maximumScale);
+
+			if (self.centerVertically) {
+				if (canCenterVertically) {
+					translateY = "-50%";
+					topPosition = "50%";
+				}
+				else {
+					translateY = "0";
+					topPosition = "0";
+				}
+				
+				if (style.top != topPosition) {
+					style.top = topPosition + "";
+				}
+
+				if (canCenterVertically) {
+					transformValue += " translateY(" + translateY+ ")";
+				}
+			}
+
+			if (self.centerHorizontally) {
+				if (canCenterHorizontally) {
+					translateX = "-50%";
+					leftPosition = "50%";
+				}
+				else {
+					translateX = "0";
+					leftPosition = "0";
+				}
+
+				if (style.left != leftPosition) {
+					style.left = leftPosition + "";
+				}
+
+				if (canCenterHorizontally) {
+					transformValue += " translateX(" + translateX+ ")";
+				}
+				else {
+					transformValue += " translateX(" + 0 + ")";
+				}
+			}
+
+			style.transformOrigin = "0 0";
+			style.transform = transformValue;
+
+
+			self.viewScale = desiredScale;
+			self.viewToFitWidthScale = scaleNeededToFitWidth;
+			self.viewToFitHeightScale = scaleNeededToFitHeight;
+			self.viewLeft = leftPosition;
+			self.viewTop = topPosition;
+
+			self.updateSliderValue(desiredScale);
+			
+			return desiredScale;
+		}
+	}
+
+	/**
+	 * Returns true if view can be centered horizontally
+	 * @param {HTMLElement} view view
+	 * @param {String} type type of scaling - width, height, all, none
+	 * @param {Boolean} scaleUp if scale up enabled 
+	 * @param {Number} scale target scale value 
+	 */
+	self.canCenterHorizontally = function(view, type, scaleUp, scale, minimumScale, maximumScale) {
+		var scaleNeededToFit = self.getViewFitToViewportScale(view, scaleUp);
+		var scaleNeededToFitHeight = self.getViewFitToViewportHeightScale(view, scaleUp);
+		var scaleNeededToFitWidth = self.getViewFitToViewportWidthScale(view, scaleUp);
+		var canCenter = false;
+		var minScale;
+
+		type = type==null ? "none" : type;
+		scale = scale==null ? scale : scaleNeededToFitWidth;
+		scaleUp = scaleUp == null ? false : scaleUp;
+
+		if (type=="width") {
+	
+			if (scaleUp && maximumScale==null) {
+				canCenter = false;
+			}
+			else if (scaleNeededToFitWidth>=1) {
+				canCenter = true;
+			}
+		}
+		else if (type=="height") {
+			minScale = Math.min(1, scaleNeededToFitHeight);
+			if (minimumScale!="" && maximumScale!="") {
+				minScale = Math.max(minimumScale, Math.min(maximumScale, scaleNeededToFitHeight));
+			}
+			else {
+				if (minimumScale!="") {
+					minScale = Math.max(minimumScale, scaleNeededToFitHeight);
+				}
+				if (maximumScale!="") {
+					minScale = Math.max(minimumScale, Math.min(maximumScale, scaleNeededToFitHeight));
+				}
+			}
+	
+			if (scaleUp && maximumScale=="") {
+				canCenter = false;
+			}
+			else if (scaleNeededToFitWidth>=minScale) {
+				canCenter = true;
+			}
+		}
+		else if (type=="fit") {
+			canCenter = scaleNeededToFitWidth>=scaleNeededToFit;
+		}
+		else {
+			if (scaleUp) {
+				canCenter = false;
+			}
+			else if (scaleNeededToFitWidth>=1) {
+				canCenter = true;
+			}
+		}
+
+		self.horizontalScrollbarsNeeded = canCenter;
+		
+		return canCenter;
+	}
+
+	/**
+	 * Returns true if view can be centered horizontally
+	 * @param {HTMLElement} view view to scale
+	 * @param {String} type type of scaling
+	 * @param {Boolean} scaleUp if scale up enabled 
+	 * @param {Number} scale target scale value 
+	 */
+	self.canCenterVertically = function(view, type, scaleUp, scale, minimumScale, maximumScale) {
+		var scaleNeededToFit = self.getViewFitToViewportScale(view, scaleUp);
+		var scaleNeededToFitWidth = self.getViewFitToViewportWidthScale(view, scaleUp);
+		var scaleNeededToFitHeight = self.getViewFitToViewportHeightScale(view, scaleUp);
+		var canCenter = false;
+		var minScale;
+
+		type = type==null ? "none" : type;
+		scale = scale==null ? 1 : scale;
+		scaleUp = scaleUp == null ? false : scaleUp;
+	
+		if (type=="width") {
+			canCenter = scaleNeededToFitHeight>=scaleNeededToFitWidth;
+		}
+		else if (type=="height") {
+			minScale = Math.max(minimumScale, Math.min(maximumScale, scaleNeededToFit));
+			canCenter = scaleNeededToFitHeight>=minScale;
+		}
+		else if (type=="fit") {
+			canCenter = scaleNeededToFitHeight>=scaleNeededToFit;
+		}
+		else {
+			if (scaleUp) {
+				canCenter = false;
+			}
+			else if (scaleNeededToFitHeight>=1) {
+				canCenter = true;
+			}
+		}
+
+		self.verticalScrollbarsNeeded = canCenter;
+		
+		return canCenter;
+	}
+
+	self.getViewFitToViewportScale = function(view, scaleUp) {
+		var enableScaleUp = scaleUp;
+		var availableWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+		var availableHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+		var elementWidth = parseFloat(getComputedStyle(view, "style").width);
+		var elementHeight = parseFloat(getComputedStyle(view, "style").height);
+		var newScale = 1;
+
+		// if element is not added to the document computed values are NaN
+		if (isNaN(elementWidth) || isNaN(elementHeight)) {
+			return newScale;
+		}
+
+		availableWidth -= self.horizontalPadding;
+		availableHeight -= self.verticalPadding;
+
+		if (enableScaleUp) {
+			newScale = Math.min(availableHeight/elementHeight, availableWidth/elementWidth);
+		}
+		else if (elementWidth > availableWidth || elementHeight > availableHeight) {
+			newScale = Math.min(availableHeight/elementHeight, availableWidth/elementWidth);
+		}
+		
+		return newScale;
+	}
+
+	self.getViewFitToViewportWidthScale = function(view, scaleUp) {
+		// need to get browser viewport width when element
+		var isParentWindow = view && view.parentNode && view.parentNode===document.body;
+		var enableScaleUp = scaleUp;
+		var availableWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+		var elementWidth = parseFloat(getComputedStyle(view, "style").width);
+		var newScale = 1;
+
+		// if element is not added to the document computed values are NaN
+		if (isNaN(elementWidth)) {
+			return newScale;
+		}
+
+		availableWidth -= self.horizontalPadding;
+
+		if (enableScaleUp) {
+			newScale = availableWidth/elementWidth;
+		}
+		else if (elementWidth > availableWidth) {
+			newScale = availableWidth/elementWidth;
+		}
+		
+		return newScale;
+	}
+
+	self.getViewFitToViewportHeightScale = function(view, scaleUp) {
+		var enableScaleUp = scaleUp;
+		var availableHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+		var elementHeight = parseFloat(getComputedStyle(view, "style").height);
+		var newScale = 1;
+
+		// if element is not added to the document computed values are NaN
+		if (isNaN(elementHeight)) {
+			return newScale;
+		}
+
+		availableHeight -= self.verticalPadding;
+
+		if (enableScaleUp) {
+			newScale = availableHeight/elementHeight;
+		}
+		else if (elementHeight > availableHeight) {
+			newScale = availableHeight/elementHeight;
+		}
+		
+		return newScale;
+	}
+
+	self.keypressHandler = function(event) {
+		var rightKey = 39;
+		var leftKey = 37;
+		
+		// listen for both events 
+		if (event.type=="keypress") {
+			window.removeEventListener("keyup", self.keypressHandler);
+		}
+		else {
+			window.removeEventListener("keypress", self.keypressHandler);
+		}
+		
+		if (self.showNavigationControls) {
+			if (self.navigationOnKeypress) {
+				if (event.keyCode==rightKey) {
+					self.nextView();
+				}
+				if (event.keyCode==leftKey) {
+					self.previousView();
+				}
+			}
+		}
+		else if (self.navigationOnKeypress) {
+			if (event.keyCode==rightKey) {
+				self.nextView();
+			}
+			if (event.keyCode==leftKey) {
+				self.previousView();
+			}
+		}
+	}
+
+	///////////////////////////////////
+	// GENERAL FUNCTIONS
+	///////////////////////////////////
+
+	self.getViewById = function(id) {
+		id = id ? id.replace("#", "") : "";
+		var view = self.viewIds.indexOf(id)!=-1 && self.getElement(id);
+		return view;
+	}
+
+	self.getViewIds = function() {
+		var viewIds = self.getViewPreferenceValue(document.body, self.prefix + "view-ids");
+		var viewId = null;
+
+		viewIds = viewIds!=null && viewIds!="" ? viewIds.split(",") : [];
+
+		if (viewIds.length==0) {
+			viewId = self.getViewPreferenceValue(document.body, self.prefix + "view-id");
+			viewIds = viewId ? [viewId] : [];
+		}
+
+		return viewIds;
+	}
+
+	self.getInitialViewId = function() {
+		var viewId = self.getViewPreferenceValue(document.body, self.prefix + "view-id");
+		return viewId;
+	}
+
+	self.getApplicationStylesheet = function() {
+		var stylesheetId = self.getViewPreferenceValue(document.body, self.prefix + "stylesheet-id");
+		self.applicationStylesheet = document.getElementById("applicationStylesheet");
+		return self.applicationStylesheet.sheet;
+	}
+
+	self.getVisibleView = function() {
+		var viewIds = self.getViewIds();
+		
+		for (var i=0;i<viewIds.length;i++) {
+			var viewId = viewIds[i].replace(/[\#?\.?](.*)/, "$" + "1");
+			var view = self.getElement(viewId);
+			var postName = "_Class";
+
+			if (view==null && viewId && viewId.lastIndexOf(postName)!=-1) {
+				view = self.getElement(viewId.replace(postName, ""));
+			}
+			
+			if (view) {
+				var display = getComputedStyle(view).display;
+		
+				if (display=="block" || display=="flex") {
+					return view;
+				}
+			}
+		}
+
+		return null;
+	}
+
+	self.getVisibleViews = function() {
+		var viewIds = self.getViewIds();
+		var views = [];
+		
+		for (var i=0;i<viewIds.length;i++) {
+			var viewId = viewIds[i].replace(/[\#?\.?](.*)/, "$" + "1");
+			var view = self.getElement(viewId);
+			var postName = "_Class";
+
+			if (view==null && viewId && viewId.lastIndexOf(postName)!=-1) {
+				view = self.getElement(viewId.replace(postName, ""));
+			}
+			
+			if (view) {
+				var display = getComputedStyle(view).display;
+				
+				if (display=="none") {
+					continue;
+				}
+
+				if (display=="block" || display=="flex") {
+					views.push(view);
+				}
+			}
+		}
+
+		return views;
+	}
+
+	self.getStateNameByViewId = function(id) {
+		var state = self.viewsDictionary[id];
+		return state && state.stateName;
+	}
+
+	self.getMatchingViews = function(ids) {
+		var views = self.addedViews.slice(0);
+		var matchingViews = [];
+
+		if (self.showByMediaQuery) {
+			for (let index = 0; index < views.length; index++) {
+				var viewId = views[index];
+				var state = self.viewsDictionary[viewId];
+				var rule = state && state.rule; 
+				var matchResults = window.matchMedia(rule.conditionText);
+				var view = self.views[viewId];
+				
+				if (matchResults.matches) {
+					if (ids==true) {
+						matchingViews.push(viewId);
+					}
+					else {
+						matchingViews.push(view);
+					}
+				}
+			}
+		}
+
+		return matchingViews;
+	}
+
+	self.ruleMatchesQuery = function(rule) {
+		var result = window.matchMedia(rule.conditionText);
+		return result.matches;
+	}
+
+	self.getViewsByStateName = function(stateName, matchQuery) {
+		var views = self.addedViews.slice(0);
+		var matchingViews = [];
+
+		if (self.showByMediaQuery) {
+
+			// find state name
+			for (let index = 0; index < views.length; index++) {
+				var viewId = views[index];
+				var state = self.viewsDictionary[viewId];
+				var rule = state.rule;
+				var mediaRule = state.mediaRule;
+				var view = self.views[viewId];
+				var viewStateName = self.getStyleRuleValue(mediaRule, self.STATE_NAME, state);
+				var stateFoundAtt = view.getAttribute(self.STATE_NAME)==state;
+				var matchesResults = false;
+				
+				if (viewStateName==stateName) {
+					if (matchQuery) {
+						matchesResults = self.ruleMatchesQuery(rule);
+
+						if (matchesResults) {
+							matchingViews.push(view);
+						}
+					}
+					else {
+						matchingViews.push(view);
+					}
+				}
+			}
+		}
+
+		return matchingViews;
+	}
+
+	self.getInitialView = function() {
+		var viewId = self.getInitialViewId();
+		viewId = viewId.replace(/[\#?\.?](.*)/, "$" + "1");
+		var view = self.getElement(viewId);
+		var postName = "_Class";
+
+		if (view==null && viewId && viewId.lastIndexOf(postName)!=-1) {
+			view = self.getElement(viewId.replace(postName, ""));
+		}
+
+		return view;
+	}
+
+	self.getViewIndex = function(view) {
+		var viewIds = self.getViewIds();
+		var id = view ? view.id : null;
+		var index = id && viewIds ? viewIds.indexOf(id) : -1;
+
+		return index;
+	}
+
+	self.syncronizeViewToURL = function() {
+		var fragment = self.getHashFragment();
+
+		if (self.showByMediaQuery) {
+			var stateName = fragment;
+			
+			if (stateName==null || stateName=="") {
+				var initialView = self.getInitialView();
+				stateName = initialView ? self.getStateNameByViewId(initialView.id) : null;
+			}
+			
+			self.showMediaQueryViewsByState(stateName);
+			return;
+		}
+
+		var view = self.getViewById(fragment);
+		var index = view ? self.getViewIndex(view) : 0;
+		if (index==-1) index = 0;
+		var currentView = self.hideViews(index);
+
+		if (self.supportsPopState && currentView) {
+
+			if (fragment==null) {
+				window.history.replaceState({name:currentView.id}, null, "#"+ currentView.id);
+			}
+			else {
+				window.history.pushState({name:currentView.id}, null, "#"+ currentView.id);
+			}
+		}
+		
+		self.setViewVariables(view);
+		return view;
+	}
+
+	/**
+	 * Set the currentView or currentOverlay properties and set the lastView or lastOverlay properties
+	 */
+	self.setViewVariables = function(view, overlay, parentView) {
+		if (view) {
+			if (self.currentView) {
+				self.lastView = self.currentView;
+			}
+			self.currentView = view;
+		}
+
+		if (overlay) {
+			if (self.currentOverlay) {
+				self.lastOverlay = self.currentOverlay;
+			}
+			self.currentOverlay = overlay;
+		}
+	}
+
+	self.getViewPreferenceBoolean = function(view, property, altValue) {
+		var computedStyle = window.getComputedStyle(view);
+		var value = computedStyle.getPropertyValue(property);
+		var type = typeof value;
+		
+		if (value=="true" || (type=="string" && value.indexOf("true")!=-1)) {
+			return true;
+		}
+		else if (value=="" && arguments.length==3) {
+			return altValue;
+		}
+
+		return false;
+	}
+
+	self.getViewPreferenceValue = function(view, property, defaultValue) {
+		var value = window.getComputedStyle(view).getPropertyValue(property);
+
+		if (value===undefined) {
+			return defaultValue;
+		}
+		
+		value = value.replace(/^[\s\"]*/, "");
+		value = value.replace(/[\s\"]*$/, "");
+		value = value.replace(/^[\s"]*(.*?)[\s"]*$/, function (match, capture) { 
+			return capture;
+		});
+
+		return value;
+	}
+
+	self.getStyleRuleValue = function(cssRule, property) {
+		var value = cssRule ? cssRule.style.getPropertyValue(property) : null;
+
+		if (value===undefined) {
+			return null;
+		}
+		
+		value = value.replace(/^[\s\"]*/, "");
+		value = value.replace(/[\s\"]*$/, "");
+		value = value.replace(/^[\s"]*(.*?)[\s"]*$/, function (match, capture) { 
+			return capture;
+		});
+
+		return value;
+	}
+
+	/**
+	 * Get the first defined value of property. Returns empty string if not defined
+	 * @param {String} id id of element
+	 * @param {String} property 
+	 */
+	self.getCSSPropertyValueForElement = function(id, property) {
+		var styleSheets = document.styleSheets;
+		var numOfStylesheets = styleSheets.length;
+		var values = [];
+		var selectorIDText = "#" + id;
+		var selectorClassText = "." + id + "_Class";
+		var value;
+
+		for(var i=0;i<numOfStylesheets;i++) {
+			var styleSheet = styleSheets[i];
+			var cssRules = self.getStylesheetRules(styleSheet);
+			var numOfCSSRules = cssRules.length;
+			var cssRule;
+			
+			for (var j=0;j<numOfCSSRules;j++) {
+				cssRule = cssRules[j];
+				
+				if (cssRule.media) {
+					var mediaRules = cssRule.cssRules;
+					var numOfMediaRules = mediaRules ? mediaRules.length : 0;
+					
+					for(var k=0;k<numOfMediaRules;k++) {
+						var mediaRule = mediaRules[k];
+						
+						if (mediaRule.selectorText==selectorIDText || mediaRule.selectorText==selectorClassText) {
+							
+							if (mediaRule.style && mediaRule.style.getPropertyValue(property)!="") {
+								value = mediaRule.style.getPropertyValue(property);
+								values.push(value);
+							}
+						}
+					}
+				}
+				else {
+
+					if (cssRule.selectorText==selectorIDText || cssRule.selectorText==selectorClassText) {
+						if (cssRule.style && cssRule.style.getPropertyValue(property)!="") {
+							value = cssRule.style.getPropertyValue(property);
+							values.push(value);
+						}
+					}
+				}
+			}
+		}
+
+		return values.pop();
+	}
+
+	self.getIsStyleDefined = function(id, property) {
+		var value = self.getCSSPropertyValueForElement(id, property);
+		return value!==undefined && value!="";
+	}
+
+	self.collectViews = function() {
+		var viewIds = self.getViewIds();
+
+		for (let index = 0; index < viewIds.length; index++) {
+			const id = viewIds[index];
+			const view = self.getElement(id);
+			self.views[id] = view;
+		}
+		
+		self.viewIds = viewIds;
+	}
+
+	self.collectOverlays = function() {
+		var viewIds = self.getViewIds();
+		var ids = [];
+
+		for (let index = 0; index < viewIds.length; index++) {
+			const id = viewIds[index];
+			const view = self.getViewById(id);
+			const isOverlay = view && self.isOverlay(view);
+			
+			if (isOverlay) {
+				ids.push(id);
+				self.overlays[id] = view;
+			}
+		}
+		
+		self.overlayIds = ids;
+	}
+
+	self.collectMediaQueries = function() {
+		var viewIds = self.getViewIds();
+		var styleSheet = self.getApplicationStylesheet();
+		var cssRules = self.getStylesheetRules(styleSheet);
+		var numOfCSSRules = cssRules ? cssRules.length : 0;
+		var cssRule;
+		var id = viewIds.length ? viewIds[0]: ""; // single view
+		var selectorIDText = "#" + id;
+		var selectorClassText = "." + id + "_Class";
+		var viewsNotFound = viewIds.slice();
+		var viewsFound = [];
+		var selectorText = null;
+		var property = self.prefix + "view-id";
+		var stateName = self.prefix + "state";
+		var stateValue = null;
+		var view = null;
+		
+		for (var j=0;j<numOfCSSRules;j++) {
+			cssRule = cssRules[j];
+			
+			if (cssRule.media) {
+				var mediaRules = cssRule.cssRules;
+				var numOfMediaRules = mediaRules ? mediaRules.length : 0;
+				var mediaViewInfoFound = false;
+				var mediaId = null;
+				
+				for(var k=0;k<numOfMediaRules;k++) {
+					var mediaRule = mediaRules[k];
+
+					selectorText = mediaRule.selectorText;
+					
+					if (selectorText==".mediaViewInfo" && mediaViewInfoFound==false) {
+
+						mediaId = self.getStyleRuleValue(mediaRule, property);
+						stateValue = self.getStyleRuleValue(mediaRule, stateName);
+
+						selectorIDText = "#" + mediaId;
+						selectorClassText = "." + mediaId + "_Class";
+						view = self.getElement(mediaId);
+						
+						// prevent duplicates from load and domcontentloaded events
+						if (self.addedViews.indexOf(mediaId)==-1) {
+							self.addView(view, mediaId, cssRule, mediaRule, stateValue);
+						}
+
+						viewsFound.push(mediaId);
+
+						if (viewsNotFound.indexOf(mediaId)!=-1) {
+							viewsNotFound.splice(viewsNotFound.indexOf(mediaId));
+						}
+
+						mediaViewInfoFound = true;
+					}
+
+					if (selectorIDText==selectorText || selectorClassText==selectorText) {
+						var styleObject = self.viewsDictionary[mediaId];
+						if (styleObject) {
+							styleObject.styleDeclaration = mediaRule;
+						}
+						break;
+					}
+				}
+			}
+			else {
+				selectorText = cssRule.selectorText;
+				
+				if (selectorText==null) continue;
+
+				selectorText = selectorText.replace(/[#|\s|*]?/g, "");
+
+				if (viewIds.indexOf(selectorText)!=-1) {
+					view = self.getElement(selectorText);
+					self.addView(view, selectorText, cssRule, null, stateValue);
+
+					if (viewsNotFound.indexOf(selectorText)!=-1) {
+						viewsNotFound.splice(viewsNotFound.indexOf(selectorText));
+					}
+
+					break;
+				}
+			}
+		}
+
+		if (viewsNotFound.length) {
+			console.log("Could not find the following views:" + viewsNotFound.join(",") + "");
+			console.log("Views found:" + viewsFound.join(",") + "");
+		}
+	}
+
+	/**
+	 * Adds a view
+	 * @param {HTMLElement} view view element
+	 * @param {String} id id of view element
+	 * @param {CSSRule} cssRule of view element
+	 * @param {CSSMediaRule} mediaRule media rule of view element
+	 * @param {String} stateName name of state if applicable
+	 **/
+	self.addView = function(view, viewId, cssRule, mediaRule, stateName) {
+		var viewData = {};
+		viewData.name = viewId;
+		viewData.rule = cssRule;
+		viewData.id = viewId;
+		viewData.mediaRule = mediaRule;
+		viewData.stateName = stateName;
+
+		self.views.push(viewData);
+		self.addedViews.push(viewId);
+		self.viewsDictionary[viewId] = viewData;
+		self.mediaQueryDictionary[viewId] = cssRule;
+	}
+
+	self.hasView = function(name) {
+
+		if (self.addedViews.indexOf(name)!=-1) {
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * Go to view by id. Views are added in addView()
+	 * @param {String} id id of view in current
+	 * @param {Boolean} maintainPreviousState if true then do not hide other views
+	 * @param {String} parent id of parent view
+	 **/
+	self.goToView = function(id, maintainPreviousState, parent) {
+		var state = self.viewsDictionary[id];
+
+		if (state) {
+			if (maintainPreviousState==false || maintainPreviousState==null) {
+				self.hideViews();
+			}
+			self.enableMediaQuery(state.rule);
+			self.updateViewLabel();
+			self.updateURL();
+		}
+		else {
+			var event = new Event(self.STATE_NOT_FOUND);
+			self.stateName = id;
+			window.dispatchEvent(event);
+		}
+	}
+
+	/**
+	 * Go to the view in the event targets CSS variable
+	 **/
+	self.goToTargetView = function(event) {
+		var button = event.currentTarget;
+		var buttonComputedStyles = getComputedStyle(button);
+		var actionTargetValue = buttonComputedStyles.getPropertyValue(self.prefix+"action-target").trim();
+		var animation = buttonComputedStyles.getPropertyValue(self.prefix+"animation").trim();
+		var targetType = buttonComputedStyles.getPropertyValue(self.prefix+"action-type").trim();
+		var targetView = self.application ? null : self.getElement(actionTargetValue);
+		var targetState = targetView ? self.getStateNameByViewId(targetView.id) : null;
+		var actionTargetStyles = targetView ? targetView.style : null;
+		var state = self.viewsDictionary[actionTargetValue];
+		
+		// navigate to page
+		if (self.application==false || targetType=="page") {
+			document.location.href = "./" + actionTargetValue;
+			return;
+		}
+
+		// if view is found
+		if (targetView) {
+
+			if (self.currentOverlay) {
+				self.removeOverlay(false);
+			}
+
+			if (self.showByMediaQuery) {
+				var stateName = targetState;
+				
+				if (stateName==null || stateName=="") {
+					var initialView = self.getInitialView();
+					stateName = initialView ? self.getStateNameByViewId(initialView.id) : null;
+				}
+				self.showMediaQueryViewsByState(stateName, event);
+				return;
+			}
+
+			// add animation set in event target style declaration
+			if (animation && self.supportAnimations) {
+				self.crossFade(self.currentView, targetView, false, animation);
+			}
+			else {
+				self.setViewVariables(self.currentView);
+				self.hideViews();
+				self.enableMediaQuery(state.rule);
+				self.scaleViewIfNeeded(targetView);
+				self.centerView(targetView);
+				self.updateViewLabel();
+				self.updateURL();
+			}
+		}
+		else {
+			var stateEvent = new Event(self.STATE_NOT_FOUND);
+			self.stateName = name;
+			window.dispatchEvent(stateEvent);
+		}
+
+		event.stopImmediatePropagation();
+	}
+
+	/**
+	 * Cross fade between views
+	 **/
+	self.crossFade = function(from, to, update, animation) {
+		var targetIndex = to.parentNode
+		var fromIndex = Array.prototype.slice.call(from.parentElement.children).indexOf(from);
+		var toIndex = Array.prototype.slice.call(to.parentElement.children).indexOf(to);
+
+		if (from.parentNode==to.parentNode) {
+			var reverse = self.getReverseAnimation(animation);
+			var duration = self.getAnimationDuration(animation, true);
+
+			// if target view is above (higher index)
+			// then fade in target view 
+			// and after fade in then hide previous view instantly
+			if (fromIndex<toIndex) {
+				self.setElementAnimation(from, null);
+				self.setElementAnimation(to, null);
+				self.showViewByMediaQuery(to);
+				self.fadeIn(to, update, animation);
+
+				setTimeout(function() {
+					self.setElementAnimation(to, null);
+					self.setElementAnimation(from, null);
+					self.hideView(from);
+					self.updateURL();
+					self.setViewVariables(to);
+					self.updateViewLabel();
+				}, duration)
+			}
+			// if target view is on bottom
+			// then show target view instantly 
+			// and fade out current view
+			else if (fromIndex>toIndex) {
+				self.setElementAnimation(to, null);
+				self.setElementAnimation(from, null);
+				self.showViewByMediaQuery(to);
+				self.fadeOut(from, update, reverse);
+
+				setTimeout(function() {
+					self.setElementAnimation(to, null);
+					self.setElementAnimation(from, null);
+					self.hideView(from);
+					self.updateURL();
+					self.setViewVariables(to);
+				}, duration)
+			}
+		}
+	}
+
+	self.fadeIn = function(element, update, animation) {
+		self.showViewByMediaQuery(element);
+
+		if (update) {
+			self.updateURL(element);
+
+			element.addEventListener("animationend", function(event) {
+				element.style.animation = null;
+				self.setViewVariables(element);
+				self.updateViewLabel();
+				element.removeEventListener("animationend", arguments.callee);
+			});
+		}
+
+		self.setElementAnimation(element, null);
+		
+		element.style.animation = animation;
+	}
+
+	self.fadeOutCurrentView = function(animation, update) {
+		if (self.currentView) {
+			self.fadeOut(self.currentView, update, animation);
+		}
+		if (self.currentOverlay) {
+			self.fadeOut(self.currentOverlay, update, animation);
+		}
+	}
+
+	self.fadeOut = function(element, update, animation) {
+		if (update) {
+			element.addEventListener("animationend", function(event) {
+				element.style.animation = null;
+				self.hideView(element);
+				element.removeEventListener("animationend", arguments.callee);
+			});
+		}
+
+		element.style.animationPlayState = "paused";
+		element.style.animation = animation;
+		element.style.animationPlayState = "running";
+	}
+
+	self.getReverseAnimation = function(animation) {
+		if (animation && animation.indexOf("reverse")==-1) {
+			animation += " reverse";
+		}
+
+		return animation;
+	}
+
+	/**
+	 * Get duration in animation string
+	 * @param {String} animation animation value
+	 * @param {Boolean} inMilliseconds length in milliseconds if true
+	 */
+	self.getAnimationDuration = function(animation, inMilliseconds) {
+		var duration = 0;
+		var expression = /.+(\d\.\d)s.+/;
+
+		if (animation && animation.match(expression)) {
+			duration = parseFloat(animation.replace(expression, "$" + "1"));
+			if (duration && inMilliseconds) duration = duration * 1000;
+		}
+
+		return duration;
+	}
+
+	self.setElementAnimation = function(element, animation, priority) {
+		element.style.setProperty("animation", animation, "important");
+	}
+
+	self.getElement = function(id) {
+		id = id ? id.trim() : id;
+		var element = id ? document.getElementById(id) : null;
+
+		return element;
+	}
+
+	self.getElementById = function(id) {
+		id = id ? id.trim() : id;
+		var element = id ? document.getElementById(id) : null;
+
+		return element;
+	}
+
+	self.getElementByClass = function(className) {
+		className = className ? className.trim() : className;
+		var elements = document.getElementsByClassName(className);
+
+		return elements.length ? elements[0] : null;
+	}
+
+	self.resizeHandler = function(event) {
+		
+		if (self.showByMediaQuery) {
+			if (self.enableDeepLinking) {
+				var stateName = self.getHashFragment();
+
+				if (stateName==null || stateName=="") {
+					var initialView = self.getInitialView();
+					stateName = initialView ? self.getStateNameByViewId(initialView.id) : null;
+				}
+				self.showMediaQueryViewsByState(stateName, event);
+			}
+		}
+		else {
+			var visibleViews = self.getVisibleViews();
+
+			for (let index = 0; index < visibleViews.length; index++) {	
+				var view = visibleViews[index];
+				self.scaleViewIfNeeded(view);
+			}
+		}
+
+		window.dispatchEvent(new Event(self.APPLICATION_RESIZE));
+	}
+
+	self.scaleViewIfNeeded = function(view) {
+
+		if (self.scaleViewsOnResize) {
+			if (view==null) {
+				view = self.getVisibleView();
+			}
+
+			var isViewScaled = view.getAttributeNS(null, self.SIZE_STATE_NAME)=="false" ? false : true;
+
+			if (isViewScaled) {
+				self.scaleViewToFit(view, true);
+			}
+			else {
+				self.scaleViewToActualSize(view);
+			}
+		}
+		else if (view) {
+			self.centerView(view);
+		}
+	}
+
+	self.centerView = function(view) {
+
+		if (self.scaleViewsToFit) {
+			self.scaleViewToFit(view, true);
+		}
+		else {
+			self.scaleViewToActualSize(view);  // for centering support for now
+		}
+	}
+
+	self.preventDoubleClick = function(event) {
+		event.stopImmediatePropagation();
+	}
+
+	self.getHashFragment = function() {
+		var value = window.location.hash ? window.location.hash.replace("#", "") : "";
+		return value;
+	}
+
+	self.showBlockElement = function(view) {
+		view.style.display = "block";
+	}
+
+	self.hideElement = function(view) {
+		view.style.display = "none";
+	}
+
+	self.showStateFunction = null;
+
+	self.showMediaQueryViewsByState = function(state, event) {
+		// browser will hide and show by media query (small, medium, large)
+		// but if multiple views exists at same size user may want specific view
+		// if showStateFunction is defined that is called with state fragment and user can show or hide each media matching view by returning true or false
+		// if showStateFunction is not defined and state is defined and view has a defined state that matches then show that and hide other matching views
+		// if no state is defined show view 
+		// an viewChanging event is dispatched before views are shown or hidden that can be prevented 
+
+		// get all matched queries
+		// if state name is specified then show that view and hide other views
+		// if no state name is defined then show
+		var matchedViews = self.getMatchingViews();
+		var matchMediaQuery = true;
+		var foundViews = self.getViewsByStateName(state, matchMediaQuery);
+		var showViews = [];
+		var hideViews = [];
+
+		// loop views that match media query 
+		for (let index = 0; index < matchedViews.length; index++) {
+			var view = matchedViews[index];
+			
+			// let user determine visible view
+			if (self.showStateFunction!=null) {
+				if (self.showStateFunction(view, state)) {
+					showViews.push(view);
+				}
+				else {
+					hideViews.push(view);
+				}
+			}
+			// state was defined so check if view matches state
+			else if (foundViews.length) {
+
+				if (foundViews.indexOf(view)!=-1) {
+					showViews.push(view);
+				}
+				else {
+					hideViews.push(view);
+				}
+			}
+			// if no state names are defined show view (define unused state name to exclude)
+			else if (state==null || state=="") {
+				showViews.push(view);
+			}
+		}
+
+		if (showViews.length) {
+			var viewChangingEvent = new Event(self.VIEW_CHANGING);
+			viewChangingEvent.showViews = showViews;
+			viewChangingEvent.hideViews = hideViews;
+			window.dispatchEvent(viewChangingEvent);
+
+			if (viewChangingEvent.defaultPrevented==false) {
+				for (var index = 0; index < hideViews.length; index++) {
+					var view = hideViews[index];
+
+					if (self.isOverlay(view)) {
+						self.removeOverlay(view);
+					}
+					else {
+						self.hideElement(view);
+					}
+				}
+
+				for (var index = 0; index < showViews.length; index++) {
+					var view = showViews[index];
+
+					if (index==showViews.length-1) {
+						self.clearDisplay(view);
+						self.setViewOptions(view);
+						self.setViewVariables(view);
+						self.centerView(view);
+						self.updateURLState(view, state);
+					}
+				}
+			}
+
+			var viewChangeEvent = new Event(self.VIEW_CHANGE);
+			viewChangeEvent.showViews = showViews;
+			viewChangeEvent.hideViews = hideViews;
+			window.dispatchEvent(viewChangeEvent);
+		}
+		
+	}
+
+	self.clearDisplay = function(view) {
+		view.style.setProperty("display", null);
+	}
+
+	self.hashChangeHandler = function(event) {
+		var fragment = self.getHashFragment();
+		var view = self.getViewById(fragment);
+
+		if (self.showByMediaQuery) {
+			var stateName = fragment;
+
+			if (stateName==null || stateName=="") {
+				var initialView = self.getInitialView();
+				stateName = initialView ? self.getStateNameByViewId(initialView.id) : null;
+			}
+			self.showMediaQueryViewsByState(stateName);
+		}
+		else {
+			if (view) {
+				self.hideViews();
+				self.showView(view);
+				self.setViewVariables(view);
+				self.updateViewLabel();
+				
+				window.dispatchEvent(new Event(self.VIEW_CHANGE));
+			}
+			else {
+				window.dispatchEvent(new Event(self.VIEW_NOT_FOUND));
+			}
+		}
+	}
+
+	self.popStateHandler = function(event) {
+		var state = event.state;
+		var fragment = state ? state.name : window.location.hash;
+		var view = self.getViewById(fragment);
+
+		if (view) {
+			self.hideViews();
+			self.showView(view);
+			self.updateViewLabel();
+		}
+		else {
+			window.dispatchEvent(new Event(self.VIEW_NOT_FOUND));
+		}
+	}
+
+	self.doubleClickHandler = function(event) {
+		var view = self.getVisibleView();
+		var scaleValue = view ? self.getViewScaleValue(view) : 1;
+		var scaleNeededToFit = view ? self.getViewFitToViewportScale(view) : 1;
+		var scaleNeededToFitWidth = view ? self.getViewFitToViewportWidthScale(view) : 1;
+		var scaleNeededToFitHeight = view ? self.getViewFitToViewportHeightScale(view) : 1;
+		var scaleToFitType = self.scaleToFitType;
+
+		// Three scenarios
+		// - scale to fit on double click
+		// - set scale to actual size on double click
+		// - switch between scale to fit and actual page size
+
+		if (scaleToFitType=="width") {
+			scaleNeededToFit = scaleNeededToFitWidth;
+		}
+		else if (scaleToFitType=="height") {
+			scaleNeededToFit = scaleNeededToFitHeight;
+		}
+
+		// if scale and actual size enabled then switch between
+		if (self.scaleToFitOnDoubleClick && self.actualSizeOnDoubleClick) {
+			var isViewScaled = view.getAttributeNS(null, self.SIZE_STATE_NAME);
+			var isScaled = false;
+			
+			// if scale is not 1 then view needs scaling
+			if (scaleNeededToFit!=1) {
+
+				// if current scale is at 1 it is at actual size
+				// scale it to fit
+				if (scaleValue==1) {
+					self.scaleViewToFit(view);
+					isScaled = true;
+				}
+				else {
+					// scale is not at 1 so switch to actual size
+					self.scaleViewToActualSize(view);
+					isScaled = false;
+				}
+			}
+			else {
+				// view is smaller than viewport 
+				// so scale to fit() is scale actual size
+				// actual size and scaled size are the same
+				// but call scale to fit to retain centering
+				self.scaleViewToFit(view);
+				isScaled = false;
+			}
+			
+			view.setAttributeNS(null, self.SIZE_STATE_NAME, isScaled+"");
+			isViewScaled = view.getAttributeNS(null, self.SIZE_STATE_NAME);
+		}
+		else if (self.scaleToFitOnDoubleClick) {
+			self.scaleViewToFit(view);
+		}
+		else if (self.actualSizeOnDoubleClick) {
+			self.scaleViewToActualSize(view);
+		}
+
+	}
+
+	self.scaleViewToFit = function(view) {
+		return self.setViewScaleValue(view, true);
+	}
+
+	self.scaleViewToActualSize = function(view) {
+		self.setViewScaleValue(view, false, 1);
+	}
+
+	self.onloadHandler = function(event) {
+		self.initialize();
+	}
+
+	self.setElementHTML = function(id, value) {
+		var element = self.getElement(id);
+		element.innerHTML = value;
+	}
+
+	self.getStackArray = function(error) {
+		var value = "";
+		
+		if (error==null) {
+		  try {
+			 error = new Error("Stack");
+		  }
+		  catch (e) {
+			 
+		  }
+		}
+		
+		if ("stack" in error) {
+		  value = error.stack;
+		  var methods = value.split(/\n/g);
+	 
+		  var newArray = methods ? methods.map(function (value, index, array) {
+			 value = value.replace(/\@.*/,"");
+			 return value;
+		  }) : null;
+	 
+		  if (newArray && newArray[0].includes("getStackTrace")) {
+			 newArray.shift();
+		  }
+		  if (newArray && newArray[0].includes("getStackArray")) {
+			 newArray.shift();
+		  }
+		  if (newArray && newArray[0]=="") {
+			 newArray.shift();
+		  }
+	 
+			return newArray;
+		}
+		
+		return null;
+	}
+
+	self.log = function(value) {
+		console.log.apply(this, [value]);
+	}
+	
+	// initialize on load
+	// sometimes the body size is 0 so we call this now and again later
+	window.addEventListener("load", self.onloadHandler);
+	window.document.addEventListener("DOMContentLoaded", self.onloadHandler);
+}
+
+window.application = new Application();
+</script>
+</head>
+<body>
+<div id="Connected">
+	<div id="Group_14627">
+		<svg class="Rectangle_1000">
+			<rect id="Rectangle_1000" rx="0" ry="0" x="0" y="0" width="390" height="844">
+			</rect>
+		</svg>
+		<img id="Mask_Group_2" src="Mask_Group_2.png" srcset="Mask_Group_2.png 1x, Mask_Group_2@2x.png 2x">
+			
+		</svg>
+		<svg class="Path_678" viewBox="0 0 390 241">
+			<path id="Path_678" d="M 0 0 L 390 0 L 390 241 C 390 241 292.5 177 195 139 C 97.5 101 0 89 0 89 L 0 0 Z">
+			</path>
+		</svg>
+	</div>
+	<div id="Current_IP_127001">
+		<span>Current IP 127.0.0.1</span>
+	</div>
+	<div id="Group_14594">
+		<div id="Group_1567">
+			<div id="United_States">
+				<span>United States</span>
+			</div>
+			<img id="united-states-of-america-flag-" src="united-states-of-america-flag-.png" srcset="united-states-of-america-flag-.png 1x, united-states-of-america-flag-@2x.png 2x">
+				
+			<svg class="Rectangle_983">
+				<rect id="Rectangle_983" rx="8" ry="8" x="0" y="0" width="315" height="50">
+				</rect>
+			</svg>
+			<svg class="Chevron" viewBox="0 0 8.201 14.01">
+				<path id="Chevron" d="M 1.682782053947449 13.72478866577148 L 8.000938415527344 7.480523586273193 C 8.267153739929199 7.217670440673828 8.267153739929199 6.793011665344238 8.000938415527344 6.529477596282959 L 1.682782053947449 0.2852112650871277 C 1.298477411270142 -0.09507042169570923 0.6732138991355896 -0.09507042169570923 0.2882279455661774 0.2852112650871277 C -0.09607662260532379 0.6654929518699646 -0.09607662260532379 1.282682776451111 0.2882279455661774 1.662964463233948 L 5.69306468963623 7.005341529846191 L 0.2882279455661774 12.34635257720947 C -0.09607662260532379 12.72731876373291 -0.09607662260532379 13.34450721740723 0.2882279455661774 13.72478866577148 C 0.6732138991355896 14.10507011413574 1.298477411270142 14.10507011413574 1.682782053947449 13.72478866577148">
+				</path>
+			</svg>
+		</div>
+	</div>
+	<div id="Current_Location">
+		<span>Current Location</span>
+	</div>
+	<div id="iPhone_XStatus_BarsStatus_Bar_" class="iPhone_X_Status_Bars_Status_Bar__Black_">
+		<svg class="Rectangle">
+			<rect id="Rectangle" rx="0" ry="0" x="0" y="0" width="390" height="44">
+			</rect>
+		</svg>
+		<div id="Group_3">
+			<div id="Battery">
+				<svg class="Border">
+					<rect id="Border" rx="2.6666667461395264" ry="2.6666667461395264" x="0" y="0" width="22" height="11.333">
+					</rect>
+				</svg>
+				<svg class="Cap" viewBox="0 0 1.328 4">
+					<path id="Cap" d="M 0 0 L 0 4 C 0.8047311305999756 3.661223411560059 1.328037977218628 2.873133182525635 1.328037977218628 2 C 1.328037977218628 1.126866698265076 0.8047311305999756 0.3387765288352966 0 0 Z">
+					</path>
+				</svg>
+				<svg class="Capacity">
+					<rect id="Capacity" rx="1.3333333730697632" ry="1.3333333730697632" x="0" y="0" width="18" height="7.333">
+					</rect>
+				</svg>
+			</div>
+			<svg class="Wifi" viewBox="0 0 15.272 10.965">
+				<path id="Wifi" d="M 7.63653564453125 10.96537017822266 C 7.5538330078125 10.96537017822266 7.47314453125 10.93158149719238 7.415130615234375 10.87267112731934 L 5.417144775390625 8.857570648193359 C 5.355865478515625 8.796310424804688 5.321746826171875 8.712329864501953 5.323516845703125 8.627170562744141 C 5.3253173828125 8.539939880371094 5.363006591796875 8.457281112670898 5.427032470703125 8.400371551513672 C 6.043792724609375 7.878471374511719 6.8284912109375 7.59105110168457 7.63653564453125 7.59105110168457 C 8.444580078125 7.59105110168457 9.229248046875 7.878471374511719 9.846038818359375 8.400371551513672 C 9.910003662109375 8.457241058349609 9.94769287109375 8.539901733398438 9.94952392578125 8.627170562744141 C 9.9512939453125 8.712360382080078 9.91717529296875 8.796340942382812 9.855926513671875 8.857570648193359 L 7.857940673828125 10.87267112731934 C 7.799041748046875 10.93245124816895 7.720428466796875 10.96537017822266 7.63653564453125 10.96537017822266 Z M 11.14443969726562 7.428279876708984 C 11.06454467773438 7.428279876708984 10.98855590820312 7.397951126098633 10.9305419921875 7.342870712280273 C 10.02593994140625 6.523971557617188 8.856109619140625 6.072971343994141 7.63653564453125 6.072971343994141 C 6.41680908203125 6.073871612548828 5.2479248046875 6.524860382080078 4.34521484375 7.342870712280273 C 4.28717041015625 7.397941589355469 4.21112060546875 7.428279876708984 4.13104248046875 7.428279876708984 C 4.048004150390625 7.428291320800781 3.970001220703125 7.396039962768555 3.91143798828125 7.337471008300781 L 2.75762939453125 6.170171737670898 C 2.69580078125 6.108331680297852 2.6622314453125 6.026500701904297 2.663116455078125 5.93977165222168 C 2.664031982421875 5.852901458740234 2.698883056640625 5.771720886230469 2.76123046875 5.711170196533203 C 4.090576171875 4.474969863891602 5.822418212890625 3.794170379638672 7.63775634765625 3.794170379638672 C 9.453094482421875 3.794170379638672 11.18472290039062 4.474969863891602 12.51364135742188 5.711170196533203 C 12.57656860351562 5.772260665893555 12.61172485351562 5.85344123840332 12.61264038085938 5.93977165222168 C 12.613525390625 6.026510238647461 12.5799560546875 6.108331680297852 12.51812744140625 6.170171737670898 L 11.36431884765625 7.337471008300781 C 11.30532836914062 7.396030426025391 11.22723388671875 7.428279876708984 11.14443969726562 7.428279876708984 Z M 1.46759033203125 4.743230819702148 C 1.385101318359375 4.743230819702148 1.30755615234375 4.711101531982422 1.249237060546875 4.65277099609375 L 0.0936279296875 3.485471725463867 C 0.033233642578125 3.425050735473633 -0.000885009765625 3.341730117797852 3.0517578125e-05 3.256870269775391 C 0.00091552734375 3.171241760253906 0.036041259765625 3.088571548461914 0.096343994140625 3.030071258544922 C 2.134735107421875 1.076101303100586 4.812408447265625 0 7.636077880859375 0 C 10.45974731445312 0 13.13742065429688 1.076101303100586 15.17584228515625 3.030071258544922 C 15.23703002929688 3.089460372924805 15.27212524414062 3.172121047973633 15.27212524414062 3.256870269775391 C 15.27304077148438 3.341730117797852 15.23892211914062 3.425050735473633 15.17852783203125 3.485471725463867 L 14.02291870117188 4.65277099609375 C 13.96505737304688 4.711101531982422 13.88775634765625 4.743221282958984 13.8052978515625 4.743221282958984 C 13.72421264648438 4.743221282958984 13.64743041992188 4.712060928344727 13.58914184570312 4.65546989440918 C 11.97622680664062 3.122119903564453 9.862213134765625 2.277669906616211 7.63653564453125 2.277669906616211 C 5.410247802734375 2.277669906616211 3.295928955078125 3.122119903564453 1.683074951171875 4.65546989440918 C 1.62518310546875 4.712051391601562 1.54864501953125 4.743221282958984 1.46759033203125 4.743230819702148 Z">
+				</path>
+			</svg>
+			<svg class="Cellular_Connection" viewBox="0 0 17 10.667">
+				<path id="Cellular_Connection" d="M 16.00018310546875 10.66680145263672 L 15.00030517578125 10.66680145263672 C 14.44894409179688 10.66680145263672 14.00039672851562 10.21784019470215 14.00039672851562 9.666000366210938 L 14.00039672851562 0.9999008178710938 C 14.00039672851562 0.4485511779785156 14.44894409179688 0 15.00030517578125 0 L 16.00018310546875 0 C 16.55154418945312 0 17.00009155273438 0.4485511779785156 17.00009155273438 0.9999008178710938 L 17.00009155273438 9.666000366210938 C 17.00009155273438 10.21784019470215 16.55154418945312 10.66680145263672 16.00018310546875 10.66680145263672 Z M 11.33370971679688 10.66680145263672 L 10.33380126953125 10.66680145263672 C 9.781951904296875 10.66680145263672 9.3330078125 10.21784019470215 9.3330078125 9.666000366210938 L 9.3330078125 3.332700729370117 C 9.3330078125 2.781351089477539 9.781951904296875 2.332799911499023 10.33380126953125 2.332799911499023 L 11.33370971679688 2.332799911499023 C 11.88504028320312 2.332799911499023 12.33358764648438 2.781351089477539 12.33358764648438 3.332700729370117 L 12.33358764648438 9.666000366210938 C 12.33358764648438 10.21784019470215 11.88504028320312 10.66680145263672 11.33370971679688 10.66680145263672 Z M 6.667205810546875 10.66680145263672 L 5.6663818359375 10.66680145263672 C 5.11505126953125 10.66680145263672 4.66650390625 10.21784019470215 4.66650390625 9.666000366210938 L 4.66650390625 5.666400909423828 C 4.66650390625 5.11505126953125 5.11505126953125 4.666500091552734 5.6663818359375 4.666500091552734 L 6.667205810546875 4.666500091552734 C 7.218536376953125 4.666500091552734 7.667083740234375 5.11505126953125 7.667083740234375 5.666400909423828 L 7.667083740234375 9.666000366210938 C 7.667083740234375 10.21784019470215 7.218536376953125 10.66680145263672 6.667205810546875 10.66680145263672 Z M 1.999786376953125 10.66680145263672 L 0.999908447265625 10.66680145263672 C 0.44854736328125 10.66680145263672 0 10.21784019470215 0 9.666000366210938 L 0 7.666200637817383 C 0 7.114850997924805 0.44854736328125 6.666299819946289 0.999908447265625 6.666299819946289 L 1.999786376953125 6.666299819946289 C 2.5511474609375 6.666299819946289 2.99969482421875 7.114850997924805 2.99969482421875 7.666200637817383 L 2.99969482421875 9.666000366210938 C 2.99969482421875 10.21784019470215 2.5511474609375 10.66680145263672 1.999786376953125 10.66680145263672 Z">
+				</path>
+			</svg>
+		</div>
+		<div id="Time_Style">
+			<svg class="n_Time" viewBox="0 0 7.67 10.268">
+				<path id="n_Time" d="M 3.6572265625 10.267578125 C 6.166015625 10.267578125 7.669921875 8.3125 7.669921875 5.0244140625 C 7.669921875 1.3671875 5.7080078125 0 3.6845703125 0 C 1.5517578125 0 0 1.4423828125 0 3.4521484375 C 0 5.359375 1.4287109375 6.685546875 3.2744140625 6.685546875 C 4.552734375 6.685546875 5.564453125 6.04296875 5.947265625 5.0859375 L 5.974609375 5.0859375 C 5.974609375 7.3828125 5.22265625 8.8388671875 3.6708984375 8.8388671875 C 2.7685546875 8.8388671875 2.10546875 8.4287109375 1.859375 7.6494140625 L 0.109375 7.6494140625 C 0.3828125 9.2080078125 1.8115234375 10.267578125 3.6572265625 10.267578125 Z M 3.6845703125 5.318359375 C 2.5634765625 5.318359375 1.7294921875 4.51171875 1.7294921875 3.3837890625 C 1.7294921875 2.3037109375 2.6044921875 1.44921875 3.705078125 1.44921875 C 4.8193359375 1.44921875 5.6806640625 2.310546875 5.6806640625 3.41796875 C 5.6806640625 4.5185546875 4.826171875 5.318359375 3.6845703125 5.318359375 Z">
+				</path>
+			</svg>
+			<svg class="n_Time_" viewBox="8.88 1.593 1.962 7.075">
+				<path id="n_Time_" d="M 9.864530563354492 8.66796875 C 10.41140556335449 8.66796875 10.84206962585449 8.2373046875 10.84206962585449 7.68359375 C 10.84206962585449 7.13671875 10.41140556335449 6.69921875 9.864530563354492 6.69921875 C 9.310819625854492 6.69921875 8.880155563354492 7.13671875 8.880155563354492 7.68359375 C 8.880155563354492 8.2373046875 9.310819625854492 8.66796875 9.864530563354492 8.66796875 Z M 9.864530563354492 3.5615234375 C 10.41140556335449 3.5615234375 10.84206962585449 3.1240234375 10.84206962585449 2.5771484375 C 10.84206962585449 2.0302734375 10.41140556335449 1.5927734375 9.864530563354492 1.5927734375 C 9.310819625854492 1.5927734375 8.880155563354492 2.0302734375 8.880155563354492 2.5771484375 C 8.880155563354492 3.1240234375 9.310819625854492 3.5615234375 9.864530563354492 3.5615234375 Z">
+				</path>
+			</svg>
+			<svg class="n_Time_ba" viewBox="11.977 0.205 7.943 9.864">
+				<path id="n_Time_ba" d="M 16.89898490905762 10.0693359375 L 18.58062553405762 10.0693359375 L 18.58062553405762 8.17578125 L 19.92046928405762 8.17578125 L 19.92046928405762 6.7265625 L 18.58062553405762 6.7265625 L 18.58062553405762 0.205078125 L 16.07183647155762 0.205078125 C 13.93218803405762 3.3154296875 12.83160209655762 5.0654296875 11.97710990905762 6.671875 L 11.97710990905762 8.17578125 L 16.89898490905762 8.17578125 L 16.89898490905762 10.0693359375 Z M 13.56304740905762 6.7197265625 C 14.34918022155762 5.2841796875 15.30621147155762 3.80078125 16.89898490905762 1.517578125 L 16.92632865905762 1.517578125 L 16.92632865905762 6.767578125 L 13.56304740905762 6.767578125 L 13.56304740905762 6.7197265625 Z">
+				</path>
+			</svg>
+			<svg class="n_Time_bb" viewBox="20.666 0.205 4.32 9.864">
+				<path id="n_Time_bb" d="M 23.25668144226074 10.0693359375 L 24.98617362976074 10.0693359375 L 24.98617362976074 0.205078125 L 23.24300956726074 0.205078125 L 20.66586112976074 2.0166015625 L 20.66586112976074 3.63671875 L 23.21566581726074 1.88671875 L 23.25668144226074 1.88671875 L 23.25668144226074 10.0693359375 Z">
+				</path>
+			</svg>
+		</div>
+	</div>
+	<svg class="Union_64" viewBox="12690 1604 25.5 25.497">
+		<path onclick="application.showOverlay(event,'Menu',0,0)" id="Union_64" d="M 12707.7490234375 1629.497924804688 C 12706.2333984375 1629.497924804688 12704.998046875 1628.26611328125 12704.998046875 1626.750366210938 L 12704.998046875 1621.749755859375 C 12704.998046875 1620.23388671875 12706.2333984375 1618.998901367188 12707.7490234375 1618.998901367188 L 12712.75 1618.998901367188 C 12714.265625 1618.998901367188 12715.5 1620.23388671875 12715.5 1621.749755859375 L 12715.5 1626.750366210938 C 12715.5 1628.26611328125 12714.265625 1629.497924804688 12712.75 1629.497924804688 L 12707.7490234375 1629.497924804688 Z M 12692.7509765625 1629.497924804688 C 12691.234375 1629.497924804688 12690 1628.26611328125 12690 1626.750366210938 L 12690 1621.749755859375 C 12690 1620.23388671875 12691.234375 1618.998901367188 12692.7509765625 1618.998901367188 L 12697.7509765625 1618.998901367188 C 12699.2666015625 1618.998901367188 12700.4990234375 1620.23388671875 12700.4990234375 1621.749755859375 L 12700.4990234375 1626.750366210938 C 12700.4990234375 1628.26611328125 12699.2666015625 1629.497924804688 12697.7509765625 1629.497924804688 L 12692.7509765625 1629.497924804688 Z M 12707.7490234375 1614.499389648438 C 12706.2333984375 1614.499389648438 12704.998046875 1613.267578125 12704.998046875 1611.751831054688 L 12704.998046875 1606.751220703125 C 12704.998046875 1605.232299804688 12706.2333984375 1604.00048828125 12707.7490234375 1604.00048828125 L 12712.75 1604.00048828125 C 12714.265625 1604.00048828125 12715.5 1605.232299804688 12715.5 1606.751220703125 L 12715.5 1611.751831054688 C 12715.5 1613.267578125 12714.265625 1614.499389648438 12712.75 1614.499389648438 L 12707.7490234375 1614.499389648438 Z M 12692.7509765625 1614.499389648438 C 12691.234375 1614.499389648438 12690 1613.267578125 12690 1611.751831054688 L 12690 1606.751220703125 C 12690 1605.232299804688 12691.234375 1604.00048828125 12692.7509765625 1604.00048828125 L 12697.7509765625 1604.00048828125 C 12699.2666015625 1604.00048828125 12700.4990234375 1605.232299804688 12700.4990234375 1606.751220703125 L 12700.4990234375 1611.751831054688 C 12700.4990234375 1613.267578125 12699.2666015625 1614.499389648438 12697.7509765625 1614.499389648438 L 12692.7509765625 1614.499389648438 Z">
+		</path>
+	</svg>
+	<img id="StarX-VPN-Logo-white" src="StarX-VPN-Logo-white.png" srcset="StarX-VPN-Logo-white.png 1x, StarX-VPN-Logo-white@2x.png 2x">
+		
+	<div id="Group_14604">
+		<svg class="Rectangle_993">
+			<rect id="Rectangle_993" rx="0" ry="0" x="0" y="0" width="390" height="51">
+			</rect>
+		</svg>
+		<div id="Group_14603">
+			<div id="Group_14601">
+				<div id="You_Are_Protected">
+					<span>You Are Protected</span>
+				</div>
+			</div>
+			<div id="surface1">
+				<svg class="Path_680" viewBox="120.441 158.457 9.546 9.546">
+					<path id="Path_680" d="M 125.2142639160156 158.4570007324219 C 122.5822296142578 158.4570007324219 120.4410018920898 160.5982208251953 120.4410018920898 163.2300567626953 C 120.4410018920898 165.8620910644531 122.5822296142578 168.0033264160156 125.2142639160156 168.0033264160156 C 127.8461074829102 168.0033264160156 129.9873352050781 165.8620910644531 129.9873352050781 163.2300567626953 C 129.9873352050781 160.5982208251953 127.8461074829102 158.4570007324219 125.2142639160156 158.4570007324219 Z M 128.0481262207031 162.3311767578125 L 124.6286315917969 165.7506408691406 C 124.4851303100586 165.8941955566406 124.2968521118164 165.9660797119141 124.1087646484375 165.9660797119141 C 123.9207305908203 165.9660797119141 123.7326507568359 165.8943786621094 123.5890884399414 165.7506408691406 L 122.282341003418 164.4438781738281 C 121.9952774047852 164.1570129394531 121.9952774047852 163.6916198730469 122.282341003418 163.404541015625 C 122.5692672729492 163.1174774169922 123.0346298217773 163.1174774169922 123.3216934204102 163.404541015625 L 124.1087646484375 164.1916198730469 L 127.0087814331055 161.2918395996094 C 127.295654296875 161.0047149658203 127.7610626220703 161.0047149658203 128.0481262207031 161.2918395996094 C 128.335205078125 161.5787048339844 128.335205078125 162.0441284179688 128.0481262207031 162.3311767578125 Z M 128.0481262207031 162.3311767578125">
+					</path>
+				</svg>
+				<svg class="Path_681" viewBox="0 -0.001 21.333 25.052">
+					<path id="Path_681" d="M 21.30813789367676 6.796178340911865 L 21.30740547180176 6.776704788208008 C 21.29649543762207 6.536072254180908 21.28925323486328 6.281445026397705 21.28484916687012 5.998196125030518 C 21.26439666748047 4.616927146911621 20.16633415222168 3.474358320236206 18.78487586975098 3.397143602371216 C 15.90457344055176 3.236407041549683 13.67639827728271 2.297201156616211 11.77257347106934 0.4415305256843567 L 11.75632858276367 0.4260489344596863 C 11.1353235244751 -0.1433234512805939 10.19862747192383 -0.1433234512805939 9.577425956726074 0.4260489344596863 L 9.56118106842041 0.4415305256843567 C 7.657355785369873 2.297201156616211 5.429181575775146 3.236407041549683 2.548871755599976 3.397334337234497 C 1.167587995529175 3.474358320236206 0.0693613737821579 4.616927146911621 0.0489107258617878 5.998391628265381 C 0.04470587149262428 6.279733180999756 0.03725184127688408 6.534310340881348 0.02635752037167549 6.776704788208008 L 0.02521077170968056 6.821964263916016 C -0.03078991733491421 9.75907039642334 -0.1003608852624893 13.41440391540527 1.122480511665344 16.73217964172363 C 1.79487156867981 18.55669021606445 2.813205480575562 20.14267349243164 4.149004936218262 21.44638252258301 C 5.670401096343994 22.93108367919922 7.66308069229126 24.10978126525879 10.07170581817627 24.94959831237793 C 10.15004062652588 24.97690010070801 10.23145771026611 24.99906539916992 10.3144416809082 25.01570129394531 C 10.43138217926025 25.03903961181641 10.54915428161621 25.05068588256836 10.66687679290771 25.05068588256836 C 10.78460025787354 25.05068588256836 10.90251922607422 25.03903961181641 11.01931285858154 25.01570129394531 C 11.10224628448486 24.99906539916992 11.18425178527832 24.97670555114746 11.26302719116211 24.94920539855957 C 13.66871738433838 24.10782623291016 15.65934181213379 22.92858695983887 17.17936897277832 21.44408416748047 C 18.51463890075684 20.14002799987793 19.53294944763184 18.55365562438965 20.20591735839844 16.7287540435791 C 21.433349609375 13.40099716186523 21.36396598815918 9.738812446594238 21.30813789367676 6.796178340911865 Z M 10.66648578643799 18.76845359802246 C 7.223894596099854 18.76845359802246 4.423270702362061 15.96786022186279 4.423270702362061 12.52526664733887 C 4.423270702362061 9.082627296447754 7.223894596099854 6.282032489776611 10.66648578643799 6.282032489776611 C 14.10893058776855 6.282032489776611 16.90971946716309 9.082627296447754 16.90971946716309 12.52526664733887 C 16.90971946716309 15.96786022186279 14.10893058776855 18.76845359802246 10.66648578643799 18.76845359802246 Z M 10.66648578643799 18.76845359802246">
+					</path>
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Group_14621">
+		<svg class="Ellipse_118_bo">
+			<linearGradient id="Ellipse_118_bo" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+				<stop offset="0" stop-color="#275b13" stop-opacity="1"></stop>
+				<stop offset="0.2847" stop-color="#61d631" stop-opacity="1"></stop>
+				<stop offset="1" stop-color="#2d6617" stop-opacity="1"></stop>
+			</linearGradient>
+			<ellipse id="Ellipse_118_bo" rx="137" ry="137" cx="137" cy="137">
+			</ellipse>
+		</svg>
+		<svg class="Ellipse_116">
+			<ellipse id="Ellipse_116" rx="110" ry="110" cx="110" cy="110">
+			</ellipse>
+		</svg>
+		<img id="Mask_Group_3" src="Mask_Group_3.png" srcset="Mask_Group_3.png 1x, Mask_Group_3@2x.png 2x">
+			
+		</svg>
+		<div id="n_00001">
+			<span>00:00:01</span>
+		</div>
+		<div id="Group_14620">
+			<svg class="Path_682" viewBox="180.734 180.858 45.263 46.544">
+				<path id="Path_682" d="M 201.8036041259766 200.0727996826172 L 201.8036041259766 182.4198760986328 C 201.8036041259766 181.5587615966797 202.5043487548828 180.8580017089844 203.3654632568359 180.8580017089844 C 204.2265777587891 180.8580017089844 204.9273223876953 181.5587615966797 204.9273223876953 182.4198760986328 L 204.9273223876953 200.0727996826172 C 204.9273223876953 200.9339141845703 204.2265777587891 201.6346740722656 203.3654632568359 201.6346740722656 C 202.5043487548828 201.6346740722656 201.8036041259766 200.9339141845703 201.8036041259766 200.0727996826172 Z M 219.3680267333984 188.7676544189453 C 218.9702606201172 188.3698883056641 218.5055236816406 188.3101959228516 218.2639617919922 188.3101959228516 C 218.0223846435547 188.3101959228516 217.5576477050781 188.3698883056641 217.1591949462891 188.7679901123047 C 216.7614440917969 189.1657562255859 216.7020874023438 189.6305084228516 216.7020874023438 189.8724060058594 C 216.7020874023438 190.1139831542969 216.7614440917969 190.5787200927734 217.1595458984375 190.9768218994141 C 220.8438110351562 194.6614532470703 222.8731994628906 199.5601654052734 222.8731994628906 204.7705535888672 C 222.8731994628906 215.5273132324219 214.1218719482422 224.2786407470703 203.3654632568359 224.2786407470703 C 192.6087036132812 224.2786407470703 183.8577423095703 215.5273132324219 183.8577423095703 204.7705535888672 C 183.8577423095703 199.5601654052734 185.8867797851562 194.6614532470703 189.5713958740234 190.9768218994141 C 190.1805267333984 190.3676910400391 190.1805267333984 189.3767700195312 189.5713958740234 188.7679901123047 C 189.1732940673828 188.3698883056641 188.7085571289062 188.3101959228516 188.4669799804688 188.3101959228516 C 188.2254180908203 188.3101959228516 187.7610168457031 188.3698883056641 187.3625640869141 188.7679901123047 C 183.0882568359375 193.0423126220703 180.7339935302734 198.7257690429688 180.7339935302734 204.7705535888672 C 180.7339935302734 217.2498779296875 190.886474609375 227.4023742675781 203.3654632568359 227.4023742675781 C 215.8444519042969 227.4023742675781 225.9969482421875 217.2498779296875 225.9969482421875 204.7705535888672 C 225.9969482421875 198.7257690429688 223.6430358886719 193.0423126220703 219.3680267333984 188.7676544189453 Z">
+				</path>
+			</svg>
+			<div id="Switch_off">
+				<span>Switch off</span>
+			</div>
+		</div>
+		<div id="DUUR">
+			<span>DUUR</span>
+		</div>
+	</div>
+	<div id="Group_14630">
+		<div id="Downloaded">
+			<span>Downloaded</span>
+		</div>
+		<div id="n_64_KiB">
+			<span>56.4 KiB</span>
+		</div>
+		<div id="n_33_KiB">
+			<span>43.3 KiB</span>
+		</div>
+		<div id="Uploaded">
+			<span>Uploaded</span>
+		</div>
+	</div>
+</div>
+</body>
+</html>

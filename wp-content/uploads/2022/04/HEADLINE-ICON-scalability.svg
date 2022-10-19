@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_1" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fdad31;
+      }
+
+      .cls-3 {
+        fill: #051344;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" width="60" height="60"/>
+    </clipPath>
+  </defs>
+  <g class="cls-4">
+    <g>
+      <path class="cls-2" d="M10.31,16.88c1.55,0,2.81,1.26,2.81,2.81s-1.26,2.81-2.81,2.81-2.81-1.26-2.81-2.81,1.26-2.81,2.81-2.81m0-1.88c-2.59,0-4.69,2.1-4.69,4.69s2.1,4.69,4.69,4.69,4.69-2.1,4.69-4.69-2.1-4.69-4.69-4.69h0Z"/>
+      <g>
+        <polygon class="cls-3" points="35.62 43.12 35.62 33.75 33.75 33.75 33.75 43.12 24.38 43.12 24.38 45 33.75 45 33.75 54.38 35.62 54.38 35.62 45 45 45 45 43.12 35.62 43.12"/>
+        <polygon class="cls-3" points="0 15 1.88 15 1.88 11.25 5.62 11.25 5.62 9.38 0 9.38 0 15"/>
+        <rect class="cls-3" x="22.5" y="9.38" width="5.62" height="1.88"/>
+        <rect class="cls-3" x="15" y="9.38" width="5.62" height="1.88"/>
+        <rect class="cls-3" x="15" y="43.12" width="5.62" height="1.88"/>
+        <polygon class="cls-3" points="1.88 39.38 0 39.38 0 45 5.62 45 5.62 43.12 1.88 43.12 1.88 39.38"/>
+        <rect class="cls-3" x="7.5" y="43.12" width="5.62" height="1.88"/>
+        <rect class="cls-3" x="7.5" y="9.38" width="5.62" height="1.88"/>
+        <rect class="cls-3" y="16.88" width="1.88" height="5.62"/>
+        <rect class="cls-3" x="33.75" y="24.38" width="1.88" height="5.62"/>
+        <rect class="cls-3" x="33.75" y="16.88" width="1.88" height="5.62"/>
+        <rect class="cls-3" y="31.88" width="1.88" height="5.62"/>
+        <polygon class="cls-3" points="33.75 15 35.62 15 35.62 9.38 30 9.38 30 11.25 33.75 11.25 33.75 15"/>
+        <rect class="cls-3" y="24.38" width="1.88" height="5.62"/>
+      </g>
+    </g>
+  </g>
+</svg>

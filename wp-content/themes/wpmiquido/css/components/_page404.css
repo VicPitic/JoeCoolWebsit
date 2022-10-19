@@ -1,0 +1,29 @@
+.container-error-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: calc(100vh - 100px);
+
+    text-align: center;
+
+    line-height: var(--line_hight--normal);
+}
+
+.container-error-page .title-404 {
+    padding-bottom: 30px;
+
+    font-size: var(--h3--font-size);
+    font-weight: var(--font_weight--bold);
+    line-height: var(--line_hight--normal);
+}
+
+.container-error-page p {
+    font-size: var(--h4--font-size);
+}
+
+.container-error-page a {
+    text-decoration: underline;
+
+    font-weight: var(--font_weight--bold);
+}

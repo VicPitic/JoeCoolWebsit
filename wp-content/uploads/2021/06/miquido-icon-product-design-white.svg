@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="36" viewBox="0 0 56 36">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <g transform="translate(-548.000000, -10640.000000) translate(-4.790000, 10320.000000) translate(246.476292, 260.000000) translate(281.313708, 0.000000) translate(25.000000, 60.000000) translate(4.000000, 0.000000)">
+                                    <path stroke="#FFF" stroke-width="2" d="M23 27.254L23 35 1 35 1 1"/>
+                                    <path fill="#FFF" d="M0 0H5V2H0zM9 0H15V2H9zM19 0H24V2H19z"/>
+                                    <path fill="#FFF" d="M20.5 1.5H25.5V3.5H20.5z" transform="translate(23.000000, 2.500000) rotate(90.000000) translate(-23.000000, -2.500000)"/>
+                                    <path fill="#FFF" d="M21 10H25V12H21z" transform="translate(23.000000, 11.000000) rotate(90.000000) translate(-23.000000, -11.000000)"/>
+                                    <circle cx="12" cy="29" r="1" stroke="#FFF" stroke-width="2"/>
+                                </g>
+                                <g stroke-width="2">
+                                    <path stroke="#FFF" d="M15.113 2.161L15.113 21.595 11.113 25.595 7.113 21.595 7.113 2.236" transform="translate(-548.000000, -10640.000000) translate(-4.790000, 10320.000000) translate(246.476292, 260.000000) translate(281.313708, 0.000000) translate(25.000000, 60.000000) translate(4.000000, 0.000000) translate(15.170000, 4.840000) translate(11.113428, 13.877950) rotate(45.000000) translate(-11.113428, -13.877950)"/>
+                                    <path stroke="#FDAD31" d="M19.335 1.657c-1.105 0-2.105.448-2.828 1.172-.724.723-1.172 1.723-1.172 2.828 0 1.105.448 2.105 1.172 2.828.723.724 1.723 1.172 2.828 1.172 1.105 0 2.105-.448 2.828-1.172.724-.723 1.172-1.723 1.172-2.828 0-1.105-.448-2.105-1.172-2.828-.723-.724-1.723-1.172-2.828-1.172z" transform="translate(-548.000000, -10640.000000) translate(-4.790000, 10320.000000) translate(246.476292, 260.000000) translate(281.313708, 0.000000) translate(25.000000, 60.000000) translate(4.000000, 0.000000) translate(15.170000, 4.840000) translate(19.334524, 5.656854) rotate(45.000000) translate(-19.334524, -5.656854)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

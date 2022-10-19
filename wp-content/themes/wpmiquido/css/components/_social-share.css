@@ -1,0 +1,130 @@
+.container-sidebar-social {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    height: calc(100% - 250px);
+
+    transform: translateX(100%);
+}
+
+@media only screen and (max-width: 1440px) {
+    .container-sidebar-social {
+        height: calc(100% - 200px);
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .container-sidebar-social {
+        height: calc(100% - 100px);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .container-sidebar-social {
+        height: calc(100% - 50px);
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .container-sidebar-social {
+        height: 100%;
+    }
+}
+
+.container-sidebar-social .share-label {
+    margin-top: 100%;
+
+    transform: rotate(-270deg);
+    white-space: nowrap;
+
+    line-height: 30px;
+}
+
+.container-sidebar-social .share-devider {
+    margin: 30px 0;
+}
+
+.container-sidebar-social .social-media-item {
+    margin-bottom: 25px;
+
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1280px) {
+    .container-sidebar-social .social-media-item {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .container-sidebar-social .social-media-item {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .container-sidebar-social .social-media-item {
+        margin-bottom: 0;
+    }
+}
+
+.container-sidebar-social a {
+    display: block;
+
+    width: 30px;
+    height: 35px;
+
+    transition: color 0.3s;
+    text-align: center;
+    text-decoration: none;
+
+    color: var(--brand);
+
+    font-size: 1.6em;
+    line-height: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container-sidebar-social a {
+        font-size: 1.2em;
+    }
+}
+
+.container-sidebar-social a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    content: "";
+    transform: translateX(-105%);
+
+    border-bottom: 2px solid var(--brand);
+}
+
+.container-sidebar-social a:hover:after {
+    transform: translateX(0);
+    animation-name: menuHoverIn;
+    animation-duration: 0.25s;
+}
+
+.container-sidebar-social a.menuhoverout:after {
+    animation-name: menuHoverOut;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+}
+
+.container-sidebar-social .icon-clutch a {
+    font-size: 1.1em;
+}
+
+.container-sidebar-social .icon-facebook a {
+    font-size: 1.2em;
+}

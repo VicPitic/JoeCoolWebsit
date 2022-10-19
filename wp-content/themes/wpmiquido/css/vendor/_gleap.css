@@ -1,0 +1,98 @@
+/* ----- gleap bug report tool ----- */
+
+@media only screen and (max-width: 451px) {
+  .gleap-frame-container {
+    height: 100vh !important;
+  }
+}
+
+@media only screen and (min-width: 451px) {
+  .gleap-frame-container {
+    display: block !important;
+    margin-right: -360px !important;
+    transition: margin 250ms ease-out !important;
+    right: -20px !important;
+    animation: none !important;
+    animation-delay: 0ms !important;
+    box-shadow: 0px 5px 30px rgb(0 0 0 / 16%) !important;
+    transition-delay: 0ms !important;
+  }
+
+  .gleap-frame-container.gleap-frame-container--hidden {
+    display: block !important;
+    right: -20px !important;
+    box-shadow: 0px 5px 30px rgb(0 0 0 / 16%) !important;
+    transition: margin 250ms ease-out !important;
+    transition-delay: 0ms !important;
+  }
+
+  .gleap-frame-container--animate {
+    display: block !important;
+    margin-right: 40px !important;
+    box-shadow: 0px 5px 30px rgb(0 0 0 / 16%) !important;
+    right: -20px !important;
+    transition: margin 250ms ease-out !important;
+    transition-delay: 0ms !important;
+  }
+}
+
+.bb-feedback-button {
+  display: none !important;
+}
+
+.bb-feedback-button--open.bb-feedback-button--survey,
+.bb-feedback-button--open .bb-feedback-button-classic {
+  animation-delay: 0.5s;
+}
+
+.gleap-frame-container .gleap-frame-container-inner {
+  max-height: 425px !important;
+  background-color: #494d9f !important;
+}
+
+@media only screen and (min-width: 451px) {
+  .gleap-frame-container .gleap-frame-container-inner {
+    height: calc(100vh - 50px);
+  }
+}
+
+.bb-feedback-button {
+  z-index: 3 !important;
+}
+
+.bb-feedback-button .bb-feedback-button-classic {
+  font-family: "sofia-pro";
+  top: auto !important;
+  bottom: 180px !important;
+  font-weight: 600;
+  border-radius: 12px 12px 0 0;
+  color: #494d9f !important;
+  background-color: #ffffff;
+  border-radius: 11.33px 11.33px 0 0 !important;
+  box-shadow: none !important;
+  filter: drop-shadow(0px 5.66667px 30px rgba(55, 59, 120, 0.15)) !important;
+  z-index: 3 !important;
+}
+
+/* ----- gleap bug report tool --- additional code to be entered on the plugin page ----- */
+
+/* .feedback-flow-container {
+  background: white !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feedback-flow-container .feedback-flow {
+  box-shadow: none !important;
+  position: relative;
+}
+
+.feedback-flow-chat {
+  display: none;
+  height: 0;
+}
+
+.main-app {
+  overflow-y: auto;
+} */

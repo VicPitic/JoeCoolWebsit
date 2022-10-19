@@ -1,0 +1,32 @@
+<svg id="Warstwa_1" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #fdad31;
+      }
+
+      .cls-4 {
+        fill: #051344;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="60" height="60"/>
+    </clipPath>
+  </defs>
+  <g class="cls-2">
+    <g>
+      <path class="cls-3" d="M14.06,26.25a2.82,2.82,0,1,1-2.81,2.81,2.82,2.82,0,0,1,2.81-2.81m0-1.87a4.69,4.69,0,1,0,4.69,4.68,4.67,4.67,0,0,0-4.69-4.68Z"/>
+      <path class="cls-3" d="M27.19,26.25a2.82,2.82,0,1,1-2.81,2.81,2.81,2.81,0,0,1,2.81-2.81m0-1.87a4.69,4.69,0,1,0,4.69,4.68,4.68,4.68,0,0,0-4.69-4.68Z"/>
+      <path class="cls-3" d="M39.38,30A18.78,18.78,0,0,1,20.62,48.75v1.87a20.62,20.62,0,1,0,0-41.24v1.87A18.78,18.78,0,0,1,39.38,30Z"/>
+      <path class="cls-4" d="M1.88,30A18.76,18.76,0,0,0,20.62,48.75v1.87a20.62,20.62,0,1,1,0-41.24v1.87A18.77,18.77,0,0,0,1.88,30Z"/>
+    </g>
+  </g>
+</svg>

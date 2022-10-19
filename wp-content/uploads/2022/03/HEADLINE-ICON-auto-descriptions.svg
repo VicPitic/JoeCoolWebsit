@@ -1,0 +1,40 @@
+<svg id="Warstwa_1" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #fdad31;
+      }
+
+      .cls-4 {
+        fill: #f1f1f1;
+      }
+
+      .cls-5 {
+        fill: #051344;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="60" height="60"/>
+    </clipPath>
+  </defs>
+  <g class="cls-2">
+    <g>
+      <path class="cls-3" d="M4.69,24.34a2.82,2.82,0,1,1-2.81,2.81,2.81,2.81,0,0,1,2.81-2.81m0-1.87a4.69,4.69,0,1,0,4.69,4.68,4.68,4.68,0,0,0-4.69-4.68Z"/>
+      <rect class="cls-4" x="13.13" y="13.13" width="22.5" height="1.88"/>
+      <polygon class="cls-5" points="35.63 13.13 13.13 13.13 13.13 15 35.63 15 35.63 13.13 35.63 13.13"/>
+      <rect class="cls-5" x="28.13" y="45" width="7.5" height="1.88"/>
+      <rect class="cls-5" x="28.13" y="39.38" width="7.5" height="1.88"/>
+      <rect class="cls-5" x="24.38" y="33.75" width="11.25" height="1.88"/>
+      <rect class="cls-5" x="18.75" y="28.13" width="16.88" height="1.88"/>
+      <path class="cls-5" d="M7.5,7.5V23.41a4.67,4.67,0,0,1,1.81,3h0c0,.12,0,.24,0,.36s0,.26,0,.39h0c0,.13,0,.25,0,.37s0,.2,0,.3L22.5,41v4l-4,0L5.34,31.79l-.28,0-.37,0h0a4.67,4.67,0,0,1-3.32-1.37L7.5,36.61V52.5H41.25V7.5ZM39.38,50.62h-30V38.49l8.37,8.39,6.63,0V40.25l-15-15V9.38h30Z"/>
+    </g>
+  </g>
+</svg>

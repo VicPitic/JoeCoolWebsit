@@ -1,0 +1,169 @@
+@keyframes menuHoverIn {
+    0% {
+        transform: translateX(-105%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes menuHoverOut {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(105%);
+    }
+}
+
+@keyframes linkHover {
+    0% {
+        transform: translateX(0%);
+    }
+
+    40% {
+        transform: translateX(105%);
+
+        opacity: 1;
+    }
+
+    41% {
+        opacity: 0;
+    }
+
+    59% {
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateX(-105%);
+
+        opacity: 1;
+    }
+
+    100% {
+        transform-origin: left center;
+    }
+}
+
+@-webkit-keyframes btnarrow {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+
+        opacity: 1;
+    }
+
+    40% {
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px);
+
+        opacity: 0;
+    }
+
+    60% {
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+
+        opacity: 1;
+    }
+}
+
+@keyframes btnarrow {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+
+        opacity: 1;
+    }
+
+    40% {
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px);
+
+        opacity: 0;
+    }
+
+    60% {
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+
+        opacity: 1;
+    }
+}
+
+@keyframes stickyMenuSlideDown {
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes stickyMenuSlideUp {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: -100%;
+    }
+}
+
+@keyframes growLineHoryzontal {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes numberup {
+    0% {
+        transform: translateY(0);
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-25px);
+    }
+}
+
+@keyframes floatImg {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}

@@ -1,0 +1,10 @@
+/*! LoadCSS. [c]2020 Filament Group, Inc. MIT License */
+(function(w){"use strict";var wpacuLoadCSS=function(href,before,media,attributes){var doc=w.document;var ss=doc.createElement('link');var ref;if(before){ref=before}else{var refs=(doc.body||doc.getElementsByTagName('head')[0]).childNodes;ref=refs[refs.length-1]}
+var sheets=doc.styleSheets;if(attributes){for(var attributeName in attributes){if(attributes.hasOwnProperty(attributeName)){ss.setAttribute(attributeName,attributes[attributeName])}}}
+ss.rel="stylesheet";ss.href=href;ss.media="only x";function ready(cb){if(doc.body){return cb()}
+setTimeout(function(){ready(cb)})}
+ready(function(){ref.parentNode.insertBefore(ss,(before?ref:ref.nextSibling))});var onwpaculoadcssdefined=function(cb){var resolvedHref=ss.href;var i=sheets.length;while(i--){if(sheets[i].href===resolvedHref){return cb()}}
+setTimeout(function(){onwpaculoadcssdefined(cb)})};function loadCB(){if(ss.addEventListener){ss.removeEventListener("load",loadCB)}
+ss.media=media||"all"}
+if(ss.addEventListener){ss.addEventListener("load",loadCB)}
+ss.onwpaculoadcssdefined=onwpaculoadcssdefined;onwpaculoadcssdefined(loadCB);return ss};if(typeof exports!=="undefined"){exports.wpacuLoadCSS=wpacuLoadCSS}else{w.wpacuLoadCSS=wpacuLoadCSS}}(typeof global!=="undefined"?global:this));if(top.location!=location){document.documentElement.style.visibility="hidden";top.location=self.location};var _options={'_license_key':'218-744-434','_role_token':'','_registration_token':'','_widget_containerID':'embedWidget','_widget_width':'100%','_widget_height':'100%',};(function(){!function(i){i.Widget=function(c){'function'==typeof c&&i.Widget.__cbs.push(c),i.Widget.initialized&&(i.Widget.__cbs.forEach(function(i){i()}),i.Widget.__cbs=[])},i.Widget.__cbs=[]}(window);var ab=document.createElement('script');ab.type='text/javascript';ab.async=!0;ab.src='https://embed.livewebinar.com/em?t='+_options._license_key+'&'+Object.keys(_options).reduce(function(a,k){a.push(k+'='+encodeURIComponent(_options[k]));return a},[]).join('&');var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ab,s)})()

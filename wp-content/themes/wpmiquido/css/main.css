@@ -1,0 +1,52 @@
+﻿/* ----- vendor ----- */
+@import url("vendor/_reset.css");
+@import url("vendor/_fonts.css");
+@import url("vendor/_gleap.css");
+
+/* ----- global ----- */
+@import url("global/_variables.css");
+@import url("global/_animations.css");
+@import url("global/_global.css");
+
+/* ----- layout ----- */
+@import url("layout/_grid.css");
+
+/* ----- components ----- */
+@import url("components/_header.css");
+
+@import url("components/_footer.css");
+
+@import url("components/_social-share.css");
+
+@import url("components/_cookie-notification.css");
+
+@import url("components/_portfolio-filter.css");
+@import url("components/_portfolio-list.css");
+
+@import url("components/_form.css");
+@import url("components/_contact-form.css");
+@import url("components/_contact-info.css");
+@import url("components/_contact-trust-builders.css");
+
+@import url("components/_press.css");
+@import url("components/_downloadables.css");
+@import url("components/_it-glossary.css");
+
+@import url("components/_newsletter.css");
+
+@import url("components/_page404.css");
+
+/* ----- sections ----- */
+@import url("sections/_contact_map.css");
+
+/* ----- dubai ----- */
+@import url("global/_dubai.css");
+
+/* ----- ninja styles ----- */
+@import url("ninja.css");
+
+/* ----- blog archive ----- */
+@import url("blog/archive.css");
+
+/* ----- blog single ----- */
+@import url("blog/single.css");

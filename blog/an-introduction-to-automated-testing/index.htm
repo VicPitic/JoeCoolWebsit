@@ -1,0 +1,1353 @@
+﻿
+<!doctype html>
+<html lang="en-US" class="no-js">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Automated Software Testing: Web &amp; Mobile. An Introduction - Miquido Blog</title><style id="rocket-critical-css">a,b,body,div,figure,h1,h4,header,html,iframe,img,legend,li,nav,p,section,span,strong,ul{margin:0;padding:0;vertical-align:baseline;border:0;font:inherit;font-size:100%}figure,header,nav,section{display:block}body{line-height:1}ul{list-style:none}@font-face{font-family:"fontello";font-display:swap;src:url(../../wp-content/themes/wpmiquido/fonts/fontello.eot);font-weight:normal;font-style:normal}:root{--brand:#051344;--brand--dark:#373b78;--brand--light:#9D9FCB;--black:#000000;--white:#ffffff;--grey_light:#f9fbff;--grey_darker:#f1f7ff;--grey_blue:#d9e8ff;--grey_deep_blue:#a5a8cd;--orange:#fdad31;--orange_dark:#ff8819;--red:#43b8c9;--red--light:#fdeaf0;--red--dark:#d31d54;--font_family:"sofia-pro", sans-serif;--font_weight--normal:300;--font_weight--semibold:500;--font_weight--bold:600;--letter_spacing--wideer:1px;--h1-hero--font-size:40px;--h1-hero--font-size--large:36px;--h1-hero--font-size--desktop:36px;--h1-hero--font-size--tablet:30px;--h1-hero--font-size--mobile_landscape:24px;--h1-hero--font-size--mobile:24px;--h1--font-size:60px;--h1--font-size--large:54px;--h1--font-size--desktop:50px;--h1--font-size--tablet:48px;--h1--font-size--mobile_landscape:28px;--h1--font-size--mobile:36px;--h2--font-size:46px;--h2--font-size--large:40px;--h2--font-size--desktop:40px;--h2--font-size--tablet:32px;--h2--font-size--mobile_landscape:24px;--h2--font-size--mobile:22px;--h3--font-size:34px;--h3--font-size--large:32px;--h3--font-size--desktop:28px;--h3--font-size--tablet:24px;--h3--font-size--mobile_landscape:20px;--h3--font-size--mobile:16px;--h4--font-size:24px;--h4--font-size--large:20px;--h4--font-size--desktop:20px;--h4--font-size--tablet:16px;--h4--font-size--mobile_landscape:16px;--h4--font-size--mobile:14px;--h5--font-size:18px;--h5--font-size--large:16px;--h5--font-size--desktop:14px;--h5--font-size--tablet:14px;--h5--font-size--mobile:12px;--p--font-size:18px;--p--font-size--large:18px;--p--font-size--desktop:16px;--p--font-size--tablet:14px;--p--font-size--mobile_landscape:14px;--p--font-size--mobile:14px;--primary-link--font-size:24px;--primary-link--font-size--large:20px;--primary-link--font-size--desktop:18px;--primary-link--font-size--tablet:16px;--primary-link--font-size--mobile:16px;--secondary-link--font-size:18px;--list-font-size:18px;--list-font-size--tablet:14px;--list-font-size--mobile:12px;--menu--font-size:16px;--menu--font-size--tablet:14px;--breadcrumbs--font-size:12px;--blockquote--font-size:34px;--blockquote--font-size--large:28px;--blockquote--font-size--tablet:24px;--blockquote--font-size--mobile:18px;--table-header--font-size:16px;--table-text--font-size:13px;--tab--font-size:24px;--caption-font-size:16px;--caption-font-size--mobile:12px;--tech-stack-header--font-size:12px;--tech-stack-header--font-size--mobile:11px;--tech-stack--font-size:14px;--tech-stack--font-size--mobile:12px;--footer--font-size:12px;--line_hight:1;--line_hight--normal:1.24;--line_hight--header:1.25;--line_hight--large:1.5;--line_hight--extralarge:2;--h1-hero:40px;--h1-hero--large:32px;--h1-hero--desktop:22px;--h1-hero--tablet:32px;--h1-hero--mobile_landscape:32px;--h1-hero--mobile:22px;--h2-hero:50px;--h2-hero--large:40px;--h2-hero--desktop:32px;--h2-hero--tablet:40px;--h2-hero--mobile_landscape:40px;--h2-hero--mobile:32px;--h2:40px;--h2--large:32px;--h2--desktop:22px;--h2--tablet:32px;--h2--mobile_landscape:32px;--h2--mobile:22px;--h3:32px;--h3--large:22px;--h3--desktop:18px;--h3--tablet:22px;--h3--mobile_landscape:22px;--h3--mobile:18px;--h3-blog:32px;--h3-blog--large:24px;--h3-blog--desktop:24px;--h3-blog--tablet:24px;--h3-blog--mobile_landscape:24px;--h3-blog--mobile:20px;--h4:22px;--h4--large:18px;--h4--desktop:16px;--h4--tablet:18px;--h4--mobile_landscape:18px;--h4--mobile:16px;--h4-blog:24px;--h4-blog--large:20px;--h4-blog--desktop:20px;--h4-blog--tablet:20px;--h4-blog--mobile_landscape:20px;--h4-blog--mobile:18px;--h5:18px;--h5--large:16px;--h5--desktop:14px;--h5--tablet:16px;--h5--mobile_landscape:16px;--h5--mobile:14px;--h5-blog:20px;--h5-blog--large:18px;--h5-blog--desktop:18px;--h5-blog--tablet:18px;--h5-blog--mobile_landscape:18px;--h5-blog--mobile:16px;--p:18px;--p--large:16px;--p--desktop:14px;--p--tablet:16px;--p--mobile_landscape:16px;--p--mobile:14px;--p-blog:20px;--p-blog--large:18px;--p-blog--desktop:16px;--p-blog--tablet:18px;--p-blog--mobile_landscape:18px;--p-blog--mobile:16px;--label:22px;--label--large:18px;--label--desktop:16px;--label--tablet:18px;--label--mobile_landscape:18px;--label--mobile:16px;--caption:16px;--caption--large:14px;--caption--desktop:14px;--caption--tablet:14px;--caption--mobile_landscape:14px;--caption--mobile:14px;--tag:14px;--footer-copy:12px;--link-primary:20px;--link-primary--large:18px;--link-primary--desktop:16px;--link-primary--tablet:18px;--link-primary--mobile_landscape:18px;--link-primary--mobile:16px;--link-secondary:18px;--link-secondary--large:16px;--link-secondary--desktop:14px;--link-secondary--tablet:16px;--link-secondary--mobile_landscape:16px;--link-secondary--mobile:14px;--line-height--s:1;--line-height--m:1.25;--line-height--l:1.3;--line-height--xl:1.5;--line-height--xl-blog:1.75;--line-height--xxl:2;--section-margin-bottom--xl:140px;--section-margin-bottom--xl--large:110px;--section-margin-bottom--xl--desktop:100px;--section-margin-bottom--xl--tablet:110px;--section-margin-bottom--xl--landscape-mobile:100px;--section-margin-bottom--xl--mobile:50px;--section-margin-bottom--l:100px;--section-margin-bottom--l--large:80px;--section-margin-bottom--l--desktop:70px;--section-margin-bottom--l--tablet:80px;--section-margin-bottom--l--landscape-mobile:70px;--section-margin-bottom--l--mobile:50px;--section-margin-bottom--m:80px;--section-margin-bottom--m--large:70px;--section-margin-bottom--m--desktop:60px;--section-margin-bottom--m--tablet:70px;--section-margin-bottom--m--landscape-mobile:60px;--section-margin-bottom--m--mobile:50px;--section-margin-bottom--s:50px;--section-margin-bottom--s--large:40px;--section-margin-bottom--s--desktop:30px;--section-margin-bottom--s--tablet:40px;--section-margin-bottom--s--landscape-mobile:40px;--section-margin-bottom--s--mobile:50px;--element-margin-bottom--m:70px;--element-margin-bottom--m--large:60px;--element-margin-bottom--m--desktop:50px;--element-margin-bottom--m--tablet:60px;--element-margin-bottom--m--landscape-mobile:50px;--element-margin-bottom--m--mobile:20px;--element-margin-bottom--s:40px;--element-margin-bottom--s--large:30px;--element-margin-bottom--s--desktop:20px;--element-margin-bottom--s--tablet:30px;--element-margin-bottom--s--landscape-mobile:20px;--element-margin-bottom--s--mobile:20px;--element-margin-right:30px;--element-margin-right--large:30px;--element-margin-right--desktop:24px;--element-margin-right--tablet:24px;--element-margin-right--landscape-mobile:24px;--element-margin-right--mobile:24px;--inside-padding--l:100px;--inside-padding--l--large:80px;--inside-padding--l--desktop:70px;--inside-padding--l--tablet:80px;--inside-padding--l--landscape-mobile:70px;--inside-padding--l--mobile:50px;--inside-padding--m:80px;--inside-padding--m--large:70px;--inside-padding--m--desktop:60px;--inside-padding--m--tablet:60px;--inside-padding--m--landscape-mobile:50px;--inside-padding--m--mobile:50px;--inside-padding--s:50px;--inside-padding--s--large:40px;--inside-padding--s--desktop:30px;--inside-padding--s--tablet:40px;--inside-padding--s--landscape-mobile:40px;--inside-padding--s--mobile:50px;--translation_duration:300ms;--translation_duration--fast:100ms;--translation_duration--slow:600ms;--margin-bottom:100px;--margin-bottom--large:80px;--margin-bottom--desktop:70px;--margin-bottom--tablet:60px;--margin-bottom--mobile:40px}html{width:100vw;overflow-x:hidden!important}body{position:relative;min-height:100vh;color:var(--brand);background-color:var(--white);font-family:var(--font_family);font-size:16px;font-weight:var(--font_weight--normal);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%}*,*:after,*:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}input{border-radius:0;-webkit-appearance:none;-webkit-font-smoothing:antialiased}*{outline:0!important}.main-content{min-height:calc(100vh - 100px - 106px);margin-top:80px}@media only screen and (max-width:1440px){.main-content{margin-top:70px}}@media only screen and (max-width:1279px){.main-content{margin-top:60px}}.main-content>section{max-width:100vw}img{height:auto;vertical-align:middle}span{font-weight:inherit}h1,h4{font-weight:var(--font_weight--bold)}h1{font-size:var(--h1--font-size)}@media only screen and (max-width:1440px){h1{font-size:var(--h1--font-size--large)}}@media only screen and (max-width:1280px){h1{font-size:var(--h1--font-size--desktop)}}@media only screen and (max-width:1024px){h1{font-size:var(--h1--font-size--tablet)}}@media only screen and (max-width:768px){h1{font-size:var(--h1--font-size--mobile_landscape)}}@media only screen and (max-width:460px){h1{font-size:var(--h1--font-size--mobile)}}.header2-hero{font-size:var(--h2-hero)}@media only screen and (max-width:1440px){.header2-hero{font-size:var(--h2-hero--large)}}@media only screen and (max-width:1280px){.header2-hero{font-size:var(--h2-hero--desktop)}}@media only screen and (max-width:1024px){.header2-hero{font-size:var(--h2-hero--tablet)}}@media only screen and (max-width:768px){.header2-hero{font-size:var(--h2-hero--mobile_landscape)}}@media only screen and (max-width:460px){.header2-hero{font-size:var(--h2-hero--mobile)}}.header2-hero{font-size:var(--h2-hero);line-height:var(--line-height--l)}@media only screen and (max-width:1440px){.header2-hero{font-size:var(--h2-hero--large)}}@media only screen and (max-width:1280px){.header2-hero{font-size:var(--h2-hero--desktop)}}@media only screen and (max-width:1024px){.header2-hero{font-size:var(--h2-hero--tablet)}}@media only screen and (max-width:768px){.header2-hero{font-size:var(--h2-hero--mobile_landscape)}}@media only screen and (max-width:460px){.header2-hero{font-size:var(--h2-hero--mobile)}}h4{font-size:var(--h4)}@media only screen and (max-width:1440px){h4{font-size:var(--h4--large)}}@media only screen and (max-width:1280px){h4{font-size:var(--h4--desktop)}}@media only screen and (max-width:1024px){h4{font-size:var(--h4--tablet)}}@media only screen and (max-width:768px){h4{font-size:var(--h4--mobile_landscape)}}@media only screen and (max-width:460px){h4{font-size:var(--h4--mobile)}}p{font-size:var(--p);font-weight:var(--font_weight--normal)}@media only screen and (max-width:1440px){p{font-size:var(--p--large)}}@media only screen and (max-width:1280px){p{font-size:var(--p--desktop)}}@media only screen and (max-width:1024px){p{font-size:var(--p--tablet)}}@media only screen and (max-width:768px){p{font-size:var(--p--mobile_landscape)}}@media only screen and (max-width:460px){p{font-size:var(--p--mobile)}}ul li{font-size:var(--list-font-size);line-height:var(--line_hight--extralarge)}@media only screen and (max-width:1024px){ul li{font-size:var(--list-font-size--tablet)}}@media only screen and (max-width:768px){ul li{font-size:var(--list-font-size--mobile)}}a{position:relative;overflow:hidden;text-decoration:none;text-decoration:none;color:var(--red)}strong{font-weight:var(--font_weight--bold)}[class*=" icon-"] a:before{display:inline-block;width:auto;text-align:center;text-decoration:inherit;font-family:"fontello";font-weight:normal;font-style:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-clutch a:before{content:"\e801";font-size:1rem}.icon-instagram a:before{content:"\e802";font-size:1.6rem}.icon-linkedin a:before{content:"\e803";font-size:1.6rem}.icon-twitter a:before{content:"\e804";font-size:1.5rem}.icon-instagram a:before{content:"\f16d";font-size:1.1rem}.icon-facebook a:before{content:"\f300";font-size:1.2rem}.wrapper{margin:0 auto}@media only screen and (max-width:1440px){.wrapper{width:90%}}@media only screen and (max-width:1280px){.wrapper{width:90%}}@media only screen and (max-width:1024px){.wrapper{width:90%}}@media only screen and (max-width:460px){.wrapper{width:100%}}.wrapper-blog{margin:0 auto}@media only screen and (max-width:1440px){.wrapper-blog{max-width:1300px}}@media only screen and (max-width:1280px){.wrapper-blog{width:90%}.wrapper-blog .wrapper-inside{justify-content:center}}@media only screen and (max-width:1024px){.wrapper-blog{width:90%}}@media only screen and (max-width:460px){.wrapper-blog{width:100%}}.wrapper-blog .wrapper-inside{flex-wrap:nowrap}@media only screen and (max-width:970px){.wrapper-blog .wrapper-inside{flex-wrap:wrap}}@media only screen and (max-width:460px){.wrapper-blog .wrapper-inside{display:block}}.wrapper-inside{position:relative;display:flex;flex-wrap:wrap}@media only screen and (max-width:1440px){.wrapper-inside{width:100%}}@media only screen and (max-width:1280px){.wrapper-inside{width:100%}}@media only screen and (max-width:1024px){.wrapper-inside{width:100%}}@media only screen and (max-width:460px){.wrapper-inside{width:calc(100% - 60px);margin:0 auto}}.push-left-1{margin-left:7.1428571429%}.col-9{box-sizing:border-box;margin-right:30px}.col-9:last-child{margin-right:0}.col-9{width:calc((100% / (14 / 9)) - (30px * (14 - 9) / 14))}.col-12{box-sizing:border-box;margin-right:30px}.col-12:last-child{margin-right:0}.col-12{width:calc((100% / (14 / 12)) - (30px * (14 - 12) / 14))}@media only screen and (max-width:1440px){.push-left-large-1{margin-left:7.1428571429%}.col-large-9{box-sizing:border-box;margin-right:24px}.col-large-9:last-child{margin-right:0}.col-large-9{width:calc((100% / (14 / 9)) - (24px * (14 - 9) / 14))}}@media only screen and (max-width:1024px){.col-tablet-6{box-sizing:border-box;margin-right:24px}.col-tablet-6:last-child{margin-right:0}.col-tablet-6{width:calc((100% / (8 / 6)) - (24px * (8 - 6) / 8))}.col-tablet-7{box-sizing:border-box;margin-right:24px}.col-tablet-7:last-child{margin-right:0}.col-tablet-7{width:calc((100% / (8 / 7)) - (24px * (8 - 7) / 8))}.push-left-tablet-0{margin-left:0}}@media only screen and (max-width:768px){.col-landscape-mobile-8{box-sizing:border-box;margin-right:0}.col-landscape-mobile-8:last-child{margin-right:0}.col-landscape-mobile-8{width:calc((100% / (8 / 8)) - (24px * (8 - 8) / 8))}}@media only screen and (max-width:460px){.col-mobile-6{box-sizing:border-box;margin-right:12px}.col-mobile-6:last-child{margin-right:0}.col-mobile-6{width:calc((100% / (6 / 6)) - (12px * (6 - 6) / 6))}.push-left-mobile-0{margin-left:0}}.section-margin--l{margin-bottom:var(--section-margin-bottom--l)}@media only screen and (max-width:1440px){.section-margin--l{margin-bottom:var(--section-margin-bottom--l--large)}}@media only screen and (max-width:1280px){.section-margin--l{margin-bottom:var(--section-margin-bottom--l--desktop)}}@media only screen and (max-width:1024px){.section-margin--l{margin-bottom:var(--section-margin-bottom--l--tablet)}}@media only screen and (max-width:768px){.section-margin--l{margin-bottom:var(--section-margin-bottom--l--landscape-mobile)}}@media only screen and (max-width:460px){.section-margin--l{margin-bottom:var(--section-margin-bottom--l--mobile)}}header{position:fixed;z-index:4;top:0;width:100vw;background-color:var(--white);border-bottom:1px solid var(--grey_blue)}.container--header{display:flex;justify-content:space-between;height:80px;padding:0 50px}@media only screen and (max-width:1440px){.container--header{height:70px}}@media only screen and (max-width:1279px){.container--header{height:60px}}@media only screen and (max-width:460px){.container--header{padding:0 30px}}.logo{z-index:12;display:flex;align-items:center;overflow:visible;flex:0 0 121px}.logo img{width:auto;max-height:42px}header .submenu-bg{position:absolute;z-index:1;top:80px;left:0;display:block;width:100vw;content:'';background:var(--grey_light);border-top:1px solid var(--grey_blue)}@media only screen and (max-width:1440px){header .submenu-bg{top:70px}}@media only screen and (max-width:1279px){header .submenu-bg{top:60px}}.nav--main{display:flex;margin-right:0;width:100%}.nav-container{display:flex;justify-content:center;width:100%}.nav--main ul.menu{position:relative;display:flex;align-items:baseline;justify-content:center}@media only screen and (max-width:1279px){.nav--main ul.menu{justify-content:flex-end}.nav--main .menu-item{display:none}}.nav--main ul.menu>li{padding-right:55px}.nav--main ul.menu>li:last-of-type{padding-right:0}@media only screen and (max-width:1440px){.nav--main ul.menu>li{padding-right:40px}}@media only screen and (max-width:1440px){.nav--main ul.menu>li:last-of-type{padding-right:0}}.nav--main ul.menu>li:last-child{padding-right:0}.nav--main .menu-item a{position:relative;display:block;text-decoration:none;color:var(--brand);font-size:var(--menu--font-size);font-weight:600;line-height:80px}.menu>.menu-item.current_page_parent>a{color:var(--red)}@media only screen and (max-width:1440px){.nav--main .menu-item a{line-height:70px}}@media only screen and (max-width:1440px){.nav--main .menu-item a{font-size:var(--menu--font-size--tablet)}}.nav--main .menu-item.menu-item-has-children a{padding-right:22px}@media only screen and (max-width:460px){.nav--main .menu-item a{font-size:0.8rem}}.nav--main .menu-item .arrow--nav{display:inline;width:10px;height:7px;position:absolute;right:-30px;top:calc(50% - 1px);transform:rotate(90deg)}.nav--main .menu-item.all-submenu{white-space:nowrap}.nav--main .menu-item.all-submenu .arrow--nav{position:relative;margin-left:5px;top:0;right:0}.nav--main .menu-item.all-submenu .arrow--nav svg{transform:rotate(0deg)!important}.nav--main .menu-item .arrow--nav svg{width:7px;height:10px}.nav--main .menu-item .arrow--nav svg path{fill:var(--brand)}nav.menu{display:flex}@media only screen and (max-width:1279px){nav.menu{display:none}}nav.menu a{display:block;align-self:center;padding:4px 15px;color:var(--white);background-color:var(--red);font-weight:600;line-height:var(--line_hight--large);white-space:nowrap}.nav--main ul.menu>li>.sub-menu{position:absolute;z-index:-1;top:80px;left:0;display:flex;width:100vw;padding:40px 0 70px;opacity:0;transform:translateY(-150%)}@media only screen and (max-width:1440px){.nav--main ul.menu>li>.sub-menu{top:70px;padding:30px 0 60px}}@media only screen and (max-width:1279px){.nav--main ul.menu>li>.sub-menu{top:50px}}.nav--main ul.menu>li:nth-child(1)>.sub-menu,.nav--main ul.menu>li:nth-child(3)>.sub-menu{left:-260px}.nav--main ul.menu>li:nth-child(2)>.sub-menu{left:-200px}@media only screen and (max-width:1540px){.nav--main ul.menu>li:nth-child(1)>.sub-menu,.nav--main ul.menu>li:nth-child(3)>.sub-menu{left:-300px}.nav--main ul.menu>li:nth-child(2)>.sub-menu{left:-300px}}.nav--main ul.menu .sub-menu a{line-height:var(--line_hight--large)}.nav--main ul.menu>li>.sub-menu>li{z-index:1;flex:0 0 250px;padding-right:30px}.nav--main ul.menu>li:nth-child(1)>.sub-menu>li,.nav--main ul.menu>li:nth-child(3)>.sub-menu>li{flex:0 0 230px}.nav--main ul.menu>li:nth-child(2)>.sub-menu>li{flex:0 0 170px}.nav--main ul.menu>li:nth-child(2)>.sub-menu>li{margin-right:10px}@media only screen and (max-width:1279px){.nav--main ul.menu>li:nth-child(2)>.sub-menu>li{margin-right:0}}.nav--main ul.menu>li>.sub-menu>li.all-submenu{position:relative;margin-right:30px}@media only screen and (max-width:1540px){.nav--main ul.menu>li>.sub-menu>li{flex:0 0 240px}.nav--main ul.menu>li:nth-child(1)>.sub-menu>li,.nav--main ul.menu>li:nth-child(3)>.sub-menu>li{flex:0 0 200px}.nav--main ul.menu>li:nth-child(2)>.sub-menu>li{flex:0 0 170px}}@media only screen and (max-width:1279px){.nav--main ul.menu>li>.sub-menu>li{flex:0 0 220px;padding-right:10px}.nav--main ul.menu>li:nth-child(1)>.sub-menu>li,.nav--main ul.menu>li:nth-child(3)>.sub-menu>li{flex:0 0 160px}.nav--main ul.menu>li:nth-child(2)>.sub-menu>li{flex:0 0 135px}}.nav--main ul.menu>li>.sub-menu>li .arrow--nav svg path{fill:var(--brand)}.nav--main ul.menu>li>.sub-menu>li.all-submenu a{color:var(--brand)}.nav--main ul.menu>li>.sub-menu>li.all-submenu:after{content:'';display:block;background:var(--grey_blue);height:100%;width:1px;position:absolute;right:0;top:0}.nav--main ul.menu>li>.sub-menu li.icon>a{padding-top:38px;position:relative}.nav--main ul.menu>li>.sub-menu li.icon>a:before{content:'';position:absolute;display:block;top:0;left:0;margin-bottom:15px;height:23px;width:36px;background-repeat:no-repeat;background-position:0 0;opacity:0.6}.nav--main ul.menu>li>.sub-menu li.icon-ideation>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-strategy-blue.svg)}.nav--main ul.menu>li>.sub-menu li.icon-product>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-product-design-blue.svg)}.nav--main ul.menu>li>.sub-menu li.icon-web>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-phone-computer-blue.svg)}.nav--main ul.menu>li>.sub-menu li.icon-ai>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-brain-blue.svg)}.nav--main ul.menu>li>.sub-menu li.icon-cloud>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-cloud-blue.svg)}.nav--main ul.menu>li>.sub-menu li.icon-android>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-android-blue.svg)}.nav--main ul.menu>li>.sub-menu li.icon-ios>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-apple-blue.svg)}.nav--main ul.menu>li>.sub-menu li.icon-cross>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-cross-platform-blue.svg)}.nav--main ul.menu>li>.sub-menu li.icon-frontend>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-computer-blue.svg)}.nav--main ul.menu>li>.sub-menu li.icon-backend>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-code-blue.svg)}.nav--main ul.menu>li>.sub-menu li.icon-healthcare>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-healthcare-blue.svg)}.nav--main ul.menu>li>.sub-menu li.icon-ecommerce>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-ecommerce-blue.svg)}.nav--main ul.menu>li>.sub-menu li.icon-finetech>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-money-blue.svg)}.nav--main ul.menu>li>.sub-menu li.icon-entertainment>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-ok-blue.svg)}.nav--main ul.menu>li>.sub-menu li.icon-other>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-gallery-blue.svg)}.nav--main ul.menu>li>.sub-menu li.icon-about>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-people-blue.svg)}.nav--main ul.menu>li>.sub-menu li.icon-careers>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-careers-blue.svg)}.nav--main ul.menu>li>.sub-menu li.icon-downloadables>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-star-blue.svg)}.nav--main ul.menu>li>.sub-menu li.icon-glossary>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-blue-white.svg)}.nav--main ul.menu>li>.sub-menu li.icon-press>a:before{background-image:url(../../wp-content/themes/wpmiquido/img/icons/menu-icons/miquido-icon-press-blue.svg)}.nav--main ul.menu>li>.sub-menu>li:last-child{margin-right:0}.nav--main ul.menu>li>.sub-menu>li>a{font-size:var(--menu--font-size)}@media only screen and (max-width:1440px){.nav--main ul.menu>li>.sub-menu>li>a{font-size:var(--menu--font-size--tablet)}}.nav--main ul.menu>li>.sub-menu>li>a .menu-item-description{display:block;margin-top:20px;color:var(--brand);font-size:var(--menu--font-size--tablet);font-weight:var(--font_weight--normal)}@media only screen and (max-width:1440px){.nav--main ul.menu>li>.sub-menu>li>a .menu-item-description{margin-top:15px}}.nav--main ul.menu .sub-menu .sub-menu{display:block;margin-top:20px}.nav--main ul.menu .sub-menu .sub-menu li{margin-bottom:10px}.nav--main ul.menu .sub-menu .sub-menu li:last-child{margin-bottom:0}.nav--main ul.menu .sub-menu .sub-menu li a{font-size:var(--menu--font-size--tablet);font-weight:var(--font_weight--normal)}@media only screen and (max-width:1279px){.header:after{position:fixed;z-index:11;top:0;left:0;width:100vw;height:100vh;content:"";transform:scaleY(0);transform-origin:top center;background-color:var(--white)}}.header .menu--button{position:relative;z-index:13;display:none;overflow:visible;flex:0 0 auto;width:30px;margin:16px 0;color:var(--brand)}@media only screen and (max-width:1279px){.header .menu--button{display:block}}.header .menu--button span{position:absolute;top:calc(50% - 1px);display:block;width:30px;height:2px;opacity:1;background-color:var(--brand);font-size:0}.header .menu--button:after,.header .menu--button:before{position:absolute;display:block;width:30px;height:2px;content:"";background-color:var(--brand)}.header .menu--button:after{bottom:3px}.header .menu--button:before{top:3px}.header .menu-mobile{display:none}.menu-careers-button{z-index:12;display:flex;overflow:visible;align-items:center;align-self:center;flex:0 0 115px;justify-content:center;height:27px;margin-left:20px;padding:0 15px;white-space:nowrap;text-decoration:none;color:var(--brand);border:none;border-radius:0px 16px 16px 16px;background:#F2F3F9;font-size:12px;font-weight:700}.menu-careers-button svg{margin-left:5px}.toTop{position:fixed;z-index:1;right:30px;bottom:30px;display:block;opacity:0}.toTop a{display:block;width:40px;height:40px}.toTop a svg{opacity:0.4}#cookie-notice{width:calc((100% / (14 / 3)) - (30px * (14 - 3) / 14))!important;min-width:unset!important;font-family:var(--font_family)!important;font-size:inherit!important;font-weight:inherit!important;line-height:inherit!important}@media screen and (max-width:1440px){#cookie-notice{width:calc((100% / (14 / 5)) - (24px * (14 - 5) / 14))!important}}@media screen and (max-width:1024px){#cookie-notice{width:100%!important}}.cookie-notice-container{padding:35px 30px 30px;text-align:left;background-color:var(--brand--dark)}.cookie-notice-container .cn-text-container{margin-bottom:10px}.cn-text-container h4{margin-bottom:20px;color:var(--white);font-size:var(--tech-stack--font-size)}.cn-close-icon{top:15px!important;right:30px!important;width:15px!important;height:15px!important;margin-top:0!important;opacity:1!important}.cn-close-icon:after,.cn-close-icon:before{position:absolute;top:7px;display:block;width:10px;height:2px;content:"";background:var(--white)}.cn-close-icon:before{transform:rotate(45deg)}.cn-close-icon:after{transform:rotate(-45deg)}.cn-text-container p{overflow:hidden;max-height:40px;padding-bottom:10px;text-align:left;color:var(--white);font-size:var(--tech-stack--font-size);font-weight:var(--font_weight--normal);line-height:var(--line_hight--large)}.cn-text-container .cookie-text-more{position:relative;display:block;width:100%;height:40px;margin:-10px 0 10px;text-align:center;background:var(--brand--dark);background:linear-gradient(0deg,#373b78 0%,#373b78 75%,rgba(55,59,120,0) 100%)}.cn-text-container .cookie-text-more:after{position:absolute;bottom:9px;display:inline-block;padding:3px;content:"";transform:rotate(45deg);border-width:0 3px 3px 0;border-style:solid;border-color:var(--white)}.cn-buttons-container{display:flex!important;flex-direction:row-reverse;justify-content:flex-start}.cn-buttons-container a{margin:0 10px;padding:0 25px;text-align:center;text-transform:capitalize;line-height:28px}#cn-more-info{color:var(--white);background-color:transparent!important;font-family:var(--font_family)!important;font-size:16px!important}#cn-accept-cookie{color:var(--white);background-color:var(--red)!important;border-radius:0!important;font-family:var(--font_family)!important;font-size:16px!important;padding:0 25px;line-height:28px}::-webkit-input-placeholder{opacity:0.3;color:#051344}::-moz-placeholder{opacity:0.3;color:#051344}:-ms-input-placeholder{opacity:0.3;color:#051344}:-moz-placeholder{opacity:0.3;color:#051344}::placeholder{opacity:0.3;color:#051344}p .form-legend .policy-more{display:none}.section--blog-breadcrumbs{padding:10px 0}.breadcrumbs{display:flex;align-items:center;flex-wrap:wrap}.breadcrumbs .separator{color:var(--brand);opacity:0.6;display:block;margin:0 5px;font-size:var(--breadcrumbs--font-size);line-height:var(--line-height--xl)}.breadcrumbs li{font-size:var(--breadcrumbs--font-size);line-height:var(--line-height--xl)}.breadcrumbs .active,.breadcrumbs a{color:var(--brand);font-size:var(--breadcrumbs--font-size);line-height:var(--line-height--xl)}.breadcrumbs .active{opacity:0.6}.blog-categories-list{display:flex;margin-bottom:10px;flex-wrap:wrap}.blog-categories-list li{margin-right:20px;line-height:inherit}.blog-categories-list li a{font-size:var(--tag);color:var(--orange_dark);font-weight:var(--font_weight--bold);line-height:var(--line-height--xl)}.blog-meta,.blog-meta .separator{color:var(--brand);opacity:0.6;font-size:var(--tech-stack--font-size);line-height:var(--line-height--xl)}@media only screen and (max-width:1440px){.blog-meta,.blog-meta .separator{font-size:var(--tech-stack--font-size--mobile)}}.section--blog-single-header{margin-top:60px}@media only screen and (max-width:1440px){.section--blog-single-header{margin-top:50px}}@media only screen and (max-width:768px){.section--blog-single-header{margin-top:40px}}.blog-info h1{line-height:var(--line-height--m);margin-bottom:30px;max-width:900px}@media only screen and (max-width:1440px){.blog-info h1{margin-bottom:20px}}.blog-feature-image{margin-top:20px;margin-bottom:60px;overflow:hidden;height:550px;width:100%;background-repeat:no-repeat;background-size:cover;background-position-x:center;background-position-y:0px;will-change:background-position-y}@media only screen and (max-width:1440px){.blog-feature-image{margin-top:15px;margin-bottom:50px;height:400px}}@media only screen and (max-width:1024px){.blog-feature-image{height:300px}}@media only screen and (max-width:768px){.blog-feature-image{margin-top:20px;height:auto;background-image:unset!important}}.blog-feature-image picture,.blog-feature-image img{max-width:100%;display:none}@media only screen and (max-width:768px){.blog-feature-image picture,.blog-feature-image img{display:block}}.container-blog-single-content-left-column,.container-blog-single-content-right-column{flex:1 1 235px;max-width:235px}@media only screen and (max-width:970px){.container-blog-single-content-left-column,.container-blog-single-content-right-column{flex:0 1 100%;max-width:unset}.container-blog-single-content-right-column{display:none}}.container-blog-single-content{flex:0 1 750px;margin:0 40px}@media only screen and (max-width:1280px){.container-blog-single-content{flex:0 1 650px;margin:0 40px 0 0;max-width:650px}}@media only screen and (max-width:970px){.container-blog-single-content{flex:0 1 100%;margin:0;max-width:100%}}.container-blog-single-content-left-column{position:relative}@media only screen and (max-width:1280px){.container-blog-single-content-left-column{display:none}}@media only screen and (max-width:970px){.container-blog-single-content-left-column{display:unset}}.container-blog-single-content-left-column>div{position:sticky;top:80px}@media only screen and (max-width:460px){.container-blog-single-content-left-column>div{position:relative;top:unset}}.container-blog-single-content-left-column .lwptoc{margin:0 0 40px!important}@media only screen and (max-width:1440px){.container-blog-single-content-left-column .lwptoc{margin:0 0 30px!important}}.container-blog-single-content-right-column .lwptoc{margin:30px 0 30px!important}.container-blog-single-content-left-column .lwptoc_i,.container-blog-single-content-right-column .lwptoc_i{background:transparent!important;border:none!important;color:var(--brand)!important;padding:0}.container-blog-single-content-left-column .lwptoc_header,.container-blog-single-content-right-column .lwptoc_header{margin-bottom:20px;font-weight:var(--font_weight--bold)}.container-blog-single-content-left-column .lwptoc_title,.container-blog-single-content-right-column .lwptoc_title{font-size:var(--p);line-height:var(--line-height--xl)}.container-blog-single-content-left-column .lwptoc_items,.container-blog-single-content-right-column .lwptoc_items{font-size:var(--menu--font-size--tablet);line-height:var(--line-height--xl)}.container-blog-single-content-left-column .lwptoc_item,.container-blog-single-content-right-column .lwptoc_item{margin-top:12px}.container-blog-single-content-right-column .lwptoc_itemWrap .lwptoc_itemWrap{margin-left:14px;transform-origin:top;opacity:0;height:0}@media only screen and (max-width:768px){.container-blog-single-content-right-column .lwptoc_itemWrap .lwptoc_itemWrap{display:block}}.container-blog-single-content-left-column .lwptoc-light .lwptoc_i a,.container-blog-single-content-right-column .lwptoc-light .lwptoc_i a{color:var(--brand);font-weight:var(--font_weight--bold)}.container-blog-single-content-right-column .lwptoc_itemWrap .lwptoc_itemWrap a{font-weight:var(--font_weight)}.container-blog-single-content-left-column .lwptoc-light .lwptoc_i a,.container-blog-single-content-right-column .lwptoc-light .lwptoc_i a span{text-overflow:ellipsis;display:block;overflow:hidden;white-space:nowrap;opacity:inherit;padding-left:14px}@media only screen and (max-width:768px){.container-blog-single-content-left-column .lwptoc-light .lwptoc_i a,.container-blog-single-content-right-column .lwptoc-light .lwptoc_i a span{padding-left:0}}.container-blog-single-content-left-column .lwptoc-light .lwptoc_i a,.container-blog-single-content-right-column .lwptoc-light .lwptoc_i a{opacity:0.6}@media only screen and (max-width:768px){.container-blog-single-content-left-column .lwptoc-light .lwptoc_i a,.container-blog-single-content-right-column .lwptoc-light .lwptoc_i a{opacity:1}}.container-blog-single-content-right-column .blog-share{display:flex;flex-wrap:wrap;align-items:center;font-size:var(--caption-font-size);line-height:var(--line-height--xl)}.container-blog-single-content-right-column .blog-share span{display:block;font-weight:var(--font_weight--bold);margin-bottom:20px;width:100%}.container-blog-single-content-right-column .blog-share div{display:flex;margin-bottom:50px}.container-blog-single-content-right-column .blog-share a{width:26px;height:26px;display:block;margin-right:20px}.author-info .author-avatar{margin-right:20px}.author-info .author-avatar img{border-radius:50%;max-width:100%}.author-desc{display:flex;flex-direction:column}.author-desc a{color:var(--brand);line-height:var(--line-height--xl);font-size:var(--caption)}.author-desc a{font-size:var(--caption--large)}.container-blog-single-content-right-column .author-info{display:flex}.container-blog-single-content-left-column .author-info{display:none}@media only screen and (max-width:768px){.container-blog-single-content-left-column .author-info{display:flex;margin-bottom:50px}}.container-blog-single-content-right-column .sticky-toc{position:sticky;top:80px}.container-blog-single-content-right-column .lwptoc,.container-blog-single-content-right-column .blog-share{display:none}@media only screen and (max-width:1280px){.container-blog-single-content-right-column .lwptoc,.container-blog-single-content-right-column .blog-share{display:block}}@media only screen and (max-width:768px){.container-blog-single-content-right-column .lwptoc,.container-blog-single-content-right-column .blog-share{display:none}}.container-blog-single-content-left-column .author-desc .author-occupation,.container-blog-single-content-right-column .author-desc .author-occupation{line-height:var(--line-height--xl);font-size:var(--caption)}@media only screen and (max-width:1440px){.container-blog-single-content-left-column .author-desc .author-occupation,.container-blog-single-content-right-column .author-desc .author-occupation{font-size:var(--caption--large)}}.container-blog-single-content p{font-size:var(--p-blog);margin-bottom:30px;line-height:var(--line-height--xl-blog)}@media only screen and (max-width:1440px){.container-blog-single-content p{font-size:var(--p-blog--large);margin-bottom:20px}}@media only screen and (max-width:1280px){.container-blog-single-content p{font-size:var(--p-blog--desktop)}}@media only screen and (max-width:1024px){.container-blog-single-content p{font-size:var(--p-blog--tablet)}}@media only screen and (max-width:768px){.container-blog-single-content p{font-size:var(--p-blog--mobile_landscape)}}@media only screen and (max-width:460px){.container-blog-single-content p{font-size:var(--p-blog--mobile)}}.container-blog-single-content p a{color:var(--brand);border-bottom:1px solid var(--brand);word-break:break-word}.lwptoc{margin:32px 0}.lwptoc:first-child{margin-top:16px}.lwptoc_i{padding:14px 18px 18px;text-align:left}.lwptoc_header{margin-bottom:6px}.lwptoc_item{margin-top:2px}.lwptoc_item:first-child{margin-top:0}.lwptoc_itemWrap .lwptoc_itemWrap{margin:2px 0 0 14px}.lwptoc-notInherit .lwptoc_i DIV A{box-shadow:none!important;border:none!important;text-decoration:none!important}.lwptoc-light .lwptoc_i{color:#333;background:#fafafa}.lwptoc-light .lwptoc_i A{color:#3175e4}.lwptoc-light .lwptoc_items A:visited{color:#000394}</style><link rel="preload" href="../../css?family=Roboto&#038;display=swap" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <meta name="author" content="Miquido">
+    <meta name="copyright" content="Miquido">
+
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+    <link rel="shortcut icon" href="../../wp-content/themes/wpmiquido/img/favicons/favicon.ico">
+    <link rel="apple-touch-icon" href="../../wp-content/themes/wpmiquido/img/favicons/android-chrome-512x512.png">
+    <link rel="apple-touch-icon-precomposed" href="../../wp-content/themes/wpmiquido/img/favicons/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../wp-content/themes/wpmiquido/img/favicons/apple-touch-icon-180x180.png">
+    <link rel="mask-icon" mask="" href="https://www.miquido.com/wp-content/themes/wpmiquido/img/favicons/favicon.svg" color="#11162A">
+    <meta name="msapplication-TileColor" content="#11162A">
+    <meta name="msapplication-TileImage" content="https://www.miquido.com/wp-content/themes/wpmiquido/img/favicons/android-chrome-512x512.png">
+
+    <meta name="google-site-verification" content="eMXli8rpu8utFBaD6AyVSpF8dZxkQgldwI4tgZN9QRI">
+
+    <meta name="facebook-domain-verification" content="26nlh49w768ddjtvvk83l8x9cfifj3">
+
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="preload" href="../../wp-content/themes/wpmiquido/fonts/SofiaProLight/font.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="../../wp-content/themes/wpmiquido/fonts/SofiaProSemiBold/font.woff2" as="font" type="font/woff2" crossorigin="">
+
+    
+
+    <style>
+        @font-face{font-family:'sofia-pro';src:local('sofia-pro'),
+url('../../wp-content/themes/wpmiquido/fonts/SofiaProLight/font.woff2') format('woff2'),
+url('../../wp-content/themes/wpmiquido/fonts/SofiaProLight/font.woff') format('woff');font-weight:300;font-style:normal;font-display:swap;}
+
+        @font-face{font-family:'sofia-pro';src:local('sofia-pro'),
+url('../../wp-content/themes/wpmiquido/fonts/SofiaProSemiBold/font.woff2') format('woff2'),
+url('../../wp-content/themes/wpmiquido/fonts/SofiaProSemiBold/font.woff') format('woff');font-weight:600;font-style:normal;font-display:swap;}
+    </style>
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Miquido",
+            "logo": "https://www.miquido.com/wp-content/themes/wpmiquido/img/logos/logo__miquido.svg",
+            "url": "https://www.miquido.com/",
+            "sameAs": [
+                "https://twitter.com/miquido",
+                "https://www.linkedin.com/company/miquido/",
+                "https://www.facebook.com/miquido/",
+                "https://www.instagram.com/miquido/",
+                "https://clutch.co/profile/miquido",
+                "https://dribbble.com/miquido/",
+                "https://www.behance.net/miquido"
+                ],
+            "email": "hello@miquido.com",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+48 536 083 559",
+                "contactType": "customer support",
+                "contactOption": "TollFree",
+                "areaServed": "PL"
+            },
+            "foundingDate": "2011",
+            "foundingLocation": "Krakow, Poland",
+            "member": {
+                "@type": "Person",
+                "name": "Krzysztof Kogutkiewicz",
+                "jobTitle": "CEO",
+                "nationality": "Poland",
+                "url": "https://www.linkedin.com/in/krzysztofkogutkiewicz/"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Zabłocie 43a",
+                "addressLocality": "Krakow",
+                "postalCode": "30-701",
+                "addressCountry": "Poland"
+            }
+        }
+    </script>
+
+    
+	
+	<meta name="description" content="Starting your adventure with web and mobile automated testing? Take a look at out introduction to testing and let us guide you along your journey!">
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<link rel="canonical" href="index.htm">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Automated Software Testing: Web &amp; Mobile. An Introduction - Miquido Blog">
+	<meta property="og:description" content="Starting your adventure with web and mobile automated testing? Take a look at out introduction to testing and let us guide you along your journey!">
+	<meta property="og:url" content="https://www.miquido.com/blog/an-introduction-to-automated-testing/">
+	<meta property="og:site_name" content="Miquido">
+	<meta property="article:publisher" content="https://www.facebook.com/miquido/">
+	<meta property="article:published_time" content="2020-05-05T10:08:37+00:00">
+	<meta property="article:modified_time" content="2022-04-08T08:27:25+00:00">
+	<meta property="og:image" content="https://www.miquido.com/wp-content/uploads/uploads/2020/07/miquido-embeded.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:creator" content="@miquido">
+	<meta name="twitter:site" content="@miquido">
+	<meta name="twitter:label1" content="Written by">
+	<meta name="twitter:data1" content="Łukasz Mikołajczyk">
+	<meta name="twitter:label2" content="Est. reading time">
+	<meta name="twitter:data2" content="4 minutes">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.miquido.com/#organization","name":"Miquido","url":"https://www.miquido.com/","sameAs":["https://www.facebook.com/miquido/","https://www.instagram.com/miquido/","https://www.linkedin.com/company/miquido","https://twitter.com/miquido"],"logo":{"@type":"ImageObject","@id":"https://www.miquido.com/#logo","inLanguage":"en-US","url":"https://www.miquido.com/wp-content/uploads/uploads/2020/07/logo__miquido.svg","width":121,"height":31,"caption":"Miquido"},"image":{"@id":"https://www.miquido.com/#logo"}},{"@type":"WebSite","@id":"https://www.miquido.com/#website","url":"https://www.miquido.com/","name":"Miquido","description":"","publisher":{"@id":"https://www.miquido.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://www.miquido.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.miquido.com/blog/an-introduction-to-automated-testing/#primaryimage","inLanguage":"en-US","url":"https://www.miquido.com/wp-content/uploads/2020/05/header-Web-mobile-testing-an-introduction-4-min.png","width":1920,"height":1280,"caption":"Automated Software Testing: Web & Mobile"},{"@type":"WebPage","@id":"https://www.miquido.com/blog/an-introduction-to-automated-testing/#webpage","url":"https://www.miquido.com/blog/an-introduction-to-automated-testing/","name":"Automated Software Testing: Web & Mobile. An Introduction - Miquido Blog","isPartOf":{"@id":"https://www.miquido.com/#website"},"primaryImageOfPage":{"@id":"https://www.miquido.com/blog/an-introduction-to-automated-testing/#primaryimage"},"datePublished":"2020-05-05T10:08:37+00:00","dateModified":"2022-04-08T08:27:25+00:00","description":"Starting your adventure with web and mobile automated testing? Take a look at out introduction to testing and let us guide you along your journey!","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.miquido.com/blog/an-introduction-to-automated-testing/"]}]}]}</script>
+	
+
+
+<link rel='dns-prefetch' href='//a.omappapi.com'>
+<link href='https://fonts.gstatic.com' crossorigin="" rel='preconnect'>
+<link data-minify="1" rel='preload' href='../../wp-content/cache/min/1/wp-content/plugins/faq-schema-for-pages-and-posts/css/jquery-ui-288e1fc3ea02087cafc9df79bf23e329.css' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" media='all'>
+<link rel='preload' href='../../wp-content/plugins/responsive-lightbox/assets/tosrus/jquery.tosrus.min.css?ver=2.4.1' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" media='all'>
+<link data-minify="1" rel='preload' href='../../wp-content/cache/min/1/wp-content/themes/wpmiquido/css/vendor/aos-e6bc74c299f83247dce10ff461a476da.css' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" media='all'>
+<link data-minify="1" rel='preload' href='../../wp-content/cache/min/1/wp-content/cache/asset-cleanup/css/item/styles-v14c77b90f7606bed06ad1aedbada9b6a94d931b5-6ab52b3ff151830c707f66a91cc93a36.css' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" media='all'>
+<link rel='preload' href='../../wp-content/plugins/cookie-notice/css/front.min.css?ver=5.4.2' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" media='all'>
+<link rel='preload' href='../../wp-content/plugins/enlighter/cache/enlighterjs.min.css?ver=bQtpxitl4i5v8I3' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" media='all'>
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;cursor:pointer;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:72px;width:72px;left:50%;top:50%;margin-left:-36px;margin-top:-36px;position:absolute;background:url(../../wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat;cursor:pointer}
+</style>
+
+
+
+
+
+
+<script data-rocketlazyloadscript='https://www.miquido.com/wp-content/themes/wpmiquido/js/gtm.js?ver=1.0.0' type='text/javascript'></script>
+
+
+
+
+
+<link rel="alternate" type="application/json+oembed" href="../../wp-json/oembed/1.0/embed-558?url=https%3A%2F%2Fwww.miquido.com%2Fblog%2Fan-introduction-to-automated-testing%2F">
+<link rel="alternate" type="text/xml+oembed" href="../../wp-json/oembed/1.0/embed-559?url=https%3A%2F%2Fwww.miquido.com%2Fblog%2Fan-introduction-to-automated-testing%2F&#038;format=xml">
+<link rel="Shortcut Icon" type="image/x-icon" href="../../wp-content/themes/wpmiquido/img/favicons/favicon.ico">            <script type="application/ld+json">
+                {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "listItem",
+            "position": 1,
+            "item": {
+                "name": "Home",
+                "@id": "https://www.miquido.com"
+            }
+        },
+        {
+            "@type": "listItem",
+            "position": 2,
+            "item": {
+                "name": "Blog",
+                "@id": "https://www.miquido.com/blog/"
+            }
+        },
+        {
+            "@type": "listItem",
+            "position": 3,
+            "item": {
+                "name": "Software development",
+                "@id": "https://www.miquido.com/blog/?category=software-development"
+            }
+        },
+        {
+            "@type": "listItem",
+            "position": 4,
+            "item": {
+                "name": "An introduction to automated...",
+                "@id": "https://www.miquido.com/blog/an-introduction-to-automated-testing/"
+            }
+        }
+    ]
+}            </script>
+                    <script type="application/ld+json">
+                {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "image": "https://www.miquido.com/wp-content/uploads/2020/05/header-Web-mobile-testing-an-introduction-4-min.png",
+    "url": "https://www.miquido.com/blog/an-introduction-to-automated-testing/",
+    "headline": "An introduction to automated testing: web and mobile",
+    "datePublished": "2020-05-5",
+    "dateModified": "2022-04-8",
+    "inLanguage": "en",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Łukasz Mikołajczyk",
+            "url": "https://www.miquido.com/blog/author/lukasz-mikolajczyk/"
+        },
+        {
+            "@type": "Organization",
+            "name": "Miquido",
+            "url": "https://www.miquido.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.miquido.com/img/logos/logo__miquido.svg",
+                "width": "164",
+                "height": "42"
+            }
+        }
+    ],
+    "publisher": {
+        "@type": "Organization",
+        "name": "Miquido",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.miquido.com/img/logos/logo__miquido.svg",
+            "width": "164",
+            "height": "42"
+        }
+    }
+}            </script>
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><script>
+/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}
+var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=!1}
+return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}
+if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}
+setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}
+var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",!0);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}
+if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}
+else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
+</script></head>
+
+<body class="post-template-default single single-post postid-1130 single-format-standard ajax-wp-applaud cookies-not-set">
+    
+    
+    <header class="header">
+        <div class="submenu-bg"></div>
+
+        
+        <div class="container container--header">
+
+            
+            <nav class="nav--main" role="navigation">
+
+    <a class="logo" href="../../index.htm" title="Miquido">
+                <img class="logo_image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20164%2042'%3E%3C/svg%3E" title="Miquido Logo" alt="Miquido Logo" width="164" height="42" data-lazy-src="https://www.miquido.com/wp-content/themes/wpmiquido/img/logos/logo__miquido.svg"><noscript><img class="logo_image" src="../../wp-content/themes/wpmiquido/img/logos/logo__miquido.svg" title="Miquido Logo" alt="Miquido Logo" width="164" height="42"></noscript>
+    </a>    <a class="menu-careers-button" href="https://careers.miquido.com/job-offers/" title="Miquido Careers" target="_blank">Join our team! <svg width="12" height="10" viewbox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.94055 1.59992C6.72278 0.822524 7.27063 0.150333 8.47571 0.0190607C10.7384 -0.228589 12.8195 1.97977 11.6769 4.15368C11.3517 4.77281 10.6896 5.50924 9.95715 6.2317C9.15344 7.02493 8.26379 7.80232 7.64075 8.39165L5.94153 9.99858L4.53723 8.71006C2.84778 7.15899 0.0928948 5.20666 0.00207453 2.78789C-0.061402 1.09345 1.34094 0.00788851 2.95422 0.0274398C4.39563 0.04606 5.00207 0.729423 5.94055 1.59992Z" fill="#494D9F"></path>
+</svg>
+</a>
+    <div class="nav-container">
+        <ul class="menu"><li id="menu-item-1327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1327"><a href="../../software-development-services/index.htm">Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-3912" class="all-submenu menu-item menu-item-type-post_type menu-item-object-page menu-item-3912"><a href="../../software-development-services/index.htm">All services</a></li>
+	<li id="menu-item-3974" class="icon icon-ideation menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3974"><a href="../../ideation-and-strategy-services/index.htm">Ideation &#038; Strategy</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5547" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5547"><a href="../../product-strategy-consulting-services/index.htm">Product Strategy</a></li>
+		<li id="menu-item-5563" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5563"><a href="../../digital-transformation-services/index.htm">Digital Transformation</a></li>
+		<li id="menu-item-6319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6319"><a href="../../legacy-modernisation-services/index.htm">Legacy app modernisation</a></li>
+		<li id="menu-item-3975" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3975"><a href="../../research-development-company/index.htm">Research &#038; Development</a></li>
+	</ul>
+</li>
+	<li id="menu-item-5208" class="icon icon-product menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5208"><a href="../../product-design-company/index.htm">Product Design</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5362" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5362"><a href="../../ux-design-services/index.htm">UX Design</a></li>
+		<li id="menu-item-5752" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5752"><a href="../../ui-design-services/index.htm">UI Design</a></li>
+		<li id="menu-item-5579" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5579"><a href="../../product-bootcamp/index.htm">Product Bootcamp</a></li>
+		<li id="menu-item-5117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5117"><a href="../../workshops/index.htm">Workshops</a></li>
+	</ul>
+</li>
+	<li id="menu-item-3924" class="icon icon-web menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3924"><a href="../../web-mobile-development-company/index.htm">Web &#038; Mobile</a>
+	<ul class="sub-menu">
+		<li id="menu-item-4763" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4763"><a href="../../custom-app-development-services/index.htm">Custom app</a></li>
+	</ul>
+</li>
+	<li id="menu-item-5305" class="icon icon-cloud menu-item menu-item-type-post_type menu-item-object-page menu-item-5305"><a href="../../cloud-computing-services/index.htm">Cloud Services</a></li>
+	<li id="menu-item-14723" class="icon icon-ta menu-item menu-item-type-post_type menu-item-object-page menu-item-14723"><a href="../../team-augmentation/index.htm">Team Augmentation</a></li>
+</ul>
+</li>
+<li id="menu-item-3916" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3916"><a href="../../our-tech-stack/index.htm">Technologies</a>
+<ul class="sub-menu">
+	<li id="menu-item-3917" class="all-submenu menu-item menu-item-type-post_type menu-item-object-page menu-item-3917"><a href="../../our-tech-stack/index.htm">All technologies</a></li>
+	<li id="menu-item-4109" class="icon icon-android menu-item menu-item-type-post_type menu-item-object-page menu-item-4109"><a href="../../android-development-company/index.htm">Android</a></li>
+	<li id="menu-item-4108" class="icon icon-ios menu-item menu-item-type-post_type menu-item-object-page menu-item-4108"><a href="../../ios-development-company/index.htm">iOS</a></li>
+	<li id="menu-item-3921" class="icon icon-cross menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3921"><a href="../../cross-platform-app-development/index.htm">Cross-platform</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5102"><a href="../../react-native-app-development-company/index.htm">React Native</a></li>
+		<li id="menu-item-5196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5196"><a href="../../flutter-development-company/index.htm">Flutter</a></li>
+	</ul>
+</li>
+	<li id="menu-item-4106" class="icon icon-frontend menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4106"><a href="../../frontend-development-company/index.htm">Frontend</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5469" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5469"><a href="../../angular-development-company/index.htm">Angular</a></li>
+		<li id="menu-item-11081" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11081"><a href="../../react-js-development/index.htm">React</a></li>
+	</ul>
+</li>
+	<li id="menu-item-4107" class="icon icon-backend menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4107"><a href="../../backend-development-services/index.htm">Backend</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5294" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5294"><a href="../../golang-development-company/index.htm">Golang</a></li>
+		<li id="menu-item-5175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5175"><a href="../../node-js-development-company/index.htm">Node.js</a></li>
+		<li id="menu-item-6259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6259"><a href="../../java-development-company/index.htm">Java</a></li>
+	</ul>
+</li>
+	<li id="menu-item-3928" class="icon icon-ai menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3928"><a href="../../artificial-intelligence-development-company/index.htm">Artificial Intelligence</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5007" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5007"><a href="../../data-science-services/index.htm">Data science</a></li>
+		<li id="menu-item-5008" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5008"><a href="../../computer-vision-services/index.htm">Computer Vision</a></li>
+		<li id="menu-item-5009" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5009"><a href="../../machine-learning-services/index.htm">Machine Learning</a></li>
+		<li id="menu-item-5010" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5010"><a href="../../voice-assistant-and-chatbots-development-services/index.htm">Voice assistants &#038; chatbots</a></li>
+	</ul>
+</li>
+	<li id="menu-item-14679" class="icon icon-blockchain menu-item menu-item-type-post_type menu-item-object-page menu-item-14679"><a href="../../blockchain-development/index.htm">Blockchain</a></li>
+</ul>
+</li>
+<li id="menu-item-3915" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3915"><a href="../../it-services-for-industries/index.htm">Industries</a>
+<ul class="sub-menu">
+	<li id="menu-item-3918" class="all-submenu menu-item menu-item-type-post_type menu-item-object-page menu-item-3918"><a href="../../it-services-for-industries/index.htm">All industries</a></li>
+	<li id="menu-item-3920" class="icon icon-healthcare menu-item menu-item-type-post_type menu-item-object-page menu-item-3920"><a href="../../healthcare-software-solutions/index.htm">Healthcare</a></li>
+	<li id="menu-item-3919" class="icon icon-ecommerce menu-item menu-item-type-post_type menu-item-object-page menu-item-3919"><a href="../../ecommerce-software-solutions/index.htm">eCommerce</a></li>
+	<li id="menu-item-4162" class="icon icon-finetech menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4162"><a href="../../fintech-app-development/index.htm">Fintech</a>
+	<ul class="sub-menu">
+		<li id="menu-item-6280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6280"><a href="../../banking-app-development/index.htm">Banking</a></li>
+		<li id="menu-item-5470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5470"><a href="../../insurance-software-development/index.htm">Insurance</a></li>
+	</ul>
+</li>
+	<li id="menu-item-4163" class="icon icon-entertainment menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4163"><a href="../../entertainment-app-development/index.htm">Entertainment</a>
+	<ul class="sub-menu">
+		<li id="menu-item-6413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6413"><a href="../../music-app-development/index.htm">Music</a></li>
+		<li id="menu-item-11366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11366"><a href="../../travel-app-development/index.htm">Travel</a></li>
+	</ul>
+</li>
+	<li id="menu-item-5072" class="icon icon-other menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5072"><a href="../../it-services-for-other-industries/index.htm">Other</a>
+	<ul class="sub-menu">
+		<li id="menu-item-12348" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12348"><a href="../../education-app-development/index.htm">Education</a></li>
+		<li id="menu-item-12371" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12371"><a href="../../food-delivery-app-development/index.htm">Food delivery</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-1326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1326"><a href="../../portfolio/index.htm">Portfolio</a></li>
+<li id="menu-item-1324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1324"><a href="../../about-us/index.htm">Company</a>
+<ul class="sub-menu">
+	<li id="menu-item-3913" class="icon icon-about menu-item menu-item-type-post_type menu-item-object-page menu-item-3913"><a href="../../about-us/index.htm">About us<p class="menu-item-description">Get to know us a little better and see what we’re all about</p></a></li>
+	<li id="menu-item-1329" class="icon icon-careers menu-item menu-item-type-custom menu-item-object-custom menu-item-1329"><a target="_blank" rel="noopener noreferrer" href="https://careers.miquido.com/">Careers<p class="menu-item-description">We’re always looking for fresh talent. Check how to join us</p></a></li>
+	<li id="menu-item-15055" class="icon icon-aiwaves menu-item menu-item-type-custom menu-item-object-custom menu-item-15055"><a target="_blank" rel="noopener noreferrer" href="https://lp.miquido.com/ai-waves">AI Waves<p class="menu-item-description">Leading industry experts discussing the future of tech</p></a></li>
+</ul>
+</li>
+<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-12648"><a href="../index.htm">Blog</a></li>
+<li id="menu-item-11535" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11535"><a href="../../downloadables/index.htm">Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-11536" class="icon icon-downloadables menu-item menu-item-type-post_type menu-item-object-page menu-item-11536"><a href="../../downloadables/index.htm">Downloadables<p class="menu-item-description">Get valuable insights from our downloadable materials</p></a></li>
+	<li id="menu-item-11538" class="icon icon-glossary menu-item menu-item-type-post_type menu-item-object-page menu-item-11538"><a href="../../it-terms-glossary/index.htm">IT Glossary<p class="menu-item-description">Master important IT terms with our comprehensive dictionary</p></a></li>
+	<li id="menu-item-11537" class="icon icon-press menu-item menu-item-type-post_type menu-item-object-page menu-item-11537"><a href="../../press/index.htm">Press<p class="menu-item-description">Learn more about our work and what we’ve been up to</p></a></li>
+</ul>
+</li>
+</ul>    </div>
+
+    <nav class="menu"><a href="../../get-a-quote/index.htm">Contact us</a>
+</nav>
+    <a href="#" class="menu--button" title="open mobile menu">
+        <span>menu</span>
+    </a>
+</nav>
+<div class="menu-mobile">
+    <div class="wrapper">
+        <div class="menu-container">
+            <ul class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1327"><a href="../../software-development-services/index.htm">Services</a>
+<ul class="sub-menu">
+	<li class="all-submenu menu-item menu-item-type-post_type menu-item-object-page menu-item-3912"><a href="../../software-development-services/index.htm">All services</a></li>
+	<li class="icon icon-ideation menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3974"><a href="../../ideation-and-strategy-services/index.htm">Ideation &#038; Strategy</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5547"><a href="../../product-strategy-consulting-services/index.htm">Product Strategy</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5563"><a href="../../digital-transformation-services/index.htm">Digital Transformation</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6319"><a href="../../legacy-modernisation-services/index.htm">Legacy app modernisation</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3975"><a href="../../research-development-company/index.htm">Research &#038; Development</a></li>
+	</ul>
+</li>
+	<li class="icon icon-product menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5208"><a href="../../product-design-company/index.htm">Product Design</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5362"><a href="../../ux-design-services/index.htm">UX Design</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5752"><a href="../../ui-design-services/index.htm">UI Design</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5579"><a href="../../product-bootcamp/index.htm">Product Bootcamp</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5117"><a href="../../workshops/index.htm">Workshops</a></li>
+	</ul>
+</li>
+	<li class="icon icon-web menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3924"><a href="../../web-mobile-development-company/index.htm">Web &#038; Mobile</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4763"><a href="../../custom-app-development-services/index.htm">Custom app</a></li>
+	</ul>
+</li>
+	<li class="icon icon-cloud menu-item menu-item-type-post_type menu-item-object-page menu-item-5305"><a href="../../cloud-computing-services/index.htm">Cloud Services</a></li>
+	<li class="icon icon-ta menu-item menu-item-type-post_type menu-item-object-page menu-item-14723"><a href="../../team-augmentation/index.htm">Team Augmentation</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3916"><a href="../../our-tech-stack/index.htm">Technologies</a>
+<ul class="sub-menu">
+	<li class="all-submenu menu-item menu-item-type-post_type menu-item-object-page menu-item-3917"><a href="../../our-tech-stack/index.htm">All technologies</a></li>
+	<li class="icon icon-android menu-item menu-item-type-post_type menu-item-object-page menu-item-4109"><a href="../../android-development-company/index.htm">Android</a></li>
+	<li class="icon icon-ios menu-item menu-item-type-post_type menu-item-object-page menu-item-4108"><a href="../../ios-development-company/index.htm">iOS</a></li>
+	<li class="icon icon-cross menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3921"><a href="../../cross-platform-app-development/index.htm">Cross-platform</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5102"><a href="../../react-native-app-development-company/index.htm">React Native</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5196"><a href="../../flutter-development-company/index.htm">Flutter</a></li>
+	</ul>
+</li>
+	<li class="icon icon-frontend menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4106"><a href="../../frontend-development-company/index.htm">Frontend</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5469"><a href="../../angular-development-company/index.htm">Angular</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11081"><a href="../../react-js-development/index.htm">React</a></li>
+	</ul>
+</li>
+	<li class="icon icon-backend menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4107"><a href="../../backend-development-services/index.htm">Backend</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5294"><a href="../../golang-development-company/index.htm">Golang</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5175"><a href="../../node-js-development-company/index.htm">Node.js</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6259"><a href="../../java-development-company/index.htm">Java</a></li>
+	</ul>
+</li>
+	<li class="icon icon-ai menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3928"><a href="../../artificial-intelligence-development-company/index.htm">Artificial Intelligence</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5007"><a href="../../data-science-services/index.htm">Data science</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5008"><a href="../../computer-vision-services/index.htm">Computer Vision</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5009"><a href="../../machine-learning-services/index.htm">Machine Learning</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5010"><a href="../../voice-assistant-and-chatbots-development-services/index.htm">Voice assistants &#038; chatbots</a></li>
+	</ul>
+</li>
+	<li class="icon icon-blockchain menu-item menu-item-type-post_type menu-item-object-page menu-item-14679"><a href="../../blockchain-development/index.htm">Blockchain</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3915"><a href="../../it-services-for-industries/index.htm">Industries</a>
+<ul class="sub-menu">
+	<li class="all-submenu menu-item menu-item-type-post_type menu-item-object-page menu-item-3918"><a href="../../it-services-for-industries/index.htm">All industries</a></li>
+	<li class="icon icon-healthcare menu-item menu-item-type-post_type menu-item-object-page menu-item-3920"><a href="../../healthcare-software-solutions/index.htm">Healthcare</a></li>
+	<li class="icon icon-ecommerce menu-item menu-item-type-post_type menu-item-object-page menu-item-3919"><a href="../../ecommerce-software-solutions/index.htm">eCommerce</a></li>
+	<li class="icon icon-finetech menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4162"><a href="../../fintech-app-development/index.htm">Fintech</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6280"><a href="../../banking-app-development/index.htm">Banking</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5470"><a href="../../insurance-software-development/index.htm">Insurance</a></li>
+	</ul>
+</li>
+	<li class="icon icon-entertainment menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4163"><a href="../../entertainment-app-development/index.htm">Entertainment</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6413"><a href="../../music-app-development/index.htm">Music</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11366"><a href="../../travel-app-development/index.htm">Travel</a></li>
+	</ul>
+</li>
+	<li class="icon icon-other menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5072"><a href="../../it-services-for-other-industries/index.htm">Other</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12348"><a href="../../education-app-development/index.htm">Education</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12371"><a href="../../food-delivery-app-development/index.htm">Food delivery</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1326"><a href="../../portfolio/index.htm">Portfolio</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1324"><a href="../../about-us/index.htm">Company</a>
+<ul class="sub-menu">
+	<li class="icon icon-about menu-item menu-item-type-post_type menu-item-object-page menu-item-3913"><a href="../../about-us/index.htm">About us<p class="menu-item-description">Get to know us a little better and see what we’re all about</p></a></li>
+	<li class="icon icon-careers menu-item menu-item-type-custom menu-item-object-custom menu-item-1329"><a target="_blank" rel="noopener noreferrer" href="https://careers.miquido.com/">Careers<p class="menu-item-description">We’re always looking for fresh talent. Check how to join us</p></a></li>
+	<li class="icon icon-aiwaves menu-item menu-item-type-custom menu-item-object-custom menu-item-15055"><a target="_blank" rel="noopener noreferrer" href="https://lp.miquido.com/ai-waves">AI Waves<p class="menu-item-description">Leading industry experts discussing the future of tech</p></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-12648"><a href="../index.htm">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11535"><a href="../../downloadables/index.htm">Resources</a>
+<ul class="sub-menu">
+	<li class="icon icon-downloadables menu-item menu-item-type-post_type menu-item-object-page menu-item-11536"><a href="../../downloadables/index.htm">Downloadables<p class="menu-item-description">Get valuable insights from our downloadable materials</p></a></li>
+	<li class="icon icon-glossary menu-item menu-item-type-post_type menu-item-object-page menu-item-11538"><a href="../../it-terms-glossary/index.htm">IT Glossary<p class="menu-item-description">Master important IT terms with our comprehensive dictionary</p></a></li>
+	<li class="icon icon-press menu-item menu-item-type-post_type menu-item-object-page menu-item-11537"><a href="../../press/index.htm">Press<p class="menu-item-description">Learn more about our work and what we’ve been up to</p></a></li>
+</ul>
+</li>
+</ul>            <nav class="menu"><a href="../../get-a-quote/index.htm">Contact us</a>
+</nav>        </div>
+        <div class="container-social-media">
+            <ul class="nav-social-media">
+                <li class="social-media-item social-media--linkedin icon-linkedin">
+                    <a href="https://www.linkedin.com/company/miquido" rel="noopener noreferrer nofollow" target="_blank" title="Miquido on LinkedIn"></a>
+                </li>
+                <li class="social-media-item social-media--twitter icon-twitter">
+                    <a href="https://twitter.com/miquido" rel="noopener noreferrer nofollow" target="_blank" title="Miquido on Twitter"></a>
+                </li>
+                <li class="social-media-item social-media--clutch icon-clutch">
+                    <a href="https://clutch.co/profile/miquido" rel="noopener noreferrer nofollow" target="_blank" title="Miquido on Clutch"></a>
+                </li>
+                <li class="social-media-item social-media--facebook icon-facebook">
+                    <a href="https://www.facebook.com/miquido/" rel="noopener noreferrer nofollow" target="_blank" title="Miquido on Facebook"></a>
+                </li>
+                <li class="social-media-item social-media--instagram icon-instagram">
+                    <a href="https://www.instagram.com/miquido/" rel="noopener noreferrer nofollow" target="_blank" title="Miquido on Instagram"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>            
+
+        </div>
+    </header>
+
+    
+    <main class="main-content" id="top">
+
+        
+                    <section class="section--blog-breadcrumbs">
+    <div class="container">
+        <div class="wrapper">
+            <div class="container">
+                <div class="wrapper-inside">
+                    <div class="container-blog-breadcrumbs col-12 push-left-1 col-tablet-6 push-left-tablet-0 col-mobile-6 push-left-mobile-0">
+                        <ul class="breadcrumbs">
+                            <li>
+                                <a href="../../index.htm">Home</a>
+                            </li>
+                                                                                                                                                                            <span class="separator">/</span>
+                                <li>
+                                    <a href="../index.htm">Blog</a>
+                                </li>
+                                                                                                                        <span class="separator">/</span>
+                                                                                    <a href="../index-1.htm?category=software-development">Software development</a>
+                                                                    <span class="separator">/</span>
+                                <span class="active">An introduction to automated...</span>
+                                                                                                                                                                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                
+
+<section class="section--blog-single-header">
+    <div class="container">
+        <div class="wrapper">
+            <div class="container">
+                <div class="wrapper-inside">
+                    <div class="container-blog-single-header col-9 push-left-1 col-large-9 push-left-large-1 col-tablet-7 push-left-tablet-0 col-landscape-mobile-8  col-mobile-6 push-left-mobile-0">
+                        <section class="blog-info">
+                                        <ul class="blog-categories-list">
+                                    <li><a class="blog-categories-list__single-category-search" data-filter="software-development" href="../category/software-development.html">Software development</a></li>
+                            </ul>
+
+                            <h1 class="header2-hero">An introduction to automated testing: web and mobile</h1>
+
+                            
+                            <div class="blog-meta">
+                5 May 2020            <span class="separator">|</span>
+        8 min read</div>                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container container-blog-single-header-image">
+                <figure data-bg="https://www.miquido.com/wp-content/uploads/2020/05/header-Web-mobile-testing-an-introduction-4-min-1300x650.png" class="blog-feature-image rocket-lazyload" style="">
+                    <div class="wrapper">
+                        <div class="container">
+                            <div class="wrapper-inside">
+                                <picture class="attachment-blog-single-feature size-blog-single-feature wp-post-image">
+<source type="image/webp" data-lazy-srcset="https://www.miquido.com/wp-content/uploads/2020/05/header-Web-mobile-testing-an-introduction-4-min-1300x650.png.webp" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201300%20650'%3E%3C/svg%3E">
+<img width="1300" height="650" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201300%20650'%3E%3C/svg%3E" alt="Automated Software Testing: Web &amp; Mobile" data-lazy-src="https://www.miquido.com/wp-content/uploads/2020/05/header-Web-mobile-testing-an-introduction-4-min-1300x650.png">
+</picture>
+<noscript><picture class="attachment-blog-single-feature size-blog-single-feature wp-post-image">
+<source type="image/webp" srcset="../../wp-content/uploads/2020/05/header-Web-mobile-testing-an-introduction-4-min-1300x650.png.webp">
+<img width="1300" height="650" src="../../wp-content/uploads/2020/05/header-Web-mobile-testing-an-introduction-4-min-1300x650.png" alt="Automated Software Testing: Web &amp; Mobile">
+</picture>
+</noscript>                            </div>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </div>
+    
+</section>
+
+
+
+<section class="section--blog-single-content section-margin--l">
+    <div class="container">
+        <div class="wrapper-blog">
+            <div class="container">
+                <div class="wrapper-inside">
+                    <div class="container-blog-single-content-left-column">
+                        
+                        <div>
+                                        <div class="author-info">
+                <figure class="author-avatar">
+                    <a href="../author/miquido-author/index.htm" title="Łukasz Mikołajczyk">
+                        <img alt='' src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2035%2035'%3E%3C/svg%3E" data-lazy-srcset='https://secure.gravatar.com/avatar/86765563f76ab97ffe48ed026ee78559?s=70&#038;d=mm&#038;r=g 2x' class='avatar avatar-35 photo' height='35' width='35' data-lazy-src="https://secure.gravatar.com/avatar/86765563f76ab97ffe48ed026ee78559?s=35&#038;d=mm&#038;r=g"><noscript><img alt='' src='../../avatar/86765563f76ab97ffe48ed026ee78559.png?s=35&#038;d=mm&#038;r=g' srcset='../../avatar/86765563f76ab97ffe48ed026ee78559-1.png 2x?s=70&#038;d=mm&#038;r=g 2x' class='avatar avatar-35 photo' height='35' width='35'></noscript>                    </a>
+                </figure>
+                <div class="author-desc">
+                    <a href="../author/miquido-author/index.htm" title="Łukasz Mikołajczyk"><strong>Łukasz Mikołajczyk</strong></a>
+                                    </div>
+            </div>
+
+                            <div class="lwptoc lwptoc-light lwptoc-notInherit" data-smooth-scroll="0"><div class="lwptoc_i">    <div class="lwptoc_header">
+        <b class="lwptoc_title">Table of contents</b>            </div>
+<div class="lwptoc_items lwptoc_items-visible">
+    <div class="lwptoc_itemWrap"><div class="lwptoc_item">    <a href="#First_of_all_know_thy_enemy">
+                <span class="lwptoc_item_label">First of all – know thy enemy!</span>
+    </a>
+    </div><div class="lwptoc_item">    <a href="#Primo_web_or_mobile">
+                <span class="lwptoc_item_label">Primo – web or mobile?</span>
+    </a>
+    </div><div class="lwptoc_item">    <a href="#Secundo_the_technology">
+                <span class="lwptoc_item_label">Secundo – the technology!</span>
+    </a>
+    </div><div class="lwptoc_item">    <a href="#Tetrio_the_language">
+                <span class="lwptoc_item_label">Tetrio – the language!</span>
+    </a>
+    </div><div class="lwptoc_item">    <a href="#Last_but_not_least">
+                <span class="lwptoc_item_label">Last, but not least…</span>
+    </a>
+    </div></div></div>
+</div></div>
+                            <div class="blog-share">
+                                <span>Share</span>
+                                <div><a class="share-facebook" href="../../cookie/consent_prompt/index-193.htm?u=https%3A%2F%2Fwww.miquido.com%2Fblog%2Fan-introduction-to-automated-testing%2F" target="_blank" rel="nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewbox="0 0 26 26">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#051344">
+            <g>
+                <g>
+                    <g>
+                        <path d="M17.788 10.4h-3.055V8.667c0-.895.073-1.458 1.355-1.458h1.619V4.453c-.788-.081-1.58-.121-2.373-.12-2.351 0-4.067 1.436-4.067 4.073V10.4h-2.6v3.467l2.6-.001v7.8h3.466v-7.802h2.658l.397-3.464z" transform="translate(-1217.000000, -17877.000000) translate(585.000000, 17868.000000) translate(569.000000, 9.000000) translate(63.000000, 0.000000)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+</a><a class="share-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.miquido.com%2Fblog%2Fan-introduction-to-automated-testing%2F&title=An%20introduction%20to%20automated%20testing:%20web%20and%20mobile" target="_blank" rel="nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewbox="0 0 26 26">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#051344">
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M3.797 15.573L.244 15.573.223 4.967 3.777 4.967zM1.931 3.58h-.02C.749 3.58 0 2.782 0 1.788 0 .771.773 0 1.955 0s1.907.77 1.931 1.788c0 .994-.752 1.792-1.955 1.792zM16.116 15.573h-3.584V9.811c0-1.394-.37-2.343-1.622-2.343-.955 0-1.47.64-1.718 1.26-.093.223-.117.528-.117.84v6.005h-3.6L5.452 4.967h3.602l.02 1.497c.46-.709 1.227-1.713 3.062-1.713 2.275 0 3.976 1.48 3.976 4.663v6.16h.003z" transform="translate(-1263.000000, -17877.000000) translate(585.000000, 17868.000000) translate(569.000000, 9.000000) translate(63.000000, 0.000000) translate(46.000000, 0.000000) translate(4.642857, 6.500000)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+</a><a class="share-twitter" href="https://twitter.com/intent/tweet?text=An%20introduction%20to%20automated%20testing:%20web%20and%20mobile&url=https%3A%2F%2Fwww.miquido.com%2Fblog%2Fan-introduction-to-automated-testing%2F&amp" target="_blank" rel="nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewbox="0 0 26 26">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#051344">
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <path d="M23.4 7.046c-.733.314-1.521.525-2.349.622.843-.49 1.494-1.26 1.798-2.18-.79.45-1.667.779-2.598.955-.746-.765-1.808-1.243-2.985-1.243-2.258 0-4.09 1.764-4.09 3.939 0 .308.037.61.107.897-3.4-.164-6.411-1.735-8.429-4.118-.353.583-.554 1.26-.554 1.984 0 1.366.722 2.57 1.82 3.277-.672-.02-1.302-.197-1.853-.493v.05c0 1.908 1.409 3.5 3.28 3.863-.344.09-.703.137-1.077.137-.265 0-.52-.023-.77-.07.52 1.562 2.03 2.705 3.819 2.734-1.397 1.058-3.162 1.686-5.079 1.686-.331 0-.654-.018-.973-.053C5.274 20.149 7.425 20.8 9.735 20.8c7.522 0 11.635-6.002 11.635-11.204 0-.173-.003-.343-.012-.513.8-.55 1.494-1.245 2.042-2.037" transform="translate(-1309.000000, -17877.000000) translate(585.000000, 17868.000000) translate(569.000000, 9.000000) translate(63.000000, 0.000000) translate(92.000000, 0.000000)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+</a></div>                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="container-blog-single-content">
+                        
+                        
+<p>So, you’d like to start your very own automated testing adventure. And decided to do that by incorporating it into the project you have a dictatorship in. Or in quality assurance, at least. </p>
+
+
+
+<p>Fantastic! Excellent! Outstanding! But just a second, space cowboy – before you bravely venture into the automated testing battle against the programmer’s wildest code dreams, you must assemble an appropriate party, consisting of an adequate framework and accompanying language. It’s extremely easy to make the wrong turn and rapidly sink in the technological quicksand, rather than ascend into a higher plane of testing excellence.</p>
+
+
+
+<h2 id="First-of-all---know-thy-enemy!"><span id="First_of_all_know_thy_enemy">First of all – know thy enemy!</span></h2>
+
+
+
+<p>Depending on the <a href="../../web-mobile-development-company/index.htm" target="_blank" rel="noreferrer noopener">application – web or mobile</a> – your choice of framework and language will be different… obviously! However, before you do any preparations, you must answer a very crucial, critical even, question – is it worth all that hassle.</p>
+
+
+
+<p>That’s right – <strong>automating things as a whole is going to take quite some time</strong>. And in some cases, it might take a whole lot. If you’re already low on time, the project must be delivered as soon as possible, your coding skills are rusty at best and some kind of a dedicated testing environment doesn’t really exist, then adding that tiny thing called ‘automated tests’ to the whole might prove to be… problematic at best. Remember, these kinds of tests are all cool and good, but there’s not much point in butting them in when you have neither space or skill to do so. All within reason, ladies and gents!</p>
+
+
+
+<p>If, on the other hand, you’re feeling pretty confident about the whole thing, and have the opportunity to do so, I’d say definitely go for it! So let’s start with the basics, shall we?</p>
+
+
+
+<h2 id="Primo---web-or-mobile?"><span id="Primo_web_or_mobile">Primo – web or mobile?</span></h2>
+
+
+
+<p>While coding the tests might feel similar between these two, there are some major differences and things you should account for. When it comes to web applications, one of the most important aspects is <strong>browser compatibility</strong> (Edge, Gecko, Chromium engines…), while the difference between <strong>supported OS versions and devices</strong> is a key thing for mobile apps. </p>
+
+
+
+<p>As of writing this article, the most popular choices among the web testing frameworks include Selenide/Selenium, <a href="http://webdriver.io/" target="_blank" rel="noreferrer noopener nofollow">Webdriver.io</a> or Protractor, and when it comes to mobile tests – Appium, Espresso or native tests. That being said it’s time to move into…</p>
+
+
+
+<h2 id="Secundo---the-technology!"><span id="Secundo_the_technology">Secundo – the technology!</span></h2>
+
+
+
+<p>Yeah, scary thing, isn’t it? Not to worry, I got your back, bro. Depending on the <a href="../../our-tech-stack/index.htm">technology used to develop the application</a>, your mileage may vary:</p>
+
+
+
+<p></p>
+
+
+
+<ul><li><a href="https://www.protractortest.org/#/" target="_blank" rel="noreferrer noopener nofollow"><strong>Protractor</strong></a> is the best choice for heavy Angular web applications. <a href="https://selenide.org/" target="_blank" rel="noreferrer noopener nofollow"><strong>Selenide</strong></a> and <a href="http://webdriver.io/" target="_blank" rel="noreferrer noopener nofollow"><strong>Webdriver.io</strong></a> are more of a general usage, ‘automate-everything’ kind of frameworks.</li><li><a href="http://appium.io/" target="_blank" rel="noreferrer noopener nofollow"><strong>Appium</strong></a> is a popular framework of choice when it comes to mobile applications. <a href="https://developer.android.com/training/testing/espresso" target="_blank" rel="noreferrer noopener nofollow"><strong>Espresso</strong></a> or <a href="https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/01-introduction.html#//apple_ref/doc/uid/TP40014132-CH1-SW1" target="_blank" rel="noreferrer noopener nofollow"><strong>XCUI</strong></a>/native tests are also used for more specific kind of testing (f.e. extensive UI tests in case of Espresso, or as they quote it, “concise, beautiful, and reliable Android UI test“).</li></ul><p></p>
+
+
+
+<p>Of course, that’s just the tip of the iceberg, as there’s a ton of other frameworks – choices might include Cypress, Puppeteer (both for web testing), or Detox for React mobile apps. Why am I focusing on such a small group of frameworks then, you might ask? </p>
+
+
+
+<p>Well, it all boils down to <strong>popularity, community, and support</strong>. Because let’s face it, sooner or later you will run into some kind of a problem, critical or not. When it comes to such popular frameworks, there’s a high chance someone has already found a solution to your problem, and even if that’s not the case, your question shouldn’t be hanging too long unanswered. Remember the golden rule – a friend in need is a friend indeed!</p>
+
+
+
+<h2 id="Tetrio---the-language!"><span id="Tetrio_the_language">Tetrio – the language!</span></h2>
+
+
+
+<p>Ah yes, yes… The meat of all IT discussions. A topic much more sensitive than discussing politics with your drunken racist uncle during Christmas. Who is the supreme champion among the programming/scripting languages? Would it be Java? C#? Javascript? Ruby? Php? Python maybe? Well, I’ll just simply answer with a completely neutral <em>‘it depends’</em> – no surprise there. Not to mention the type of application and your framework of choice will narrow the list of available languages some more.</p>
+
+
+
+<p>Now, I’m going to do something controversial, and narrow the list <em>even more</em>, down to just three most popular choices in the IT world right now: <strong>Java</strong>, <strong>Javascript</strong>, and <strong>Python</strong>, with a pinch of native tests. Easy now, lay that pitchfork down, cowboy…</p>
+
+
+
+<p></p>
+
+
+
+<ul><li><a href="https://www.protractortest.org/#/" target="_blank" rel="noreferrer noopener nofollow"><strong>Protractor</strong></a> and <a href="http://webdriver.io/" target="_blank" rel="noreferrer noopener nofollow"><strong>Webdriver.io</strong></a>, due to their… node-iness are best to be used with JavaScript,</li><li>Both <a href="http://appium.io/" target="_blank" rel="noreferrer noopener nofollow"><strong>Appium</strong></a> library and <a href="https://selenide.org/" target="_blank" rel="noreferrer noopener nofollow"><strong>Selenide</strong></a> web driver have a multitude of different implementations (Java, Ruby, Php, C#, Python…) Currently, Java and Javascript seem to be the most popular choices,</li><li><a href="https://developer.android.com/training/testing/espresso" target="_blank" rel="noreferrer noopener nofollow"><strong>Espresso</strong></a> is provided by AndroidX Test, courtesy of St. Google, so it’s no wonder it runs on both Kotlin and Java,</li><li>Similarly, the pure <a href="https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/01-introduction.html#//apple_ref/doc/uid/TP40014132-CH1-SW1" target="_blank" rel="noreferrer noopener nofollow"><strong>XCUITest</strong></a> is Apple’s little special child, so we’re stepping into Swift territory.</li></ul><p></p>
+
+
+
+<p></p>
+
+
+
+<p>Woe is me! What to do, what to do, so many choices, so little time… Tell you what, pardner – <strong>the framework and language all depends on your skill and current project</strong>. In an ideal world, you’d code the tests in the same language as the application, so you wouldn’t have to worry about the place to stash them or some code review from the developers. </p>
+
+
+
+<p>But *this is the world we live in, and it’s not the case in most of the projects. So choose accordingly, choose carefully, choose tenderly, choose meaningfully. As I said before, take many factors into consideration, including your time, skills, knowledge of the platform/project, and potential support from fellow testers/developers.</p>
+
+
+
+<h2><span id="Last_but_not_least">Last, but not least… </span></h2>
+
+
+
+<p>Treat this information above as sort of a guide sign, with a grain of salt and a shot of tequila. Having said that, I wish you the best of luck with your automated testing endeavours! May your code be light and efficient, and time spent debugging minimal, pardner!</p>
+
+
+
+<p class="has-text-align-center"><a href="../../get-a-quote/index.htm" target="_blank" rel="noreferrer noopener">Ready for your next software project? Get in touch with us!</a></p>
+                        
+
+                        
+                        <div class="container-blog-single-footer">
+
+                            <div class="blog-meta-clap-share">
+                                <div class="blog-clap">
+                                    <a href="#" class="wp-applaud" id="wp-applaud-1130" title=""><span class="wp-applaud-count">0</span></a>                                </div>
+                                <div class="blog-share">
+                                    <span>Share</span><div><a class="share-facebook" href="../../cookie/consent_prompt/index-193.htm?u=https%3A%2F%2Fwww.miquido.com%2Fblog%2Fan-introduction-to-automated-testing%2F" target="_blank" rel="nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewbox="0 0 26 26">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#051344">
+            <g>
+                <g>
+                    <g>
+                        <path d="M17.788 10.4h-3.055V8.667c0-.895.073-1.458 1.355-1.458h1.619V4.453c-.788-.081-1.58-.121-2.373-.12-2.351 0-4.067 1.436-4.067 4.073V10.4h-2.6v3.467l2.6-.001v7.8h3.466v-7.802h2.658l.397-3.464z" transform="translate(-1217.000000, -17877.000000) translate(585.000000, 17868.000000) translate(569.000000, 9.000000) translate(63.000000, 0.000000)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+</a><a class="share-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.miquido.com%2Fblog%2Fan-introduction-to-automated-testing%2F&title=An%20introduction%20to%20automated%20testing:%20web%20and%20mobile" target="_blank" rel="nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewbox="0 0 26 26">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#051344">
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M3.797 15.573L.244 15.573.223 4.967 3.777 4.967zM1.931 3.58h-.02C.749 3.58 0 2.782 0 1.788 0 .771.773 0 1.955 0s1.907.77 1.931 1.788c0 .994-.752 1.792-1.955 1.792zM16.116 15.573h-3.584V9.811c0-1.394-.37-2.343-1.622-2.343-.955 0-1.47.64-1.718 1.26-.093.223-.117.528-.117.84v6.005h-3.6L5.452 4.967h3.602l.02 1.497c.46-.709 1.227-1.713 3.062-1.713 2.275 0 3.976 1.48 3.976 4.663v6.16h.003z" transform="translate(-1263.000000, -17877.000000) translate(585.000000, 17868.000000) translate(569.000000, 9.000000) translate(63.000000, 0.000000) translate(46.000000, 0.000000) translate(4.642857, 6.500000)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+</a><a class="share-twitter" href="https://twitter.com/intent/tweet?text=An%20introduction%20to%20automated%20testing:%20web%20and%20mobile&url=https%3A%2F%2Fwww.miquido.com%2Fblog%2Fan-introduction-to-automated-testing%2F&amp" target="_blank" rel="nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewbox="0 0 26 26">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#051344">
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <path d="M23.4 7.046c-.733.314-1.521.525-2.349.622.843-.49 1.494-1.26 1.798-2.18-.79.45-1.667.779-2.598.955-.746-.765-1.808-1.243-2.985-1.243-2.258 0-4.09 1.764-4.09 3.939 0 .308.037.61.107.897-3.4-.164-6.411-1.735-8.429-4.118-.353.583-.554 1.26-.554 1.984 0 1.366.722 2.57 1.82 3.277-.672-.02-1.302-.197-1.853-.493v.05c0 1.908 1.409 3.5 3.28 3.863-.344.09-.703.137-1.077.137-.265 0-.52-.023-.77-.07.52 1.562 2.03 2.705 3.819 2.734-1.397 1.058-3.162 1.686-5.079 1.686-.331 0-.654-.018-.973-.053C5.274 20.149 7.425 20.8 9.735 20.8c7.522 0 11.635-6.002 11.635-11.204 0-.173-.003-.343-.012-.513.8-.55 1.494-1.245 2.042-2.037" transform="translate(-1309.000000, -17877.000000) translate(585.000000, 17868.000000) translate(569.000000, 9.000000) translate(63.000000, 0.000000) translate(92.000000, 0.000000)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+</a></div>                                </div>
+                            </div>
+
+                            <div class="blog-meta-tags-edit">
+                                <div class="blog-tags">
+                <ul>
+                                        <li>
+                            <a href='../tag/app-development/index.htm' title='App development' class=''>App development</a>
+                    </li>
+                                        <li>
+                            <a href='../tag/web-development/index.htm' title='Web development' class=''>Web development</a>
+                    </li>
+                            </ul>
+    </div>
+                                <div class="blog-edited-date">
+                                    Edited: 8 Apr 2022, 10:27                                </div>
+                            </div>
+
+                                        <div class="author-info author-info--bio">
+                <figure class="author-avatar">
+                    <a href="../author/miquido-author/index.htm" title="Łukasz Mikołajczyk">
+                        <img alt='' src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2035%2035'%3E%3C/svg%3E" data-lazy-srcset='https://secure.gravatar.com/avatar/86765563f76ab97ffe48ed026ee78559?s=70&#038;d=mm&#038;r=g 2x' class='avatar avatar-35 photo' height='35' width='35' data-lazy-src="https://secure.gravatar.com/avatar/86765563f76ab97ffe48ed026ee78559?s=35&#038;d=mm&#038;r=g"><noscript><img alt='' src='../../avatar/86765563f76ab97ffe48ed026ee78559.png?s=35&#038;d=mm&#038;r=g' srcset='../../avatar/86765563f76ab97ffe48ed026ee78559-1.png 2x?s=70&#038;d=mm&#038;r=g 2x' class='avatar avatar-35 photo' height='35' width='35'></noscript>                    </a>
+                </figure>
+                <div class="author-desc">
+                    <a href="../author/miquido-author/index.htm" title="Łukasz Mikołajczyk"><strong>Łukasz Mikołajczyk</strong></a>
+                    
+                    <span class="author-bio">
+                                            </span>
+
+                    <div class="author-social">
+                        
+                                            </div>
+                </div>
+            </div>
+
+                        </div>
+                        
+                    </div>
+                    <div class="container-blog-single-content-right-column">
+                        
+                                    <div class="author-info">
+                <figure class="author-avatar">
+                    <a href="../author/miquido-author/index.htm" title="Łukasz Mikołajczyk">
+                        <img alt='' src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2035%2035'%3E%3C/svg%3E" data-lazy-srcset='https://secure.gravatar.com/avatar/86765563f76ab97ffe48ed026ee78559?s=70&#038;d=mm&#038;r=g 2x' class='avatar avatar-35 photo' height='35' width='35' data-lazy-src="https://secure.gravatar.com/avatar/86765563f76ab97ffe48ed026ee78559?s=35&#038;d=mm&#038;r=g"><noscript><img alt='' src='../../avatar/86765563f76ab97ffe48ed026ee78559.png?s=35&#038;d=mm&#038;r=g' srcset='../../avatar/86765563f76ab97ffe48ed026ee78559-1.png 2x?s=70&#038;d=mm&#038;r=g 2x' class='avatar avatar-35 photo' height='35' width='35'></noscript>                    </a>
+                </figure>
+                <div class="author-desc">
+                    <a href="../author/miquido-author/index.htm" title="Łukasz Mikołajczyk"><strong>Łukasz Mikołajczyk</strong></a>
+                                    </div>
+            </div>
+
+                        <div class="sticky-toc">
+                            <div class="lwptoc lwptoc-light lwptoc-notInherit" data-smooth-scroll="0"><div class="lwptoc_i">    <div class="lwptoc_header">
+        <b class="lwptoc_title">Table of contents</b>            </div>
+<div class="lwptoc_items lwptoc_items-visible">
+    <div class="lwptoc_itemWrap"><div class="lwptoc_item">    <a href="#First_of_all_know_thy_enemy">
+                <span class="lwptoc_item_label">First of all – know thy enemy!</span>
+    </a>
+    </div><div class="lwptoc_item">    <a href="#Primo_web_or_mobile">
+                <span class="lwptoc_item_label">Primo – web or mobile?</span>
+    </a>
+    </div><div class="lwptoc_item">    <a href="#Secundo_the_technology">
+                <span class="lwptoc_item_label">Secundo – the technology!</span>
+    </a>
+    </div><div class="lwptoc_item">    <a href="#Tetrio_the_language">
+                <span class="lwptoc_item_label">Tetrio – the language!</span>
+    </a>
+    </div><div class="lwptoc_item">    <a href="#Last_but_not_least">
+                <span class="lwptoc_item_label">Last, but not least…</span>
+    </a>
+    </div></div></div>
+</div></div>
+                            <div class="blog-share">
+                                <span>Share</span>
+                                <div><a class="share-facebook" href="../../cookie/consent_prompt/index-193.htm?u=https%3A%2F%2Fwww.miquido.com%2Fblog%2Fan-introduction-to-automated-testing%2F" target="_blank" rel="nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewbox="0 0 26 26">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#051344">
+            <g>
+                <g>
+                    <g>
+                        <path d="M17.788 10.4h-3.055V8.667c0-.895.073-1.458 1.355-1.458h1.619V4.453c-.788-.081-1.58-.121-2.373-.12-2.351 0-4.067 1.436-4.067 4.073V10.4h-2.6v3.467l2.6-.001v7.8h3.466v-7.802h2.658l.397-3.464z" transform="translate(-1217.000000, -17877.000000) translate(585.000000, 17868.000000) translate(569.000000, 9.000000) translate(63.000000, 0.000000)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+</a><a class="share-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.miquido.com%2Fblog%2Fan-introduction-to-automated-testing%2F&title=An%20introduction%20to%20automated%20testing:%20web%20and%20mobile" target="_blank" rel="nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewbox="0 0 26 26">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#051344">
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M3.797 15.573L.244 15.573.223 4.967 3.777 4.967zM1.931 3.58h-.02C.749 3.58 0 2.782 0 1.788 0 .771.773 0 1.955 0s1.907.77 1.931 1.788c0 .994-.752 1.792-1.955 1.792zM16.116 15.573h-3.584V9.811c0-1.394-.37-2.343-1.622-2.343-.955 0-1.47.64-1.718 1.26-.093.223-.117.528-.117.84v6.005h-3.6L5.452 4.967h3.602l.02 1.497c.46-.709 1.227-1.713 3.062-1.713 2.275 0 3.976 1.48 3.976 4.663v6.16h.003z" transform="translate(-1263.000000, -17877.000000) translate(585.000000, 17868.000000) translate(569.000000, 9.000000) translate(63.000000, 0.000000) translate(46.000000, 0.000000) translate(4.642857, 6.500000)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+</a><a class="share-twitter" href="https://twitter.com/intent/tweet?text=An%20introduction%20to%20automated%20testing:%20web%20and%20mobile&url=https%3A%2F%2Fwww.miquido.com%2Fblog%2Fan-introduction-to-automated-testing%2F&amp" target="_blank" rel="nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewbox="0 0 26 26">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#051344">
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <path d="M23.4 7.046c-.733.314-1.521.525-2.349.622.843-.49 1.494-1.26 1.798-2.18-.79.45-1.667.779-2.598.955-.746-.765-1.808-1.243-2.985-1.243-2.258 0-4.09 1.764-4.09 3.939 0 .308.037.61.107.897-3.4-.164-6.411-1.735-8.429-4.118-.353.583-.554 1.26-.554 1.984 0 1.366.722 2.57 1.82 3.277-.672-.02-1.302-.197-1.853-.493v.05c0 1.908 1.409 3.5 3.28 3.863-.344.09-.703.137-1.077.137-.265 0-.52-.023-.77-.07.52 1.562 2.03 2.705 3.819 2.734-1.397 1.058-3.162 1.686-5.079 1.686-.331 0-.654-.018-.973-.053C5.274 20.149 7.425 20.8 9.735 20.8c7.522 0 11.635-6.002 11.635-11.204 0-.173-.003-.343-.012-.513.8-.55 1.494-1.245 2.042-2.037" transform="translate(-1309.000000, -17877.000000) translate(585.000000, 17868.000000) translate(569.000000, 9.000000) translate(63.000000, 0.000000) translate(92.000000, 0.000000)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+</a></div>                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="blog-single-newsletter-form section-margin--l">
+    <div class="col-12 push-left-1">
+        <div class="container-single-newsletter-form inside-padding--l">
+
+            
+            <script charset="utf-8" type="text/javascript" src="../../forms/v2.js"></script>
+            <script>
+                hbspt.forms.create({
+                    region: "na1",
+                    portalId: "20037839",
+                    formId: "667ea1ad-6cd3-46f4-bf03-03a2d12a3b99"
+                });
+            </script>
+
+            <p>
+                <small class="form-legend policy">The controller of your personal data is Miquido sp. z ograniczoną odpowiedzialnością sp.k. with its registered office in Krakow, ul. Zabłocie 43a, 30-701 Kraków. We process the above information in order to answer your questions, contact you and conduct business communication, and if you tick the checkbox, to send you messages containing commercial, business and marketing materials.<br>
+                <span class="policy-more">The basis for the processing of your data is Miquido's legitimate interest - informing customers about news and changes to our offer as well as providing information about products that may be useful in their business. You can unsubscribe from the marketing communications at any time. You also have the right to access data, the right to request rectification, deletion or limitation of their processing, data transfer, the right to object, as well as the right to lodge a complaint to the supervisory body. Full information about processing of personal data can be found in the <a href="../../privacy-policy.html" target="_blank">Privacy Policy</a>.</span></small><br>
+                <span class="cookie-policy-more"><small class="form-legend">Show more</small></span>
+            </p>
+
+        </div>
+    </div>
+</div>
+
+
+<section class="section--blog-related-posts section-space-bottom">
+    <div class="container container-full">
+        <div class="wrapper">
+            <div class="container container-darker-grey inside-padding--l">
+                <div class="wrapper-inside">
+                    <div class="blog-related-posts-header col-12 push-left-1">
+                        <h2 class="header2 animated-header-long">Related posts</h2>
+                    </div>
+                    <div class="blog-related-posts-container col-12 push-left-1">
+                                                            <article class="blog-item">
+                                        <a class="blog-item-image" href="../technical-debt-in-software-development/index.htm">
+                                            <picture class="attachment-blog-archive-thumb-small size-blog-archive-thumb-small wp-post-image">
+<source type="image/webp" data-lazy-srcset="https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development-432x288.png.webp 432w, https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development-250x167.png.webp 250w, https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development-700x467.png.webp 700w, https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development-768x512.png.webp 768w, https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development-1536x1024.png.webp 1536w, https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development-120x80.png.webp 120w, https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development-367x245.png.webp 367w, https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development.png.webp 1920w, https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development-750x500.png.webp 750w" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20432%20288'%3E%3C/svg%3E" data-lazy-sizes="(max-width: 432px) 100vw, 432px">
+<img width="432" height="288" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20432%20288'%3E%3C/svg%3E" alt="Technical debt in software development: how to manage it?" data-lazy-srcset="https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development-432x288.png 432w, https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development-250x167.png 250w, https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development-700x467.png 700w, https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development-768x512.png 768w, https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development-1536x1024.png 1536w, https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development-120x80.png 120w, https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development-367x245.png 367w, https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development.png 1920w, https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development-750x500.png 750w, https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development-600x400.png 600w, https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development-450x300.png 450w" data-lazy-sizes="(max-width: 432px) 100vw, 432px" data-lazy-src="https://www.miquido.com/wp-content/uploads/2021/08/header-technical-debt-in-software-development-432x288.png">
+</picture>
+<noscript><picture class="attachment-blog-archive-thumb-small size-blog-archive-thumb-small wp-post-image">
+<source type="image/webp" srcset="../../wp-content/uploads/2021/08/header-technical-debt-in-software-development-432x288.png.webp 432w, ../../wp-content/uploads/2021/08/header-technical-debt-in-software-development-250x167.png.webp 250w, ../../wp-content/uploads/2021/08/header-technical-debt-in-software-development-700x467.png.webp 700w, ../../wp-content/uploads/2021/08/header-technical-debt-in-software-development-768x512.png.webp 768w, ../../wp-content/uploads/2021/08/header-technical-debt-in-software-development-1536x1024.png.webp 1536w, ../../wp-content/uploads/2021/08/header-technical-debt-in-software-development-120x80.png.webp 120w, ../../wp-content/uploads/2021/08/header-technical-debt-in-software-development-367x245.png.webp 367w, ../../wp-content/uploads/2021/08/header-technical-debt-in-software-development.png.webp 1920w, ../../wp-content/uploads/2021/08/header-technical-debt-in-software-development-750x500.png.webp 750w" sizes="(max-width: 432px) 100vw, 432px">
+<img width="432" height="288" src="../../wp-content/uploads/2021/08/header-technical-debt-in-software-development-432x288.png" alt="Technical debt in software development: how to manage it?" srcset="../../wp-content/uploads/2021/08/header-technical-debt-in-software-development-432x288.png 432w, ../../wp-content/uploads/2021/08/header-technical-debt-in-software-development-250x167.png 250w, ../../wp-content/uploads/2021/08/header-technical-debt-in-software-development-700x467.png 700w, ../../wp-content/uploads/2021/08/header-technical-debt-in-software-development-768x512.png 768w, ../../wp-content/uploads/2021/08/header-technical-debt-in-software-development-1536x1024.png 1536w, ../../wp-content/uploads/2021/08/header-technical-debt-in-software-development-120x80.png 120w, ../../wp-content/uploads/2021/08/header-technical-debt-in-software-development-367x245.png 367w, ../../wp-content/uploads/2021/08/header-technical-debt-in-software-development.png 1920w, ../../wp-content/uploads/2021/08/header-technical-debt-in-software-development-750x500.png 750w, ../../wp-content/uploads/2021/08/header-technical-debt-in-software-development-600x400.png 600w, ../../wp-content/uploads/2021/08/header-technical-debt-in-software-development-450x300.png 450w" sizes="(max-width: 432px) 100vw, 432px">
+</picture>
+</noscript>                                        </a>
+                                        <section class="blog-info">
+                                                        <ul class="blog-categories-list">
+                                    <li><a class="blog-categories-list__single-category-search" data-filter="process-insights" href="../category/process-insights.html">Process Insights</a></li>
+                            </ul>
+                                            <h4 class="blog-item-title"><a href="../technical-debt-in-software-development/index.htm">Technical debt in software development: how to manage it?</a></h4>
+                                            <div class="blog-meta">
+                                                                                                        20 Aug 2021                                                        <span class="separator">|</span>
+                                                                                                14 min read                                            </div>
+                                        </section>
+                                    </article>
+                                                            <article class="blog-item">
+                                        <a class="blog-item-image" href="../devops-behind-kubernetes-wheel/index.htm">
+                                            <picture class="attachment-blog-archive-thumb-small size-blog-archive-thumb-small wp-post-image">
+<source type="image/webp" data-lazy-srcset="https://www.miquido.com/wp-content/uploads/2018/09/devops-behind-kubernetes-wheel-432x288.jpeg.webp 432w, https://www.miquido.com/wp-content/uploads/2018/09/devops-behind-kubernetes-wheel-750x500.jpeg.webp 750w" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20432%20288'%3E%3C/svg%3E" data-lazy-sizes="(max-width: 432px) 100vw, 432px">
+<img width="432" height="288" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20432%20288'%3E%3C/svg%3E" alt="Kubernetes in DevOps" data-lazy-srcset="https://www.miquido.com/wp-content/uploads/2018/09/devops-behind-kubernetes-wheel-432x288.jpeg 432w, https://www.miquido.com/wp-content/uploads/2018/09/devops-behind-kubernetes-wheel-750x500.jpeg 750w" data-lazy-sizes="(max-width: 432px) 100vw, 432px" data-lazy-src="https://www.miquido.com/wp-content/uploads/2018/09/devops-behind-kubernetes-wheel-432x288.jpeg">
+</picture>
+<noscript><picture class="attachment-blog-archive-thumb-small size-blog-archive-thumb-small wp-post-image">
+<source type="image/webp" srcset="../../wp-content/uploads/2018/09/devops-behind-kubernetes-wheel-432x288.jpeg.webp 432w, ../../wp-content/uploads/2018/09/devops-behind-kubernetes-wheel-750x500.jpeg.webp 750w" sizes="(max-width: 432px) 100vw, 432px">
+<img width="432" height="288" src="../../wp-content/uploads/2018/09/devops-behind-kubernetes-wheel-432x288.jpeg" alt="Kubernetes in DevOps" srcset="../../wp-content/uploads/2018/09/devops-behind-kubernetes-wheel-432x288.jpeg 432w, ../../wp-content/uploads/2018/09/devops-behind-kubernetes-wheel-750x500.jpeg 750w" sizes="(max-width: 432px) 100vw, 432px">
+</picture>
+</noscript>                                        </a>
+                                        <section class="blog-info">
+                                                        <ul class="blog-categories-list">
+                                    <li><a class="blog-categories-list__single-category-search" data-filter="software-development" href="../category/software-development.html">Software development</a></li>
+                            </ul>
+                                            <h4 class="blog-item-title"><a href="../devops-behind-kubernetes-wheel/index.htm">DevOps POV: Behind the Kubernetes wheel</a></h4>
+                                            <div class="blog-meta">
+                                                                                                        17 Sep 2018                                                        <span class="separator">|</span>
+                                                                                                6 min read                                            </div>
+                                        </section>
+                                    </article>
+                                                            <article class="blog-item">
+                                        <a class="blog-item-image" href="../flutter-architecture-provider-vs-bloc/index.htm">
+                                            <picture class="attachment-blog-archive-thumb-small size-blog-archive-thumb-small wp-post-image">
+<source type="image/webp" data-lazy-srcset="https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-432x288.jpg.webp 432w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-250x167.jpg.webp 250w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-700x467.jpg.webp 700w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-768x512.jpg.webp 768w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-1536x1024.jpg.webp 1536w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-120x80.jpg.webp 120w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-367x245.jpg.webp 367w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1.jpg.webp 1920w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-750x500.jpg.webp 750w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-600x400.jpg.webp 600w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-450x300.jpg.webp 450w" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20432%20288'%3E%3C/svg%3E" data-lazy-sizes="(max-width: 432px) 100vw, 432px">
+<img width="432" height="288" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20432%20288'%3E%3C/svg%3E" alt="Flutter architecture: Provider vs BLoC" data-lazy-srcset="https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-432x288.jpg 432w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-250x167.jpg 250w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-700x467.jpg 700w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-768x512.jpg 768w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-1536x1024.jpg 1536w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-120x80.jpg 120w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-367x245.jpg 367w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1.jpg 1920w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-750x500.jpg 750w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-600x400.jpg 600w, https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-450x300.jpg 450w" data-lazy-sizes="(max-width: 432px) 100vw, 432px" data-lazy-src="https://www.miquido.com/wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-432x288.jpg">
+</picture>
+<noscript><picture class="attachment-blog-archive-thumb-small size-blog-archive-thumb-small wp-post-image">
+<source type="image/webp" srcset="../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-432x288.jpg.webp 432w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-250x167.jpg.webp 250w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-700x467.jpg.webp 700w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-768x512.jpg.webp 768w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-1536x1024.jpg.webp 1536w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-120x80.jpg.webp 120w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-367x245.jpg.webp 367w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1.jpg.webp 1920w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-750x500.jpg.webp 750w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-600x400.jpg.webp 600w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-450x300.jpg.webp 450w" sizes="(max-width: 432px) 100vw, 432px">
+<img width="432" height="288" src="../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-432x288.jpg" alt="Flutter architecture: Provider vs BLoC" srcset="../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-432x288.jpg 432w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-250x167.jpg 250w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-700x467.jpg 700w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-768x512.jpg 768w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-1536x1024.jpg 1536w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-120x80.jpg 120w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-367x245.jpg 367w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1.jpg 1920w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-750x500.jpg 750w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-600x400.jpg 600w, ../../wp-content/uploads/2020/04/header-provider-vs-bloc-making-the-right-decision-1-450x300.jpg 450w" sizes="(max-width: 432px) 100vw, 432px">
+</picture>
+</noscript>                                        </a>
+                                        <section class="blog-info">
+                                                        <ul class="blog-categories-list">
+                                    <li><a class="blog-categories-list__single-category-search" data-filter="software-development" href="../category/software-development.html">Software development</a></li>
+                            </ul>
+                                            <h4 class="blog-item-title"><a href="../flutter-architecture-provider-vs-bloc/index.htm">Flutter architecture: Provider vs BLoC</a></h4>
+                                            <div class="blog-meta">
+                                                                                                        17 Apr 2020                                                        <span class="separator">|</span>
+                                                                                                23 min read                                            </div>
+                                        </section>
+                                    </article>
+                                            </div>
+                    <div class="blog-related-posts-footer col-12 push-left-1">
+                        <a href="../index.htm" class="link--arrow primary-link">View all posts<span class="arrow--right"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="10" viewbox="0 0 7 10"><path d="M8.45 8.45h-2v-5h-5v-2h7v7z" transform="translate(-662 -767) translate(598 761) translate(61 6) rotate(45 4.95 4.95)"></path></svg>
+</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section--contact-from-block section-margin--xl">
+    <div class="container">
+        <div class="wrapper">
+            <div class="container-contact-from-block space-inside">
+                <div id="contact-us" class="wrapper-inside section-nav-anchor">
+                    <div class="contact-from-header col-3 push-left-2 col-tablet-6 push-left-tablet-1 col-mobile-6 push-left-mobile-0">
+                        <h2 class="header2 element-margin-bottom--s animated-header-long">Want to talk about your project?</h2>
+                        <div class="contact-person">
+                            <figure class="avatar element-margin-right">
+                                <picture>
+<source type="image/webp" data-lazy-srcset="https://www.miquido.com/wp-content/uploads/2021/12/miquido-contact-malczyk@2x.png.webp" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://www.miquido.com/wp-content/uploads/2021/12/miquido-contact-malczyk@2x.png">
+</picture>
+<noscript><picture>
+<source type="image/webp" srcset="../../wp-content/uploads/2021/12/miquido-contact-malczyk%402x.png.webp">
+<img src="../../wp-content/uploads/2021/12/miquido-contact-malczyk%402x.png" alt="">
+</picture>
+</noscript>
+                            </figure>
+                            <p>Hi, I’m Sebastian from Miquido. How can we help you with your project? Fill out the form or write us at <a href="mailto:hello@miquido.com">hello@miquido.com</a>. We’ll get back to you soon!</p>
+                        </div>
+                    </div>
+                    <div class="contact-from-container col-6 push-left-1 col-tablet-6 push-left-tablet-1 col-mobile-6 push-left-mobile-0">
+                                                        
+                                <script charset="utf-8" type="text/javascript" src="../../forms/v2.js"></script>
+                                <script>
+                                    hbspt.forms.create({
+                                        region: "na1",
+                                        portalId: "20037839",
+                                        formId: "2fd4efed-2dc4-4ab1-9161-f2f8941344aa"
+                                    });
+                                </script>
+                                                                    <p class="hubspot-policy">
+                                        <small class="form-legend policy">The controller of your personal data is Miquido sp. z ograniczoną odpowiedzialnością sp.k. with its registered office in Krakow, ul. Zabłocie 43a, 30-701 Kraków. We process the above information in order to answer your questions, contact you and conduct business communication, and if you tick the checkbox, to send you messages containing commercial, business and marketing materials.<br>
+                                        <span class="policy-more">The basis for the processing of your data is your consent and Miquido's legitimate interest.You can unsubscribe from the marketing communications at any time. You also have the right to access data, the right to request rectification, deletion or limitation of their processing, data transfer, the right to object, as well as the right to lodge a complaint to the supervisory body. Full information about processing of personal data can be found in the <a href="../../privacy-policy.html" target="_blank">Privacy Policy</a></span></small><br>
+                                        <span class="cookie-policy-more"><small class="form-legend">Show more</small></span>
+                                    </p>
+                                                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+            </main>
+
+            
+            <footer class="footer">
+
+                
+                <section class="footer-section--top">
+                    <div class="container">
+                        <div class="wrapper">
+
+                            
+                            <div class="container-footer-menu container-darker-grey">
+    <div class="wrapper-inside">
+        <div class="container-footer-logo col-12 push-left-1 col-tablet-7 push-left-tablet-1 col-mobile-6 push-left-mobile-0" data-aos="fade-up" data-aos-delay="0">
+            <figure>
+                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20121%2031'%3E%3C/svg%3E" width="121" height="31" alt="" data-lazy-src="https://www.miquido.com/wp-content/themes/wpmiquido/img/logos/logo__miquido.svg"><noscript><img src="../../wp-content/themes/wpmiquido/img/logos/logo__miquido.svg" width="121" height="31" alt=""></noscript>
+            </figure>
+        </div>
+        <div class="container-footer-menu-items col-12 push-left-1 col-tablet-7 push-left-tablet-1 col-mobile-6 push-left-mobile-0">
+            <div class="footer-menu-block" data-aos="fade-up">
+                <div class="widget_text box"><div class="textwidget custom-html-widget"><h4>Miquido Sp. z o.o. Sp. k.</h4>
+<p>Zabłocie 43a</p>
+<p>30-701 Krakow</p>
+<p><a href="mailto:hello@miquido.com">hello@miquido.com</a></p>
+<p><a href="tel:+48536083559">+48 536 083 559</a></p>
+<p>VAT-UE: 9452138173</p></div></div>            </div>
+            <div class="footer-menu-block" data-aos="fade-up">
+                <div class="box">			<div class="textwidget"><h4><a href="../../software-development-services/index.htm">Services</a></h4>
+</div>
+		</div><div class="box"><div class="menu-footer-menu1-container"><ul id="menu-footer-menu1" class="menu"><li id="menu-item-12250" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12250"><a href="../../web-mobile-development-company/index.htm">Web &#038; mobile development</a></li>
+<li id="menu-item-12251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12251"><a href="../../custom-app-development-services/index.htm">Custom app development</a></li>
+<li id="menu-item-12252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12252"><a href="../../product-strategy-consulting-services/index.htm">Product strategy</a></li>
+<li id="menu-item-12253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12253"><a href="../../product-design-company/index.htm">Product design</a></li>
+<li id="menu-item-12254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12254"><a href="../../artificial-intelligence-development-company/index.htm">Artificial Intelligence</a></li>
+<li id="menu-item-12255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12255"><a href="../../machine-learning-services/index.htm">Machine Learning</a></li>
+</ul></div></div>            </div>
+            <div class="footer-menu-block" data-aos="fade-up">
+                <div class="box">			<div class="textwidget"><h4><a href="../../our-tech-stack/index.htm">Technologies</a></h4>
+</div>
+		</div><div class="box"><div class="menu-footer-menu2-container"><ul id="menu-footer-menu2" class="menu"><li id="menu-item-12256" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12256"><a href="../../flutter-development-company/index.htm">Flutter</a></li>
+<li id="menu-item-12257" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12257"><a href="../../golang-development-company/index.htm">Golang</a></li>
+<li id="menu-item-12258" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12258"><a href="../../ios-development-company/index.htm">iOS</a></li>
+<li id="menu-item-12259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12259"><a href="../../android-development-company/index.htm">Android</a></li>
+<li id="menu-item-12260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12260"><a href="../../frontend-development-company/index.htm">Frontend</a></li>
+<li id="menu-item-12261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12261"><a href="../../backend-development-services/index.htm">Backend</a></li>
+</ul></div></div>            </div>
+            <div class="footer-menu-block" data-aos="fade-up">
+                <div class="box">			<div class="textwidget"><h4><a href="../../it-services-for-industries/index.htm">Industries</a></h4>
+</div>
+		</div><div class="box"><div class="menu-footer-menu3-container"><ul id="menu-footer-menu3" class="menu"><li id="menu-item-12262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12262"><a href="../../ecommerce-software-solutions/index.htm">eCommerce</a></li>
+<li id="menu-item-12263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12263"><a href="../../fintech-app-development/index.htm">Fintech</a></li>
+<li id="menu-item-12264" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12264"><a href="../../banking-app-development/index.htm">Banking</a></li>
+<li id="menu-item-12265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12265"><a href="../../healthcare-software-solutions/index.htm">Healthcare</a></li>
+<li id="menu-item-12266" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12266"><a href="../../entertainment-app-development/index.htm">Entertainment</a></li>
+</ul></div></div>            </div>
+            <div class="footer-menu-block" data-aos="fade-up">
+                <div class="box">			<div class="textwidget"><h4><a href="../../downloadables.html#ebook">Ebooks &amp; Reports</a></h4>
+</div>
+		</div><div class="box"><div class="menu-footer-menu4-container"><ul id="menu-footer-menu4" class="menu"><li id="menu-item-12267" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12267"><a href="https://lp.miquido.com/guide-to-the-finance-app-sector-ebook" target="_blank">The ultimate guide to fintech</a></li>
+<li id="menu-item-12268" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12268"><a href="https://lp.miquido.com/future-of-mobile-app-development-report" target="_blank">The future of app development</a></li>
+<li id="menu-item-12269" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12269"><a href="https://lp.miquido.com/how-to-validate-your-product-idea" target="_blank">How to validate an idea</a></li>
+<li id="menu-item-12270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12270"><a href="https://lp.miquido.com/legacy-modernisation-ebook" target="_blank">Legacy modernisation guide</a></li>
+</ul></div></div>            </div>
+        </div>
+    </div>
+</div>                            
+
+                            
+                            <div class="container-footer-badges container-darker-grey">
+    <div class="wrapper-inside">
+        <div class="container-footer-awards-logos col-12 push-left-1 col-tablet-6 push-left-tablet-1 col-mobile-6 push-left-mobile-0">
+            <div class="container-footer-awards-logo" data-aos="fade-up" data-aos-delay="100">
+                <div class="box">			<div class="textwidget"><p><img class="alignnone wp-image-5917 size-medium" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" alt="" width="300" height="300" data-lazy-src="https://www.miquido.com/wp-content/uploads/2021/06/award-footer-google-io.svg"><noscript><img class="alignnone wp-image-5917 size-medium" src="../../wp-content/uploads/2021/06/award-footer-google-io.svg" alt="" width="300" height="300"></noscript></p>
+<p>Featured at Google<br>
+I/O 2018</p>
+</div>
+		</div>            </div>
+            <div class="container-footer-awards-logo" data-aos="fade-up" data-aos-delay="100">
+                <div class="box">			<div class="textwidget"><p><a href="../../press/miquido-with-deloitte-technology-fast-50-ce-award/index.htm" rel="noopener nofollow" title="deloitte"><img class="alignnone wp-image-5918 size-medium" title="Deloitte" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" alt="" width="300" height="300" data-lazy-src="https://www.miquido.com/wp-content/uploads/2021/06/miquido-logo-deloitte.svg"><noscript><img class="alignnone wp-image-5918 size-medium" title="Deloitte" src="../../wp-content/uploads/2021/06/miquido-logo-deloitte.svg" alt="" width="300" height="300"></noscript></a></p>
+<p>One of the fastest growing<br>
+companies in Europe</p>
+</div>
+		</div>            </div>
+            <div class="container-footer-awards-logo" data-aos="fade-up" data-aos-delay="100">
+                <div class="box">			<div class="textwidget"><p><img class="alignnone wp-image-5919 size-medium" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" alt="" width="300" height="300" data-lazy-src="https://www.miquido.com/wp-content/uploads/2021/06/miquido-logo-webit.svg"><noscript><img class="alignnone wp-image-5919 size-medium" src="../../wp-content/uploads/2021/06/miquido-logo-webit.svg" alt="" width="300" height="300"></noscript></p>
+<p>The Most Innovative<br>
+Mobile App (CEE)</p>
+</div>
+		</div>            </div>
+            <div class="container-footer-awards-logo" data-aos="fade-up" data-aos-delay="100">
+                <div class="box">			<div class="textwidget"><p><a href="https://www.pangea.ai/vendors/miquido" target="_blank" rel="noopener nofollow noreferrer" title="pangea"><img class="alignnone wp-image-5920 size-medium" title="Pangea" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20250%2083'%3E%3C/svg%3E" alt="" width="250" height="83" data-lazy-src="https://www.miquido.com/wp-content/uploads/2021/06/award-footer-panagea@3x-250x83.png"><noscript><img class="alignnone wp-image-5920 size-medium" title="Pangea" src="../../wp-content/uploads/2021/06/award-footer-panagea%403x-250x83.png" alt="" width="250" height="83"></noscript></a></p>
+<p>Verified as top 7%<br>
+of software vendors</p>
+</div>
+		</div>            </div>
+            <div class="container-footer-awards-logo" data-aos="fade-up" data-aos-delay="100">
+                <div class="box">			<div class="textwidget"><p><picture class="alignnone wp-image-14566 size-full" title="Clutch">
+<source type="image/webp" data-lazy-srcset="https://www.miquido.com/wp-content/uploads/2022/07/Cluth-Top-Mobile-App.png.webp" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" alt="" width="150" height="150" data-lazy-src="https://www.miquido.com/wp-content/uploads/2022/07/Cluth-Top-Mobile-App.png">
+</picture>
+<noscript><picture class="alignnone wp-image-14566 size-full" title="Clutch">
+<source type="image/webp" srcset="../../wp-content/uploads/2022/07/Cluth-Top-Mobile-App.png.webp">
+<img src="../../wp-content/uploads/2022/07/Cluth-Top-Mobile-App.png" alt="" width="150" height="150">
+</picture>
+</noscript></p>
+</div>
+		</div>            </div>
+            <div class="container-footer-awards-logo" data-aos="fade-up" data-aos-delay="100">
+                <div class="box">			<div class="textwidget"><p><a href="https://www.goodfirms.co/company/miquido" target="_blank" rel="noopener nofollow noreferrer" title="goodfirms"><picture class="alignnone wp-image-5923 size-full" title="Goodfirms">
+<source type="image/webp" data-lazy-srcset="https://www.miquido.com/wp-content/uploads/2021/06/miquido-badge-goodfirms.png.webp" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" alt="" width="150" height="150" data-lazy-src="https://www.miquido.com/wp-content/uploads/2021/06/miquido-badge-goodfirms.png">
+</picture>
+<noscript><picture class="alignnone wp-image-5923 size-full" title="Goodfirms">
+<source type="image/webp" srcset="../../wp-content/uploads/2021/06/miquido-badge-goodfirms.png.webp">
+<img src="../../wp-content/uploads/2021/06/miquido-badge-goodfirms.png" alt="" width="150" height="150">
+</picture>
+</noscript></a></p>
+</div>
+		</div>            </div>
+            <div class="container-footer-awards-logo" data-aos="fade-up" data-aos-delay="100">
+                <div class="box">			<div class="textwidget"><p><picture class="alignnone wp-image-14564 size-full" title="Flutter app development companies">
+<source type="image/webp" data-lazy-srcset="https://www.miquido.com/wp-content/uploads/2022/07/Top-Flutter-Development-Companies.png.webp" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" alt="" width="150" height="150" data-lazy-src="https://www.miquido.com/wp-content/uploads/2022/07/Top-Flutter-Development-Companies.png">
+</picture>
+<noscript><picture class="alignnone wp-image-14564 size-full" title="Flutter app development companies">
+<source type="image/webp" srcset="../../wp-content/uploads/2022/07/Top-Flutter-Development-Companies.png.webp">
+<img src="../../wp-content/uploads/2022/07/Top-Flutter-Development-Companies.png" alt="" width="150" height="150">
+</picture>
+</noscript></p>
+</div>
+		</div>            </div>
+        </div>
+    </div>
+</div>                            
+
+                        </div>
+                    </div>
+                </section>
+
+                
+                <section class="footer-section--bottom">
+                    <div class="container container-left">
+                        <div class="wrapper">
+                            <div class="container container-footer-bottom container-dark">
+                                <div class="wrapper-inside">
+                                    <div class="copyright col-6 push-left-1 col-large-6 col-tablet-8 push-left-tablet-0 col-mobile-6 push-left-mobile-0">
+                <p class="copyright">© 2022 Miquido. All rights reserved. <a href="../../privacy-policy/index.htm" target="_blank" rel="noopener noreferrer">Privacy Policy</a></p>
+    </div>
+<div class="footer-social-media col-5 push-left-1 col-large-6 push-left-large-0 col-tablet-8 push-left-tablet-0 col-mobile-6 push-left-mobile-0">
+    <p>Follow us</p>
+    <div class="box"><div class="menu-social-footer-container"><ul id="menu-social-footer" class="menu"><li id="menu-item-1337" class="icon-linkedin menu-item menu-item-type-custom menu-item-object-custom menu-item-1337"><a target="_blank" rel="noopener noreferrer nofollow" href="https://www.linkedin.com/company/miquido">LinkedIn</a></li>
+<li id="menu-item-1338" class="icon-twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-1338"><a target="_blank" rel="noopener noreferrer nofollow" href="https://twitter.com/miquido">Twitter</a></li>
+<li id="menu-item-1339" class="icon-clutch menu-item menu-item-type-custom menu-item-object-custom menu-item-1339"><a target="_blank" rel="noopener noreferrer" href="https://clutch.co/profile/miquido">Clutch</a></li>
+<li id="menu-item-1340" class="icon-facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-1340"><a target="_blank" rel="noopener noreferrer nofollow" href="https://www.facebook.com/miquido/">Facebook</a></li>
+<li id="menu-item-1341" class="icon-medium menu-item menu-item-type-custom menu-item-object-custom menu-item-1341"><a target="_blank" rel="noopener noreferrer nofollow" href="https://medium.com/miquido">Medium</a></li>
+<li id="menu-item-1342" class="icon-dribbble menu-item menu-item-type-custom menu-item-object-custom menu-item-1342"><a target="_blank" rel="noopener noreferrer nofollow" href="https://dribbble.com/miquido/">Dribbble</a></li>
+<li id="menu-item-1343" class="icon-instagram menu-item menu-item-type-custom menu-item-object-custom menu-item-1343"><a target="_blank" rel="noopener noreferrer nofollow" href="https://www.instagram.com/miquido/">Instagram</a></li>
+</ul></div></div></div>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </footer>
+
+            <div class="toTop">
+                <a href="#top" title="go top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40"><g fill="none" fill-rule="evenodd"><path fill="#373B78" d="M0 0H40V40H0z" transform="translate(-390 -651) translate(390 651)"></path><g fill="#FFF"><path d="M11 14H9V7H2V5h9v9z" transform="translate(-390 -651) translate(390 651) rotate(-90 19.5 9) rotate(45 6.5 9.5)"></path></g></g></svg>                </a>
+            </div>
+        
+
+        
+<script data-rocketlazyloadscript='data:text/javascript;base64,CiAgdmFyIF9kY3EgPSBfZGNxIHx8IFtdOwogIHZhciBfZGNzID0gX2RjcyB8fCB7fTsgCiAgX2Rjcy5hY2NvdW50ID0gJzYzNzI3ODQnOwogIAogIChmdW5jdGlvbigpIHsKICAgIHZhciBkYyA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3NjcmlwdCcpOwogICAgZGMudHlwZSA9ICd0ZXh0L2phdmFzY3JpcHQnOyBkYy5hc3luYyA9IHRydWU7IAogICAgZGMuc3JjID0gJy8vdGFnLmdldGRyaXAuY29tLzYzNzI3ODQuanMnOwogICAgdmFyIHMgPSBkb2N1bWVudC5nZXRFbGVtZW50c0J5VGFnTmFtZSgnc2NyaXB0JylbMF07CiAgICBzLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGRjLCBzKTsKICB9KSgpOwo=' type="text/javascript"></script>        
+    
+        
+        
+        
+        
+        
+
+<script data-rocketlazyloadscript='data:text/javascript;base64,KGZ1bmN0aW9uKGQsdSxhYyl7dmFyIHM9ZC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTtzLnR5cGU9J3RleHQvamF2YXNjcmlwdCc7cy5zcmM9J2h0dHBzOi8vYS5vbWFwcGFwaS5jb20vYXBwL2pzL2FwaS5taW4uanMnO3MuYXN5bmM9dHJ1ZTtzLmRhdGFzZXQudXNlcj11O3MuZGF0YXNldC5jYW1wYWlnbj1hYztkLmdldEVsZW1lbnRzQnlUYWdOYW1lKCdoZWFkJylbMF0uYXBwZW5kQ2hpbGQocyk7fSkoZG9jdW1lbnQsMTU5Njc2LCdiZWg3cWRsNzRycXV2Z2tkd3NmdycpOw=='></script>
+
+<script data-rocketlazyloadscript='data:text/javascript;base64,KGZ1bmN0aW9uKGQsdSxhYyl7dmFyIHM9ZC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTtzLnR5cGU9J3RleHQvamF2YXNjcmlwdCc7cy5zcmM9J2h0dHBzOi8vYS5vbWFwcGFwaS5jb20vYXBwL2pzL2FwaS5taW4uanMnO3MuYXN5bmM9dHJ1ZTtzLmRhdGFzZXQudXNlcj11O3MuZGF0YXNldC5jYW1wYWlnbj1hYztkLmdldEVsZW1lbnRzQnlUYWdOYW1lKCdoZWFkJylbMF0uYXBwZW5kQ2hpbGQocyk7fSkoZG9jdW1lbnQsMTU5Njc2LCd2amVuZnludGowbWZ3Y3p3N2s3dycpOw=='></script>
+
+<script data-rocketlazyloadscript='data:text/javascript;base64,KGZ1bmN0aW9uKGQsdSxhYyl7dmFyIHM9ZC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTtzLnR5cGU9J3RleHQvamF2YXNjcmlwdCc7cy5zcmM9J2h0dHBzOi8vYS5vbWFwcGFwaS5jb20vYXBwL2pzL2FwaS5taW4uanMnO3MuYXN5bmM9dHJ1ZTtzLmRhdGFzZXQudXNlcj11O3MuZGF0YXNldC5jYW1wYWlnbj1hYztkLmdldEVsZW1lbnRzQnlUYWdOYW1lKCdoZWFkJylbMF0uYXBwZW5kQ2hpbGQocyk7fSkoZG9jdW1lbnQsMTU5Njc2LCdzOWhzN29zdnl0NG14MmhxdXYwdCcpOw=='></script>
+		
+		<link rel='preload' href='../../wp-content/plugins/luckywp-table-of-contents/front/assets/main.min.css?ver=2.1.4' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" media='all'>
+
+
+
+
+
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var rlArgs = {"script":"tosrus","selector":"lightbox","customEvents":"","activeGalleries":"1","effect":"slide","infinite":"0","keys":"1","autoplay":"0","pauseOnHover":"0","timeout":"4000","pagination":"0","paginationType":"thumbnails","closeOnClick":"1","woocommerce_gallery":"0","ajaxurl":"https:\/\/www.miquido.com\/wp-admin\/admin-ajax.php","nonce":"e7e9c6b0f2","preview":"false","postId":"1130","scriptExtension":""};
+/* ]]> */
+</script>
+
+<script type='text/javascript'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript'>
+(function() {
+"use strict";var e=function(){function n(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(e,t,r){return t&&n(e.prototype,t),r&&n(e,r),e}}();function n(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function r(e,t){n(this,r),this.attrName="data-rocketlazyloadscript",this.browser=t,this.options=this.browser.options,this.triggerEvents=e,this.userEventListener=this.triggerListener.bind(this)}return e(r,[{key:"init",value:function(){this._addEventListener(this)}},{key:"reset",value:function(){this._removeEventListener(this)}},{key:"_addEventListener",value:function(t){this.triggerEvents.forEach(function(e){return window.addEventListener(e,t.userEventListener,t.options)})}},{key:"_removeEventListener",value:function(t){this.triggerEvents.forEach(function(e){return window.removeEventListener(e,t.userEventListener,t.options)})}},{key:"_loadScriptSrc",value:function(){var r=this;document.querySelectorAll("script["+this.attrName+"]").forEach(function(e){var t=e.getAttribute(r.attrName);e.setAttribute("src",t),e.removeAttribute(r.attrName)}),this.reset()}},{key:"triggerListener",value:function(){this._loadScriptSrc(),this._removeEventListener(this)}}],[{key:"run",value:function(){RocketBrowserCompatibilityChecker&&new r(["keydown","mouseover","touchmove","touchstart"],new RocketBrowserCompatibilityChecker({passive:!0})).init()}}]),r}();t.run();
+}());
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/www.miquido.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var cnArgs = {"ajaxUrl":"https:\/\/www.miquido.com\/wp-admin\/admin-ajax.php","nonce":"d0b77d8f70","hideEffect":"none","position":"bottom","onScroll":"0","onScrollOffset":"100","onClick":"0","cookieName":"cookie_notice_accepted","cookieTime":"2592000","cookieTimeRejected":"86400","cookiePath":"\/","cookieDomain":"","redirection":"0","cache":"1","refuse":"0","revokeCookies":"0","revokeCookiesOpt":"automatic","secure":"1"};
+/* ]]> */
+</script>
+
+<script data-rocketlazyloadscript='data:text/javascript;base64,KGZ1bmN0aW9uKGQpe3ZhciBzPWQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7cy50eXBlPSJ0ZXh0L2phdmFzY3JpcHQiO3Muc3JjPSJodHRwczovL2Eub21hcHBhcGkuY29tL2FwcC9qcy9hcGkubWluLmpzIjtzLmFzeW5jPXRydWU7cy5pZD0ib21hcGktc2NyaXB0IjtkLmdldEVsZW1lbnRzQnlUYWdOYW1lKCJoZWFkIilbMF0uYXBwZW5kQ2hpbGQocyk7fSkoZG9jdW1lbnQpOw=='></script>
+
+
+
+
+<style>.lwptoc .lwptoc_i{background-color:#ffffff;border:1px solid #ffffff;}.lwptoc_header{color:#051344;}.lwptoc .lwptoc_i A{color:#9195c6;}.lwptoc .lwptoc_i A:hover,.lwptoc .lwptoc_i A:focus,.lwptoc .lwptoc_i A:active{color:#051344;border-color:#051344;}.lwptoc .lwptoc_i A:visited{color:#051344;}</style>
+		
+		<div id="cookie-notice" role="dialog" class="cookie-notice-hidden cookie-revoke-hidden cn-position-bottom" aria-label="Cookie Notice" style="background-color: rgba(0,0,0,1);"><div class="cookie-notice-container" style="color: #fff;"><span id="cn-notice-text" class="cn-text-container"><h4>Cookies Policy</h4>
+<p>Website uses cookies and tracking pixels to customize its content, analyze movement and users' behavior, provide services and to profile the presented content, including ads. By closing this banner or continuing to browse this website otherwise, you agree to the use of cookies, which means that such cookie files will be placed on your device.<br>
+If you want to withdraw your consent to all or some of the cookies, change your cookie settings, please see further details in the <a href="../../privacy-policy.html" target="_blank">Cookie Policy</a>.</p>
+<span class="cookie-text-more"></span></span><span id="cn-notice-buttons" class="cn-buttons-container"><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button" aria-label="Agree" style="background-color: #00a99d">Agree</a><a href="../../privacy-policy/index.htm" target="_blank" id="cn-more-info" class="cn-more-info cn-button" aria-label="Privacy policy" style="background-color: #00a99d">Privacy policy</a></span><span id="cn-close-notice" data-cookie-set="accept" class="cn-close-icon" title="No"></span></div>
+			
+		</div>
+				<script type="text/javascript">var omapi_localized = {
+			ajax: 'https://www.miquido.com/wp-admin/admin-ajax.php?optin-monster-ajax-route=1',
+			nonce: '351086d0d6',
+			slugs:
+			{"beh7qdl74rquvgkdwsfw":{"slug":"beh7qdl74rquvgkdwsfw","mailpoet":false},"vjenfyntj0mfwczw7k7w":{"slug":"vjenfyntj0mfwczw7k7w","mailpoet":false},"s9hs7osvyt4mx2hquv0t":{"slug":"s9hs7osvyt4mx2hquv0t","mailpoet":false}}		};</script>
+				<script type="text/javascript">var omapi_data = {"wc_cart":[],"object_id":1130,"object_key":"post","object_type":"post","term_ids":[32,70,83],"wp_json":"https:\/\/www.miquido.com\/wp-json"};</script>
+		<noscript></noscript>
+<script>window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){return}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){return}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="../../wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js"></script><script data-rocketlazyloadscript='data:text/javascript;base64,ZnVuY3Rpb24gbGF6eUxvYWRUaHVtYihlKXt2YXIgdD0nPGltZyBsb2FkaW5nPSJsYXp5IiBkYXRhLWxhenktc3JjPSJodHRwczovL2kueXRpbWcuY29tL3ZpL0lEL2hxZGVmYXVsdC5qcGciIGFsdD0iIiB3aWR0aD0iNDgwIiBoZWlnaHQ9IjM2MCI+PG5vc2NyaXB0PjxpbWcgc3JjPSJodHRwczovL2kueXRpbWcuY29tL3ZpL0lEL2hxZGVmYXVsdC5qcGciIGFsdD0iIiB3aWR0aD0iNDgwIiBoZWlnaHQ9IjM2MCI+PC9ub3NjcmlwdD4nLGE9JzxkaXYgY2xhc3M9InBsYXkiPjwvZGl2Pic7cmV0dXJuIHQucmVwbGFjZSgiSUQiLGUpK2F9ZnVuY3Rpb24gbGF6eUxvYWRZb3V0dWJlSWZyYW1lKCl7dmFyIGU9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgiaWZyYW1lIiksdD0iSUQ/YXV0b3BsYXk9MSI7dCs9MD09PXRoaXMuZGF0YXNldC5xdWVyeS5sZW5ndGg/Jyc6JyYnK3RoaXMuZGF0YXNldC5xdWVyeTtlLnNldEF0dHJpYnV0ZSgic3JjIix0LnJlcGxhY2UoIklEIix0aGlzLmRhdGFzZXQuc3JjKSksZS5zZXRBdHRyaWJ1dGUoImZyYW1lYm9yZGVyIiwiMCIpLGUuc2V0QXR0cmlidXRlKCJhbGxvd2Z1bGxzY3JlZW4iLCIxIiksZS5zZXRBdHRyaWJ1dGUoImFsbG93IiwgImFjY2VsZXJvbWV0ZXI7IGF1dG9wbGF5OyBlbmNyeXB0ZWQtbWVkaWE7IGd5cm9zY29wZTsgcGljdHVyZS1pbi1waWN0dXJlIiksdGhpcy5wYXJlbnROb2RlLnJlcGxhY2VDaGlsZChlLHRoaXMpfWRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoIkRPTUNvbnRlbnRMb2FkZWQiLGZ1bmN0aW9uKCl7dmFyIGUsdCxhPWRvY3VtZW50LmdldEVsZW1lbnRzQnlDbGFzc05hbWUoInJsbC15b3V0dWJlLXBsYXllciIpO2Zvcih0PTA7dDxhLmxlbmd0aDt0KyspZT1kb2N1bWVudC5jcmVhdGVFbGVtZW50KCJkaXYiKSxlLnNldEF0dHJpYnV0ZSgiZGF0YS1pZCIsYVt0XS5kYXRhc2V0LmlkKSxlLnNldEF0dHJpYnV0ZSgiZGF0YS1xdWVyeSIsIGFbdF0uZGF0YXNldC5xdWVyeSksZS5zZXRBdHRyaWJ1dGUoImRhdGEtc3JjIiwgYVt0XS5kYXRhc2V0LnNyYyksZS5pbm5lckhUTUw9bGF6eUxvYWRUaHVtYihhW3RdLmRhdGFzZXQuaWQpLGUub25jbGljaz1sYXp5TG9hZFlvdXR1YmVJZnJhbWUsYVt0XS5hcHBlbmRDaGlsZChlKX0pOw=='></script>    <script>"use strict";var wprRemoveCPCSS=function wprRemoveCPCSS(){var elem;document.querySelector('link[data-rocket-async="style"][rel="preload"]')?setTimeout(wprRemoveCPCSS,200):(elem=document.getElementById("rocket-critical-css"))&&"remove"in elem&&elem.remove()};window.addEventListener?window.addEventListener("load",wprRemoveCPCSS):window.attachEvent&&window.attachEvent("onload",wprRemoveCPCSS);</script><script src="../../wp-content/cache/min/1/4aed605e552eadae814688e86ae89925.js" data-minify="1"></script><noscript><link rel="stylesheet" href="../../css?family=Roboto&#038;display=swap"><link data-minify="1" rel='stylesheet' id='wp-faq-schema-jquery-ui-css' href='../../wp-content/cache/min/1/wp-content/plugins/faq-schema-for-pages-and-posts/css/jquery-ui-288e1fc3ea02087cafc9df79bf23e329.css' media='all'><link rel='stylesheet' id='responsive-lightbox-tosrus-css' href='../../wp-content/plugins/responsive-lightbox/assets/tosrus/jquery.tosrus.min.css?ver=2.4.1' media='all'><link data-minify="1" rel='stylesheet' id='aos-css' href='../../wp-content/cache/min/1/wp-content/themes/wpmiquido/css/vendor/aos-e6bc74c299f83247dce10ff461a476da.css' media='all'><link data-minify="1" rel='stylesheet' id='styles-css' href='../../wp-content/cache/min/1/wp-content/cache/asset-cleanup/css/item/styles-v14c77b90f7606bed06ad1aedbada9b6a94d931b5-6ab52b3ff151830c707f66a91cc93a36.css' media='all'><link rel='stylesheet' id='cookie-notice-front-css' href='../../wp-content/plugins/cookie-notice/css/front.min.css?ver=5.4.2' media='all'><link rel='stylesheet' id='enlighterjs-css' href='../../wp-content/plugins/enlighter/cache/enlighterjs.min.css?ver=bQtpxitl4i5v8I3' media='all'><link rel='stylesheet' id='lwptoc-main-css' href='../../wp-content/plugins/luckywp-table-of-contents/front/assets/main.min.css?ver=2.1.4' media='all'></noscript></body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1665061918 -->

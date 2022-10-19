@@ -1,0 +1,1872 @@
+﻿
+<!doctype html>
+<html lang="en-US" class="no-js">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Blog about Software Development, AI, Product Design &amp; Strategy | Miquido</title>
+    <meta name="author" content="Miquido">
+    <meta name="copyright" content="Miquido">
+
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+    <link rel="shortcut icon" href="../../../wp-content/themes/wpmiquido/img/favicons/favicon.ico">
+    <link rel="apple-touch-icon" href="../../../wp-content/themes/wpmiquido/img/favicons/android-chrome-512x512.png">
+    <link rel="apple-touch-icon-precomposed" href="../../../wp-content/themes/wpmiquido/img/favicons/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../wp-content/themes/wpmiquido/img/favicons/apple-touch-icon-180x180.png">
+    <link rel="mask-icon" mask="" href="https://www.miquido.com/wp-content/themes/wpmiquido/img/favicons/favicon.svg" color="#11162A">
+    <meta name="msapplication-TileColor" content="#11162A">
+    <meta name="msapplication-TileImage" content="https://www.miquido.com/wp-content/themes/wpmiquido/img/favicons/android-chrome-512x512.png">
+
+    <meta name="google-site-verification" content="eMXli8rpu8utFBaD6AyVSpF8dZxkQgldwI4tgZN9QRI">
+
+    <meta name="facebook-domain-verification" content="26nlh49w768ddjtvvk83l8x9cfifj3">
+
+    <script>
+        if (top.location != location) {
+            document.documentElement.style.visibility="hidden";
+            top.location=self.location;
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="preload" href="../../../wp-content/themes/wpmiquido/fonts/SofiaProLight/font.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="../../../wp-content/themes/wpmiquido/fonts/SofiaProSemiBold/font.woff2" as="font" type="font/woff2" crossorigin="">
+
+    <link rel='preload' as="style" onload="this.onload=null;this.rel='stylesheet'" data-wpacu-preload-it-async='1' id='wpacu-combined-google-fonts-css-async-preload' href='../../../css?family=Roboto&amp;display=swap' type='text/css' media='all'>
+<script id="wpacu-preload-async-css-fallback">
+/*! LoadCSS. [c]2020 Filament Group, Inc. MIT License */
+/* This file is meant as a standalone workflow for
+- testing support for link[rel=preload]
+- enabling async CSS loading in browsers that do not support rel=preload
+- applying rel preload css once loaded, whether supported or not.
+*/
+(function(w){"use strict";var wpacuLoadCSS=function(href,before,media,attributes){var doc=w.document;var ss=doc.createElement('link');var ref;if(before){ref=before}else{var refs=(doc.body||doc.getElementsByTagName('head')[0]).childNodes;ref=refs[refs.length-1]}
+var sheets=doc.styleSheets;if(attributes){for(var attributeName in attributes){if(attributes.hasOwnProperty(attributeName)){ss.setAttribute(attributeName,attributes[attributeName])}}}
+ss.rel="stylesheet";ss.href=href;ss.media="only x";function ready(cb){if(doc.body){return cb()}
+setTimeout(function(){ready(cb)})}
+ready(function(){ref.parentNode.insertBefore(ss,(before?ref:ref.nextSibling))});var onwpaculoadcssdefined=function(cb){var resolvedHref=ss.href;var i=sheets.length;while(i--){if(sheets[i].href===resolvedHref){return cb()}}
+setTimeout(function(){onwpaculoadcssdefined(cb)})};function loadCB(){if(ss.addEventListener){ss.removeEventListener("load",loadCB)}
+ss.media=media||"all"}
+if(ss.addEventListener){ss.addEventListener("load",loadCB)}
+ss.onwpaculoadcssdefined=onwpaculoadcssdefined;onwpaculoadcssdefined(loadCB);return ss};if(typeof exports!=="undefined"){exports.wpacuLoadCSS=wpacuLoadCSS}else{w.wpacuLoadCSS=wpacuLoadCSS}}(typeof global!=="undefined"?global:this))
+</script>
+    <style>
+        @font-face{font-family:'sofia-pro';src:local('sofia-pro'),
+url('../../../wp-content/themes/wpmiquido/fonts/SofiaProLight/font.woff2') format('woff2'),
+url('../../../wp-content/themes/wpmiquido/fonts/SofiaProLight/font.woff') format('woff');font-weight:300;font-style:normal;font-display:swap;}
+
+        @font-face{font-family:'sofia-pro';src:local('sofia-pro'),
+url('../../../wp-content/themes/wpmiquido/fonts/SofiaProSemiBold/font.woff2') format('woff2'),
+url('../../../wp-content/themes/wpmiquido/fonts/SofiaProSemiBold/font.woff') format('woff');font-weight:600;font-style:normal;font-display:swap;}
+    </style>
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Miquido",
+            "logo": "https://www.miquido.com/wp-content/themes/wpmiquido/img/logos/logo__miquido.svg",
+            "url": "https://www.miquido.com/",
+            "sameAs": [
+                "https://twitter.com/miquido",
+                "https://www.linkedin.com/company/miquido/",
+                "https://www.facebook.com/miquido/",
+                "https://www.instagram.com/miquido/",
+                "https://clutch.co/profile/miquido",
+                "https://dribbble.com/miquido/",
+                "https://www.behance.net/miquido"
+                ],
+            "email": "hello@miquido.com",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+48 536 083 559",
+                "contactType": "customer support",
+                "contactOption": "TollFree",
+                "areaServed": "PL"
+            },
+            "foundingDate": "2011",
+            "foundingLocation": "Krakow, Poland",
+            "member": {
+                "@type": "Person",
+                "name": "Krzysztof Kogutkiewicz",
+                "jobTitle": "CEO",
+                "nationality": "Poland",
+                "url": "https://www.linkedin.com/in/krzysztofkogutkiewicz/"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Zabłocie 43a",
+                "addressLocality": "Krakow",
+                "postalCode": "30-701",
+                "addressCountry": "Poland"
+            }
+        }
+    </script>
+
+    
+	
+	<meta name="description" content="Visit our blog and get fresh tech tips, business insights &amp; design know-hows. Learn more about software development, project management &amp; product design!">
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<link rel="canonical" href="index.htm">
+	<link rel="prev" href="../2/index.htm">
+	<link rel="next" href="../4/index.htm">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Blog about Software Development, AI, Product Design &amp; Strategy | Miquido">
+	<meta property="og:description" content="Visit our blog and get fresh tech tips, business insights &amp; design know-hows. Learn more about software development, project management &amp; product design!">
+	<meta property="og:url" content="https://www.miquido.com/blog/">
+	<meta property="og:site_name" content="Miquido">
+	<meta property="og:image" content="https://www.miquido.com/wp-content/uploads/uploads/2020/07/miquido-embeded.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@miquido">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.miquido.com/#organization","name":"Miquido","url":"https://www.miquido.com/","sameAs":["https://www.facebook.com/miquido/","https://www.instagram.com/miquido/","https://www.linkedin.com/company/miquido","https://twitter.com/miquido"],"logo":{"@type":"ImageObject","@id":"https://www.miquido.com/#logo","inLanguage":"en-US","url":"https://www.miquido.com/wp-content/uploads/uploads/2020/07/logo__miquido.svg","width":121,"height":31,"caption":"Miquido"},"image":{"@id":"https://www.miquido.com/#logo"}},{"@type":"WebSite","@id":"https://www.miquido.com/#website","url":"https://www.miquido.com/","name":"Miquido","description":"","publisher":{"@id":"https://www.miquido.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://www.miquido.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.miquido.com/blog/page/3/#primaryimage","inLanguage":"en-US","url":"https://www.miquido.com/wp-content/uploads/2021/08/placeholder-image.png","width":1300,"height":650},{"@type":["WebPage","CollectionPage"],"@id":"https://www.miquido.com/blog/page/3/#webpage","url":"https://www.miquido.com/blog/page/3/","name":"Blog about Software Development, AI, Product Design & Strategy | Miquido","isPartOf":{"@id":"https://www.miquido.com/#website"},"primaryImageOfPage":{"@id":"https://www.miquido.com/blog/page/3/#primaryimage"},"datePublished":"2021-08-30T10:07:40+00:00","dateModified":"2021-09-02T09:21:37+00:00","description":"Visit our blog and get fresh tech tips, business insights & design know-hows. Learn more about software development, project management & product design!","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.miquido.com/blog/page/3/"]}]}]}</script>
+	
+
+
+<link rel='dns-prefetch' href='//a.omappapi.com'>
+<link href='https://fonts.gstatic.com' crossorigin="" rel='preconnect'>
+<link rel='stylesheet' id='wp-faq-schema-jquery-ui-css' href='../../../wp-content/plugins/faq-schema-for-pages-and-posts/css/jquery-ui.css?ver=2.0.0' media='all'>
+<link rel='stylesheet' id='aos-css' href='../../../wp-content/themes/wpmiquido/css/vendor/aos.css?ver=2.3.4' media='all'>
+<link rel='stylesheet' id='styles-css' href='../../../wp-content/cache/asset-cleanup/css/item/styles-v14c77b90f7606bed06ad1aedbada9b6a94d931b5.css' media='all'>
+<link rel='stylesheet' id='cookie-notice-front-css' href='../../../wp-content/plugins/cookie-notice/css/front.min.css?ver=5.4.2' media='all'>
+<link rel='stylesheet' id='enlighterjs-css' href='../../../wp-content/plugins/enlighter/cache/enlighterjs.min.css?ver=bQtpxitl4i5v8I3' media='all'>
+<script type='text/javascript' src='../../../wp-content/themes/wpmiquido/js/jquery.min.js?ver=3.5.1'></script>
+<script type='text/javascript' src='../../../wp-content/themes/wpmiquido/js/anime.min.js?ver=2.2.0'></script>
+<script type='text/javascript' src='../../../wp-content/themes/wpmiquido/js/aos.js?ver=2.3.4'></script>
+<script type='text/javascript' src='../../../wp-content/themes/wpmiquido/js/isotope.pkgd.min.js?ver=3.0.6'></script>
+<script type='text/javascript' src='../../../wp-content/themes/wpmiquido/js/owl.carousel.min.js?ver=2.3.4'></script>
+<script type='text/javascript' src='../../../wp-content/themes/wpmiquido/js/jquery.lazy.min.js?ver=1.7.10'></script>
+<script type='text/javascript' src='../../../wp-content/themes/wpmiquido/js/gtm.js?ver=1.0.0'></script>
+<script type='text/javascript' src='../../../wp-content/themes/wpmiquido/js/scripts.js?ver=1.0.0'></script>
+<script type='text/javascript'>
+!function(Gleap,t,i){if(!(Gleap=window.Gleap=window.Gleap||[]).invoked){for(window.GleapActions=[],Gleap.invoked=!0,Gleap.methods=["identify","clearIdentity","attachCustomData","setCustomData","removeCustomData","clearCustomData","registerCustomAction","logEvent","sendSilentCrashReport","startFeedbackFlow","setAppBuildNumber","setAppVersionCode","preFillForm","setApiUrl","setFrameUrl","isOpened","open","close","on","setLanguage","setOfflineMode","initialize"],Gleap.f=function(e){return function(){var t=Array.prototype.slice.call(arguments);window.GleapActions.push({e:e,a:t})}},t=0;t<Gleap.methods.length;t++)Gleap[i=Gleap.methods[t]]=Gleap.f(i);Gleap.load=function(){var t=document.getElementsByTagName("head")[0],i=document.createElement("script");i.type="text/javascript",i.async=!0,i.src="https://sdk.gleap.io/latest/index.js",t.appendChild(i)},Gleap.load(),Gleap.initialize("iWPG722wZ3FQsDEjb6qYZoHmplDYBAgD")}}();
+</script>
+<script type='text/javascript' src='../../../wp-content/plugins/responsive-lightbox/assets/infinitescroll/infinite-scroll.pkgd.min.js?ver=5.4.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wp_applaud = {"ajaxurl":"https:\/\/www.miquido.com\/wp-admin\/admin-ajax.php","user_likes":"25"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../wp-content/plugins/wp-applaud/assets/scripts/wp-applaud.js?ver=5.4.2'></script>
+<link rel="Shortcut Icon" type="image/x-icon" href="../../../wp-content/themes/wpmiquido/img/favicons/favicon.ico">            <script type="application/ld+json">
+                {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "listItem",
+            "position": 1,
+            "item": {
+                "name": "Home",
+                "@id": "https://www.miquido.com"
+            }
+        },
+        {
+            "@type": "listItem",
+            "position": 2,
+            "item": {
+                "name": "Blog",
+                "@id": "https://www.miquido.com/blog/"
+            }
+        }
+    ]
+}            </script>
+        </head>
+
+<body class="blog paged paged-3 ajax-wp-applaud cookies-not-set">
+    
+    
+    <header class="header">
+        <div class="submenu-bg"></div>
+
+        
+        <div class="container container--header">
+
+            
+            <nav class="nav--main" role="navigation">
+
+    <a class="logo" href="../../../index.htm" title="Miquido">
+                <img class="logo_image" src="../../../wp-content/themes/wpmiquido/img/logos/logo__miquido.svg" title="Miquido Logo" alt="Miquido Logo" width="164" height="42">
+    </a>    <a class="menu-careers-button" href="https://careers.miquido.com/job-offers/" title="Miquido Careers" target="_blank">Join our team! <svg width="12" height="10" viewbox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.94055 1.59992C6.72278 0.822524 7.27063 0.150333 8.47571 0.0190607C10.7384 -0.228589 12.8195 1.97977 11.6769 4.15368C11.3517 4.77281 10.6896 5.50924 9.95715 6.2317C9.15344 7.02493 8.26379 7.80232 7.64075 8.39165L5.94153 9.99858L4.53723 8.71006C2.84778 7.15899 0.0928948 5.20666 0.00207453 2.78789C-0.061402 1.09345 1.34094 0.00788851 2.95422 0.0274398C4.39563 0.04606 5.00207 0.729423 5.94055 1.59992Z" fill="#494D9F"></path>
+</svg>
+</a>
+    <div class="nav-container">
+        <ul class="menu"><li id="menu-item-1327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1327"><a href="../../../software-development-services/index.htm">Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-3912" class="all-submenu menu-item menu-item-type-post_type menu-item-object-page menu-item-3912"><a href="../../../software-development-services/index.htm">All services</a></li>
+	<li id="menu-item-3974" class="icon icon-ideation menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3974"><a href="../../../ideation-and-strategy-services/index.htm">Ideation &#038; Strategy</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5547" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5547"><a href="../../../product-strategy-consulting-services/index.htm">Product Strategy</a></li>
+		<li id="menu-item-5563" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5563"><a href="../../../digital-transformation-services/index.htm">Digital Transformation</a></li>
+		<li id="menu-item-6319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6319"><a href="../../../legacy-modernisation-services/index.htm">Legacy app modernisation</a></li>
+		<li id="menu-item-3975" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3975"><a href="../../../research-development-company/index.htm">Research &#038; Development</a></li>
+	</ul>
+</li>
+	<li id="menu-item-5208" class="icon icon-product menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5208"><a href="../../../product-design-company/index.htm">Product Design</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5362" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5362"><a href="../../../ux-design-services/index.htm">UX Design</a></li>
+		<li id="menu-item-5752" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5752"><a href="../../../ui-design-services/index.htm">UI Design</a></li>
+		<li id="menu-item-5579" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5579"><a href="../../../product-bootcamp/index.htm">Product Bootcamp</a></li>
+		<li id="menu-item-5117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5117"><a href="../../../workshops/index.htm">Workshops</a></li>
+	</ul>
+</li>
+	<li id="menu-item-3924" class="icon icon-web menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3924"><a href="../../../web-mobile-development-company/index.htm">Web &#038; Mobile</a>
+	<ul class="sub-menu">
+		<li id="menu-item-4763" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4763"><a href="../../../custom-app-development-services/index.htm">Custom app</a></li>
+	</ul>
+</li>
+	<li id="menu-item-5305" class="icon icon-cloud menu-item menu-item-type-post_type menu-item-object-page menu-item-5305"><a href="../../../cloud-computing-services/index.htm">Cloud Services</a></li>
+	<li id="menu-item-14723" class="icon icon-ta menu-item menu-item-type-post_type menu-item-object-page menu-item-14723"><a href="../../../team-augmentation/index.htm">Team Augmentation</a></li>
+</ul>
+</li>
+<li id="menu-item-3916" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3916"><a href="../../../our-tech-stack/index.htm">Technologies</a>
+<ul class="sub-menu">
+	<li id="menu-item-3917" class="all-submenu menu-item menu-item-type-post_type menu-item-object-page menu-item-3917"><a href="../../../our-tech-stack/index.htm">All technologies</a></li>
+	<li id="menu-item-4109" class="icon icon-android menu-item menu-item-type-post_type menu-item-object-page menu-item-4109"><a href="../../../android-development-company/index.htm">Android</a></li>
+	<li id="menu-item-4108" class="icon icon-ios menu-item menu-item-type-post_type menu-item-object-page menu-item-4108"><a href="../../../ios-development-company/index.htm">iOS</a></li>
+	<li id="menu-item-3921" class="icon icon-cross menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3921"><a href="../../../cross-platform-app-development/index.htm">Cross-platform</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5102"><a href="../../../react-native-app-development-company/index.htm">React Native</a></li>
+		<li id="menu-item-5196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5196"><a href="../../../flutter-development-company/index.htm">Flutter</a></li>
+	</ul>
+</li>
+	<li id="menu-item-4106" class="icon icon-frontend menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4106"><a href="../../../frontend-development-company/index.htm">Frontend</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5469" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5469"><a href="../../../angular-development-company/index.htm">Angular</a></li>
+		<li id="menu-item-11081" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11081"><a href="../../../react-js-development/index.htm">React</a></li>
+	</ul>
+</li>
+	<li id="menu-item-4107" class="icon icon-backend menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4107"><a href="../../../backend-development-services/index.htm">Backend</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5294" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5294"><a href="../../../golang-development-company/index.htm">Golang</a></li>
+		<li id="menu-item-5175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5175"><a href="../../../node-js-development-company/index.htm">Node.js</a></li>
+		<li id="menu-item-6259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6259"><a href="../../../java-development-company/index.htm">Java</a></li>
+	</ul>
+</li>
+	<li id="menu-item-3928" class="icon icon-ai menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3928"><a href="../../../artificial-intelligence-development-company/index.htm">Artificial Intelligence</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5007" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5007"><a href="../../../data-science-services/index.htm">Data science</a></li>
+		<li id="menu-item-5008" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5008"><a href="../../../computer-vision-services/index.htm">Computer Vision</a></li>
+		<li id="menu-item-5009" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5009"><a href="../../../machine-learning-services/index.htm">Machine Learning</a></li>
+		<li id="menu-item-5010" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5010"><a href="../../../voice-assistant-and-chatbots-development-services/index.htm">Voice assistants &#038; chatbots</a></li>
+	</ul>
+</li>
+	<li id="menu-item-14679" class="icon icon-blockchain menu-item menu-item-type-post_type menu-item-object-page menu-item-14679"><a href="../../../blockchain-development/index.htm">Blockchain</a></li>
+</ul>
+</li>
+<li id="menu-item-3915" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3915"><a href="../../../it-services-for-industries/index.htm">Industries</a>
+<ul class="sub-menu">
+	<li id="menu-item-3918" class="all-submenu menu-item menu-item-type-post_type menu-item-object-page menu-item-3918"><a href="../../../it-services-for-industries/index.htm">All industries</a></li>
+	<li id="menu-item-3920" class="icon icon-healthcare menu-item menu-item-type-post_type menu-item-object-page menu-item-3920"><a href="../../../healthcare-software-solutions/index.htm">Healthcare</a></li>
+	<li id="menu-item-3919" class="icon icon-ecommerce menu-item menu-item-type-post_type menu-item-object-page menu-item-3919"><a href="../../../ecommerce-software-solutions/index.htm">eCommerce</a></li>
+	<li id="menu-item-4162" class="icon icon-finetech menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4162"><a href="../../../fintech-app-development/index.htm">Fintech</a>
+	<ul class="sub-menu">
+		<li id="menu-item-6280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6280"><a href="../../../banking-app-development/index.htm">Banking</a></li>
+		<li id="menu-item-5470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5470"><a href="../../../insurance-software-development/index.htm">Insurance</a></li>
+	</ul>
+</li>
+	<li id="menu-item-4163" class="icon icon-entertainment menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4163"><a href="../../../entertainment-app-development/index.htm">Entertainment</a>
+	<ul class="sub-menu">
+		<li id="menu-item-6413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6413"><a href="../../../music-app-development/index.htm">Music</a></li>
+		<li id="menu-item-11366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11366"><a href="../../../travel-app-development/index.htm">Travel</a></li>
+	</ul>
+</li>
+	<li id="menu-item-5072" class="icon icon-other menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5072"><a href="../../../it-services-for-other-industries/index.htm">Other</a>
+	<ul class="sub-menu">
+		<li id="menu-item-12348" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12348"><a href="../../../education-app-development/index.htm">Education</a></li>
+		<li id="menu-item-12371" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12371"><a href="../../../food-delivery-app-development/index.htm">Food delivery</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-1326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1326"><a href="../../../portfolio/index.htm">Portfolio</a></li>
+<li id="menu-item-1324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1324"><a href="../../../about-us/index.htm">Company</a>
+<ul class="sub-menu">
+	<li id="menu-item-3913" class="icon icon-about menu-item menu-item-type-post_type menu-item-object-page menu-item-3913"><a href="../../../about-us/index.htm">About us<p class="menu-item-description">Get to know us a little better and see what we’re all about</p></a></li>
+	<li id="menu-item-1329" class="icon icon-careers menu-item menu-item-type-custom menu-item-object-custom menu-item-1329"><a target="_blank" rel="noopener noreferrer" href="https://careers.miquido.com/">Careers<p class="menu-item-description">We’re always looking for fresh talent. Check how to join us</p></a></li>
+	<li id="menu-item-15055" class="icon icon-aiwaves menu-item menu-item-type-custom menu-item-object-custom menu-item-15055"><a target="_blank" rel="noopener noreferrer" href="https://lp.miquido.com/ai-waves">AI Waves<p class="menu-item-description">Leading industry experts discussing the future of tech</p></a></li>
+</ul>
+</li>
+<li id="menu-item-12648" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6479 current_page_item current_page_parent menu-item-12648"><a href="../../index.htm" aria-current="page">Blog</a></li>
+<li id="menu-item-11535" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11535"><a href="../../../downloadables/index.htm">Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-11536" class="icon icon-downloadables menu-item menu-item-type-post_type menu-item-object-page menu-item-11536"><a href="../../../downloadables/index.htm">Downloadables<p class="menu-item-description">Get valuable insights from our downloadable materials</p></a></li>
+	<li id="menu-item-11538" class="icon icon-glossary menu-item menu-item-type-post_type menu-item-object-page menu-item-11538"><a href="../../../it-terms-glossary/index.htm">IT Glossary<p class="menu-item-description">Master important IT terms with our comprehensive dictionary</p></a></li>
+	<li id="menu-item-11537" class="icon icon-press menu-item menu-item-type-post_type menu-item-object-page menu-item-11537"><a href="../../../press/index.htm">Press<p class="menu-item-description">Learn more about our work and what we’ve been up to</p></a></li>
+</ul>
+</li>
+</ul>    </div>
+
+    <nav class="menu"><a href="../../../get-a-quote/index.htm">Contact us</a>
+</nav>
+    <a href="#" class="menu--button" title="open mobile menu">
+        <span>menu</span>
+    </a>
+</nav>
+<div class="menu-mobile">
+    <div class="wrapper">
+        <div class="menu-container">
+            <ul class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1327"><a href="../../../software-development-services/index.htm">Services</a>
+<ul class="sub-menu">
+	<li class="all-submenu menu-item menu-item-type-post_type menu-item-object-page menu-item-3912"><a href="../../../software-development-services/index.htm">All services</a></li>
+	<li class="icon icon-ideation menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3974"><a href="../../../ideation-and-strategy-services/index.htm">Ideation &#038; Strategy</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5547"><a href="../../../product-strategy-consulting-services/index.htm">Product Strategy</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5563"><a href="../../../digital-transformation-services/index.htm">Digital Transformation</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6319"><a href="../../../legacy-modernisation-services/index.htm">Legacy app modernisation</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3975"><a href="../../../research-development-company/index.htm">Research &#038; Development</a></li>
+	</ul>
+</li>
+	<li class="icon icon-product menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5208"><a href="../../../product-design-company/index.htm">Product Design</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5362"><a href="../../../ux-design-services/index.htm">UX Design</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5752"><a href="../../../ui-design-services/index.htm">UI Design</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5579"><a href="../../../product-bootcamp/index.htm">Product Bootcamp</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5117"><a href="../../../workshops/index.htm">Workshops</a></li>
+	</ul>
+</li>
+	<li class="icon icon-web menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3924"><a href="../../../web-mobile-development-company/index.htm">Web &#038; Mobile</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4763"><a href="../../../custom-app-development-services/index.htm">Custom app</a></li>
+	</ul>
+</li>
+	<li class="icon icon-cloud menu-item menu-item-type-post_type menu-item-object-page menu-item-5305"><a href="../../../cloud-computing-services/index.htm">Cloud Services</a></li>
+	<li class="icon icon-ta menu-item menu-item-type-post_type menu-item-object-page menu-item-14723"><a href="../../../team-augmentation/index.htm">Team Augmentation</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3916"><a href="../../../our-tech-stack/index.htm">Technologies</a>
+<ul class="sub-menu">
+	<li class="all-submenu menu-item menu-item-type-post_type menu-item-object-page menu-item-3917"><a href="../../../our-tech-stack/index.htm">All technologies</a></li>
+	<li class="icon icon-android menu-item menu-item-type-post_type menu-item-object-page menu-item-4109"><a href="../../../android-development-company/index.htm">Android</a></li>
+	<li class="icon icon-ios menu-item menu-item-type-post_type menu-item-object-page menu-item-4108"><a href="../../../ios-development-company/index.htm">iOS</a></li>
+	<li class="icon icon-cross menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3921"><a href="../../../cross-platform-app-development/index.htm">Cross-platform</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5102"><a href="../../../react-native-app-development-company/index.htm">React Native</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5196"><a href="../../../flutter-development-company/index.htm">Flutter</a></li>
+	</ul>
+</li>
+	<li class="icon icon-frontend menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4106"><a href="../../../frontend-development-company/index.htm">Frontend</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5469"><a href="../../../angular-development-company/index.htm">Angular</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11081"><a href="../../../react-js-development/index.htm">React</a></li>
+	</ul>
+</li>
+	<li class="icon icon-backend menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4107"><a href="../../../backend-development-services/index.htm">Backend</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5294"><a href="../../../golang-development-company/index.htm">Golang</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5175"><a href="../../../node-js-development-company/index.htm">Node.js</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6259"><a href="../../../java-development-company/index.htm">Java</a></li>
+	</ul>
+</li>
+	<li class="icon icon-ai menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3928"><a href="../../../artificial-intelligence-development-company/index.htm">Artificial Intelligence</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5007"><a href="../../../data-science-services/index.htm">Data science</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5008"><a href="../../../computer-vision-services/index.htm">Computer Vision</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5009"><a href="../../../machine-learning-services/index.htm">Machine Learning</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5010"><a href="../../../voice-assistant-and-chatbots-development-services/index.htm">Voice assistants &#038; chatbots</a></li>
+	</ul>
+</li>
+	<li class="icon icon-blockchain menu-item menu-item-type-post_type menu-item-object-page menu-item-14679"><a href="../../../blockchain-development/index.htm">Blockchain</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3915"><a href="../../../it-services-for-industries/index.htm">Industries</a>
+<ul class="sub-menu">
+	<li class="all-submenu menu-item menu-item-type-post_type menu-item-object-page menu-item-3918"><a href="../../../it-services-for-industries/index.htm">All industries</a></li>
+	<li class="icon icon-healthcare menu-item menu-item-type-post_type menu-item-object-page menu-item-3920"><a href="../../../healthcare-software-solutions/index.htm">Healthcare</a></li>
+	<li class="icon icon-ecommerce menu-item menu-item-type-post_type menu-item-object-page menu-item-3919"><a href="../../../ecommerce-software-solutions/index.htm">eCommerce</a></li>
+	<li class="icon icon-finetech menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4162"><a href="../../../fintech-app-development/index.htm">Fintech</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6280"><a href="../../../banking-app-development/index.htm">Banking</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5470"><a href="../../../insurance-software-development/index.htm">Insurance</a></li>
+	</ul>
+</li>
+	<li class="icon icon-entertainment menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4163"><a href="../../../entertainment-app-development/index.htm">Entertainment</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6413"><a href="../../../music-app-development/index.htm">Music</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11366"><a href="../../../travel-app-development/index.htm">Travel</a></li>
+	</ul>
+</li>
+	<li class="icon icon-other menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5072"><a href="../../../it-services-for-other-industries/index.htm">Other</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12348"><a href="../../../education-app-development/index.htm">Education</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12371"><a href="../../../food-delivery-app-development/index.htm">Food delivery</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1326"><a href="../../../portfolio/index.htm">Portfolio</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1324"><a href="../../../about-us/index.htm">Company</a>
+<ul class="sub-menu">
+	<li class="icon icon-about menu-item menu-item-type-post_type menu-item-object-page menu-item-3913"><a href="../../../about-us/index.htm">About us<p class="menu-item-description">Get to know us a little better and see what we’re all about</p></a></li>
+	<li class="icon icon-careers menu-item menu-item-type-custom menu-item-object-custom menu-item-1329"><a target="_blank" rel="noopener noreferrer" href="https://careers.miquido.com/">Careers<p class="menu-item-description">We’re always looking for fresh talent. Check how to join us</p></a></li>
+	<li class="icon icon-aiwaves menu-item menu-item-type-custom menu-item-object-custom menu-item-15055"><a target="_blank" rel="noopener noreferrer" href="https://lp.miquido.com/ai-waves">AI Waves<p class="menu-item-description">Leading industry experts discussing the future of tech</p></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6479 current_page_item current_page_parent menu-item-12648"><a href="../../index.htm" aria-current="page">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11535"><a href="../../../downloadables/index.htm">Resources</a>
+<ul class="sub-menu">
+	<li class="icon icon-downloadables menu-item menu-item-type-post_type menu-item-object-page menu-item-11536"><a href="../../../downloadables/index.htm">Downloadables<p class="menu-item-description">Get valuable insights from our downloadable materials</p></a></li>
+	<li class="icon icon-glossary menu-item menu-item-type-post_type menu-item-object-page menu-item-11538"><a href="../../../it-terms-glossary/index.htm">IT Glossary<p class="menu-item-description">Master important IT terms with our comprehensive dictionary</p></a></li>
+	<li class="icon icon-press menu-item menu-item-type-post_type menu-item-object-page menu-item-11537"><a href="../../../press/index.htm">Press<p class="menu-item-description">Learn more about our work and what we’ve been up to</p></a></li>
+</ul>
+</li>
+</ul>            <nav class="menu"><a href="../../../get-a-quote/index.htm">Contact us</a>
+</nav>        </div>
+        <div class="container-social-media">
+            <ul class="nav-social-media">
+                <li class="social-media-item social-media--linkedin icon-linkedin">
+                    <a href="https://www.linkedin.com/company/miquido" rel="noopener noreferrer nofollow" target="_blank" title="Miquido on LinkedIn"></a>
+                </li>
+                <li class="social-media-item social-media--twitter icon-twitter">
+                    <a href="https://twitter.com/miquido" rel="noopener noreferrer nofollow" target="_blank" title="Miquido on Twitter"></a>
+                </li>
+                <li class="social-media-item social-media--clutch icon-clutch">
+                    <a href="https://clutch.co/profile/miquido" rel="noopener noreferrer nofollow" target="_blank" title="Miquido on Clutch"></a>
+                </li>
+                <li class="social-media-item social-media--facebook icon-facebook">
+                    <a href="https://www.facebook.com/miquido/" rel="noopener noreferrer nofollow" target="_blank" title="Miquido on Facebook"></a>
+                </li>
+                <li class="social-media-item social-media--instagram icon-instagram">
+                    <a href="https://www.instagram.com/miquido/" rel="noopener noreferrer nofollow" target="_blank" title="Miquido on Instagram"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>            
+
+        </div>
+    </header>
+
+    
+    <main class="main-content" id="top">
+
+        
+                    <section class="section--blog-breadcrumbs">
+    <div class="container">
+        <div class="wrapper">
+            <div class="container">
+                <div class="wrapper-inside">
+                    <div class="container-blog-breadcrumbs col-12 push-left-1 col-tablet-6 push-left-tablet-0 col-mobile-6 push-left-mobile-0">
+                        <ul class="breadcrumbs">
+                            <li>
+                                <a href="../../../index.htm">Home</a>
+                            </li>
+                                                            <span class="separator">/</span>
+                                <span class="active">Blog</span>
+                                                                                                                                                                                                                                                                                                                                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                
+
+<section class="section--blog-featured-posts">
+    <div class="container">
+        <div class="wrapper">
+            <div class="container">
+                <div class="wrapper-inside">
+                    <div class="blog-feature blog-feature--big col-8 push-left-1 col-tablet-5 push-left-tablet-0 col-landscape-mobile-8 col-mobile-6 push-left-mobile-0">
+    <figure class="blog-thumb">
+        <a href="../../artificial-intelligence-in-business-guide/index.htm">
+            <picture class="attachment-blog-archive-feature size-blog-archive-feature wp-post-image">
+<source type="image/webp" srcset="../../../wp-content/uploads/2021/06/header-artificial-intelligence-for-business-owners-955x470.png.webp">
+<img width="955" height="470" src="../../../wp-content/uploads/2021/06/header-artificial-intelligence-for-business-owners-955x470.png" alt="Artificial Intelligence in Business - Guide">
+</picture>
+        </a>
+    </figure>
+    <section class="blog-info">
+                    <ul class="blog-categories-list">
+                                    <li><a class="blog-categories-list__single-category-search" data-filter="artificial-intelligence" href="../../category/artificial-intelligence.html">Artificial Intelligence</a></li>
+                            </ul>
+
+        <h2 class="header2"><a href="../../artificial-intelligence-in-business-guide/index.htm">Artificial Intelligence for Business Owners: The Ultimate Guide</a></h2>
+
+        <div class="blog-meta">
+    <a href="../../author/luiza-stelitano/index.htm" title="Posts by Luiza Stelitano" class="author url fn" rel="author">Luiza Stelitano</a>    <span class="separator">|</span>
+                2 Jun 2021            <span class="separator">|</span>
+        27 min read</div>    </section>
+</div><div class="blog-feature-list col-4 col-tablet-3 push-left-tablet-0 col-landscape-mobile-8 col-mobile-6 push-left-mobile-0"><h4 class="header4">Most popular</h4><div class="blog-feature">
+    <section class="blog-info">
+                    <ul class="blog-categories-list">
+                                    <li><a class="blog-categories-list__single-category-search" data-filter="business-strategy" href="../../category/business-strategy.html">Business Strategy</a></li>
+                            </ul>
+
+        <h5><a href="../../trends-in-fintech-and-digital-banking/index.htm">6 trends that will shape the future of fintech and digital banking</a></h5>
+
+        <div class="blog-meta">
+    <a href="../../author/wojciech-zielonka/index.htm" title="Posts by Wojciech Zielonka" class="author url fn" rel="author">Wojciech Zielonka</a>    <span class="separator">|</span>
+                17 Jan 2022            <span class="separator">|</span>
+        14 min read</div>    </section>
+</div><div class="blog-feature">
+    <section class="blog-info">
+                    <ul class="blog-categories-list">
+                                    <li><a class="blog-categories-list__single-category-search" data-filter="artificial-intelligence" href="../../category/artificial-intelligence.html">Artificial Intelligence</a></li>
+                            </ul>
+
+        <h5><a href="../../what-are-voice-assistants/index.htm">A quick and easy guide to voice assistants</a></h5>
+
+        <div class="blog-meta">
+    <a href="../../author/luiza-stelitano/index.htm" title="Posts by Luiza Stelitano" class="author url fn" rel="author">Luiza Stelitano</a>    <span class="separator">|</span>
+                16 Jul 2021            <span class="separator">|</span>
+        11 min read</div>    </section>
+</div><div class="blog-feature">
+    <section class="blog-info">
+                    <ul class="blog-categories-list">
+                                    <li><a class="blog-categories-list__single-category-search" data-filter="software-development" href="../../category/software-development.html">Software development</a></li>
+                            </ul>
+
+        <h5><a href="../../top-golang-apps-best-apps-made-with-golang/index.htm">Top Golang apps: 6 best apps made with Golang</a></h5>
+
+        <div class="blog-meta">
+    <a href="../../author/miquido-author/index.htm" title="Posts by Miquido" class="author url fn" rel="author">Miquido</a>    <span class="separator">|</span>
+                5 Jun 2020            <span class="separator">|</span>
+        10 min read</div>    </section>
+</div></div>                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="section--blog-category-filter">
+    <div class="container container-full">
+        <div class="wrapper">
+            <div class="container container-darker-grey">
+                <div class="wrapper-inside">
+                    <div class="container-blog-category-filter col-12 push-left-1 col-tablet-8 push-left-tablet-0 col-landscape-mobile-8 col-mobile-6 push-left-mobile-0">
+                        <ul class="category-filter-list">
+                            <li class="active category_search active-category">                                <form method="get" action="javascript:void(0);">
+                                    <button type="submit" class="category_search category_search--all" data-filter="all" value="all">All</button>   
+                                </form>
+                            </li>
+                                                                <li class="category_search">                                        <form method="post" action="javascript:void(0);">
+                                            <button type="submit" class="category_search" data-filter="artificial-intelligence" value="artificial-intelligence">Artificial Intelligence</button>                    
+                                        </form>
+
+                                      
+                                    </li>
+                                                                <li class="category_search">                                        <form method="post" action="javascript:void(0);">
+                                            <button type="submit" class="category_search" data-filter="business-strategy" value="business-strategy">Business Strategy</button>                    
+                                        </form>
+
+                                      
+                                    </li>
+                                                                <li class="category_search">                                        <form method="post" action="javascript:void(0);">
+                                            <button type="submit" class="category_search" data-filter="process-insights" value="process-insights">Process Insights</button>                    
+                                        </form>
+
+                                      
+                                    </li>
+                                                                <li class="category_search">                                        <form method="post" action="javascript:void(0);">
+                                            <button type="submit" class="category_search" data-filter="product-design" value="product-design">Product Design</button>                    
+                                        </form>
+
+                                      
+                                    </li>
+                                                                <li class="category_search">                                        <form method="post" action="javascript:void(0);">
+                                            <button type="submit" class="category_search" data-filter="software-development" value="software-development">Software development</button>                    
+                                        </form>
+
+                                      
+                                    </li>
+                                                                <li class="category_search">                                        <form method="post" action="javascript:void(0);">
+                                            <button type="submit" class="category_search" data-filter="team-culture" value="team-culture">Team &amp; Culture</button>                    
+                                        </form>
+
+                                      
+                                    </li>
+                                                        <li>
+                                <span class="search-icon">
+                                        <img src="../../../wp-content/themes/wpmiquido/img/shapes/miquido-icon-search.svg" width="23" height="24" alt="">
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="blog-search">
+                            <form method="get" action="https://www.miquido.com">
+                                <span class="search-icon">
+                                        <img src="../../../wp-content/themes/wpmiquido/img/shapes/miquido-icon-search.svg" width="23" height="24" alt="">
+                                </span>
+                                <input placeholder="Search the blog" type="text" name="s" id="search" minlength="2" value="">
+                                <span class="search-icon-close">
+                                        <img src="../../../wp-content/themes/wpmiquido/img/shapes/miquido-icon-search-close.svg" width="20" height="20" alt="">
+                                </span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+        <section class="section--blog-posts section--blog-posts-basic">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="wrapper-inside">
+                            <div class="container-blog-posts container-blog-posts-grid col-12 push-left-1 col-tablet-8 push-left-tablet-0 col-landscape-mobile-8 col-mobile-6 push-left-mobile-0">
+                                <div class="container-blog-posts-sizer"></div>
+                                <div class="container-blog-category-filter-header col-12 col-tablet-8 col-landscape-mobile-8 col-mobile-6">
+                                    <h1 class="header2">
+                                                                            </h1>
+                                </div>
+                                <div class="blog-post-item">
+    <figure class="blog-thumb">
+        <a href="../../web-3-0-impact-on-business/index.htm">
+            <picture class="attachment-blog-archive-thumb-small size-blog-archive-thumb-small wp-post-image">
+<source type="image/webp" srcset="../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-432x288.png.webp 432w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-250x167.png.webp 250w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-700x467.png.webp 700w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-768x512.png.webp 768w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-1536x1024.png.webp 1536w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-2048x1366.png.webp 2048w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-120x80.png.webp 120w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-367x245.png.webp 367w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-1920x1280.png.webp 1920w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-750x500.png.webp 750w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-600x400.png.webp 600w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-450x300.png.webp 450w" sizes="(max-width: 432px) 100vw, 432px">
+<img width="432" height="288" src="../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-432x288.png" alt="Web 3.0 explained: how it will transform businesses" srcset="../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-432x288.png 432w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-250x167.png 250w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-700x467.png 700w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-768x512.png 768w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-1536x1024.png 1536w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-2048x1366.png 2048w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-120x80.png 120w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-367x245.png 367w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-1920x1280.png 1920w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-750x500.png 750w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-600x400.png 600w, ../../../wp-content/uploads/2022/06/header-Web-3.0-explained%402x-450x300.png 450w" sizes="(max-width: 432px) 100vw, 432px">
+</picture>
+        </a>
+    </figure>
+    <section class="blog-info">
+                    <ul class="blog-categories-list">
+                                    <li><a class="blog-categories-list__single-category-search" data-filter="business-strategy" href="../../category/business-strategy.html">Business Strategy</a></li>
+                            </ul>
+
+        <h2 class="header4"><a href="../../web-3-0-impact-on-business/index.htm">Web 3.0 explained: how it will transform businesses</a></h2>
+
+        <div class="blog-meta">
+    <a href="../../author/julia-matuszewska-2/index.htm" title="Posts by Julia Matuszewska" class="author url fn" rel="author">Julia Matuszewska</a>    <span class="separator">|</span>
+                3 Jun 2022            <span class="separator">|</span>
+        12 min read</div>    </section>
+</div><div class="blog-post-item">
+    <figure class="blog-thumb">
+        <a href="../../mvc-mvp-mvvm/index.htm">
+            <picture class="attachment-blog-archive-thumb-small size-blog-archive-thumb-small wp-post-image">
+<source type="image/webp" srcset="../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-432x288.jpg.webp 432w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-250x167.jpg.webp 250w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-700x467.jpg.webp 700w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-768x512.jpg.webp 768w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-1536x1024.jpg.webp 1536w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-120x80.jpg.webp 120w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-367x245.jpg.webp 367w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM.jpg.webp 1920w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-750x500.jpg.webp 750w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-600x400.jpg.webp 600w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-450x300.jpg.webp 450w" sizes="(max-width: 432px) 100vw, 432px">
+<img width="432" height="288" src="../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-432x288.jpg" alt="MVC vs MVP vs MVVM" srcset="../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-432x288.jpg 432w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-250x167.jpg 250w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-700x467.jpg 700w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-768x512.jpg 768w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-1536x1024.jpg 1536w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-120x80.jpg 120w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-367x245.jpg 367w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM.jpg 1920w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-750x500.jpg 750w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-600x400.jpg 600w, ../../../wp-content/uploads/2022/05/header-MVC-vs-MVP-vs-MVVM-450x300.jpg 450w" sizes="(max-width: 432px) 100vw, 432px">
+</picture>
+        </a>
+    </figure>
+    <section class="blog-info">
+                    <ul class="blog-categories-list">
+                                    <li><a class="blog-categories-list__single-category-search" data-filter="software-development" href="../../category/software-development.html">Software development</a></li>
+                            </ul>
+
+        <h2 class="header4"><a href="../../mvc-mvp-mvvm/index.htm">MVC vs MVP vs MVVM: ​​Common Android architecture patterns explained</a></h2>
+
+        <div class="blog-meta">
+    <a href="../../author/kamil-krzysztof/index.htm" title="Posts by Kamil Krzysztof" class="author url fn" rel="author">Kamil Krzysztof</a>    <span class="separator">|</span>
+                27 May 2022            <span class="separator">|</span>
+        14 min read</div>    </section>
+</div><div class="blog-post-item">
+    <figure class="blog-thumb">
+        <a href="../../ecommerce-app-features/index.htm">
+            <picture class="attachment-blog-archive-thumb-small size-blog-archive-thumb-small wp-post-image">
+<source type="image/webp" srcset="../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-432x288.jpg.webp 432w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-250x167.jpg.webp 250w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-700x467.jpg.webp 700w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-768x512.jpg.webp 768w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-1536x1024.jpg.webp 1536w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-120x80.jpg.webp 120w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-367x245.jpg.webp 367w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1.jpg.webp 1920w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-750x500.jpg.webp 750w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-600x400.jpg.webp 600w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-450x300.jpg.webp 450w" sizes="(max-width: 432px) 100vw, 432px">
+<img width="432" height="288" src="../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-432x288.jpg" alt="" srcset="../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-432x288.jpg 432w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-250x167.jpg 250w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-700x467.jpg 700w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-768x512.jpg 768w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-1536x1024.jpg 1536w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-120x80.jpg 120w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-367x245.jpg 367w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1.jpg 1920w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-750x500.jpg 750w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-600x400.jpg 600w, ../../../wp-content/uploads/2022/05/header-eCommerce-mobile-app-1920x1280-1-450x300.jpg 450w" sizes="(max-width: 432px) 100vw, 432px">
+</picture>
+        </a>
+    </figure>
+    <section class="blog-info">
+                    <ul class="blog-categories-list">
+                                    <li><a class="blog-categories-list__single-category-search" data-filter="business-strategy" href="../../category/business-strategy.html">Business Strategy</a></li>
+                                    <li><a class="blog-categories-list__single-category-search" data-filter="software-development" href="../../category/software-development.html">Software development</a></li>
+                            </ul>
+
+        <h2 class="header4"><a href="../../ecommerce-app-features/index.htm">12 must-have features for your eCommerce mobile app</a></h2>
+
+        <div class="blog-meta">
+    <a href="../../author/wojciech-zielonka/index.htm" title="Posts by Wojciech Zielonka" class="author url fn" rel="author">Wojciech Zielonka</a>    <span class="separator">|</span>
+                23 May 2022            <span class="separator">|</span>
+        14 min read</div>    </section>
+</div><div class="blog-post-item">
+    <figure class="blog-thumb">
+        <a href="../../best-aws-tools/index.htm">
+            <picture class="attachment-blog-archive-thumb-small size-blog-archive-thumb-small wp-post-image">
+<source type="image/webp" srcset="../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-432x288.jpg.webp 432w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-250x167.jpg.webp 250w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-700x467.jpg.webp 700w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-768x512.jpg.webp 768w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-1536x1024.jpg.webp 1536w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-120x80.jpg.webp 120w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-367x245.jpg.webp 367w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools.jpg.webp 1920w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-750x500.jpg.webp 750w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-600x400.jpg.webp 600w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-450x300.jpg.webp 450w" sizes="(max-width: 432px) 100vw, 432px">
+<img width="432" height="288" src="../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-432x288.jpg" alt="Best 10 AWS ML Tools" srcset="../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-432x288.jpg 432w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-250x167.jpg 250w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-700x467.jpg 700w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-768x512.jpg 768w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-1536x1024.jpg 1536w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-120x80.jpg 120w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-367x245.jpg 367w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools.jpg 1920w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-750x500.jpg 750w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-600x400.jpg 600w, ../../../wp-content/uploads/2022/05/header-Top-10-AWS-ML-Tools-450x300.jpg 450w" sizes="(max-width: 432px) 100vw, 432px">
+</picture>
+        </a>
+    </figure>
+    <section class="blog-info">
+                    <ul class="blog-categories-list">
+                                    <li><a class="blog-categories-list__single-category-search" data-filter="artificial-intelligence" href="../../category/artificial-intelligence.html">Artificial Intelligence</a></li>
+                            </ul>
+
+        <h2 class="header4"><a href="../../best-aws-tools/index.htm">Best 10 AWS Machine Learning tools</a></h2>
+
+        <div class="blog-meta">
+    <a href="../../author/julia-matuszewska-2/index.htm" title="Posts by Julia Matuszewska" class="author url fn" rel="author">Julia Matuszewska</a> and <a href="../../author/aleksander-huk/index.htm" title="Posts by Aleksander Huk" class="author url fn" rel="author">Aleksander Huk</a>    <span class="separator">|</span>
+                16 May 2022            <span class="separator">|</span>
+        14 min read</div>    </section>
+</div><div class="blog-post-item">
+    <figure class="blog-thumb">
+        <a href="../../app-maintenance/index.htm">
+            <picture class="attachment-blog-archive-thumb-small size-blog-archive-thumb-small wp-post-image">
+<source type="image/webp" srcset="../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-432x288.jpg.webp 432w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-250x167.jpg.webp 250w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-700x467.jpg.webp 700w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-768x512.jpg.webp 768w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-1536x1024.jpg.webp 1536w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-120x80.jpg.webp 120w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-367x245.jpg.webp 367w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance.jpg.webp 1920w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-750x500.jpg.webp 750w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-600x400.jpg.webp 600w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-450x300.jpg.webp 450w" sizes="(max-width: 432px) 100vw, 432px">
+<img width="432" height="288" src="../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-432x288.jpg" alt="Application maintenance" srcset="../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-432x288.jpg 432w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-250x167.jpg 250w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-700x467.jpg 700w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-768x512.jpg 768w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-1536x1024.jpg 1536w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-120x80.jpg 120w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-367x245.jpg 367w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance.jpg 1920w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-750x500.jpg 750w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-600x400.jpg 600w, ../../../wp-content/uploads/2022/04/header-Why-you-need-to-care-about-app-maintenance-450x300.jpg 450w" sizes="(max-width: 432px) 100vw, 432px">
+</picture>
+        </a>
+    </figure>
+    <section class="blog-info">
+                    <ul class="blog-categories-list">
+                                    <li><a class="blog-categories-list__single-category-search" data-filter="business-strategy" href="../../category/business-strategy.html">Business Strategy</a></li>
+                            </ul>
+
+        <h2 class="header4"><a href="../../app-maintenance/index.htm">App maintenance: Why it matters for your business</a></h2>
+
+        <div class="blog-meta">
+    <a href="../../author/wojciech-zielonka/index.htm" title="Posts by Wojciech Zielonka" class="author url fn" rel="author">Wojciech Zielonka</a>    <span class="separator">|</span>
+                2 May 2022            <span class="separator">|</span>
+        15 min read</div>    </section>
+</div><div class="blog-post-item">
+    <figure class="blog-thumb">
+        <a href="../../benefits-of-angular/index.htm">
+            <picture class="attachment-blog-archive-thumb-small size-blog-archive-thumb-small wp-post-image">
+<source type="image/webp" srcset="../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-432x288.png.webp 432w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-250x167.png.webp 250w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-700x467.png.webp 700w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-768x512.png.webp 768w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-1536x1024.png.webp 1536w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-2048x1366.png.webp 2048w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-120x80.png.webp 120w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-367x245.png.webp 367w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-1920x1280.png.webp 1920w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-750x500.png.webp 750w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-600x400.png.webp 600w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-450x300.png.webp 450w" sizes="(max-width: 432px) 100vw, 432px">
+<img width="432" height="288" src="../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-432x288.png" alt="Benefits of the Angular framework" srcset="../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-432x288.png 432w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-250x167.png 250w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-700x467.png 700w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-768x512.png 768w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-1536x1024.png 1536w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-2048x1366.png 2048w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-120x80.png 120w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-367x245.png 367w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-1920x1280.png 1920w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-750x500.png 750w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-600x400.png 600w, ../../../wp-content/uploads/2022/04/header-Benefits-of-Angular%402x-450x300.png 450w" sizes="(max-width: 432px) 100vw, 432px">
+</picture>
+        </a>
+    </figure>
+    <section class="blog-info">
+                    <ul class="blog-categories-list">
+                                    <li><a class="blog-categories-list__single-category-search" data-filter="software-development" href="../../category/software-development.html">Software development</a></li>
+                            </ul>
+
+        <h2 class="header4"><a href="../../benefits-of-angular/index.htm">Benefits of the Angular framework: Why choose it for your next project?</a></h2>
+
+        <div class="blog-meta">
+    <a href="../../author/miquido-author/index.htm" title="Posts by Miquido" class="author url fn" rel="author">Miquido</a>    <span class="separator">|</span>
+                25 Apr 2022            <span class="separator">|</span>
+        8 min read</div>    </section>
+</div><div class="blog-post-item">
+    <figure class="blog-thumb">
+        <a href="../../cucumber-features/index.htm">
+            <picture class="attachment-blog-archive-thumb-small size-blog-archive-thumb-small wp-post-image">
+<source type="image/webp" srcset="../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-432x288.jpg.webp 432w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-250x167.jpg.webp 250w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-700x467.jpg.webp 700w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-768x512.jpg.webp 768w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-1536x1024.jpg.webp 1536w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-120x80.jpg.webp 120w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-367x245.jpg.webp 367w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview.jpg.webp 1920w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-750x500.jpg.webp 750w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-600x400.jpg.webp 600w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-450x300.jpg.webp 450w" sizes="(max-width: 432px) 100vw, 432px">
+<img width="432" height="288" src="../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-432x288.jpg" alt="Cucumber features" srcset="../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-432x288.jpg 432w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-250x167.jpg 250w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-700x467.jpg 700w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-768x512.jpg 768w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-1536x1024.jpg 1536w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-120x80.jpg 120w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-367x245.jpg 367w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview.jpg 1920w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-750x500.jpg 750w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-600x400.jpg 600w, ../../../wp-content/uploads/2022/04/header-Cucumber-Features-an-overview-450x300.jpg 450w" sizes="(max-width: 432px) 100vw, 432px">
+</picture>
+        </a>
+    </figure>
+    <section class="blog-info">
+                    <ul class="blog-categories-list">
+                                    <li><a class="blog-categories-list__single-category-search" data-filter="software-development" href="../../category/software-development.html">Software development</a></li>
+                            </ul>
+
+        <h2 class="header4"><a href="../../cucumber-features/index.htm">Cucumber Features: an overview</a></h2>
+
+        <div class="blog-meta">
+    <a href="../../author/przemyslaw-jagodzinski/index.htm" title="Posts by Przemysław Jagodziński" class="author url fn" rel="author">Przemysław Jagodziński</a>    <span class="separator">|</span>
+                20 Apr 2022            <span class="separator">|</span>
+        12 min read</div>    </section>
+</div><div class="blog-post-item">
+    <figure class="blog-thumb">
+        <a href="../../enterprise-software-development-best-practices/index.htm">
+            <picture class="attachment-blog-archive-thumb-small size-blog-archive-thumb-small wp-post-image">
+<source type="image/webp" srcset="../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-432x288.jpg.webp 432w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-250x167.jpg.webp 250w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-700x467.jpg.webp 700w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-768x512.jpg.webp 768w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-1536x1024.jpg.webp 1536w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-120x80.jpg.webp 120w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-367x245.jpg.webp 367w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software.jpg.webp 1920w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-750x500.jpg.webp 750w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-600x400.jpg.webp 600w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-450x300.jpg.webp 450w" sizes="(max-width: 432px) 100vw, 432px">
+<img width="432" height="288" src="../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-432x288.jpg" alt="" srcset="../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-432x288.jpg 432w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-250x167.jpg 250w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-700x467.jpg 700w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-768x512.jpg 768w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-1536x1024.jpg 1536w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-120x80.jpg 120w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-367x245.jpg 367w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software.jpg 1920w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-750x500.jpg 750w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-600x400.jpg 600w, ../../../wp-content/uploads/2022/04/header-Things-to-remember-when-building-an-enterprise-software-450x300.jpg 450w" sizes="(max-width: 432px) 100vw, 432px">
+</picture>
+        </a>
+    </figure>
+    <section class="blog-info">
+                    <ul class="blog-categories-list">
+                                    <li><a class="blog-categories-list__single-category-search" data-filter="software-development" href="../../category/software-development.html">Software development</a></li>
+                            </ul>
+
+        <h2 class="header4"><a href="../../enterprise-software-development-best-practices/index.htm">Best practices for building a successful enterprise software</a></h2>
+
+        <div class="blog-meta">
+    <a href="../../author/luiza-stelitano/index.htm" title="Posts by Luiza Stelitano" class="author url fn" rel="author">Luiza Stelitano</a>    <span class="separator">|</span>
+                14 Apr 2022            <span class="separator">|</span>
+        9 min read</div>    </section>
+</div><div class="blog-post-item">
+    <figure class="blog-thumb">
+        <a href="../../how-to-run-discovery-workshop/index.htm">
+            <picture class="attachment-blog-archive-thumb-small size-blog-archive-thumb-small wp-post-image">
+<source type="image/webp" srcset="../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-432x288.jpg.webp 432w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-250x167.jpg.webp 250w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-700x467.jpg.webp 700w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-768x512.jpg.webp 768w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-1536x1024.jpg.webp 1536w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-120x80.jpg.webp 120w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-367x245.jpg.webp 367w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop.jpg.webp 1920w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-750x500.jpg.webp 750w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-600x400.jpg.webp 600w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-450x300.jpg.webp 450w" sizes="(max-width: 432px) 100vw, 432px">
+<img width="432" height="288" src="../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-432x288.jpg" alt="How to run discovery workshops" srcset="../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-432x288.jpg 432w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-250x167.jpg 250w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-700x467.jpg 700w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-768x512.jpg 768w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-1536x1024.jpg 1536w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-120x80.jpg 120w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-367x245.jpg 367w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop.jpg 1920w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-750x500.jpg 750w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-600x400.jpg 600w, ../../../wp-content/uploads/2022/04/header-how-to-run-an-efficient-discovery-workshop-450x300.jpg 450w" sizes="(max-width: 432px) 100vw, 432px">
+</picture>
+        </a>
+    </figure>
+    <section class="blog-info">
+                    <ul class="blog-categories-list">
+                                    <li><a class="blog-categories-list__single-category-search" data-filter="process-insights" href="../../category/process-insights.html">Process Insights</a></li>
+                            </ul>
+
+        <h2 class="header4"><a href="../../how-to-run-discovery-workshop/index.htm">A step by step guide on how to run an efficient Discovery Workshop</a></h2>
+
+        <div class="blog-meta">
+    <a href="../../author/miquido-author/index.htm" title="Posts by Karolina Olejniczak" class="author url fn" rel="author">Karolina Olejniczak</a>    <span class="separator">|</span>
+                4 Apr 2022            <span class="separator">|</span>
+        21 min read</div>    </section>
+</div>                            </div>
+                            <div class="container-blog-posts container-blog-posts-search container-blog-posts-serach-grid col-12 push-left-1 col-tablet-6 push-left-tablet-0 col-mobile-6"></div>
+                                <div class="container-blog-posts-search-sizer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </section>
+
+
+
+<section class="section--blog-blog-pagination section--blog-pagination-category section-margin--xl">
+    <div class="container">
+        <div class="wrapper">
+            <div class="container">
+                <div class="wrapper-inside">
+                    <div class="container-blog-pagination container-blog-pagination-category-basic col-12 col-tablet-6 col-mobile-6">
+                        <ul class='page-numbers'>
+	<li><a class="prev page-numbers" href="../2/index-2.htm?paged=2&#038;category=business-strategy"><i class='arrow-left'>‹</i></a></li>
+	<li><a class="page-numbers" href="../../index-2.htm?paged=1&#038;category=business-strategy">1</a></li>
+	<li><a class="page-numbers" href="../2/index-2.htm?paged=2&#038;category=business-strategy">2</a></li>
+	<li><span aria-current="page" class="page-numbers current">3</span></li>
+	<li><a class="page-numbers" href="../4/index-2.htm?paged=4&#038;category=business-strategy">4</a></li>
+	<li><span class="page-numbers dots">&hellip;</span></li>
+	<li><a class="page-numbers" href="../18/index-2.htm?paged=18&#038;category=business-strategy">18</a></li>
+	<li><a class="next page-numbers" href="../4/index-2.htm?paged=4&#038;category=business-strategy"><i class='arrow-right'>›</i></a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="section--blog-newsletter">
+    <div class="container">
+        <div class="wrapper">
+            <div class="container">
+                <div class="wrapper-inside">
+                    <div class="container-blog-newsletter col-12 push-left-1 col-tablet-8 push-left-tablet-0 col-landscape-mobile-8 col-mobile-6 push-left-mobile-0">
+                          <section class="section--blog-newsletter-form section-margin--l">
+    <div class="container container-full">
+        <div class="wrapper">
+            <div class="container-blog-newsletter-form">
+                <div class="wrapper-inside">
+                    <div class="container-blog-newsletter-form-text col-8 push-left-1 col-tablet-5 push-left-tablet-0 col-landscape-mobile-8 col-mobile-6 push-left-mobile-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="0">
+
+                        <!--[if lte IE 8]>
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                        <![endif]-->
+                        <script charset="utf-8" type="text/javascript" src="../../../forms/v2.js"></script>
+                        <script>
+                            hbspt.forms.create({
+                                region: "na1",
+                                portalId: "20037839",
+                                formId: "26489262-7e72-4e17-979c-7743cbbe4d3a"
+                            });
+                        </script>
+
+                        <p>
+                            <small class="form-legend policy">The controller of your personal data is Miquido sp. z ograniczoną odpowiedzialnością sp.k. with its registered office in Krakow, ul. Zabłocie 43a, 30-701 Kraków. We process the above information in order to answer your questions, contact you and conduct business communication, and if you tick the checkbox, to send you messages containing commercial, business and marketing materials.<br>
+                            <span class="policy-more">The basis for the processing of your data is Miquido's legitimate interest - informing customers about news and changes to our offer as well as providing information about products that may be useful in their business. You can unsubscribe from the marketing communications at any time. You also have the right to access data, the right to request rectification, deletion or limitation of their processing, data transfer, the right to object, as well as the right to lodge a complaint to the supervisory body. Full information about processing of personal data can be found in the <a href="../../../privacy-policy.html" target="_blank">Privacy Policy</a>.</span></small><br>
+                            <span class="cookie-policy-more"><small class="form-legend">Show more</small></span>
+                        </p>
+
+                    </div>
+                    <div class="container-blog-newsletter-form-image col-4 push-left-1 col-tablet-2 push-left-tablet-1 col-mobile-6 push-left-mobile-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="0">
+                            <img src="../../../wp-content/themes/wpmiquido/img/shapes/thank-you-illustration-newsletter.svg" width="347" height="465" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+            </main>
+
+            
+            <footer class="footer">
+
+                
+                <section class="footer-section--top">
+                    <div class="container">
+                        <div class="wrapper">
+
+                            
+                            <div class="container-footer-menu container-darker-grey">
+    <div class="wrapper-inside">
+        <div class="container-footer-logo col-12 push-left-1 col-tablet-7 push-left-tablet-1 col-mobile-6 push-left-mobile-0" data-aos="fade-up" data-aos-delay="0">
+            <figure>
+                    <img src="../../../wp-content/themes/wpmiquido/img/logos/logo__miquido.svg" width="121" height="31" alt="">
+            </figure>
+        </div>
+        <div class="container-footer-menu-items col-12 push-left-1 col-tablet-7 push-left-tablet-1 col-mobile-6 push-left-mobile-0">
+            <div class="footer-menu-block" data-aos="fade-up">
+                <div class="widget_text box"><div class="textwidget custom-html-widget"><h4>Miquido Sp. z o.o. Sp. k.</h4>
+<p>Zabłocie 43a</p>
+<p>30-701 Krakow</p>
+<p><a href="mailto:hello@miquido.com">hello@miquido.com</a></p>
+<p><a href="tel:+48536083559">+48 536 083 559</a></p>
+<p>VAT-UE: 9452138173</p></div></div>            </div>
+            <div class="footer-menu-block" data-aos="fade-up">
+                <div class="box">			<div class="textwidget"><h4><a href="../../../software-development-services/index.htm">Services</a></h4>
+</div>
+		</div><div class="box"><div class="menu-footer-menu1-container"><ul id="menu-footer-menu1" class="menu"><li id="menu-item-12250" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12250"><a href="../../../web-mobile-development-company/index.htm">Web &#038; mobile development</a></li>
+<li id="menu-item-12251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12251"><a href="../../../custom-app-development-services/index.htm">Custom app development</a></li>
+<li id="menu-item-12252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12252"><a href="../../../product-strategy-consulting-services/index.htm">Product strategy</a></li>
+<li id="menu-item-12253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12253"><a href="../../../product-design-company/index.htm">Product design</a></li>
+<li id="menu-item-12254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12254"><a href="../../../artificial-intelligence-development-company/index.htm">Artificial Intelligence</a></li>
+<li id="menu-item-12255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12255"><a href="../../../machine-learning-services/index.htm">Machine Learning</a></li>
+</ul></div></div>            </div>
+            <div class="footer-menu-block" data-aos="fade-up">
+                <div class="box">			<div class="textwidget"><h4><a href="../../../our-tech-stack/index.htm">Technologies</a></h4>
+</div>
+		</div><div class="box"><div class="menu-footer-menu2-container"><ul id="menu-footer-menu2" class="menu"><li id="menu-item-12256" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12256"><a href="../../../flutter-development-company/index.htm">Flutter</a></li>
+<li id="menu-item-12257" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12257"><a href="../../../golang-development-company/index.htm">Golang</a></li>
+<li id="menu-item-12258" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12258"><a href="../../../ios-development-company/index.htm">iOS</a></li>
+<li id="menu-item-12259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12259"><a href="../../../android-development-company/index.htm">Android</a></li>
+<li id="menu-item-12260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12260"><a href="../../../frontend-development-company/index.htm">Frontend</a></li>
+<li id="menu-item-12261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12261"><a href="../../../backend-development-services/index.htm">Backend</a></li>
+</ul></div></div>            </div>
+            <div class="footer-menu-block" data-aos="fade-up">
+                <div class="box">			<div class="textwidget"><h4><a href="../../../it-services-for-industries/index.htm">Industries</a></h4>
+</div>
+		</div><div class="box"><div class="menu-footer-menu3-container"><ul id="menu-footer-menu3" class="menu"><li id="menu-item-12262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12262"><a href="../../../ecommerce-software-solutions/index.htm">eCommerce</a></li>
+<li id="menu-item-12263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12263"><a href="../../../fintech-app-development/index.htm">Fintech</a></li>
+<li id="menu-item-12264" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12264"><a href="../../../banking-app-development/index.htm">Banking</a></li>
+<li id="menu-item-12265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12265"><a href="../../../healthcare-software-solutions/index.htm">Healthcare</a></li>
+<li id="menu-item-12266" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12266"><a href="../../../entertainment-app-development/index.htm">Entertainment</a></li>
+</ul></div></div>            </div>
+            <div class="footer-menu-block" data-aos="fade-up">
+                <div class="box">			<div class="textwidget"><h4><a href="../../../downloadables.html#ebook">Ebooks &amp; Reports</a></h4>
+</div>
+		</div><div class="box"><div class="menu-footer-menu4-container"><ul id="menu-footer-menu4" class="menu"><li id="menu-item-12267" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12267"><a href="https://lp.miquido.com/guide-to-the-finance-app-sector-ebook" target="_blank">The ultimate guide to fintech</a></li>
+<li id="menu-item-12268" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12268"><a href="https://lp.miquido.com/future-of-mobile-app-development-report" target="_blank">The future of app development</a></li>
+<li id="menu-item-12269" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12269"><a href="https://lp.miquido.com/how-to-validate-your-product-idea" target="_blank">How to validate an idea</a></li>
+<li id="menu-item-12270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12270"><a href="https://lp.miquido.com/legacy-modernisation-ebook" target="_blank">Legacy modernisation guide</a></li>
+</ul></div></div>            </div>
+        </div>
+    </div>
+</div>                            
+
+                            
+                            <div class="container-footer-badges container-darker-grey">
+    <div class="wrapper-inside">
+        <div class="container-footer-awards-logos col-12 push-left-1 col-tablet-6 push-left-tablet-1 col-mobile-6 push-left-mobile-0">
+            <div class="container-footer-awards-logo" data-aos="fade-up" data-aos-delay="100">
+                <div class="box">			<div class="textwidget"><p><img class="alignnone wp-image-5917 size-medium" src="../../../wp-content/uploads/2021/06/award-footer-google-io.svg" alt="" width="300" height="300"></p>
+<p>Featured at Google<br>
+I/O 2018</p>
+</div>
+		</div>            </div>
+            <div class="container-footer-awards-logo" data-aos="fade-up" data-aos-delay="100">
+                <div class="box">			<div class="textwidget"><p><a href="../../../press/miquido-with-deloitte-technology-fast-50-ce-award/index.htm" rel="noopener nofollow" title="deloitte"><img class="alignnone wp-image-5918 size-medium" title="Deloitte" src="../../../wp-content/uploads/2021/06/miquido-logo-deloitte.svg" alt="" width="300" height="300"></a></p>
+<p>One of the fastest growing<br>
+companies in Europe</p>
+</div>
+		</div>            </div>
+            <div class="container-footer-awards-logo" data-aos="fade-up" data-aos-delay="100">
+                <div class="box">			<div class="textwidget"><p><img class="alignnone wp-image-5919 size-medium" src="../../../wp-content/uploads/2021/06/miquido-logo-webit.svg" alt="" width="300" height="300"></p>
+<p>The Most Innovative<br>
+Mobile App (CEE)</p>
+</div>
+		</div>            </div>
+            <div class="container-footer-awards-logo" data-aos="fade-up" data-aos-delay="100">
+                <div class="box">			<div class="textwidget"><p><a href="https://www.pangea.ai/vendors/miquido" target="_blank" rel="noopener nofollow noreferrer" title="pangea"><img class="alignnone wp-image-5920 size-medium" title="Pangea" src="../../../wp-content/uploads/2021/06/award-footer-panagea%403x-250x83.png" alt="" width="250" height="83"></a></p>
+<p>Verified as top 7%<br>
+of software vendors</p>
+</div>
+		</div>            </div>
+            <div class="container-footer-awards-logo" data-aos="fade-up" data-aos-delay="100">
+                <div class="box">			<div class="textwidget"><p><picture class="alignnone wp-image-14566 size-full" title="Clutch">
+<source type="image/webp" srcset="../../../wp-content/uploads/2022/07/Cluth-Top-Mobile-App.png.webp">
+<img src="../../../wp-content/uploads/2022/07/Cluth-Top-Mobile-App.png" alt="" width="150" height="150">
+</picture>
+</p>
+</div>
+		</div>            </div>
+            <div class="container-footer-awards-logo" data-aos="fade-up" data-aos-delay="100">
+                <div class="box">			<div class="textwidget"><p><a href="https://www.goodfirms.co/company/miquido" target="_blank" rel="noopener nofollow noreferrer" title="goodfirms"><picture class="alignnone wp-image-5923 size-full" title="Goodfirms">
+<source type="image/webp" srcset="../../../wp-content/uploads/2021/06/miquido-badge-goodfirms.png.webp">
+<img src="../../../wp-content/uploads/2021/06/miquido-badge-goodfirms.png" alt="" width="150" height="150">
+</picture>
+</a></p>
+</div>
+		</div>            </div>
+            <div class="container-footer-awards-logo" data-aos="fade-up" data-aos-delay="100">
+                <div class="box">			<div class="textwidget"><p><picture class="alignnone wp-image-14564 size-full" title="Flutter app development companies">
+<source type="image/webp" srcset="../../../wp-content/uploads/2022/07/Top-Flutter-Development-Companies.png.webp">
+<img src="../../../wp-content/uploads/2022/07/Top-Flutter-Development-Companies.png" alt="" width="150" height="150">
+</picture>
+</p>
+</div>
+		</div>            </div>
+        </div>
+    </div>
+</div>                            
+
+                        </div>
+                    </div>
+                </section>
+
+                
+                <section class="footer-section--bottom">
+                    <div class="container container-left">
+                        <div class="wrapper">
+                            <div class="container container-footer-bottom container-dark">
+                                <div class="wrapper-inside">
+                                    <div class="copyright col-6 push-left-1 col-large-6 col-tablet-8 push-left-tablet-0 col-mobile-6 push-left-mobile-0">
+                <p class="copyright">© 2022 Miquido. All rights reserved. <a href="../../../privacy-policy/index.htm" target="_blank" rel="noopener noreferrer">Privacy Policy</a></p>
+    </div>
+<div class="footer-social-media col-5 push-left-1 col-large-6 push-left-large-0 col-tablet-8 push-left-tablet-0 col-mobile-6 push-left-mobile-0">
+    <p>Follow us</p>
+    <div class="box"><div class="menu-social-footer-container"><ul id="menu-social-footer" class="menu"><li id="menu-item-1337" class="icon-linkedin menu-item menu-item-type-custom menu-item-object-custom menu-item-1337"><a target="_blank" rel="noopener noreferrer nofollow" href="https://www.linkedin.com/company/miquido">LinkedIn</a></li>
+<li id="menu-item-1338" class="icon-twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-1338"><a target="_blank" rel="noopener noreferrer nofollow" href="https://twitter.com/miquido">Twitter</a></li>
+<li id="menu-item-1339" class="icon-clutch menu-item menu-item-type-custom menu-item-object-custom menu-item-1339"><a target="_blank" rel="noopener noreferrer" href="https://clutch.co/profile/miquido">Clutch</a></li>
+<li id="menu-item-1340" class="icon-facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-1340"><a target="_blank" rel="noopener noreferrer nofollow" href="https://www.facebook.com/miquido/">Facebook</a></li>
+<li id="menu-item-1341" class="icon-medium menu-item menu-item-type-custom menu-item-object-custom menu-item-1341"><a target="_blank" rel="noopener noreferrer nofollow" href="https://medium.com/miquido">Medium</a></li>
+<li id="menu-item-1342" class="icon-dribbble menu-item menu-item-type-custom menu-item-object-custom menu-item-1342"><a target="_blank" rel="noopener noreferrer nofollow" href="https://dribbble.com/miquido/">Dribbble</a></li>
+<li id="menu-item-1343" class="icon-instagram menu-item menu-item-type-custom menu-item-object-custom menu-item-1343"><a target="_blank" rel="noopener noreferrer nofollow" href="https://www.instagram.com/miquido/">Instagram</a></li>
+</ul></div></div></div>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </footer>
+
+            <div class="toTop">
+                <a href="#top" title="go top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40"><g fill="none" fill-rule="evenodd"><path fill="#373B78" d="M0 0H40V40H0z" transform="translate(-390 -651) translate(390 651)"></path><g fill="#FFF"><path d="M11 14H9V7H2V5h9v9z" transform="translate(-390 -651) translate(390 651) rotate(-90 19.5 9) rotate(45 6.5 9.5)"></path></g></g></svg>                </a>
+            </div>
+        
+
+        
+<script type="text/javascript">
+  var _dcq = _dcq || [];
+  var _dcs = _dcs || {}; 
+  _dcs.account = '6372784';
+  
+  (function() {
+    var dc = document.createElement('script');
+    dc.type = 'text/javascript'; dc.async = true; 
+    dc.src = '//tag.getdrip.com/6372784.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dc, s);
+  })();
+</script>        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                var delay = (function () {
+                    var timer = 0;
+                    return function (callback, ms) {
+                        clearTimeout(timer);
+                        timer = setTimeout(callback, ms);
+                    };
+                })();
+
+                $('input#search').keyup(function () {
+                    var searchTerm = $(this).val();
+                    if (searchTerm.length > 1) {
+                        $(".section--blog-blog-pagination").hide();
+                        $(".container-blog-posts").hide();
+                        delay(function () {
+                            jQuery.ajax({
+                                url: 'https://www.miquido.com/wp-admin/admin-ajax.php',
+                                type: 'post',
+                                data: {
+                                    action: 'search_res',
+                                    searchTerm: searchTerm
+                                },
+                                success:function(data){
+                                    $('.container-blog-posts-search').html(data);
+                                    if ($(window).width() < 769) {
+                                        $('.container-blog-posts-search').css('display', 'block').hide().fadeIn();
+                                    }
+                                    else {
+                                        $('.container-blog-posts-search').css('display', 'flex').hide().fadeIn();
+                                    }
+                                },
+                                error: function(errorThrown){
+                                    console.log(errorThrown);
+                                }
+                            });
+                        }, 300);
+                    }
+                });
+            });
+        </script>
+    <script type="text/javascript">
+        if($('.section--blog-posts-basic').length){
+            $('.blog-categories-list__single-category-search').removeAttr('href');
+        }
+    </script>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                var delay = (function () {
+                    var timer = 0;
+                    return function (callback, ms) {
+                        clearTimeout(timer);
+                        timer = setTimeout(callback, ms);
+                    };
+                })();
+
+                $(window).on("load", function () {
+                    var getUrlParameter = function getUrlParameter(sParam) {
+                    var sPageURL = window.location.search.substring(1),
+                        sURLVariables = sPageURL.split('&'),
+                        sParameterName,
+                        i;
+
+                        for (i = 0; i < sURLVariables.length; i++) {
+                            sParameterName = sURLVariables[i].split('=');
+
+                            if (sParameterName[0] === sParam) {
+                                return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+                            }
+                        }
+                        return false;
+                    };
+                    var categorySearch = getUrlParameter('category');
+                    if(categorySearch){
+                    $('.section--blog-category-filter li').removeClass('active-category');
+                    $('.section--blog-category-filter li').removeClass('active');
+
+                    $('.section--blog-category-filter li').each(function(i, obj) {
+
+                        if(obj.querySelector('button')){
+                            var objBtn = obj.querySelector('button').value;
+                        }
+
+                        if( objBtn==categorySearch){
+                            $(this).addClass('active-category');
+                            $(this).addClass('active');
+                        }
+                    });
+
+                    if (categorySearch.length > 0) {
+                        $(".container-blog-posts-search").css("height",$(".container-blog-posts").height);
+                        $('.container-blog-posts-search').show();
+                        delay(function () {
+                            jQuery.ajax({
+                                url: 'https://www.miquido.com/wp-admin/admin-ajax.php',
+                                type: 'post',
+                                data: {
+                                    action: 'blog_cat_search_res',
+                                    categorySearch: categorySearch
+                                },
+                                success:function(data){
+
+                                    if (categorySearch=='all'){
+                                        $(".container-blog-posts").show();
+                                        $(".section--blog-blog-pagination").show();
+                                        $('.container-blog-posts-search').hide();
+                                    }   else{
+                                        $(".container-blog-posts").hide();
+                                        $(".section--blog-blog-pagination").hide();
+                                        $(".section--blog-category-filter").get(0).scrollIntoView({ behavior: 'smooth' });
+                                        $('.container-blog-posts-search').html(data);
+                                        $(".container-blog-posts-search").css("height","auto");
+                                        $('.container-blog-pagination-category *').removeAttr('href');
+                                        if ($(window).width() < 769) {
+                                            $('.container-blog-posts-search').css('display', 'block').hide().fadeIn();
+                                        }
+                                        else {
+                                            $('.container-blog-posts-search').css('display', 'flex').hide().fadeIn();
+                                        }
+
+                                        if($('.section--blog-posts-basic').length){
+                                            $('.blog-categories-list__single-category-search').removeAttr('href');
+                                        }
+
+                                        window.setTimeout(()=>{
+                                            $('.header').removeClass('sticky');
+                                            $('header.header').css('transform', 'translateY(' + $('header.header').height() * -1 + 'px)');
+                                        }, 1000);
+                                    }
+
+                                },
+                                error: function(errorThrown){
+                                    console.log(errorThrown);
+                                }
+                            });
+                        }, 300);
+                    }
+
+                    }
+                });
+
+
+                $('.category_search').click(function () {
+                    var categorySearch = $(this).val();
+                    var activeCategory = $(".active-category");
+                    $('.section--blog-category-filter li').removeClass('active-category');
+                    $('.section--blog-category-filter li').removeClass('active');
+                    $(this).addClass('active-category');
+                    $(this).addClass('active');
+                    $(".container-blog-category-filter-header-cat").hide();
+
+                    if (categorySearch.length > 0) {
+                        $(".container-blog-posts-search").css("height",$(".container-blog-posts").height);
+                        $('.container-blog-posts-search').show();
+
+                        var categorySearchValue = $(this).closest( "form button" ).attr("data-filter");
+                        categorySearchString = '/blog/category/'+categorySearchValue+'/';
+                        if(categorySearchValue=='all') {
+                            window.history.pushState('', '', '/blog/');
+                            $('.section--blog-blog-pagination-all').show();
+                            $('.section--blog-pagination-category-preload').hide();
+                        } else {
+                            window.history.pushState('', '', categorySearchString);
+                        }
+
+                        delay(function () {
+                            jQuery.ajax({
+                                url: 'https://www.miquido.com/wp-admin/admin-ajax.php',
+                                type: 'post',
+                                data: {
+                                    action: 'blog_cat_search_res',
+                                    categorySearch: categorySearch
+                                },
+                                success:function(data){
+                                    if($("li").hasClass("active-category")){
+                                        if (categorySearch=='all'){
+                                            $(".container-blog-posts").show();
+                                            $(".section--blog-blog-pagination").show();
+                                            $('.container-blog-posts-search').hide();
+                                            $(".section--blog-category-filter").get(0).scrollIntoView({ behavior: 'smooth' });
+                                        }   else{
+                                            $(".container-blog-posts").hide();
+                                            $(".section--blog-blog-pagination").hide();
+                                            $(".section--blog-category-filter").get(0).scrollIntoView({ behavior: 'smooth' });
+                                            $('.container-blog-posts-search').html(data);
+                                            $(".container-blog-posts-search").css("height","auto");
+                                            $('.container-blog-pagination-category *').removeAttr('href');
+                                            $(".container-blog-category-filter-header-cat").hide();
+                                            $('.section--blog-blog-pagination-all').show();
+                                            $('.section--blog-pagination-category-preload').hide();
+                                            if(categorySearchValue=='all') {
+                                                $('.section--blog-blog-pagination-all').show();
+                                                $('.section--blog-pagination-category-preload').hide();
+                                            }
+                                            if ($(window).width() < 769) {
+                                                $('.container-blog-posts-search').css('display', 'block').hide().fadeIn();
+                                            }
+                                            else {
+                                                $('.container-blog-posts-search').css('display', 'flex').hide().fadeIn();
+                                            }
+
+                                            if($('.section--blog-posts-basic').length){
+                                                $('.blog-categories-list__single-category-search').removeAttr('href');
+                                            }
+
+                                            window.setTimeout(()=>{
+                                                $('.header').removeClass('sticky');
+                                                $('header.header').css('transform', 'translateY(' + $('header.header').height() * -1 + 'px)');
+                                            }, 1000);
+                                        }
+                                    } else {
+                                        activeCategory.addClass('active-category');
+                                        activeCategory.addClass('active');
+                                    }
+
+                                },
+                                error: function(errorThrown){
+                                    console.log(errorThrown);
+                                }
+                            });
+                        }, 300);
+                    }
+                });
+
+                $(document).on("click", '.blog-categories-list__single-category-search', function(event) {
+
+                    var categorySearch = $(this).text();
+                    var categorySearchValue = $(this).attr("data-filter")
+                    categorySearchString = '/blog/category/'+categorySearchValue+'/';
+                    if(categorySearchValue=='all') {
+                        window.history.pushState('', '', '/blog/');
+                    } else {
+                        window.history.pushState('', '', categorySearchString);
+                    }
+
+                    $('.section--blog-category-filter li').removeClass('active-category');
+                    $('.section--blog-category-filter li').removeClass('active');
+
+                    $('.section--blog-category-filter li').each(function(i, obj) {
+
+                        if(obj.querySelector('button')){
+                            var objBtn = obj.querySelector('button').textContent;
+                        }
+
+                        if( objBtn==categorySearch){
+                            $(this).addClass('active-category');
+                            $(this).addClass('active');
+                        }
+                    });
+
+                    if (categorySearch.length > 0) {
+                        $(".container-blog-posts-search").css("height",$(".container-blog-posts").height);
+                        $('.container-blog-posts-search').show();
+                        delay(function () {
+                            jQuery.ajax({
+                                url: 'https://www.miquido.com/wp-admin/admin-ajax.php',
+                                type: 'post',
+                                data: {
+                                    action: 'blog_cat_search_res',
+                                    categorySearch: categorySearch
+                                },
+                                success:function(data){
+
+                                    if (categorySearch=='all'){
+                                        $(".container-blog-posts").show();
+                                        $(".section--blog-blog-pagination").show();
+                                        $('.container-blog-posts-search').hide();
+                                    }   else{
+                                        $(".container-blog-posts").hide();
+                                        $(".section--blog-blog-pagination").hide();
+                                        $(".section--blog-category-filter").get(0).scrollIntoView({ behavior: 'smooth' });
+                                        $('.container-blog-posts-search').html(data);
+                                        $(".container-blog-posts-search").css("height","auto");
+                                        $('.container-blog-pagination-category *').removeAttr('href');
+                                        $(".container-blog-category-filter-header-cat").hide();
+                                        if ($(window).width() < 769) {
+                                            $('.container-blog-posts-search').css('display', 'block').hide().fadeIn();
+                                        }
+                                        else {
+                                            $('.container-blog-posts-search').css('display', 'flex').hide().fadeIn();
+                                        }
+
+                                        if($('.section--blog-posts-basic').length){
+                                            $('.blog-categories-list__single-category-search').removeAttr('href');
+                                        }
+
+                                        window.setTimeout(()=>{
+                                            $('.header').removeClass('sticky');
+                                            $('header.header').css('transform', 'translateY(' + $('header.header').height() * -1 + 'px)');
+                                        }, 1000);
+                                    }
+
+                                },
+                                error: function(errorThrown){
+                                    console.log(errorThrown);
+                                }
+                            });
+                        }, 300);
+                    }
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                var delay = (function () {
+                    var timer = 0;
+                    return function (callback, ms) {
+                        clearTimeout(timer);
+                        timer = setTimeout(callback, ms);
+                    };
+                })();
+
+                $(document).on("click", '.container-blog-pagination-category > ul > li > a', function(event) {
+                    var categoryName = $('.category-filter-list .active-category button').val();
+
+                    var categorySearchValue = categoryName;
+                    categorySearchString = '/blog/category/'+categorySearchValue+'/page';
+
+                    if (event.target.classList.contains('arrow-right')){
+                        var currentNumber = 0;
+                        var current = document.querySelector('.container-blog-pagination-category > ul > li > .current');
+                        current = parseInt(current.textContent);
+                        currentNumber = current+1;
+                        var categoryPaged = currentNumber;
+                        if(categorySearchValue=='all') {
+                            window.history.pushState('', '', '/blog/page/'+ currentNumber +'/');
+                        } else {
+                            window.history.pushState('', '', categorySearchString +'/'+currentNumber+'/');
+                        }
+                    } else if (event.target.classList.contains('arrow-left')){
+                        var currentNumber = 0;
+                        var current = document.querySelector('.container-blog-pagination-category > ul > li > .current');
+                        current = parseInt(current.textContent);
+                        currentNumber = current-1;
+                        var categoryPaged = currentNumber;
+                        if(currentNumber==1 && categoryName=='all'){
+                            $(".section--blog-pagination-category").show();
+                        }
+                        if(categorySearchValue=='all') {
+                            window.history.pushState('', '', '/blog/page/'+ currentNumber +'/');
+                        } else {
+                            window.history.pushState('', '', categorySearchString +'/'+currentNumber+'/');
+                        }
+                    } else {
+                        var categoryPaged = $(this).text();
+                        if(categorySearchValue=='all') {
+                            window.history.pushState('', '', '/blog/page/'+ categoryPaged +'/');
+                        } else {
+                            window.history.pushState('', '', categorySearchString +'/'+categoryPaged+'/');
+                        }
+                    }
+
+                    if (categoryPaged==1 && categoryName =='all') {
+                        $('.container-blog-posts-search').hide();
+                        $(".container-blog-posts-grid").show().fadeIn();
+                        $("main > .section--blog-blog-pagination").show();
+                        $(".container-blog-posts-search").css("height",$(".container-blog-posts-search").height);
+                        $('.container-blog-posts-search').empty();
+                        $(".container-blog-posts-search").css("height","auto");
+                        $('.container-blog-pagination-category *').removeAttr('href');
+                        $(".container-blog-posts-search").css("height",$(".container-blog-posts-search").height);
+                        $(".section--blog-category-filter").get(0).scrollIntoView({ behavior: 'smooth' });
+                        if(categoryPaged==1){
+                            $(".section--blog-pagination-category").show();
+                        }
+                        if ($(window).width() < 769) {
+                                        $('.container-blog-posts-search').css('display', 'block').hide().fadeIn();
+                                    }
+                                    else {
+                                        $('.container-blog-posts-search').css('display', 'flex').hide().fadeIn();
+                                    }
+                                    window.setTimeout(()=>{
+                                        $('.header').removeClass('sticky');
+                                        $('header.header').css('transform', 'translateY(' + $('header.header').height() * -1 + 'px)');
+                                    }, 1000);
+                    } else if (categoryPaged) {
+                        $(".container-blog-posts-search").css("height",$(".container-blog-posts-search").height);
+                        $(".section--blog-category-filter").get(0).scrollIntoView({ behavior: 'smooth' });
+                        delay(function () {
+                            jQuery.ajax({
+                                url: 'https://www.miquido.com/wp-admin/admin-ajax.php',
+                                type: 'post',
+                                data: {
+                                    action: 'blog_cat_search_res',
+                                    categorySearch: categoryName,
+                                    categoryPaged: categoryPaged
+                                },
+                                success:function(data){
+                                    $(".container-blog-posts").hide();
+                                    $('.container-blog-posts-search').show();
+                                    $(".container-blog-posts-search").css("height",$(".container-blog-posts-search").height);
+                                    $('.container-blog-posts-search').empty();
+                                    $('.container-blog-posts-search').html(data);
+                                    $(".container-blog-posts-search").css("height","auto");
+                                    $('.container-blog-pagination-category *').removeAttr('href');
+                                    if ($(window).width() < 769) {
+                                        $('.container-blog-posts-search').css('display', 'block').hide().fadeIn();
+                                    }
+                                    else {
+                                        $('.container-blog-posts-search').css('display', 'flex').hide().fadeIn();
+                                    }
+                                    window.setTimeout(()=>{
+                                        $('.header').removeClass('sticky');
+                                        $('header.header').css('transform', 'translateY(' + $('header.header').height() * -1 + 'px)');
+                                    }, 1000);
+                                },
+                                error: function(errorThrown){
+                                    console.log(errorThrown);
+                                }
+                            });
+                        }, 300);
+                    }
+                });
+
+                $(document).on("click", '.container-blog-pagination-category-basic > ul > li > a', function(event) {
+                    var categoryName = 'all';
+                    $(".container-blog-category-filter-header-cat").hide();
+
+                    var categorySearchValue = categoryName;
+                    categorySearchString = '/blog/category/'+categorySearchValue+'/page';
+
+                    if (event.target.classList.contains('arrow-right')){
+                        var currentNumber = 0;
+                        var current = document.querySelector('.container-blog-pagination-category-basic > ul > li > .current');
+                        current = parseInt(current.textContent);
+                        currentNumber = current+1;
+                        var categoryPaged = currentNumber;
+                        if(categorySearchValue=='all') {
+                            window.history.pushState('', '', '/blog/page/'+  currentNumber +'/');
+                        } else {
+                            window.history.pushState('', '', categorySearchString +'/'+currentNumber+'/');
+                        }
+                    } else if (event.target.classList.contains('arrow-left')){
+                        var currentNumber = 0;
+                        var current = document.querySelector('.container-blog-pagination-category-basic > ul > li > .current');
+                        current = parseInt(current.textContent);
+                        currentNumber = current-1;
+                        if(categorySearchValue=='all') {
+                            window.history.pushState('', '', '/blog/page/'+ currentNumber +'/');
+                        } else {
+                            window.history.pushState('', '', categorySearchString +'/'+currentNumber+'/');
+                        }
+                    } else {
+                        var categoryPaged = $(this).text();
+                        if(categorySearchValue=='all') {
+                            window.history.pushState('', '', '/blog/page/'+ categoryPaged +'/');
+                        } else {
+                            window.history.pushState('', '', categorySearchString +'/'+categoryPaged+'/');
+                        }
+                    }
+
+                    if (categoryPaged) {
+                        $(".container-blog-posts-search").css("height",$(".container-blog-posts-search").height);
+                        $(".section--blog-category-filter").get(0).scrollIntoView({ behavior: 'smooth' });
+                        delay(function () {
+                            jQuery.ajax({
+                                url: 'https://www.miquido.com/wp-admin/admin-ajax.php',
+                                type: 'post',
+                                data: {
+                                    action: 'blog_cat_search_res',
+                                    categorySearch: categoryName,
+                                    categoryPaged: categoryPaged
+                                },
+                                success:function(data){
+                                    $(".section--blog-blog-pagination").hide();
+                                    $(".container-blog-posts").hide();
+                                    $('.container-blog-posts-search').show();
+                                    $(".container-blog-posts-search").css("height",$(".container-blog-posts-search").height);
+                                    $('.container-blog-posts-search').empty();
+                                    $('.container-blog-posts-search').html(data);
+                                    $(".container-blog-posts-search").css("height","auto");
+                                    $('.container-blog-pagination-category-basic *').removeAttr('href');
+                                    $('.container-blog-pagination-category *').removeAttr('href');
+                                    if ($(window).width() < 769) {
+                                        $('.container-blog-posts-search').css('display', 'block').hide().fadeIn();
+                                    }
+                                    else {
+                                        $('.container-blog-posts-search').css('display', 'flex').hide().fadeIn();
+                                    }
+                                    window.setTimeout(()=>{
+                                        $('.header').removeClass('sticky');
+                                        $('header.header').css('transform', 'translateY(' + $('header.header').height() * -1 + 'px)');
+                                    }, 1000);
+                                },
+                                error: function(errorThrown){
+                                    console.log(errorThrown);
+                                }
+                            });
+                        }, 300);
+                    }
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                var delay = (function () {
+                    var timer = 0;
+                    return function (callback, ms) {
+                        clearTimeout(timer);
+                        timer = setTimeout(callback, ms);
+                    };
+                })();
+
+                $('input#searchPress').keyup(function () {
+                    var searchTerm = $(this).val();
+                    if (searchTerm.length > 1 && searchTerm !== '') {
+                        $(".section--blog-blog-pagination").hide();
+                        $(".container-blog-posts").hide();
+                        $('.search-term').text(searchTerm);
+                        delay(function () {
+                            jQuery.ajax({
+                                url: 'https://www.miquido.com/wp-admin/admin-ajax.php',
+                                type: 'post',
+                                data: {
+                                    action: 'search_res_press',
+                                    searchTerm: searchTerm
+                                },
+                                success:function(data){
+                                    $('.container-blog-posts-search').html(data);
+                                    if ($(window).width() < 769) {
+                                        $('.container-blog-posts-search').css('display', 'block').hide().fadeIn();
+                                    }
+                                    else {
+                                        $('.container-blog-posts-search').css('display', 'flex').hide().fadeIn();
+                                    }
+                                },
+                                error: function(errorThrown){
+                                    console.log(errorThrown);
+                                }
+                            });
+                        }, 300);
+                    }
+                    else {
+                        $('.container-blog-posts-search').html('').hide();
+                        $(".section--blog-blog-pagination").show();
+                        if ($(window).width() < 769) {
+                            $('.container-blog-posts').css('display', 'block').hide().fadeIn();
+                        }
+                        else {
+                            $('.container-blog-posts').css('display', 'flex').hide().fadeIn();
+                        }
+                    }
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                var delay = (function () {
+                    var timer = 0;
+                    return function (callback, ms) {
+                        clearTimeout(timer);
+                        timer = setTimeout(callback, ms);
+                    };
+                })();
+
+                $(document).on("click", '.container-work-works-items-load-more-btn', function(event) {
+                        var offset = $('.container-work-item').length;
+                        delay(function () {
+                            jQuery.ajax({
+                                url: 'https://www.miquido.com/wp-admin/admin-ajax.php',
+                                type: 'post',
+                                data: {
+                                    action: 'load_more_portfolio',
+                                    offset: offset
+                                },
+                                success:function(data){
+                                    $('.container-work-works-items').append(data);
+                                },
+                                error: function(errorThrown){
+                                    console.log(errorThrown);
+                                }
+                            });
+                        }, 300);
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                if($('.page-template-downloadables-template').length){
+                    if($(window).width() < 1025 && $(window).width() > 460 ) {
+                        $('.container-downloadables-type-items').not('.downloadables-type-items--other').each(function(){
+                            if($(this).children('.downloadables-type-item').length > 2){
+                                $(this).children('.downloadables-type-item').last().remove();
+                                if(!$(this).children('.downloadables-load-more').length){
+                                    $(this).append('<div class="downloadables-load-more"><a href="#" class="cta-secondary cta-secondary--border red downloadables-load-more-button">Load more</a></div>');
+                                }
+                            }
+                        });
+                        $('.downloadables-type-subitems').each(function(){
+                            if($(this).children('.downloadables-type-item').length > 2){
+                                $(this).children('.downloadables-type-item').last().remove();
+                                if(!$(this).children('.downloadables-load-more').length){
+                                    $(this).append('<div class="downloadables-load-more"><a href="#" class="cta-secondary cta-secondary--border red downloadables-load-more-button">Load more</a></div>');
+                                }
+                            }
+                        });
+                    }
+
+                    $('.downloadables-load-more .downloadables-load-more-button').on('click', function (e) {
+
+                        e.preventDefault();
+
+                        if ($(window).width() < 1024 && $(window).width() > 460 ) {
+                            $number_posts = 2;
+                        }
+                        else {
+                            $number_posts = 3;
+                        }
+
+                        $parentDiv = $(this).parent('div').parent('div');
+                        $clickedButton = $(this);
+                        $post_per_page = $number_posts;
+                        $offset = $parentDiv.children('.downloadables-type-item').length;
+
+                        $type = $(this).closest('.downloadables-type-items').attr('id');
+                        $subtype = $(this).closest('.downloadables-type-subitems').attr('id');
+
+                        if($subtype !== undefined){
+                            $loadType = $subtype;
+                        }
+                        else {
+                            $loadType = $type;
+                        }
+
+                        jQuery.ajax({
+                            url: 'https://www.miquido.com/wp-admin/admin-ajax.php',
+                            type: 'post',
+                            data: {
+                                action: 'load_more_downloadables',
+                                post_per_page: $post_per_page,
+                                offset: $offset,
+                                type: $loadType
+                            },
+                            beforeSend: function(){
+                                $clickedButton.html('loading...');
+                            },
+                            success:function(data){
+                                if(data){
+                                    $parentDiv.append(data);
+                                    $clickedButton.parent('div').appendTo($parentDiv);
+                                }
+                            },
+                            complete:function(){
+                                jQuery.ajax({
+                                    url: 'https://www.miquido.com/wp-admin/admin-ajax.php',
+                                    type: 'post',
+                                    data: {
+                                        action: 'load_more_downloadables',
+                                        post_per_page: $post_per_page,
+                                        offset: $offset + $post_per_page,
+                                        type: $loadType
+                                    },
+                                    success:function(data){
+                                        if(data){
+                                            $clickedButton.html('Load more').parent('div').appendTo($parentDiv);
+                                        }
+                                        else {
+                                            $clickedButton.remove();
+                                        }
+                                    },
+                                    error: function(errorThrown){
+                                        console.log(errorThrown);
+                                    }
+                                });
+                            },
+                            error: function(errorThrown){
+                                console.log(errorThrown);
+                            }
+                        });
+                    });
+                }
+                else {
+                    $('.downloadables-load-more .downloadables-load-more-button').on('click', function (e) {
+
+                        e.preventDefault();
+
+                        if ($(window).width() < 1024 && $(window).width() > 460 ) {
+                            $number_posts = 2;
+                        }
+                        else {
+                            $number_posts = 3;
+                        }
+
+                        $parentDiv = $(this).parent('div').parent('div');
+                        $clickedButton = $(this);
+                        $post_per_page = $number_posts;
+                        $offset = $parentDiv.children('.downloadables-type-item').length;
+
+                        $type = $(this).closest('.downloadables-type-items').attr('id');
+                        $subtype = $(this).closest('.downloadables-type-subitems').attr('id');
+
+                        if($subtype !== undefined){
+                            $loadType = $subtype;
+                        }
+                        else {
+                            $loadType = $type;
+                        }
+
+                        jQuery.ajax({
+                            url: 'https://www.miquido.com/wp-admin/admin-ajax.php',
+                            type: 'post',
+                            data: {
+                                action: 'load_more_downloadables',
+                                post_per_page: $post_per_page,
+                                offset: $offset,
+                                type: $loadType
+                            },
+                            beforeSend: function(){
+                                $clickedButton.html('loading...');
+                            },
+                            success:function(data){
+                                if(data){
+                                    $parentDiv.append(data);
+                                    $clickedButton.parent('div').appendTo($parentDiv);
+                                }
+                            },
+                            complete:function(){
+                                jQuery.ajax({
+                                    url: 'https://www.miquido.com/wp-admin/admin-ajax.php',
+                                    type: 'post',
+                                    data: {
+                                        action: 'load_more_downloadables',
+                                        post_per_page: $post_per_page,
+                                        offset: $offset + $post_per_page,
+                                        type: $loadType
+                                    },
+                                    success:function(data){
+                                        if(data){
+                                            $clickedButton.html('Load more').parent('div').appendTo($parentDiv);
+                                        }
+                                        else {
+                                            $clickedButton.remove();
+                                        }
+                                    },
+                                    error: function(errorThrown){
+                                        console.log(errorThrown);
+                                    }
+                                });
+                            },
+                            error: function(errorThrown){
+                                console.log(errorThrown);
+                            }
+                        });
+                    });
+                }
+            });
+        </script>
+
+<script>(function(d,u,ac){var s=d.createElement('script');s.type='text/javascript';s.src='https://a.omappapi.com/app/js/api.min.js';s.async=true;s.dataset.user=u;s.dataset.campaign=ac;d.getElementsByTagName('head')[0].appendChild(s);})(document,159676,'beh7qdl74rquvgkdwsfw');</script>
+
+<script>(function(d,u,ac){var s=d.createElement('script');s.type='text/javascript';s.src='https://a.omappapi.com/app/js/api.min.js';s.async=true;s.dataset.user=u;s.dataset.campaign=ac;d.getElementsByTagName('head')[0].appendChild(s);})(document,159676,'vjenfyntj0mfwczw7k7w');</script>
+
+<script>(function(d,u,ac){var s=d.createElement('script');s.type='text/javascript';s.src='https://a.omappapi.com/app/js/api.min.js';s.async=true;s.dataset.user=u;s.dataset.campaign=ac;d.getElementsByTagName('head')[0].appendChild(s);})(document,159676,'s9hs7osvyt4mx2hquv0t');</script>
+		<script type="text/javascript">
+		var beh7qdl74rquvgkdwsfw_shortcode = true;var vjenfyntj0mfwczw7k7w_shortcode = true;var s9hs7osvyt4mx2hquv0t_shortcode = true;		</script>
+		<script type='text/javascript' src='../../../wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/ui/accordion.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='../../../wp-content/plugins/faq-schema-for-pages-and-posts/js/frontend.js?ver=2.0.0'></script>
+<script type='text/javascript' src='../../../wp-content/plugins/responsive-lightbox/assets/tosrus/jquery.tosrus.min.js?ver=2.4.1'></script>
+<script type='text/javascript' src='../../../wp-includes/js/underscore.min.js?ver=1.8.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var rlArgs = {"script":"tosrus","selector":"lightbox","customEvents":"","activeGalleries":"1","effect":"slide","infinite":"0","keys":"1","autoplay":"0","pauseOnHover":"0","timeout":"4000","pagination":"0","paginationType":"thumbnails","closeOnClick":"1","woocommerce_gallery":"0","ajaxurl":"https:\/\/www.miquido.com\/wp-admin\/admin-ajax.php","nonce":"e7e9c6b0f2","preview":"false","postId":"13198","scriptExtension":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../wp-content/plugins/responsive-lightbox/js/front.js?ver=2.4.1'></script>
+<script type='text/javascript'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/www.miquido.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var cnArgs = {"ajaxUrl":"https:\/\/www.miquido.com\/wp-admin\/admin-ajax.php","nonce":"d0b77d8f70","hideEffect":"none","position":"bottom","onScroll":"0","onScrollOffset":"100","onClick":"0","cookieName":"cookie_notice_accepted","cookieTime":"2592000","cookieTimeRejected":"86400","cookiePath":"\/","cookieDomain":"","redirection":"0","cache":"1","refuse":"0","revokeCookies":"0","revokeCookiesOpt":"automatic","secure":"1"};
+/* ]]> */
+</script>
+<script async="" type='text/javascript' defer='defer' src='../../../wp-content/plugins/cookie-notice/js/front.min.js?ver=2.3.1'></script>
+<script>(function(d){var s=d.createElement("script");s.type="text/javascript";s.src="https://a.omappapi.com/app/js/api.min.js";s.async=true;s.id="omapi-script";d.getElementsByTagName("head")[0].appendChild(s);})(document);</script><script type='text/javascript' src='../../../wp-content/plugins/enlighter/resources/enlighterjs/enlighterjs.min.js?ver=4.1'></script>
+<script type='text/javascript'>
+!function(n,o){"undefined"!=typeof EnlighterJS?(n.EnlighterJSINIT=function(){EnlighterJS.init("pre.EnlighterJSRAW", "code.EnlighterJSRAW", {"indent":4,"ampersandCleanup":true,"linehover":false,"rawcodeDbclick":false,"textOverflow":"scroll","linenumbers":true,"theme":"enlighter","language":"generic","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""})})():(o&&(o.error||o.log)||function(){})("Error: EnlighterJS resources not loaded yet!")}(window,console);
+</script>
+<script type='text/javascript' src='../../../wp-includes/js/wp-embed.min.js?ver=5.4.2'></script>
+<script type='text/javascript' src='../../../wp-content/plugins/optinmonster/assets/js/helper.js?ver=2.8.0'></script>
+
+		
+		<div id="cookie-notice" role="dialog" class="cookie-notice-hidden cookie-revoke-hidden cn-position-bottom" aria-label="Cookie Notice" style="background-color: rgba(0,0,0,1);"><div class="cookie-notice-container" style="color: #fff;"><span id="cn-notice-text" class="cn-text-container"><h4>Cookies Policy</h4>
+<p>Website uses cookies and tracking pixels to customize its content, analyze movement and users' behavior, provide services and to profile the presented content, including ads. By closing this banner or continuing to browse this website otherwise, you agree to the use of cookies, which means that such cookie files will be placed on your device.<br>
+If you want to withdraw your consent to all or some of the cookies, change your cookie settings, please see further details in the <a href="../../../privacy-policy.html" target="_blank">Cookie Policy</a>.</p>
+<span class="cookie-text-more"></span></span><span id="cn-notice-buttons" class="cn-buttons-container"><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button" aria-label="Agree" style="background-color: #00a99d">Agree</a><a href="../../../privacy-policy/index.htm" target="_blank" id="cn-more-info" class="cn-more-info cn-button" aria-label="Privacy policy" style="background-color: #00a99d">Privacy policy</a></span><span id="cn-close-notice" data-cookie-set="accept" class="cn-close-icon" title="No"></span></div>
+			
+		</div>
+				<script type="text/javascript">var omapi_localized = {
+			ajax: 'https://www.miquido.com/wp-admin/admin-ajax.php?optin-monster-ajax-route=1',
+			nonce: '351086d0d6',
+			slugs:
+			{"beh7qdl74rquvgkdwsfw":{"slug":"beh7qdl74rquvgkdwsfw","mailpoet":false},"vjenfyntj0mfwczw7k7w":{"slug":"vjenfyntj0mfwczw7k7w","mailpoet":false},"s9hs7osvyt4mx2hquv0t":{"slug":"s9hs7osvyt4mx2hquv0t","mailpoet":false}}		};</script>
+				<script type="text/javascript">var omapi_data = {"wc_cart":[],"object_id":6479,"object_key":"page","object_type":"post","term_ids":[],"wp_json":"https:\/\/www.miquido.com\/wp-json"};</script>
+		<noscript><link rel="stylesheet" href="../../../css?family=Roboto&amp;display=swap" media="all"></noscript>
+    </body>
+</html>
